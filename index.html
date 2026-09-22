@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Global Citizens International Movement — Press Office" />
+  <title>News – Global Citizens</title>
+  <link rel="canonical" href="https://press.gcim.eu/">
+  <link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/">
+  <link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/?lang=en">
+  <link rel="alternate" hreflang="ar" href="https://press.gcim.eu/?lang=ar">
+  <link rel="alternate" hreflang="es" href="https://press.gcim.eu/?lang=es">
+  <link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/?lang=zh">
+  <link rel="alternate" hreflang="ru" href="https://press.gcim.eu/?lang=ru">
+  <link rel="alternate" hreflang="fr" href="https://press.gcim.eu/?lang=fr">
+  <link rel="alternate" hreflang="uk" href="https://press.gcim.eu/?lang=uk">
+  <meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <style>
+    @font-face{
+      font-family:"ITCFranklinGothicW10-Md 862390";
+      src:url("assets/itc-franklin-gothic-md.woff") format("woff");
+      font-weight:400;
+      font-style:normal;
+      font-display:swap;
+    }
+    :root{
+      --ink:#102133;
+      --muted:#62707d;
+      --paper:#f6f3ec;
+      --white:#ffffff;
+      --line:#d8d7d1;
+      --navy:#102c46;
+      --navy-2:#173b5b;
+      --accent:#a78248;
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+
+
+    .portal-bar{
+      background:#0b2237;
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+    .portal-bar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 32px;
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    @media (max-width:840px){
+      .portal-bar-inner{padding:8px 20px;font-size:9px!important;line-height:1.2;letter-spacing:.03em!important;white-space:nowrap;overflow:hidden}
+    }
+
+    .topline{
+      height:1px;
+      background:#d7bd90;
+    }
+
+    .masthead{
+      background:var(--navy);
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.18);
+    }
+    .masthead-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      min-height:112px;
+      padding:24px 32px;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:24px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    .mark{
+      width:62px;
+      height:62px;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+    }
+    #headerEmblem{
+      cursor:pointer;
+    }
+    #headerEmblem:focus-visible{
+      outline:1px solid #d7bd90;
+      outline-offset:4px;
+    }
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible{
+      outline:3px solid #84652f;
+      outline-offset:3px;
+    }
+    .emblem-tint{
+      background-color:transparent;
+      background-image:url('assets/gcim-emblem.webp');
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:contain;
+    }
+    .brand-copy strong{
+      display:block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:21px;
+      font-weight:600;
+      letter-spacing:.01em;
+    }
+    .brand-copy span{
+      display:block;
+      margin-top:4px;
+      color:#c3ced7;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+    }
+    .office-wrap{
+      text-align:center;
+      line-height:1;
+    }
+    .office{
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:18px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+    .track-two{
+      margin-top:9px;
+      color:#d7bd90;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .lang{
+      justify-self:end;
+      display:flex;
+      align-items:center;
+      gap:0;
+      padding:3px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.11em;
+    }
+    .lang button{
+      min-width:42px;
+      height:34px;
+      border:0;
+      border-radius:999px;
+      background:transparent;
+      padding:0 12px;
+      cursor:pointer;
+      color:rgba(255,255,255,.78);
+      transition:
+        background-color .18s ease,
+        color .18s ease,
+        box-shadow .18s ease,
+        transform .18s ease;
+    }
+    .lang button.active{
+      background:#fff;
+      color:var(--navy);
+      box-shadow:0 1px 5px rgba(0,0,0,.16);
+    }
+    .lang button:hover:not(.active){
+      background:rgba(255,255,255,.12);
+      color:#fff;
+    }
+    .lang button:active{
+      transform:scale(.97);
+    }
+    .lang button:focus-visible{
+      outline:2px solid #fff;
+      outline-offset:3px;
+    }
+    .lang .sep{display:none}
+
+
+    .mobile-actions{
+      display:none;
+      align-items:center;
+      gap:10px;
+      justify-self:end;
+    }
+    .mobile-lang-wrap{
+      position:relative;
+    }
+    .mobile-lang{
+      height:42px;
+      min-width:68px;
+      padding:0 28px 0 12px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,255,255,.07);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+      outline:none;
+      cursor:pointer;
+    }
+    .mobile-lang option{
+      color:#102c46;
+      background:#fff;
+    }
+    .menu-toggle{
+      width:44px;
+      height:44px;
+      padding:0;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:50%;
+      background:rgba(255,255,255,.07);
+      display:grid;
+      place-content:center;
+      gap:4px;
+      cursor:pointer;
+    }
+    .menu-toggle span{
+      display:block;
+      width:18px;
+      height:1.5px;
+      background:#fff;
+      transition:transform .2s ease, opacity .2s ease;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){
+      transform:translateY(5.5px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){
+      opacity:0;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){
+      transform:translateY(-5.5px) rotate(-45deg);
+    }
+
+    .nav-wrap{
+      border-bottom:1px solid rgba(255,255,255,.16);
+      background:var(--navy);
+      color:#fff;
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 32px;
+      height:58px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:34px;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+      font-weight:700;
+    }
+    .nav-links a{
+      position:relative;
+      padding:21px 0 19px;
+    }
+    .nav-links a.active:after{
+      content:"";
+      position:absolute;
+      left:0; right:0; bottom:-1px;
+      height:3px;
+      background:#d7bd90;
+    }
+    .media-link{
+      font-size:12px;
+      font-weight:700;
+      color:#d7bd90;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      border-left:1px solid rgba(255,255,255,.22);
+      padding-left:24px;
+    }
+
+    .hero{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:76px 32px 42px;
+    }
+    .eyebrow{
+      color:#d7bd90;
+      text-transform:uppercase;
+      letter-spacing:.17em;
+      font-size:12px;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    h1{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:clamp(56px,8vw,112px);
+      line-height:.94;
+      font-weight:500;
+      letter-spacing:-.045em;
+    }
+    .hero-rule{
+      height:1px;
+      background:var(--ink);
+      margin-top:44px;
+    }
+
+    .tools{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 32px 32px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 290px;
+      gap:18px;
+    }
+    .search{
+      position:relative;
+    }
+    .search input{
+      width:100%;
+      height:56px;
+      border:1px solid #b8bdc1;
+      background:#fff;
+      padding:0 52px 0 18px;
+      color:var(--ink);
+      outline:none;
+    }
+    .search input:focus,
+    .category select:focus{
+      border-color:var(--navy);
+      box-shadow:0 0 0 2px rgba(16,44,70,.08);
+    }
+    .search svg{
+      width:20px;
+      position:absolute;
+      right:18px;
+      top:18px;
+      stroke:var(--navy);
+    }
+    .category select{
+      width:100%;
+      height:56px;
+      border:1px solid #b8bdc1;
+      color:var(--ink);
+      background:#fff;
+      padding:0 44px 0 18px;
+      outline:none;
+      cursor:pointer;
+    }
+
+    .content{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 32px 80px;
+    }
+    .featured{
+      background:var(--paper);
+      border-top:4px solid var(--navy);
+      margin-bottom:34px;
+      padding:34px 36px 32px;
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:36px;
+    }
+    .featured-label{
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      font-size:11px;
+      font-weight:700;
+      color:#d7bd90;
+      margin-bottom:11px;
+    }
+    .featured-meta{
+      font-size:12px;
+      line-height:1.65;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.07em;
+    }
+    .featured h2{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:clamp(28px,3.2vw,46px);
+      line-height:1.08;
+      margin:0 0 14px;
+      font-weight:500;
+      letter-spacing:-.025em;
+    }
+    .featured p{
+      margin:0;
+      max-width:780px;
+      font-family:Georgia, "Times New Roman", serif;
+      color:#3c4a57;
+      font-size:17px;
+      line-height:1.55;
+    }
+
+    .results-count{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      margin:12px 0 10px;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .news-list{
+      border-top:1px solid var(--ink);
+    }
+    .news-item{
+      display:block;
+      padding:32px 20px 34px;
+      border-bottom:1px solid var(--line);
+      text-align:center;
+      transition:background .16s ease;
+    }
+    .news-item:hover{background:#faf9f6;}
+    .news-title{
+      max-width:920px;
+      margin:0 auto 14px;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:29px;
+      line-height:1.2;
+      letter-spacing:-.018em;
+      font-weight:500;
+      color:var(--ink);
+    }
+    .news-item a{display:block;text-decoration:none;}
+    .news-item a:hover .news-title{
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:5px;
+    }
+    .news-meta{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:0;
+      margin-top:2px;
+      font-size:14px;
+      line-height:1.4;
+      color:var(--muted);
+      text-transform:uppercase;
+    }
+    .news-type{margin:0;color:#84652f;font-weight:700;}
+    .news-type::after{content:" | ";color:var(--muted);font-weight:400;white-space:pre;}
+    .news-date{margin:0;color:var(--muted);font-size:14px;line-height:1.4;letter-spacing:.02em;white-space:nowrap;}
+    .template-tag{
+      display:inline-block;
+      margin-top:9px;
+      padding:4px 7px;
+      border:1px solid #c8c9c9;
+      color:#7b8084;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:9px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      vertical-align:middle;
+    }
+
+    .pagination{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:6px;
+      padding:42px 0 0;
+    }
+    .page-numbers{
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .pagination button{
+      min-width:42px;
+      height:42px;
+      padding:0 12px;
+      background:#fff;
+      border:1px solid var(--line);
+      cursor:pointer;
+      color:var(--navy);
+      font:600 12px Arial,Helvetica,sans-serif;
+    }
+    .pagination .page-nav{
+      min-width:86px;
+    }
+    .pagination button:hover:not(:disabled):not(.current){
+      border-color:var(--navy);
+    }
+    .pagination button.current{
+      background:var(--navy);
+      color:#fff;
+      border-color:var(--navy);
+      cursor:default;
+    }
+    .pagination button:disabled{
+      opacity:.38;
+      cursor:not-allowed;
+    }
+    .pagination[hidden]{
+      display:none;
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:32px 32px 34px;
+      display:grid;
+      grid-template-columns:1.25fr .8fr .8fr;
+      gap:48px;
+    }
+    .footer-brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:25px;
+      margin-bottom:12px;
+    }
+    .footer-brand-text{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:1px;
+      line-height:1.05;
+    }
+    .footer-emblem{
+      width:52px;
+      height:52px;
+      flex:0 0 auto;
+    }
+    .footer-website{
+      color:#d7bd90;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:12px;
+      letter-spacing:.04em;
+      line-height:1.1;
+      text-decoration:none;
+    }
+    .footer-website:hover{
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .footer-contacts{
+      padding-top:64px;
+    }
+    .footer-language-note{
+      margin:0;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:12px;
+      line-height:1.55;
+    }
+    .footer-subscribe{
+      padding-top:64px;
+    }
+    .subscribe-copy{
+      margin:0 0 12px;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:13px;
+      line-height:1.45;
+    }
+    .subscribe-form{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      margin:0;
+    }
+    .subscribe-form input{
+      width:100%;
+      min-width:0;
+      height:38px;
+      border:1px solid rgba(255,255,255,.38);
+      background:#fff;
+      color:#102133;
+      padding:0 11px;
+      border-radius:0;
+      outline:none;
+      font:13px Arial,Helvetica,sans-serif;
+    }
+    .subscribe-form input:focus{
+      border-color:#d7bd90;
+      box-shadow:0 0 0 1px #d7bd90;
+    }
+    .subscribe-form button{
+      align-self:flex-start;
+      min-height:36px;
+      border:1px solid #d7bd90;
+      background:#d7bd90;
+      color:#102c46;
+      padding:0 18px;
+      cursor:pointer;
+      font-size:11px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.10em;
+    }
+    .subscribe-form button:hover{
+      background:transparent;
+      color:#d7bd90;
+    }
+    .subscribe-note{
+      margin-top:9px;
+      color:#aebbc6;
+      font-size:10px;
+      line-height:1.35;
+    }
+    .sr-only{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    .footer-copy{
+      max-width:440px;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:12px;
+      line-height:1.55;
+    }
+    footer h3{
+      margin:0 0 14px;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      color:#d7bd90;
+    }
+    footer a{
+      display:block;
+      color:#fff;
+      margin:9px 0;
+      font-size:13px;
+    }
+    .copyright{
+      max-width:var(--max);
+      margin:0 auto;
+      border-top:1px solid rgba(255,255,255,.22);
+      padding:18px 32px 26px;
+      color:#b9c5cf;
+      font-size:11px;
+      letter-spacing:.04em;
+    }
+
+
+    html[dir="rtl"] body{
+      direction:rtl;
+    }
+    html[dir="rtl"] .masthead-inner,
+    html[dir="rtl"] .nav,
+    html[dir="rtl"] .hero,
+    html[dir="rtl"] .tools,
+    html[dir="rtl"] .content,
+    html[dir="rtl"] .footer-inner{
+      direction:rtl;
+    }
+    html[dir="rtl"] .brand{
+      flex-direction:row-reverse;
+    }
+    html[dir="rtl"] .lang{
+      direction:ltr;
+    }
+    html[dir="rtl"] .mobile-actions{
+      direction:ltr;
+    }
+    html[dir="rtl"] .media-link{
+      border-left:0;
+      border-right:1px solid rgba(255,255,255,.22);
+      padding-left:0;
+      padding-right:24px;
+    }
+    html[dir="rtl"] .news-date{
+      justify-self:start;
+    }
+
+    .mobile-menu{display:none}
+
+    @media (max-width:840px){
+      .masthead-inner{
+        grid-template-columns:minmax(0,1fr) auto;
+        min-height:88px;
+        padding:16px 20px;
+        gap:12px;
+      }
+      .office-wrap{display:none}
+      .lang{display:none}
+      .mobile-actions{display:flex}
+      .brand{min-width:0;gap:11px}
+      .brand-copy{min-width:0}
+      .brand-copy strong{white-space:nowrap}
+      .nav-wrap{border-bottom:1px solid rgba(255,255,255,.16)}
+      .nav{
+        display:block;
+        height:auto;
+        padding:0;
+      }
+      .nav-links{
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        width:100%;
+        font-size:12px;
+        white-space:normal;
+      }
+      .nav-wrap.is-open .nav-links{display:flex}
+      .nav-links a{
+        width:100%;
+        padding:15px 20px;
+        border-top:1px solid rgba(255,255,255,.12);
+      }
+      .nav-links a.active:after{
+        left:20px;
+        right:auto;
+        width:34px;
+        height:2px;
+      }
+      .media-link{display:none}
+      .nav-wrap.is-open .media-link{
+        display:block;
+        width:100%;
+        padding:15px 20px;
+        border-left:0;
+        border-top:1px solid rgba(255,255,255,.12);
+      }
+      .hero{padding:38px 20px 24px}
+      .hero-rule{margin-top:28px}
+      .tools{padding:0 20px 22px;grid-template-columns:1fr}
+      .content{padding:4px 20px 60px}
+      .featured{grid-template-columns:1fr;gap:14px;padding:24px 20px}
+      .news-item{padding:26px 14px 28px}
+      .news-title{font-size:24px}
+      .news-type{padding-top:0}
+      .news-date{justify-self:start;padding-top:0;order:3}
+      .footer-inner{padding:40px 20px;grid-template-columns:1fr;gap:30px}
+      .footer-contacts{padding-top:0}
+      .footer-subscribe{padding-top:0}
+      .footer-subscribe h3,
+      .subscribe-note,
+      .copyright {
+        white-space:nowrap;
+      }
+      .footer-subscribe h3 {
+        font-size:clamp(10px,3.3vw,13px);
+        letter-spacing:.08em;
+      }
+      .subscribe-note,
+      .copyright {
+        font-size:clamp(9px,2.9vw,11px);
+        letter-spacing:0;
+      }
+      .subscribe-form button{width:100%}
+      .copyright{padding:18px 20px 24px}
+    }
+    @media (max-width:520px){
+      .mark{width:52px;height:52px}
+      .brand-copy strong{font-size:18px}
+      .brand-copy span{font-size:10px}
+      .mobile-lang{min-width:64px;padding-left:10px}
+      .menu-toggle{width:42px;height:42px}
+      h1{font-size:48px}
+      .nav-links{font-size:11px}
+      .featured h2{font-family:"ITCFranklinGothicW10-Md 862390",Arial,sans-serif;font-weight:400;font-size:20px;line-height:1.35;letter-spacing:0}
+      .news-title{font-family:"ITCFranklinGothicW10-Md 862390",Arial,sans-serif;font-weight:400;font-size:20px;line-height:1.35}
+    }
+  
+    .lang .lang-pending{
+      opacity:.58;
+      cursor:default;
+      pointer-events:none;
+    }
+
+  
+    /* GCIM mobile viewport lock */
+    @media (max-width:840px) {
+      html, body { width:100%; max-width:100%; overflow-x:hidden; }
+      .masthead-inner, .nav, .content, .hero, .featured, .footer-inner,
+      .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
+      .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
+      .publication-title, .publication-body, .resource-item, .resource-title,
+      .service-value { min-width:0; max-width:100%; }
+      .brand-copy { overflow:hidden; }
+      .brand-copy strong { font-size:14px; line-height:1.1; white-space:nowrap; overflow-wrap:normal; }
+      .footer-brand { font-size:17px; }
+      .footer-brand-text span { white-space:nowrap; }
+      .publication-title, .publication-body, .news-title, .news-type, .news-date,
+      .hero h1, .inquiries-copy, .contact-value { overflow-wrap:anywhere; word-break:normal; }
+      .publication-body .quote-attribution-inline { white-space:normal; overflow-wrap:anywhere; }
+      .resource-item { flex-wrap:wrap; }
+      .resource-title { overflow-wrap:anywhere; }
+      img, svg, video, iframe { max-width:100%; height:auto; }
+    }
+    @media (max-width:380px) {
+      .masthead-inner { padding-left:10px; padding-right:10px; gap:6px; }
+      .brand { gap:7px; }
+      .mark { width:42px; height:42px; }
+      .brand-copy strong { font-size:13px; line-height:1.1; }
+      .footer-brand { font-size:15px; }
+      .brand-copy span { font-size:9px; letter-spacing:.08em; }
+      .mobile-actions { gap:5px; }
+      .mobile-lang { min-width:52px; width:52px; padding-left:5px; padding-right:5px; }
+      .menu-toggle { width:38px; height:38px; }
+      .content, .hero, .featured, .publication-shell, .inquiries-wrap { padding-left:14px; padding-right:14px; }
+    }
+
+  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Global Citizens">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="News – Global Citizens">
+  <meta property="og:description" content="Global Citizens International Movement — Press Office">
+  <meta property="og:url" content="https://press.gcim.eu/">
+  <meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg">
+  <meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Global Citizens Press Office">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News – Global Citizens">
+  <meta name="twitter:description" content="Global Citizens International Movement — Press Office">
+  <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Global Citizens Press Office">
+</head>
+<body>
+  <div class="portal-bar">
+    <div class="portal-bar-inner" data-en="Official Press Portal of GCIM" data-ar="البوابة الصحفية الرسمية لـ GCIM" data-es="Portal oficial de prensa de GCIM" data-zh="GCIM 官方新闻门户" data-ru="Официальный пресс-портал GCIM" data-fr="Portail officiel de presse de GCIM" data-uk="Офіційний прес-портал GCIM">Official Press Portal of GCIM</div>
+  </div>
+
+  <div class="topline"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html?lang=en" aria-label="Global Citizens home">
+        <div class="mark emblem-tint" id="headerEmblem" aria-hidden="true"
+       ></div>
+        <div class="brand-copy">
+          <strong data-en="Global Citizens" data-ru="Global Citizens" data-uk="Global Citizens">Global Citizens</strong>
+          <span data-en="International Movement" data-ar="الحركة الدولية" data-es="Movimiento internacional" data-zh="国际运动" data-ru="Международное движение" data-fr="Mouvement international" data-uk="Міжнародний рух">International Movement</span>
+        </div>
+      </a>
+
+      <div class="office-wrap">
+        <div class="office" data-en="Press Office" data-ar="المكتب الصحفي" data-es="Oficina de Prensa" data-zh="新闻办公室" data-ru="Пресс-офис" data-fr="Service de presse" data-uk="Пресофіс">Press Office</div>
+        <div class="track-two" data-en="Track II Diplomacy" data-ar="دبلوماسية المسار الثاني" data-es="Diplomacia de segunda vía" data-zh="二轨外交" data-ru="Дипломатия второго трека" data-fr="Diplomatie non gouvernementale" data-uk="Дипломатія другого треку">Track II Diplomacy</div>
+      </div>
+
+      <div class="lang" role="group" aria-label="Language selector">
+        <button type="button" class="active" data-lang-btn="en" aria-pressed="true" title="English">EN</button>
+        <button type="button" data-lang-btn="ar" aria-pressed="false" title="العربية" translate="no">AR</button>
+        <button type="button" data-lang-btn="es" aria-pressed="false" title="Español">ES</button>
+        <button type="button" data-lang-btn="zh" aria-pressed="false" title="中文">ZH</button>
+        <button type="button" data-lang-btn="ru" aria-pressed="false" title="Русский">RU</button>
+        <button type="button" data-lang-btn="fr" aria-pressed="false" title="Français">FR</button>
+        <button type="button" data-lang-btn="uk" aria-pressed="false" title="Українська" translate="no">UA</button>
+      </div>
+      <div class="mobile-actions">
+        <label class="mobile-lang-wrap" aria-label="Language">
+          <select id="mobileLang" class="mobile-lang notranslate" translate="no">
+            <option value="en" translate="no">EN</option>
+            <option value="ar" translate="no">AR</option>
+            <option value="es" translate="no">ES</option>
+            <option value="zh" translate="no">ZH</option>
+            <option value="ru" translate="no">RU</option>
+            <option value="fr" translate="no">FR</option>
+            <option value="uk" translate="no">UA</option>
+          </select>
+        </label>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav class="nav" id="mobileNav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a class="active" href="index.html?lang=en"
+           data-category-nav="all"
+           data-en="All"
+           data-ar="الكل"
+           data-es="Todo"
+           data-zh="全部"
+           data-ru="Все"
+           data-fr="Tout" data-uk="Усі">All</a>
+        <a href="index.html?lang=en&category=release"
+           data-category-nav="release"
+           data-en="Releases"
+           data-ar="الإصدارات"
+           data-es="Comunicados"
+           data-zh="新闻稿"
+           data-ru="Релизы"
+           data-fr="Communiqués" data-uk="Пресрелізи">Releases</a>
+        <a href="index.html?lang=en&category=statement"
+           data-category-nav="statement"
+           data-en="Statements"
+           data-ar="البيانات"
+           data-es="Declaraciones"
+           data-zh="声明"
+           data-ru="Заявления"
+           data-fr="Déclarations" data-uk="Заяви">Statements</a>
+        <a href="index.html?lang=en&category=coordinator-action"
+           data-category-nav="coordinator-action"
+           data-en="Coordinator’s Actions"
+           data-ar="أنشطة المنسق"
+           data-es="Actividades del Coordinador"
+           data-zh="协调员活动"
+           data-ru="Деятельность Координатора"
+           data-fr="Activités du Coordinateur" data-uk="Діяльність Координатора">Coordinator’s Actions</a>
+        <a href="index.html?lang=en&category=perspective" data-category-nav="perspective" data-en="Perspective" data-ar="منظور" data-es="Perspectiva" data-zh="视角" data-ru="Взгляд" data-fr="Perspective" data-uk="Погляд">Perspective</a>
+        <a id="aboutLink" href="about.html"
+           data-en="About Us"
+           data-ar="من نحن"
+           data-es="Quiénes somos"
+           data-zh="关于我们"
+           data-ru="О нас"
+           data-fr="À propos de nous" data-uk="Про нас">About Us</a>
+      </div>
+      <a class="media-link" id="mediaInquiriesLink" href="media-inquiries.html"
+         data-en="Media inquiries" data-ar="استفسارات وسائل الإعلام" data-es="Consultas de los medios" data-zh="媒体问询" data-ru="Запросы СМИ" data-fr="Demandes des médias" data-uk="Запити ЗМІ">Media inquiries</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow" data-en="Official communications" data-ar="الاتصالات الرسمية" data-es="Comunicaciones oficiales" data-zh="官方通讯" data-ru="Официальные сообщения" data-fr="Communications officielles" data-uk="Офіційна інформація">Official communications</div>
+      <h1 data-en="News" data-ar="الأخبار" data-es="Noticias" data-zh="新闻" data-ru="Новости" data-fr="Actualités" data-uk="Новини">News</h1>
+      <div class="hero-rule"></div>
+    </section>
+
+    <section class="tools" aria-label="News controls">
+      <label class="search">
+        <input id="searchInput" type="search" placeholder="Search news"
+               data-placeholder-en="Search news" data-placeholder-ar="البحث في الأخبار"
+               data-placeholder-es="Buscar noticias" data-placeholder-zh="搜索新闻"
+               data-placeholder-ru="Поиск публикаций" data-placeholder-fr="Rechercher dans les actualités"
+               data-placeholder-uk="Пошук публікацій" />
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="m16 16 4 4"></path>
+        </svg>
+      </label>
+
+      <label class="category">
+        <select id="categorySelect" aria-label="Category">
+            <option value="all"
+                    data-en="All categories"
+                    data-ar="جميع الفئات"
+                    data-es="Todas las categorías"
+                    data-zh="所有类别"
+                    data-ru="Все категории"
+                    data-fr="Toutes les catégories" data-uk="Усі категорії">All categories</option>
+
+            <option value="release"
+                    data-en="Releases"
+                    data-ar="الإصدارات"
+                    data-es="Comunicados"
+                    data-zh="新闻稿"
+                    data-ru="Релизы"
+                    data-fr="Communiqués" data-uk="Пресрелізи">Releases</option>
+
+            <option value="statement"
+                    data-en="Statements"
+                    data-ar="البيانات"
+                    data-es="Declaraciones"
+                    data-zh="声明"
+                    data-ru="Заявления"
+                    data-fr="Déclarations" data-uk="Заяви">Statements</option>
+
+            <option value="coordinator-action"
+                    data-en="Coordinator’s Actions"
+                    data-ar="أنشطة المنسق"
+                    data-es="Actividades del Coordinador"
+                    data-zh="协调员活动"
+                    data-ru="Деятельность координатора"
+                    data-fr="Activités du Coordinateur" data-uk="Діяльність Координатора">Coordinator’s Actions</option>
+
+            <option value="perspective"
+                    data-en="Perspective"
+                    data-ar="Perspective"
+                    data-es="Perspective"
+                    data-zh="Perspective"
+                    data-ru="Perspective"
+                    data-fr="Perspective" data-uk="Perspective">Perspective</option>
+          </select>
+      </label>
+    </section>
+
+    <section class="content">
+      <article class="featured" id="featuredPublication">
+        <div>
+          <div class="featured-label" data-en="Featured" data-ar="مميز" data-es="Destacado" data-zh="重点" data-ru="Главный материал" data-fr="À la une" data-uk="Головний матеріал">Featured</div>
+          <div class="featured-meta">
+            <span data-en="Press Office" data-ar="المكتب الصحفي" data-es="Oficina de Prensa" data-zh="新闻办公室" data-ru="Пресс-офис" data-fr="Service de presse" data-uk="Управління з питань роботи з пресою">Press Office</span><br>
+            <span id="featuredDate">January 4, 2024</span>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a id="featuredLink" href="2024-01-04-uae-mediation-prisoner-exchange-en.html">
+              <span id="featuredTitle" data-en="Global Citizens welcomes the prisoner exchange between the Russian Federation and Ukraine"
+                    data-ar="ترحب Global Citizens بتبادل الأسرى بين الاتحاد الروسي وأوكرانيا"
+                    data-es="Global Citizens acoge con satisfacción el intercambio de prisioneros entre la Federación de Rusia y Ucrania"
+                    data-zh="Global Citizens 欢迎俄罗斯联邦与乌克兰之间的战俘交换"
+                    data-ru="Global Citizens приветствует обмен пленными между Российской Федерацией и Украиной"
+                    data-fr="Global Citizens salue l’échange de prisonniers entre la Fédération de Russie et l’Ukraine" data-uk="Global Citizens вітає обмін полоненими між Російською Федерацією та Україною">
+                Global Citizens welcomes the prisoner exchange between the Russian Federation and Ukraine
+              </span>
+            </a>
+          </h2>
+        </div>
+      </article>
+
+      <div class="results-count">
+        <span id="resultsLabel" data-en="Publications" data-ar="المنشورات" data-es="Publicaciones" data-zh="出版物" data-ru="Релизы" data-fr="Publications" data-uk="Публікації">Publications</span>
+        <span data-en="Press Office archive" data-ar="أرشيف المكتب الصحفي" data-es="Archivo de la Oficina de Prensa" data-zh="新闻办公室档案" data-ru="Архив пресс-офиса" data-fr="Archives du service de presse" data-uk="Архів пресофісу">Press Office archive</span>
+      </div>
+
+      <div class="news-list" id="newsList">
+        <article class="news-item" data-category="release" data-search="global citizens prisoner exchange united arab emirates гуманитарный обмен оаэ">
+          <a href="2024-01-04-uae-mediation-prisoner-exchange-en.html">
+            <h2 class="news-title"
+                data-en="Global Citizens expresses gratitude for UAE mediation efforts resulting in the exchange of more than 200 prisoners"
+                data-ar="تعرب Global Citizens عن تقديرها لجهود الوساطة الإماراتية التي أسفرت عن تبادل أكثر من 200 أسير"
+                data-es="Global Citizens agradece a los Emiratos Árabes Unidos sus esfuerzos de mediación que permitieron el intercambio de más de 200 prisioneros"
+                data-zh="Global Citizens 感谢阿联酋促成200多名战俘交换的调解努力"
+                data-ru="Global Citizens выражает признательность ОАЭ за посреднические усилия, приведшие к обмену более чем 200 пленными"
+                data-fr="Global Citizens remercie les Émirats arabes unis pour leurs efforts de médiation ayant conduit à l’échange de plus de 200 prisonniers" data-uk="Global Citizens висловлює вдячність ОАЕ за посередницькі зусилля, які сприяли обміну понад 200 полоненими">
+              Global Citizens expresses gratitude for UAE mediation efforts resulting in the exchange of more than 200 prisoners
+            </h2>
+          </a>
+          <div class="news-meta">
+            <div class="news-type" data-en="Press Release" data-ar="بيان صحفي" data-es="Comunicado de prensa" data-zh="新闻稿" data-ru="Пресс-релиз" data-fr="Communiqué de presse" data-uk="Пресреліз">Press Release</div>
+            <div class="news-date">January 4, 2024</div>
+          </div>
+        </article>
+      </div>
+
+      <nav class="pagination" id="pagination" aria-label="Pagination">
+        <button type="button" id="prevPage" class="page-nav"
+                data-en="Previous" data-ar="السابق" data-es="Anterior"
+                data-zh="上一页" data-ru="Назад" data-fr="Précédent" data-uk="Попередня">Previous</button>
+
+        <div class="page-numbers" id="pageNumbers" role="group" aria-label="Page numbers"></div>
+
+        <button type="button" id="nextPage" class="page-nav"
+                data-en="Next" data-ar="التالي" data-es="Siguiente"
+                data-zh="下一页" data-ru="Далее" data-fr="Suivant" data-uk="Наступна">Next</button>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-emblem emblem-tint" role="img" aria-label="Global Citizens emblem"
+              ></div>
+          <div class="footer-brand-text">
+            <span>Global Citizens</span>
+            <a class="footer-website" href="https://gcim.eu/" target="_blank" rel="noopener">www.gcim.eu</a>
+          </div>
+        </div>
+        <div class="footer-copy" id="footerDisclaimer"
+             data-en="This official website is managed by the International Movement Global Citizens in cooperation with relevant partners and high-level stakeholders. External links are provided solely for information and convenience and should not be construed as an endorsement by the Movement of the organizations concerned, the views they express, or the policies or positions they present. When users follow a link to an external website, they are subject to the privacy and security policies of that website."
+             data-ar="يُدار هذا الموقع الرسمي من جانب الحركة الدولية Global Citizens بالتعاون مع الشركاء المعنيين والأطراف الرفيعة المستوى. وتُدرج الروابط المؤدية إلى مواقع إلكترونية خارجية حصراً لأغراض إعلامية ولتيسير استخدام الموقع، ولا ينبغي تفسير إدراجها على أنه تأييد من جانب الحركة للجهات المعنية أو للآراء التي تعرب عنها أو للسياسات أو المواقف التي تعرضها. وعند الانتقال إلى موقع إلكتروني خارجي، تسري سياسات الخصوصية والأمن الخاصة بذلك الموقع."
+             data-es="Este sitio web oficial es administrado por el Movimiento Internacional Global Citizens, en cooperación con los socios pertinentes y las partes interesadas de alto nivel. Los enlaces a sitios web externos se facilitan exclusivamente con fines informativos y para comodidad de los usuarios, y no deben interpretarse como un respaldo del Movimiento a las organizaciones correspondientes, a las opiniones que expresan ni a las políticas o posiciones que presentan. Al acceder a un sitio web externo, serán de aplicación las políticas de privacidad y seguridad de dicho sitio."
+             data-zh="本官方网站由国际运动 Global Citizens 管理，并与有关合作伙伴及高级别有关方面开展协作。所列外部网站链接仅为提供信息和方便用户而设，不应被视为本运动对相关机构、其所表达的观点以及其所提出的政策或立场的认可或支持。用户访问外部网站后，适用该网站自身的隐私和安全政策。"
+             data-ru="Настоящий официальный веб-сайт администрируется Международным движением Global Citizens во взаимодействии с соответствующими партнёрами и сторонами высокого уровня. Ссылки на внешние веб-сайты предоставляются исключительно в информационных целях и для удобства пользователей и не должны рассматриваться как одобрение Движением соответствующих организаций, выражаемых ими взглядов, проводимой политики или занимаемых позиций. При переходе на внешний веб-сайт применяются политика конфиденциальности и правила безопасности соответствующего веб-сайта."
+             data-fr="Le présent site officiel est administré par le Mouvement international Global Citizens, en coopération avec les partenaires concernés et les parties prenantes de haut niveau. Les liens vers des sites externes sont fournis à titre strictement informatif et pour faciliter la consultation ; ils ne sauraient être interprétés comme valant approbation, par le Mouvement, des organismes concernés, des opinions qu’ils expriment ou des politiques et positions qu’ils présentent. Lorsqu’un utilisateur accède à un site externe, les politiques de confidentialité et de sécurité propres à ce site s’appliquent."
+             data-uk="Цей офіційний вебсайт адмініструється Міжнародним рухом Global Citizens у взаємодії з відповідними партнерами та високими сторонами. Посилання на зовнішні вебсайти розміщуються виключно з інформаційною метою та для зручності користувачів і не можуть тлумачитися як офіційне схвалення Рухом відповідних організацій, висловлених ними поглядів, політики чи позицій. Після переходу на зовнішній вебсайт застосовуються правила конфіденційності та безпеки відповідного вебсайту.">
+          This official website is managed by the International Movement Global Citizens in cooperation with relevant partners and high-level stakeholders. External links are provided solely for information and convenience and should not be construed as an endorsement by the Movement of the organizations concerned, the views they express, or the policies or positions they present. When users follow a link to an external website, they are subject to the privacy and security policies of that website.</div>
+      </div>
+
+      <div class="footer-contacts">
+        <p class="footer-language-note"
+           data-en="Materials on this website are available in the six official languages of the United Nations, as well as in Ukrainian."
+           data-ar="تتاح مواد هذا الموقع باللغات الرسمية الست للأمم المتحدة، وكذلك باللغة الأوكرانية."
+           data-es="Los materiales de este sitio web están disponibles en los seis idiomas oficiales de las Naciones Unidas, así como en ucraniano."
+           data-zh="本网站材料以联合国六种正式语文及乌克兰语提供。"
+           data-ru="Материалы сайта представлены на шести официальных языках ООН, а также на украинском языке."
+           data-fr="Le contenu du présent site est disponible dans les six langues officielles de l’Organisation des Nations Unies, ainsi qu’en ukrainien."
+           data-uk="Матеріали сайту доступні шістьма офіційними мовами ООН, а також українською мовою.">Materials on this website are available in the six official languages of the United Nations, as well as in Ukrainian.</p>
+      </div>
+      <div class="footer-subscribe">
+        <h3 id="footerEmailUpdates"
+          data-en="Email Updates"
+          data-ar="النشرة الإلكترونية"
+          data-es="Actualizaciones por correo"
+          data-zh="电子邮件更新"
+          data-ru="Рассылка по электронной почте"
+          data-fr="Actualités par e-mail" data-uk="Електронна розсилка">Email Updates</h3>
+
+        <p class="subscribe-copy" id="footerSubscribeCopy"
+           data-en="Subscribe to receive the latest official communications from the Press Office."
+           data-ar="اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي."
+           data-es="Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa."
+           data-zh="订阅以接收新闻办公室发布的最新官方信息。"
+           data-ru="Подпишитесь, чтобы получать последние официальные сообщения Пресс-офиса."
+           data-fr="Abonnez-vous pour recevoir les dernières communications officielles du Service de presse." data-uk="Підпишіться на отримання актуальної офіційної інформації пресофісу.">
+          Subscribe to receive the latest official communications from the Press Office.
+        </p>
+
+        <form class="subscribe-form" id="subscribeForm" novalidate>
+          <label class="sr-only" id="footerEmailLabel" for="subscribeEmail"
+                 data-en="Email address"
+                 data-ar="عنوان البريد الإلكتروني"
+                 data-es="Correo electrónico"
+                 data-zh="电子邮件地址"
+                 data-ru="Адрес электронной почты"
+                 data-fr="Adresse e-mail" data-uk="Адреса електронної пошти">Email address</label>
+          <input
+            id="subscribeEmail"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            placeholder="Email address"
+            data-placeholder-en="Email address"
+            data-placeholder-ar="عنوان البريد الإلكتروني"
+            data-placeholder-es="Correo electrónico"
+            data-placeholder-zh="电子邮件地址"
+            data-placeholder-ru="Адрес электронной почты"
+            data-placeholder-fr="Adresse e-mail"
+            data-placeholder-uk="Адреса електронної пошти">
+          <button type="submit" id="footerSubscribeButton"
+                  data-en="Subscribe"
+                  data-ar="اشترك"
+                  data-es="Suscribirse"
+                  data-zh="订阅"
+                  data-ru="Подписаться"
+                  data-fr="S’abonner" data-uk="Підписатися">Subscribe</button>
+        </form>
+
+        <div class="subscribe-note" id="footerSubscribeNote"
+             data-en="You may unsubscribe at any time."
+             data-ar="يمكنك إلغاء الاشتراك في أي وقت."
+             data-es="Puede cancelar su suscripción en cualquier momento."
+             data-zh="您可以随时取消订阅。"
+             data-ru="Вы можете отказаться от подписки в любое время."
+             data-fr="Vous pouvez vous désabonner à tout moment." data-uk="Від підписки можна відмовитися в будь-який час.">
+          You may unsubscribe at any time.
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> <span data-en="Global Citizens International Movement" data-uk="Міжнародний рух Global Citizens">Global Citizens International Movement</span>
+    </div>
+  </footer>
+  <script src="scripts/language-routing.js?v=174"></script>
+
+  <script>
+    // Basic anti-harvesting protection: the complete email address and
+    // mailto URL are not present in the raw HTML source.
+    (() => {
+      const user = ['press', 'office'].join('');
+      const domain = ['gcim', 'eu'].join('.');
+      const address = user + String.fromCharCode(64) + domain;
+      const mailHref = ['mai', 'lto:'].join('') + address;
+
+      const footerEmail = document.getElementById('protectedEmail');
+      if (footerEmail) {
+        footerEmail.textContent = address;
+        footerEmail.href = mailHref;
+      }
+    })();
+
+    const subscribeForm = document.getElementById('subscribeForm');
+    if (subscribeForm) {
+      subscribeForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+      });
+    }
+
+    const langButtons = document.querySelectorAll('[data-lang-btn]');
+    let currentLang = 'en';
+
+    const pageMetaTranslations = {
+      en: {
+        title: 'News – Global Citizens',
+        description: 'Global Citizens International Movement — Press Office'
+      },
+      ar: {
+        title: 'الأخبار – Global Citizens'
+      },
+      es: {
+        title: 'Noticias – Global Citizens'
+      },
+      zh: {
+        title: '新闻 – Global Citizens'
+      },
+      ru: {
+        title: 'Новости – Global Citizens'
+      },
+      fr: {
+        title: 'Actualités – Global Citizens'
+      },
+      uk: {
+        title: 'Новини – Global Citizens',
+        description: 'Офіційний інформаційний портал Управління з питань роботи з пресою Міжнародного руху Global Citizens'
+      }
+    };
+
+    const interfaceTranslations = {
+      en: {
+        newsControls: 'News controls',
+        search: 'Search news',
+        category: 'Category',
+        pagination: 'Pagination',
+        openMenu: 'Open menu',
+        closeMenu: 'Close menu',
+        home: 'Global Citizens home',
+        englishSwitch: 'Switch to English',
+        pressEmail: 'Office of Press Operations email'
+      },
+      uk: {
+        newsControls: 'Пошук і фільтрування публікацій',
+        search: 'Пошук публікацій',
+        category: 'Категорія',
+        pagination: 'Навігація сторінками',
+        openMenu: 'Відкрити меню',
+        closeMenu: 'Закрити меню',
+        home: 'Головна сторінка Global Citizens',
+        englishSwitch: 'Перейти до англійської версії',
+        pressEmail: 'Електронна пошта Управління з питань роботи з пресою'
+      }
+    };
+
+    function applyPageMeta(lang){
+      const meta = pageMetaTranslations[lang] || pageMetaTranslations.en;
+      document.title = meta.title;
+      const description = document.querySelector('meta[name="description"]');
+      if (description && meta.description) description.setAttribute('content', meta.description);
+      document.querySelector('meta[property="og:title"]')?.setAttribute('content', meta.title);
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', description?.content || '');
+      document.querySelector('meta[property="og:url"]')?.setAttribute('content', 'https://press.gcim.eu/?lang=' + encodeURIComponent(lang));
+    }
+
+    function applyInterfaceTranslations(lang){
+      const t = interfaceTranslations[lang] || interfaceTranslations.en;
+      document.querySelector('.tools')?.setAttribute('aria-label', t.newsControls);
+      document.getElementById('searchInput')?.setAttribute('aria-label', t.search);
+      document.getElementById('categorySelect')?.setAttribute('aria-label', t.category);
+      document.getElementById('pagination')?.setAttribute('aria-label', t.pagination);
+      document.querySelector('.brand')?.setAttribute('aria-label', t.home);
+      document.getElementById('protectedEmail')?.setAttribute('aria-label', t.pressEmail);
+
+      const menuToggle = document.querySelector('.menu-toggle');
+      if (menuToggle) {
+        const open = document.querySelector('.nav-wrap')?.classList.contains('is-open');
+        menuToggle.setAttribute('aria-label', open ? t.closeMenu : t.openMenu);
+      }
+    }
+
+    const siteLanguages = ['en', 'ar', 'es', 'zh', 'ru', 'fr', 'uk'];
+    const supportedLanguages = ['en', 'ar', 'es', 'zh', 'ru', 'fr', 'uk'];
+
+    const mediaInquiryPages = {
+      en: 'media-inquiries.html',
+      ar: 'media-inquiries-ar.html',
+      es: 'media-inquiries-es.html',
+      zh: 'media-inquiries-zh.html',
+      ru: 'media-inquiries-ru.html',
+      fr: 'media-inquiries-fr.html',
+      uk: 'media-inquiries-uk.html'
+    };
+
+    const aboutPages = {
+      en: 'about.html',
+      ar: 'about-ar.html',
+      es: 'about-es.html',
+      zh: 'about-zh.html',
+      ru: 'about-ru.html',
+      fr: 'about-fr.html',
+      uk: 'about-uk.html'
+    };
+
+    function savePreferredLanguage(lang){
+      if (!supportedLanguages.includes(lang)) return;
+      try {
+        localStorage.setItem('gcimPreferredLanguage', lang);
+      } catch (e) {}
+    }
+
+    function readPreferredLanguage(){
+      const urlLang = new URLSearchParams(window.location.search).get('lang');
+      if (supportedLanguages.includes(urlLang)) return urlLang;
+
+      try {
+        const saved = localStorage.getItem('gcimPreferredLanguage');
+        if (supportedLanguages.includes(saved)) return saved;
+      } catch (e) {}
+
+      return 'en';
+    }
+
+    function updateLocalizedLinks(lang){
+      const mediaLink = document.getElementById('mediaInquiriesLink');
+      const aboutLink = document.getElementById('aboutLink');
+
+      if (mediaLink) {
+        mediaLink.href = mediaInquiryPages[lang] || mediaInquiryPages.en;
+        mediaLink.removeAttribute('aria-disabled');
+      }
+
+      if (aboutLink) {
+        aboutLink.href = aboutPages[lang] || aboutPages.en;
+        aboutLink.removeAttribute('aria-disabled');
+      }
+    }
+
+    const footerTranslations = {
+      en: {
+        mediaContacts: 'Media contacts',
+        contactInformation: 'Contact information',
+        emailUpdates: 'Email Updates',
+        subscribeCopy: 'Subscribe to receive the latest official communications from the Press Office.',
+        emailAddress: 'Email address',
+        subscribe: 'Subscribe',
+        unsubscribe: 'You may unsubscribe at any time.'
+      },
+      ar: {
+        mediaContacts: 'جهات اتصال وسائل الإعلام',
+        contactInformation: 'معلومات الاتصال',
+        emailUpdates: 'تحديثات البريد الإلكتروني',
+        subscribeCopy: 'اشترك لتلقي أحدث الاتصالات الرسمية الصادرة عن المكتب الصحفي.',
+        emailAddress: 'عنوان البريد الإلكتروني',
+        subscribe: 'اشترك',
+        unsubscribe: 'يمكن إلغاء الاشتراك في أي وقت.'
+      },
+      es: {
+        mediaContacts: 'Contactos para medios',
+        contactInformation: 'Información de contacto',
+        emailUpdates: 'Actualizaciones por correo electrónico',
+        subscribeCopy: 'Suscríbase para recibir las comunicaciones oficiales más recientes de la Oficina de Prensa.',
+        emailAddress: 'Correo electrónico',
+        subscribe: 'Suscribirse',
+        unsubscribe: 'Puede cancelar la suscripción en cualquier momento.'
+      },
+      zh: {
+        mediaContacts: '媒体联系方式',
+        contactInformation: '联系信息',
+        emailUpdates: '电子邮件更新',
+        subscribeCopy: '订阅以接收新闻办公室发布的最新官方信息。',
+        emailAddress: '电子邮件地址',
+        subscribe: '订阅',
+        unsubscribe: '您可以随时取消订阅。'
+      },
+      ru: {
+        mediaContacts: 'Контакты для СМИ',
+        contactInformation: 'Контактная информация',
+        emailUpdates: 'Рассылка по электронной почте',
+        subscribeCopy: 'Подпишитесь на получение последних официальных сообщений Пресс-офиса.',
+        emailAddress: 'Адрес электронной почты',
+        subscribe: 'Подписаться',
+        unsubscribe: 'От подписки можно отказаться в любое время.'
+      },
+      fr: {
+        mediaContacts: 'Contacts médias',
+        contactInformation: 'Coordonnées',
+        emailUpdates: 'Actualités par courrier électronique',
+        subscribeCopy: 'Abonnez-vous afin de recevoir les dernières communications officielles du Service de presse.',
+        emailAddress: 'Adresse électronique',
+        subscribe: 'S’abonner',
+        unsubscribe: 'Vous pouvez vous désabonner à tout moment.'
+      },
+      uk: {
+        mediaContacts: 'Контакти для ЗМІ',
+        contactInformation: 'Контактна інформація',
+        emailUpdates: 'Електронна розсилка',
+        subscribeCopy: 'Підпишіться на отримання актуальної офіційної інформації пресофісу.',
+        emailAddress: 'Адреса електронної пошти',
+        subscribe: 'Підписатися',
+        unsubscribe: 'Від підписки можна відмовитися в будь-який час.'
+      }
+    };
+
+    function translateFooter(lang){
+      const t = footerTranslations[lang] || footerTranslations.en;
+      const disclaimer = document.getElementById('footerDisclaimer');
+      if (disclaimer && disclaimer.dataset[lang]) disclaimer.textContent = disclaimer.dataset[lang];
+
+      const mediaContacts = document.getElementById('footerMediaContacts');
+      const contactInformation = document.getElementById('footerContactInformation');
+      const emailUpdates = document.getElementById('footerEmailUpdates');
+      const subscribeCopy = document.getElementById('footerSubscribeCopy');
+      const emailLabel = document.getElementById('footerEmailLabel');
+      const emailInput = document.getElementById('subscribeEmail');
+      const subscribeButton = document.getElementById('footerSubscribeButton');
+      const subscribeNote = document.getElementById('footerSubscribeNote');
+
+      if (mediaContacts) mediaContacts.textContent = t.mediaContacts;
+      if (contactInformation) contactInformation.textContent = t.contactInformation;
+      if (emailUpdates) emailUpdates.textContent = t.emailUpdates;
+      if (subscribeCopy) subscribeCopy.textContent = t.subscribeCopy;
+      if (emailLabel) emailLabel.textContent = t.emailAddress;
+      if (emailInput) emailInput.placeholder = t.emailAddress;
+      if (subscribeButton) subscribeButton.textContent = t.subscribe;
+      if (subscribeNote) subscribeNote.textContent = t.unsubscribe;
+    }
+
+    function setLanguage(lang){
+      if (!supportedLanguages.includes(lang)) lang = 'en';
+      currentLang = lang;
+      savePreferredLanguage(lang);
+      // Keep the selected language in the URL so a mobile refresh does not
+      // restore an older language value (for example, ?lang=ar).
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState({}, '', url.href);
+      } catch (e) {}
+      updateLocalizedLinks(lang);
+      if (window.GCIMLanguageRouting) {
+        window.GCIMLanguageRouting.wirePage(lang);
+      }
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.querySelector('.brand')?.setAttribute('href', 'index.html?lang=' + encodeURIComponent(lang));
+      applyPageMeta(lang);
+      applyInterfaceTranslations(lang);
+      translateFooter(lang);
+      langButtons.forEach(btn => {
+        const isActive = btn.dataset.langBtn === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
+      });
+      const mobileLang = document.getElementById('mobileLang');
+      if (mobileLang) mobileLang.value = lang;
+
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang] || el.dataset.en;
+      });
+
+      document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+        const key = 'placeholder' + lang.charAt(0).toUpperCase() + lang.slice(1);
+        el.placeholder = el.dataset[key] || el.dataset.placeholderEn;
+      });
+
+      document.querySelectorAll('option[data-en]').forEach(option => {
+        if (option.dataset[lang]) option.textContent = option.dataset[lang];
+      });
+
+      filterNews();
+    }
+
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.langBtn));
+    });
+
+
+    const mobileLang = document.getElementById('mobileLang');
+    if (mobileLang) {
+      mobileLang.addEventListener('change', () => setLanguage(mobileLang.value));
+    }
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navWrap = document.querySelector('.nav-wrap');
+
+    if (menuToggle && navWrap) {
+      menuToggle.addEventListener('click', () => {
+        const open = !navWrap.classList.contains('is-open');
+        navWrap.classList.toggle('is-open', open);
+        menuToggle.setAttribute('aria-expanded', String(open));
+        const labels = interfaceTranslations[currentLang] || interfaceTranslations.en;
+        menuToggle.setAttribute('aria-label', open ? labels.closeMenu : labels.openMenu);
+      });
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.matchMedia('(max-width: 840px)').matches) {
+            navWrap.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', (interfaceTranslations[currentLang] || interfaceTranslations.en).openMenu);
+          }
+        });
+      });
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const categorySelect = document.getElementById('categorySelect');
+
+    const VALID_NEWS_CATEGORIES = ['all', 'release', 'statement', 'coordinator-action', 'perspective'];
+
+    function readCategoryFromUrl(){
+      const category = new URLSearchParams(window.location.search).get('category');
+      return VALID_NEWS_CATEGORIES.includes(category) ? category : 'all';
+    }
+
+    function updateCategoryNavActive(category){
+      document.querySelectorAll('[data-category-nav]').forEach(link => {
+        const isActive = link.dataset.categoryNav === category;
+        link.classList.toggle('active', isActive);
+        if (isActive) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    function applyCategoryFromUrl(){
+      if (!categorySelect) return;
+      const category = readCategoryFromUrl();
+      categorySelect.value = category;
+      updateCategoryNavActive(category);
+    }
+    let newsItems = [...document.querySelectorAll('.news-item')];
+    const resultsLabel = document.getElementById('resultsLabel');
+    const pagination = document.getElementById('pagination');
+    const pageNumbers = document.getElementById('pageNumbers');
+    const prevPage = document.getElementById('prevPage');
+    const nextPage = document.getElementById('nextPage');
+
+    const PAGE_SIZE = 10;
+    let currentPage = 1;
+    let filteredItems = [...newsItems];
+
+    window.GCIMRefreshHomeNews = function(){
+      newsItems = [...document.querySelectorAll('.news-item')];
+      filteredItems = [...newsItems];
+      currentPage = 1;
+      filterNews(true);
+    };
+
+    function paginationLabels(){
+      return {
+        en: { previous:'Previous', next:'Next' },
+        ar: { previous:'السابق', next:'التالي' },
+        es: { previous:'Anterior', next:'Siguiente' },
+        zh: { previous:'上一页', next:'下一页' },
+        ru: { previous:'Назад', next:'Далее' },
+        fr: { previous:'Précédent', next:'Suivant' },
+        uk: { previous:'Попередня', next:'Наступна' }
+      }[currentLang] || { previous:'Previous', next:'Next' };
+    }
+
+    function renderPagination(totalPages){
+      if (!pagination || !pageNumbers || !prevPage || !nextPage) return;
+
+      const labels = paginationLabels();
+      prevPage.textContent = labels.previous;
+      nextPage.textContent = labels.next;
+
+      // Hide pagination if there is only one page of results.
+      pagination.hidden = totalPages <= 1;
+      pageNumbers.innerHTML = '';
+
+      if (totalPages <= 1) return;
+
+      prevPage.disabled = currentPage === 1;
+      nextPage.disabled = currentPage === totalPages;
+
+      for (let page = 1; page <= totalPages; page++) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = String(page);
+        button.setAttribute('aria-label', currentLang === 'uk' ? `Сторінка ${page}` : `Page ${page}`);
+
+        if (page === currentPage) {
+          button.classList.add('current');
+          button.setAttribute('aria-current', 'page');
+          button.disabled = true;
+        } else {
+          button.addEventListener('click', () => {
+            currentPage = page;
+            renderNewsPage();
+            document.getElementById('newsList')?.scrollIntoView({ behavior:'smooth', block:'start' });
+          });
+        }
+
+        pageNumbers.appendChild(button);
+      }
+    }
+
+    function renderNewsPage(){
+      const totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE));
+
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      newsItems.forEach(item => item.style.display = 'none');
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      filteredItems.slice(start, end).forEach(item => {
+        item.style.display = 'grid';
+      });
+
+      const labels = {
+        en: `Publications: ${filteredItems.length}`,
+        ar: `المنشورات: ${filteredItems.length}`,
+        es: `Publicaciones: ${filteredItems.length}`,
+        zh: `出版物：${filteredItems.length}`,
+        ru: `Публикации: ${filteredItems.length}`,
+        fr: `Publications : ${filteredItems.length}`,
+        uk: `Публікації: ${filteredItems.length}`
+      };
+      if (resultsLabel) resultsLabel.textContent = labels[currentLang] || labels.en;
+
+      renderPagination(totalPages);
+    }
+
+    function filterNews(resetPage = false){
+      if (!searchInput || !categorySelect) return;
+
+      const q = searchInput.value.trim().toLowerCase();
+      const cat = categorySelect.value;
+
+      filteredItems = newsItems.filter(item => {
+        const text = ((item.dataset.search || '') + ' ' + item.innerText).toLowerCase();
+        const matchesSearch = !q || text.includes(q);
+        const matchesCategory = cat === 'all' ||
+          (item.dataset.categories || item.dataset.category || '').split(/\s+/).includes(cat);
+        return matchesSearch && matchesCategory;
+      });
+
+      if (resetPage) currentPage = 1;
+      renderNewsPage();
+    }
+
+    if (prevPage) {
+      prevPage.addEventListener('click', () => {
+        if (currentPage <= 1) return;
+        currentPage--;
+        renderNewsPage();
+        document.getElementById('newsList')?.scrollIntoView({ behavior:'smooth', block:'start' });
+      });
+    }
+
+    if (nextPage) {
+      nextPage.addEventListener('click', () => {
+        const totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE));
+        if (currentPage >= totalPages) return;
+        currentPage++;
+        renderNewsPage();
+        document.getElementById('newsList')?.scrollIntoView({ behavior:'smooth', block:'start' });
+      });
+    }
+
+    if (searchInput) searchInput.addEventListener('input', () => filterNews(true));
+    if (categorySelect) {
+      categorySelect.addEventListener('change', () => {
+        updateCategoryNavActive(categorySelect.value);
+        filterNews(true);
+      });
+    }
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    applyCategoryFromUrl();
+    setLanguage(readPreferredLanguage());
+    filterNews(true);
+  </script>
+  <script src="content/news-data.js?v=174"></script>
+  <script src="scripts/news-model.js?v=174"></script>
+  <script src="scripts/homepage-news.js?v=174"></script>
+</body>
+</html>

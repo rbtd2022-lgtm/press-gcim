@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "codes": [
+    "release",
+    "statement",
+    "coordinator-action",
+    "perspective"
+  ],
+  "categories": {
+    "release": {
+      "en": "Press Release",
+      "ar": "بيان صحفي",
+      "es": "Comunicado de prensa",
+      "zh": "新闻稿",
+      "ru": "Пресс-релиз",
+      "fr": "Communiqué de presse",
+      "uk": "Пресреліз"
+    },
+    "statement": {
+      "en": "Official Statement",
+      "ar": "بيان رسمي",
+      "es": "Declaración oficial",
+      "zh": "官方声明",
+      "ru": "Официальное заявление",
+      "fr": "Déclaration officielle",
+      "uk": "Офіційна заява"
+    },
+    "coordinator-action": {
+      "en": "Coordinator’s Actions",
+      "ar": "أنشطة المنسق",
+      "es": "Actividades del Coordinador",
+      "zh": "协调员活动",
+      "ru": "Деятельность Координатора",
+      "fr": "Activités du Coordinateur",
+      "uk": "Діяльність Координатора"
+    },
+    "perspective": {
+      "en": "Perspective",
+      "ar": "منظور",
+      "es": "Perspectiva",
+      "zh": "视角",
+      "ru": "Взгляд",
+      "fr": "Perspective",
+      "uk": "Погляд"
+    }
+  }
+}

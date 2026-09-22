@@ -1,0 +1,35 @@
+GCIM Press Office translation policy
+
+File:
+  content/translation-policy.json
+
+Purpose:
+  Mandatory editorial rules for translating and approving publication content.
+
+Where it is used:
+  1. Translation generation layer
+  2. Editorial review interface
+  3. Validation before publication
+  4. Future admin panel / CMS
+  5. Automated checks before Publish
+
+Do NOT use this file to render visible page text directly.
+publication.html only displays an already approved translation.
+
+Required workflow:
+  original source
+  -> translate under translation-policy.json
+  -> terminology check
+  -> diplomatic-register review
+  -> semantic-fidelity review
+  -> status = approved
+  -> Publish enabled only when EN/AR/ES/ZH/RU/FR/UK are all approved
+  -> generate seven static publication pages with tools/generate_static_publications.py
+  -> update publication links and sitemap.xml
+  -> verify every static title and full-text block against the approved language text
+  -> prepare the working and Cloudflare deployment archives
+
+translationStatus values:
+  draft
+  review
+  approved
