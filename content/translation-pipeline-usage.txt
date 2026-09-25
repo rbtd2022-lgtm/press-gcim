@@ -1,0 +1,50 @@
+GCIM automatic translation pipeline
+
+Authoritative source language:
+  ru
+
+Authoritative source:
+  translations.ru
+
+Targets generated from Russian:
+  en, ar, es, zh, fr, uk
+
+The pipeline reads:
+  content/translation-policy.json
+
+The pipeline never automatically sets a translation to "approved".
+A generated translation receives:
+  translationStatus = "review"
+
+Commands:
+
+1. Prepare six strict translation jobs:
+   python tools/translate_publication.py prepare PUBLICATION.json JOBS_DIRECTORY
+
+2. Apply six completed translation-result JSON files:
+   python tools/translate_publication.py apply PUBLICATION.json RESULTS_DIRECTORY OUTPUT.json
+
+3. When a server-side/authorized translator command is connected:
+   python tools/translate_publication.py translate PUBLICATION.json OUTPUT.json --translator-command "TRANSLATOR_COMMAND"
+
+4. After all seven language versions are approved, generate the static publication pages and update sitemap.xml:
+   python tools/generate_static_publications.py .
+
+5. Before preparing the archives, verify the title and every full-text block of all seven generated pages against the approved publication data.
+
+Security:
+  Do not put an AI/API key into static HTML, index.html or browser JavaScript.
+  The translator command/provider must run server-side or in an authorized local environment.
+
+Publication flow:
+  Russian original
+  -> six diplomatic translation jobs
+  -> automatic translations
+  -> status review
+  -> editorial/diplomatic review
+  -> status approved
+  -> public only when all seven statuses are approved
+  -> generate seven static publication pages
+  -> update publication links and sitemap.xml
+  -> verify all generated language pages
+  -> prepare the FULL working and PUBLIC GitHub Pages archives

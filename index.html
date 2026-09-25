@@ -18,6 +18,7 @@
 <meta content="index, follow" name="robots"/>
 <link href="assets/favicon.png" rel="icon" type="image/png"/>
 <link href="assets/favicon.ico" rel="shortcut icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400&amp;family=Instrument+Serif:wght@400&amp;display=swap" media="(max-width: 840px)" rel="stylesheet"/>
 <link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"/><style>
     @font-face{
       font-family:"ITCFranklinGothicW10-Md 862390";
@@ -783,6 +784,7 @@
         font-size:clamp(9px,2.9vw,11px);
         letter-spacing:0;
       }
+      .subscribe-form{width:calc(100% - 32px);max-width:480px;margin-inline:auto}
       .subscribe-form button{width:100%}
       .copyright{padding:18px 20px 24px}
     }
@@ -805,6 +807,22 @@
     }
 
   
+    @media (max-width:840px){
+      .featured h2, .news-title{
+        font-family:"Instrument Serif",Georgia,"Times New Roman",serif;
+        font-size:clamp(1.375rem,2vw + 1rem,1.75rem);
+        font-weight:400;
+        line-height:1.18;
+        letter-spacing:.02em;
+      }
+      .featured-meta, .news-type, .news-date{
+        font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+        font-weight:400;
+      }
+      .featured-meta span:first-child, .news-type{font-size:12px}
+      #featuredDate, .news-date{font-size:14px}
+    }
+
     /* GCIM mobile viewport lock */
     @media (max-width:840px) {
       html, body { width:100%; max-width:100%; overflow-x:hidden; }
