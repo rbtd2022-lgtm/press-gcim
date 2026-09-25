@@ -79,6 +79,11 @@
       if (!link.dataset.languageBaseHref) link.dataset.languageBaseHref=href;
       link.setAttribute('href',publicationUrl(link.dataset.languageBaseHref,lang));
     });
+    const featured=root.getElementById ? root.getElementById('featuredLink') : null;
+    if (featured) {
+      const publicationId=featured.dataset.featuredId || '2026-09-04-press-office-launch';
+      featured.setAttribute('href',publicationId + '-' + lang + '.html');
+    }
   }
   function wireCategoryLinks(lang, root=document) {
     root.querySelectorAll('[data-category-nav]').forEach(link => {
