@@ -7,6 +7,11 @@
   const STORAGE_KEY = 'gcimPreferredLanguage';
   const QUERY_PARAM = 'lang';
 
+  const HOME_PAGES = Object.freeze({
+    en: 'index.html', ar: 'index-ar.html', es: 'index-es.html', zh: 'index-zh.html',
+    ru: 'index-ru.html', fr: 'index-fr.html', uk: 'index-uk.html'
+  });
+
   const SECTION_PAGES = Object.freeze({
     about: Object.freeze({
       en: 'about.html',
@@ -105,11 +110,20 @@
   }
 
   function wireHomeLinks(lang, root = document) {
-    root.querySelectorAll('a.brand, a[href^="index.html"]').forEach((link) => {
+    lang = normalizeLanguage(lang);
+    root.querySelectorAll('a.brand, a[href^="index"]').forEach((link) => {
       if (link.hasAttribute('data-lang-link')) return;
-      const href = link.getAttribute('href');
-      if (!href || !href.startsWith('index.html')) return;
-      link.setAttribute('href', withLanguage(href, lang));
+      const href = link.getAttribute('href') || '';
+      if (!/^index(?:-(?:ar|es|zh|ru|fr|uk))?\.html(?:[?#].*)?$/i.test(href)) return;
+      const hashIndex = href.indexOf('#');
+      const hash = hashIndex >= 0 ? href.slice(hashIndex) : '';
+      const noHash = hashIndex >= 0 ? href.slice(0, hashIndex) : href;
+      const queryIndex = noHash.indexOf('?');
+      const query = queryIndex >= 0 ? noHash.slice(queryIndex + 1) : '';
+      const params = new URLSearchParams(query);
+      params.delete(QUERY_PARAM);
+      const qs = params.toString();
+      link.setAttribute('href', HOME_PAGES[lang] + (qs ? '?' + qs : '') + hash);
     });
   }
 
@@ -168,6 +182,7 @@
     STORAGE_KEY,
     QUERY_PARAM,
     SECTION_PAGES,
+    HOME_PAGES,
     normalizeLanguage,
     saveLanguage,
     readLanguage,
