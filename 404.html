@@ -61,7 +61,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Page not found — Global Citizens">
   <meta property="og:description" content="Global Citizens — page not found">
-  <meta property="og:url" content="https://press.gcim.eu/404">
+  <meta property="og:url" content="https://press.gcim.eu/404.html">
   <meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -77,22 +77,22 @@
 <body>
   <div class="topline"></div>
   <main>
-    <a class="brand" id="brand" href="index.html?lang=en" aria-label="Global Citizens home">
-      <img src="assets/gcim-emblem.webp" alt="">
+    <a class="brand" id="brand" href="index.html" aria-label="Global Citizens home">
+      <img src="assets/gcim-emblem.webp" alt="" width="64" height="64">
       <strong>Global Citizens</strong>
     </a>
     <div class="code">404</div>
     <h1 id="title">Page not found</h1>
     <p id="message">The requested page could not be found.</p>
-    <a class="home" id="home" href="index.html?lang=en">Return to the news</a>
+    <a class="home" id="home" href="index.html">Return to the news</a>
     <nav aria-label="Language">
-      <a href="404.html?lang=en" lang="en">English</a>
-      <a href="404.html?lang=ar" lang="ar" dir="rtl">العربية</a>
-      <a href="404.html?lang=es" lang="es">Español</a>
-      <a href="404.html?lang=zh" lang="zh-Hans">中文</a>
-      <a href="404.html?lang=ru" lang="ru">Русский</a>
-      <a href="404.html?lang=fr" lang="fr">Français</a>
-      <a href="404.html?lang=uk" lang="uk">Українська</a>
+      <a href="index.html" lang="en">English</a>
+      <a href="index-ar.html" lang="ar" dir="rtl">العربية</a>
+      <a href="index-es.html" lang="es">Español</a>
+      <a href="index-zh.html" lang="zh-Hans">中文</a>
+      <a href="index-ru.html" lang="ru">Русский</a>
+      <a href="index-fr.html" lang="fr">Français</a>
+      <a href="index-uk.html" lang="uk">Українська</a>
     </nav>
   </main>
   <script>
@@ -107,9 +107,8 @@
         fr:['Page introuvable','La page demandée est introuvable.','Retour aux actualités','Accueil de Global Citizens'],
         uk:['Сторінку не знайдено','Запитану сторінку не знайдено.','Перейти до новин','Головна сторінка Global Citizens']
       };
-      let lang=new URLSearchParams(location.search).get('lang');
-      if(!content[lang]){try{lang=localStorage.getItem('gcimPreferredLanguage')}catch(e){}}
-      if(!content[lang])lang='en';
+      let lang='en';
+      try{const saved=localStorage.getItem('gcimPreferredLanguage');if(content[saved])lang=saved}catch(e){}
       document.documentElement.lang=lang;
       document.documentElement.dir=lang==='ar'?'rtl':'ltr';
       document.title=content[lang][0]+' — Global Citizens';
@@ -117,8 +116,8 @@
       document.getElementById('message').textContent=content[lang][1];
       document.getElementById('home').textContent=content[lang][2];
       document.getElementById('brand').setAttribute('aria-label',content[lang][3]);
-      document.getElementById('home').href='index.html?lang='+lang;
-      document.getElementById('brand').href='index.html?lang='+lang;
+      document.getElementById('home').href=(lang==='en'?'index.html':'index-'+lang+'.html');
+      document.getElementById('brand').href=(lang==='en'?'index.html':'index-'+lang+'.html');
     })();
   </script>
 </body>

@@ -43,11 +43,11 @@
       brand.addEventListener('click', (event) => {
         event.preventDefault();
         const visibleLang = currentLanguage();
-        window.location.href = 'index.html?lang=' + encodeURIComponent(visibleLang);
+        window.location.href = window.GCIMLanguageRouting ? window.GCIMLanguageRouting.homeUrl(visibleLang) : (visibleLang === 'en' ? 'index.html' : 'index-' + visibleLang + '.html');
       });
     }
     const backToNews = document.getElementById('backToNews');
-    if (backToNews) backToNews.href = 'index.html?lang=' + encodeURIComponent(currentLanguage());
+    if (backToNews) { const visibleLang = currentLanguage(); backToNews.href = window.GCIMLanguageRouting ? window.GCIMLanguageRouting.homeUrl(visibleLang) : (visibleLang === 'en' ? 'index.html' : 'index-' + visibleLang + '.html'); }
     const copyLinkButton = document.getElementById('copyLinkButton');
     if (copyLinkButton) {
       const copyLinkLabel = document.getElementById('copyLinkLabel');
