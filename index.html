@@ -1043,6 +1043,59 @@
       .mobile-lang{width:56px;min-width:56px}
       .menu-toggle{width:36px;height:36px;flex-basis:36px}
     }
+  
+    /* Desktop editorial refinement: official portal line and language navigation */
+    @media (min-width:841px){
+      .portal-bar-inner{
+        padding-top:9px;
+        padding-bottom:9px;
+        font-size:11px;
+        font-weight:400;
+        letter-spacing:.08em;
+        text-transform:none;
+      }
+      .lang{
+        gap:0;
+        padding:0;
+        border:0;
+        border-radius:0;
+        background:transparent;
+        box-shadow:none;
+        font-size:11px;
+        font-weight:600;
+        letter-spacing:.08em;
+      }
+      .lang :is(a,button){
+        min-width:0;
+        height:32px;
+        padding:0 10px;
+        border-radius:0;
+        color:rgba(255,255,255,.72);
+        box-shadow:none;
+      }
+      .lang :is(a,button) + :is(a,button){
+        border-left:1px solid rgba(255,255,255,.28);
+      }
+      .lang :is(a,button).active{
+        position:relative;
+        background:transparent;
+        color:#fff;
+        box-shadow:none;
+      }
+      .lang :is(a,button).active::after{
+        content:"";
+        position:absolute;
+        right:10px;
+        bottom:2px;
+        left:10px;
+        height:2px;
+        background:#d7bd90;
+      }
+      .lang :is(a,button):hover:not(.active){
+        background:transparent;
+        color:#fff;
+      }
+    }
   </style>
 <meta content="website" property="og:type"/>
 <meta content="Global Citizens" property="og:site_name"/>
