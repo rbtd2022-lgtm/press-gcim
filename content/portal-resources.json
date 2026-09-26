@@ -1,0 +1,26 @@
+{
+  "mobileTitle": {
+    "en": "Official GCIM resources",
+    "ar": "موارد GCIM الرسمية",
+    "es": "Recursos oficiales de GCIM",
+    "zh": "GCIM 官方资源",
+    "ru": "Официальные ресурсы GCIM",
+    "fr": "Ressources officielles de GCIM",
+    "uk": "Офіційні ресурси GCIM"
+  },
+  "desktop": {
+    "en": "Official web resources of the International Movement Global Citizens (GCIM) are available at the following addresses:",
+    "ar": "الموارد الإلكترونية الرسمية للحركة الدولية Global Citizens (GCIM) متاحة عبر العناوين التالية:",
+    "es": "Los recursos web oficiales del Movimiento Internacional Global Citizens (GCIM) están disponibles en las siguientes direcciones:",
+    "zh": "国际运动 Global Citizens（GCIM）的官方网络资源可通过以下地址访问：",
+    "ru": "Официальные веб-ресурсы Международного движения Global Citizens (GCIM) доступны по следующим адресам:",
+    "fr": "Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes :",
+    "uk": "Офіційні вебресурси Міжнародного руху Global Citizens (GCIM) доступні за такими адресами:"
+  },
+  "urls": [
+    "https://gcim.eu/",
+    "https://press.gcim.eu/",
+    "https://news.gcim.eu/",
+    "https://pressroom.gcim.eu/"
+  ]
+}

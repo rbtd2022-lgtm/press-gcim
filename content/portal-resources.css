@@ -1,0 +1,46 @@
+/* Official GCIM web-resources line. Desktop and mobile are intentionally separate. */
+@media (min-width:841px){
+  @font-face{
+    font-family:"Instrument Sans";
+    src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+  }
+  .portal-bar-mobile{display:none;}
+  .portal-bar-desktop{display:block;}
+  html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-desktop{
+    font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+    font-weight:400;
+  }
+  html:is([lang="ru"], [lang="uk"]) .portal-bar-desktop{
+    font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+    font-weight:400;
+  }
+}
+@media (max-width:840px){
+  .portal-bar-mobile{
+    display:grid;
+    gap:3px;
+    text-align:center;
+    text-transform:none;
+    letter-spacing:0;
+    line-height:1.25;
+  }
+  .portal-bar-desktop{display:none;}
+  .portal-bar-mobile-title{display:block;}
+  .portal-bar-mobile-links{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    white-space:nowrap;
+  }
+  html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-mobile{
+    font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+    font-weight:400;
+  }
+  html:is([lang="ru"], [lang="uk"]) .portal-bar-mobile{
+    font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+    font-weight:400;
+  }
+}
