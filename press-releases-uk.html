@@ -1198,6 +1198,54 @@
       }
     }
     /* GCIM_GENERATED_CYRILLIC_NEWS_TYPOGRAPHY_END */
+
+    /* GCIM_GENERATED_PORTAL_RESOURCES_START */
+    /* Official GCIM web-resources line. Desktop and mobile are intentionally separate. */
+    @media (min-width:841px){
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      .portal-bar-mobile{display:none;}
+      .portal-bar-desktop{display:block;}
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-desktop{
+        font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+        font-weight:400;
+      }
+      html:is([lang="ru"], [lang="uk"]) .portal-bar-desktop{
+        font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+        font-weight:400;
+      }
+    }
+    @media (max-width:840px){
+      .portal-bar-mobile{
+        display:grid;
+        gap:3px;
+        text-align:center;
+        text-transform:none;
+        letter-spacing:0;
+        line-height:1.25;
+      }
+      .portal-bar-desktop{display:none;}
+      .portal-bar-mobile-links{
+        display:flex;
+        justify-content:center;
+        gap:8px;
+        white-space:nowrap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-mobile{
+        font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+        font-weight:400;
+      }
+      html:is([lang="ru"], [lang="uk"]) .portal-bar-mobile{
+        font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+        font-weight:400;
+      }
+    }
+    /* GCIM_GENERATED_PORTAL_RESOURCES_END */
 </style>
 <meta content="website" property="og:type"/>
 <meta content="Global Citizens" property="og:site_name"/>
@@ -1219,7 +1267,7 @@
 </head>
 <body data-static-category="release">
 <div class="portal-bar">
-<div class="portal-bar-inner" data-ar="البوابة الصحفية الرسمية لـ GCIM" data-en="Official Press Portal of GCIM" data-es="Portal oficial de prensa de GCIM" data-fr="Portail officiel de presse de GCIM" data-ru="Официальный пресс-портал GCIM" data-uk="Офіційний прес-портал GCIM" data-zh="GCIM 官方新闻门户">Офіційний прес-портал GCIM</div>
+<div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">https://gcim.eu/</a> · <a href="https://press.gcim.eu/">https://press.gcim.eu/</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">https://news.gcim.eu/</a> · <a href="https://pressroom.gcim.eu/">https://pressroom.gcim.eu/</a></span></span><span class="portal-bar-desktop">Офіційні вебресурси Міжнародного руху Global Citizens (GCIM) доступні за такими адресами: <a href="https://gcim.eu/">https://gcim.eu/</a> · <a href="https://press.gcim.eu/">https://press.gcim.eu/</a> · <a href="https://news.gcim.eu/">https://news.gcim.eu/</a> · <a href="https://pressroom.gcim.eu/">https://pressroom.gcim.eu/</a></span></div>
 </div>
 <div class="topline"></div>
 <header class="masthead">
