@@ -775,6 +775,10 @@
         white-space:nowrap;
       }
       .footer-subscribe h3 {
+        white-space:nowrap;
+        overflow-wrap:normal;
+        word-break:keep-all;
+        hyphens:none;
         font-size:clamp(10px,3.3vw,13px);
         letter-spacing:.08em;
       }
@@ -1248,6 +1252,52 @@
       }
       /* GCIM_FEATURED_ALL_LISTINGS_END */
     }
+
+    /* Mobile White House typography for Latin-language news listings. */
+    @media (max-width:840px){
+      @font-face{
+        font-family:"Instrument Serif";
+        src:url("assets/fonts/instrument-serif-whitehouse-regular.woff2") format("woff2");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-variable.ttf") format("truetype");
+        font-style:normal;
+        font-weight:700;
+        font-display:swap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.featured h2, .news-title){
+        font-family:"Instrument Serif", serif;
+        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.18;
+        letter-spacing:.56px;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:manual;
+        text-wrap:wrap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.featured-meta, .featured-meta span, #featuredDate, .news-meta, .news-type, .news-date){
+        font-family:"Instrument Sans", sans-serif;
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        text-transform:none;
+      }
+    }
     /* GCIM_GENERATED_LATIN_NEWS_TYPOGRAPHY_END */
 
     /* GCIM_GENERATED_PORTAL_RESOURCES_START */
@@ -1261,7 +1311,14 @@
         font-display:swap;
       }
       .portal-bar-mobile{display:none;}
-      .portal-bar-desktop{display:block;}
+      .portal-bar-desktop{
+        display:grid;
+        gap:3px;
+        text-align:center;
+        line-height:1.25;
+      }
+      .portal-bar-desktop-title,
+      .portal-bar-desktop-links{display:block;}
       html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-desktop{
         font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
         font-weight:400;
@@ -1298,6 +1355,80 @@
       }
     }
     /* GCIM_GENERATED_PORTAL_RESOURCES_END */
+
+    /* GCIM_MOBILE_COPYRIGHT_BREAK_START */
+.copyright-mobile-break{display:none;}
+@media (max-width:840px){.copyright-mobile-break{display:block;}}
+/* GCIM_MOBILE_COPYRIGHT_BREAK_END */
+
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_START */
+    @media (max-width:840px){
+      .news-list{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin-inline:auto;
+        border-top:0;
+      }
+      .news-item{padding:0;border-bottom:0;text-align:start;}
+      .news-item + .news-item{margin-top:clamp(1.25rem, 1vw + .975rem, 1.875rem);}
+      :is(.news-title,.featured h2){
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:0;
+        padding:0;
+      }
+      .news-meta{
+        display:block;
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:12px 0 0;
+        padding:0;
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-align:start;
+        text-transform:none;
+      }
+      :is(.news-type,.news-date){
+        display:inline;
+        margin:0;
+        padding:0;
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+      .news-type::after{content:none;}
+      .news-date{
+        margin-inline-start:16px;
+        padding-inline-start:16px;
+        border-inline-start:1px solid var(--line);
+        white-space:normal;
+      }
+      .featured-meta{
+        display:block;
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:12px 0 0;
+        padding:0;
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-align:start;
+        text-transform:none;
+      }
+      .featured-meta span,#featuredDate{
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+    }
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_END */
 </style>
 <meta content="website" property="og:type"/>
 <meta content="Global Citizens" property="og:site_name"/>
@@ -1316,10 +1447,11 @@
 <meta content="Déclarations officielles du Mouvement international Global Citizens." name="twitter:description"/>
 <meta content="https://press.gcim.eu/assets/social-preview.jpg" name="twitter:image"/>
 <meta content="Global Citizens Press Office" name="twitter:image:alt"/>
+  <link rel="stylesheet" href="assets/gc-masthead.css">
 </head>
 <body data-static-category="statement">
 <div class="portal-bar">
-<div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Ressources officielles de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop">Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes : <a href="https://gcim.eu/">https://gcim.eu/</a> · <a href="https://press.gcim.eu/">https://press.gcim.eu/</a> · <a href="https://news.gcim.eu/">https://news.gcim.eu/</a> · <a href="https://pressroom.gcim.eu/">https://pressroom.gcim.eu/</a></span></div>
+<div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Ressources officielles de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes :</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
 </div>
 <div class="topline"></div>
 <header class="masthead">
@@ -1454,7 +1586,7 @@
 <div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">Vous pouvez vous désabonner à tout moment.</div>
 </div>
 </div>
-<div class="copyright">© 2020-2027 Global Citizens. All Rights Reserved</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
 </footer>
 <script src="scripts/language-routing.js?v=209"></script>
 <script>

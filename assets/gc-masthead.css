@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "GC Masthead";
+  src: url("fonts/UnifrakturCook-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.brand-copy strong,
+.footer-brand-text > span,
+.brand > strong {
+  font-family: "GC Masthead", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 841px) {
+  .brand-copy strong,
+  .brand > strong {
+    font-size: 34px;
+  }
+
+  .footer-brand-text > span {
+    font-size: 34px;
+  }
+
+  .office {
+    font-size: 30px;
+  }
+
+  .track-two {
+    font-size: 15px;
+  }
+}

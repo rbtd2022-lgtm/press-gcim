@@ -740,6 +740,10 @@
         white-space:nowrap;
       }
       .footer-subscribe h3 {
+        white-space:nowrap;
+        overflow-wrap:normal;
+        word-break:keep-all;
+        hyphens:none;
         font-size:clamp(10px,3.3vw,13px);
         letter-spacing:.08em;
       }
@@ -1313,6 +1317,64 @@
         margin-block-start:clamp(1.25rem, 1vw + 0.975rem, 1.875rem);
       }
     }
+
+    /* Mobile White House typography for Latin-language full section pages. */
+    @media (max-width:840px){
+      @font-face{
+        font-family:"Instrument Serif";
+        src:url("assets/fonts/instrument-serif-whitehouse-regular.woff2") format("woff2");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-variable.ttf") format("truetype");
+        font-style:normal;
+        font-weight:700;
+        font-display:swap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .hero h1{
+        font-family:"Instrument Serif", serif;
+        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.08;
+        letter-spacing:1.2px;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:manual;
+        text-wrap:balance;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > p,
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .about-lead{
+        font-family:"Instrument Sans", sans-serif;
+        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:.2px;
+        text-transform:none;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > h2{
+        font-family:"Instrument Serif", serif;
+        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.18;
+        letter-spacing:.56px;
+        text-transform:none;
+      }
+    }
     /* GCIM_GENERATED_LATIN_SECTION_TYPOGRAPHY_END */
 
     /* GCIM_GENERATED_PORTAL_RESOURCES_START */
@@ -1326,7 +1388,14 @@
         font-display:swap;
       }
       .portal-bar-mobile{display:none;}
-      .portal-bar-desktop{display:block;}
+      .portal-bar-desktop{
+        display:grid;
+        gap:3px;
+        text-align:center;
+        line-height:1.25;
+      }
+      .portal-bar-desktop-title,
+      .portal-bar-desktop-links{display:block;}
       html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-desktop{
         font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
         font-weight:400;
@@ -1363,6 +1432,42 @@
       }
     }
     /* GCIM_GENERATED_PORTAL_RESOURCES_END */
+
+    /* GCIM_MOBILE_COPYRIGHT_BREAK_START */
+.copyright-mobile-break{display:none;}
+@media (max-width:840px){.copyright-mobile-break{display:block;}}
+/* GCIM_MOBILE_COPYRIGHT_BREAK_END */
+
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_START */
+    @media (max-width:840px){
+      .hero h1{
+        width:min(100%, 1080px);
+        max-width:min(100%, 1080px);
+        margin:0 auto;
+        padding:0;
+      }
+      :is(.about-copy,.inquiries-copy){
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin-inline:auto;
+      }
+      :is(.about-copy,.inquiries-copy) > p,.about-lead{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:0;
+        padding:0;
+      }
+      :is(.about-copy,.inquiries-copy) > p + p{
+        margin-block-start:clamp(1.25rem, 1vw + .975rem, 1.875rem);
+      }
+      :is(.about-copy,.inquiries-copy) > h2{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:clamp(1.25rem, 1vw + .975rem, 1.875rem) 0 0;
+        padding:0;
+      }
+    }
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_END */
 </style>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Citizens">
@@ -1381,10 +1486,11 @@
   <meta name="twitter:description" content="Informations officielles sur le Bureau des opérations de presse du Mouvement international Global Citizens, ses missions principales et ses domaines d’activité.">
   <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
+  <link rel="stylesheet" href="assets/gc-masthead.css">
 </head>
 <body>
   <div class="portal-bar">
-    <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Ressources officielles de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop">Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes : <a href="https://gcim.eu/">https://gcim.eu/</a> · <a href="https://press.gcim.eu/">https://press.gcim.eu/</a> · <a href="https://news.gcim.eu/">https://news.gcim.eu/</a> · <a href="https://pressroom.gcim.eu/">https://pressroom.gcim.eu/</a></span></div>
+    <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Ressources officielles de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes :</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
   </div>
 
   <div class="topline"></div>
@@ -1599,7 +1705,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright">© 2020-2027 Global Citizens. All Rights Reserved</div>
+    <div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
   </footer>
   <script src="scripts/language-routing.js?v=209"></script>
 
