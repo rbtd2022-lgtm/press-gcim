@@ -388,3 +388,75 @@
     font-size: clamp(1.0909rem, 5.45vw, 1.5rem);
   }
 }
+
+/*
+ * v294 mobile readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (max-width: 840px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(1.625rem, 1.44vw + 1.337rem, 2rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.8vw + 0.84rem, 1.125rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.25rem, 1.2vw + 1.01rem, 1.5rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
+
+/*
+ * v295 desktop readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (min-width: 841px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(2rem, 1.3vw + 1.35rem, 2.75rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1.125rem, 0.25vw + 0.99rem, 1.25rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.5rem, 0.5vw + 1.2375rem, 1.75rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
