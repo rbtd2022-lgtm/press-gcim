@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html data-alternate-ar="2026-09-29-architecture-closed-diplomacy-ar.html" data-alternate-en="2026-09-29-architecture-closed-diplomacy-en.html" data-alternate-es="2026-09-29-architecture-closed-diplomacy-es.html" data-alternate-fr="2026-09-29-architecture-closed-diplomacy-fr.html" data-alternate-ru="2026-09-29-architecture-closed-diplomacy-ru.html" data-alternate-uk="2026-09-29-architecture-closed-diplomacy-uk.html" data-alternate-zh="2026-09-29-architecture-closed-diplomacy-zh.html" data-page-language="es" dir="ltr" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Excelencias, señoras y señores, estimados colegas:" name="description">
+<title>Arquitectura de la diplomacia confidencial: mecanismos para facilitar la liberación de personas detenidas mediante el diálogo de actores no gubernamentales con Estados y otras partes implicadas — Global Citizens</title>
+<link href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-es.html" id="canonicalUrl" rel="canonical">
+<meta content="index, follow" name="robots">
+<link href="assets/favicon.png" rel="icon" type="image/png">
+<link href="assets/favicon.ico" rel="shortcut icon">
+<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"><style>
+    @font-face{font-family:"ITCFranklinGothicW10-Md 862390";src:url("assets/itc-franklin-gothic-md.woff2") format("woff2"),url("assets/itc-franklin-gothic-md.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+    :root{
+      --ink:#102133;
+      --muted:#62707d;
+      --paper:#f6f3ec;
+      --white:#ffffff;
+      --line:#d8d7d1;
+      --navy:#102c46;
+      --navy-2:#173b5b;
+      --accent:#a78248;
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+
+
+    .portal-bar{
+      background:#0b2237;
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+    .portal-bar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 32px;
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    @media (max-width:840px){
+      .portal-bar-inner{padding:8px 20px;font-size:9px!important;line-height:1.2;letter-spacing:.03em!important;white-space:nowrap;overflow:hidden}
+    }
+
+    .topline{
+      height:1px;
+      background:#d7bd90;
+    }
+
+    .masthead{
+      background:var(--navy);
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.18);
+    }
+    .masthead-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      min-height:112px;
+      padding:24px 32px;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:24px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    .mark{
+      width:62px;
+      height:62px;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+    }
+    #headerEmblem{
+      cursor:pointer;
+    }
+    #headerEmblem:focus-visible{
+      outline:1px solid #d7bd90;
+      outline-offset:4px;
+    }
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible{
+      outline:3px solid #84652f;
+      outline-offset:3px;
+    }
+    .emblem-tint{
+      background-color:transparent;
+      background-image:url('assets/gcim-emblem.webp');
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:contain;
+    }
+    .brand-copy strong{
+      display:block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:21px;
+      font-weight:600;
+      letter-spacing:.01em;
+    }
+    .brand-copy span{
+      display:block;
+      margin-top:4px;
+      color:#c3ced7;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+    }
+    .office-wrap{
+      text-align:center;
+      line-height:1;
+    }
+    .office{
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:18px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+    .track-two{
+      margin-top:9px;
+      color:#d7bd90;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .lang{
+      justify-self:end;
+      display:flex;
+      align-items:center;
+      gap:0;
+      padding:3px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.11em;
+    }
+    .lang button{
+      min-width:42px;
+      height:34px;
+      border:0;
+      border-radius:999px;
+      background:transparent;
+      padding:0 12px;
+      cursor:pointer;
+      color:rgba(255,255,255,.78);
+      transition:
+        background-color .18s ease,
+        color .18s ease,
+        box-shadow .18s ease,
+        transform .18s ease;
+    }
+    .lang button.active{
+      background:#fff;
+      color:var(--navy);
+      box-shadow:0 1px 5px rgba(0,0,0,.16);
+    }
+    .lang button:hover:not(.active){
+      background:rgba(255,255,255,.12);
+      color:#fff;
+    }
+    .lang button:active{
+      transform:scale(.97);
+    }
+    .lang button:focus-visible{
+      outline:2px solid #fff;
+      outline-offset:3px;
+    }
+    .lang .sep{display:none}
+
+
+    .mobile-actions{
+      display:none;
+      align-items:center;
+      gap:10px;
+      justify-self:end;
+    }
+    .mobile-lang-wrap{
+      position:relative;
+    }
+    .mobile-lang{
+      height:42px;
+      min-width:68px;
+      padding:0 28px 0 12px;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:999px;
+      background:rgba(255,255,255,.07);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+      outline:none;
+      cursor:pointer;
+    }
+    .mobile-lang option{
+      color:#102c46;
+      background:#fff;
+    }
+    .menu-toggle{
+      width:44px;
+      height:44px;
+      padding:0;
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:50%;
+      background:rgba(255,255,255,.07);
+      display:grid;
+      place-content:center;
+      gap:4px;
+      cursor:pointer;
+    }
+    .menu-toggle span{
+      display:block;
+      width:18px;
+      height:1.5px;
+      background:#fff;
+      transition:transform .2s ease, opacity .2s ease;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){
+      transform:translateY(5.5px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){
+      opacity:0;
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){
+      transform:translateY(-5.5px) rotate(-45deg);
+    }
+
+    .nav-wrap{
+      border-bottom:1px solid rgba(255,255,255,.16);
+      background:var(--navy);
+      color:#fff;
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 32px;
+      height:58px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:34px;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+      font-weight:700;
+    }
+    .nav-links a{
+      position:relative;
+      padding:21px 0 19px;
+    }
+    .nav-links a.active:after{
+      content:"";
+      position:absolute;
+      left:0; right:0; bottom:-1px;
+      height:3px;
+      background:#d7bd90;
+    }
+    .media-link{
+      font-size:12px;
+      font-weight:700;
+      color:#d7bd90;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      border-left:1px solid rgba(255,255,255,.22);
+      padding-left:24px;
+    }
+
+    .hero{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:76px 32px 42px;
+    }
+    .eyebrow{
+      color:#d7bd90;
+      text-transform:uppercase;
+      letter-spacing:.17em;
+      font-size:12px;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    h1{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size:clamp(56px,8vw,112px);
+      line-height:.94;
+      font-weight:500;
+      letter-spacing:-.045em;
+    }
+    .hero-rule{
+      height:1px;
+      background:var(--ink);
+      margin-top:44px;
+    }
+
+    .tools{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 32px 32px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 290px;
+      gap:18px;
+    }
+    .search{
+      position:relative;
+    }
+    .search input{
+      width:100%;
+      height:56px;
+      border:1px solid #b8bdc1;
+      background:#fff;
+      padding:0 52px 0 18px;
+      color:var(--ink);
+      outline:none;
+    }
+    .search input:focus,
+    .category select:focus{
+      border-color:var(--navy);
+      box-shadow:0 0 0 2px rgba(16,44,70,.08);
+    }
+    .search svg{
+      width:20px;
+      position:absolute;
+      right:18px;
+      top:18px;
+      stroke:var(--navy);
+    }
+    .category select{
+      width:100%;
+      height:56px;
+      border:1px solid #b8bdc1;
+      color:var(--ink);
+      background:#fff;
+      padding:0 44px 0 18px;
+      outline:none;
+      cursor:pointer;
+    }
+
+    .content{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 32px 80px;
+    }
+    .featured{
+      background:var(--paper);
+      border-top:4px solid var(--navy);
+      margin-bottom:34px;
+      padding:34px 36px 32px;
+      display:grid;
+      grid-template-columns:180px 1fr;
+      gap:36px;
+    }
+    .featured-label{
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      font-size:11px;
+      font-weight:700;
+      color:#d7bd90;
+      margin-bottom:11px;
+    }
+    .featured-meta{
+      font-size:12px;
+      line-height:1.65;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.07em;
+    }
+    .featured h2{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:clamp(28px,3.2vw,46px);
+      line-height:1.08;
+      margin:0 0 14px;
+      font-weight:500;
+      letter-spacing:-.025em;
+    }
+    .featured p{
+      margin:0;
+      max-width:780px;
+      font-family:Georgia, "Times New Roman", serif;
+      color:#3c4a57;
+      font-size:17px;
+      line-height:1.55;
+    }
+
+    .results-count{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      margin:12px 0 10px;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .news-list{
+      border-top:1px solid var(--ink);
+    }
+    .news-item{
+      display:grid;
+      grid-template-columns:190px minmax(0,1fr) 170px;
+      gap:28px;
+      padding:28px 0 30px;
+      border-bottom:1px solid var(--line);
+      transition:background .16s ease;
+    }
+    .news-item:hover{
+      background:#faf9f6;
+    }
+    .news-type{
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:11px;
+      line-height:1.4;
+      font-weight:700;
+      color:#d7bd90;
+      padding-top:6px;
+    }
+    .news-title{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:27px;
+      line-height:1.18;
+      letter-spacing:-.018em;
+      margin:0;
+      font-weight:500;
+    }
+    .news-item a:hover .news-title{
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:5px;
+    }
+    .news-date{
+      justify-self:end;
+      padding-top:6px;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.05em;
+      white-space:nowrap;
+    }
+    .template-tag{
+      display:inline-block;
+      margin-top:9px;
+      padding:4px 7px;
+      border:1px solid #c8c9c9;
+      color:#7b8084;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:9px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      vertical-align:middle;
+    }
+
+    .pagination{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:6px;
+      padding:42px 0 0;
+    }
+    .page-numbers{
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .pagination button{
+      min-width:42px;
+      height:42px;
+      padding:0 12px;
+      background:#fff;
+      border:1px solid var(--line);
+      cursor:pointer;
+      color:var(--navy);
+      font:600 12px Arial,Helvetica,sans-serif;
+    }
+    .pagination .page-nav{
+      min-width:86px;
+    }
+    .pagination button:hover:not(:disabled):not(.current){
+      border-color:var(--navy);
+    }
+    .pagination button.current{
+      background:var(--navy);
+      color:#fff;
+      border-color:var(--navy);
+      cursor:default;
+    }
+    .pagination button:disabled{
+      opacity:.38;
+      cursor:not-allowed;
+    }
+    .pagination[hidden]{
+      display:none;
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:32px 32px 34px;
+      display:grid;
+      grid-template-columns:1.25fr .8fr .8fr;
+      gap:48px;
+    }
+    .footer-brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:25px;
+      margin-bottom:12px;
+    }
+    .footer-brand-text{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:1px;
+      line-height:1.05;
+    }
+    .footer-emblem{
+      width:52px;
+      height:52px;
+      flex:0 0 auto;
+    }
+    .footer-website{
+      color:#d7bd90;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:12px;
+      letter-spacing:.04em;
+      line-height:1.1;
+      text-decoration:none;
+    }
+    .footer-website:hover{
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .footer-contacts{
+      padding-top:64px;
+    }
+    .footer-language-note{
+      margin:0;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:12px;
+      line-height:1.55;
+    }
+    .footer-subscribe{
+      padding-top:64px;
+    }
+    .subscribe-copy{
+      margin:0 0 12px;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:13px;
+      line-height:1.45;
+    }
+    .subscribe-form{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      margin:0;
+    }
+    .subscribe-form input{
+      width:100%;
+      min-width:0;
+      height:38px;
+      border:1px solid rgba(255,255,255,.38);
+      background:#fff;
+      color:#102133;
+      padding:0 11px;
+      border-radius:0;
+      outline:none;
+      font:13px Arial,Helvetica,sans-serif;
+    }
+    .subscribe-form input:focus{
+      border-color:#d7bd90;
+      box-shadow:0 0 0 1px #d7bd90;
+    }
+    .subscribe-form button{
+      align-self:flex-start;
+      min-height:36px;
+      border:1px solid #d7bd90;
+      background:#d7bd90;
+      color:#102c46;
+      padding:0 18px;
+      cursor:pointer;
+      font-size:11px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.10em;
+    }
+    .subscribe-form button:hover{
+      background:transparent;
+      color:#d7bd90;
+    }
+    .subscribe-note{
+      margin-top:9px;
+      color:#aebbc6;
+      font-size:10px;
+      line-height:1.35;
+    }
+    .sr-only{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    .footer-copy{
+      max-width:440px;
+      color:#d2dbe3;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:12px;
+      line-height:1.55;
+    }
+    footer h3{
+      margin:0 0 14px;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      color:#d7bd90;
+    }
+    footer a{
+      display:block;
+      color:#fff;
+      margin:9px 0;
+      font-size:13px;
+    }
+    .copyright{
+      max-width:var(--max);
+      margin:0 auto;
+      border-top:1px solid rgba(255,255,255,.22);
+      padding:18px 32px 26px;
+      color:#b9c5cf;
+      font-size:11px;
+      letter-spacing:.04em;
+    }
+
+
+    html[dir="rtl"] body{
+      direction:rtl;
+    }
+    html[dir="rtl"] .masthead-inner,
+    html[dir="rtl"] .nav,
+    html[dir="rtl"] .hero,
+    html[dir="rtl"] .tools,
+    html[dir="rtl"] .content,
+    html[dir="rtl"] .footer-inner{
+      direction:rtl;
+    }
+    html[dir="rtl"] .brand{
+      flex-direction:row-reverse;
+    }
+    html[dir="rtl"] .lang{
+      direction:ltr;
+    }
+    html[dir="rtl"] .mobile-actions{
+      direction:ltr;
+    }
+    html[dir="rtl"] .media-link{
+      border-left:0;
+      border-right:1px solid rgba(255,255,255,.22);
+      padding-left:0;
+      padding-right:24px;
+    }
+    html[dir="rtl"] .news-date{
+      justify-self:start;
+    }
+
+    .mobile-menu{display:none}
+
+    @media (max-width:840px){
+      .masthead-inner{
+        grid-template-columns:minmax(0,1fr) auto;
+        min-height:88px;
+        padding:16px 20px;
+        gap:12px;
+      }
+      .office-wrap{display:none}
+      .lang{display:none}
+      .mobile-actions{display:flex}
+      .brand{min-width:0;gap:11px}
+      .brand-copy{min-width:0}
+      .brand-copy strong{white-space:nowrap}
+      .nav-wrap{border-bottom:1px solid rgba(255,255,255,.16)}
+      .nav{
+        display:block;
+        height:auto;
+        padding:0;
+      }
+      .nav-links{
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        width:100%;
+        font-size:12px;
+        white-space:normal;
+      }
+      .nav-wrap.is-open .nav-links{display:flex}
+      .nav-links a{
+        width:100%;
+        padding:15px 20px;
+        border-top:1px solid rgba(255,255,255,.12);
+      }
+      .nav-links a.active:after{
+        left:20px;
+        right:auto;
+        width:34px;
+        height:2px;
+      }
+      .media-link{display:none}
+      .nav-wrap.is-open .media-link{
+        display:block;
+        width:100%;
+        padding:15px 20px;
+        border-left:0;
+        border-top:1px solid rgba(255,255,255,.12);
+      }
+      .hero{padding:38px 20px 24px}
+      .hero-rule{margin-top:28px}
+      .tools{padding:0 20px 22px;grid-template-columns:1fr}
+      .content{padding:4px 20px 60px}
+      .featured{grid-template-columns:1fr;gap:14px;padding:24px 20px}
+      .news-item{grid-template-columns:1fr;gap:9px;padding:24px 0}
+      .news-type{padding-top:0}
+      .news-date{justify-self:start;padding-top:0;order:3}
+      .footer-inner{padding:40px 20px;grid-template-columns:1fr;gap:30px}
+      .footer-contacts{padding-top:0}
+      .footer-subscribe{padding-top:0}
+      .footer-subscribe h3,
+      .subscribe-note,
+      .copyright {
+        white-space:nowrap;
+      }
+      .footer-subscribe h3 {
+        white-space:nowrap;
+        overflow-wrap:normal;
+        word-break:keep-all;
+        hyphens:none;
+        font-size:clamp(10px,3.3vw,13px);
+        letter-spacing:.08em;
+      }
+      .subscribe-note,
+      .copyright {
+        font-size:clamp(9px,2.9vw,11px);
+        letter-spacing:0;
+      }
+      .subscribe-form{width:calc(100% - 32px);max-width:480px;margin-inline:auto}
+      .subscribe-form button{width:100%}
+      .copyright{padding:18px 20px 24px}
+    }
+    @media (max-width:520px){
+      .mark{width:52px;height:52px}
+      .brand-copy strong{font-size:18px}
+      .brand-copy span{font-size:10px}
+      .mobile-lang{min-width:64px;padding-left:10px}
+      .menu-toggle{width:42px;height:42px}
+      h1{font-size:58px}
+      .nav-links{font-size:11px}
+      .featured h2{font-size:30px}
+      .news-title{font-size:23px}
+    }
+  
+    .lang .lang-pending{
+      opacity:.58;
+      cursor:default;
+      pointer-events:none;
+    }
+
+    /* Unified publication page */
+    .publication-shell{
+      max-width:980px;
+      margin:0 auto;
+      padding:64px 32px 84px;
+    }
+    .back-to-news{display:inline-block;margin:0 0 28px;color:var(--muted);font-size:14px;text-decoration:none}
+    .back-to-news:hover,.back-to-news:focus-visible{text-decoration:underline;color:var(--ink)}
+    .copy-link-button{display:none;width:40px;height:40px;border:1px solid #c9b68f;background:transparent;color:var(--ink);padding:0;font:inherit;font-size:20px;line-height:1;cursor:pointer}
+    .copy-link-button:hover,.copy-link-button:focus-visible{background:#f4efe6}
+    @media (max-width:840px){.copy-link-button{display:inline-flex;margin:0 0 28px;margin-inline-start:12px;align-items:center}}
+    .publication-header{
+      max-width:900px;
+    }
+    .publication-meta{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:10px 14px;
+      margin-bottom:21px;
+      color:var(--muted);
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    .publication-date::after{
+      content:"";
+      display:inline-block;
+      width:1px;
+      height:13px;
+      margin-inline-start:14px;
+      vertical-align:-2px;
+      background:var(--line);
+    }
+    .publication-category{
+      color:#8b6d3e;
+      text-transform:uppercase;
+      letter-spacing:.11em;
+      font-size:14px;
+    }
+    .publication-title{
+      margin:0;
+      max-width:900px;
+      color:var(--ink);
+      font-family:"ITCFranklinGothicW10-Md 862390",Arial,sans-serif;
+      font-size:32px;
+      line-height:37px;
+      font-weight:400;
+      letter-spacing:0;
+      overflow-wrap:normal;
+      word-break:normal;
+      hyphens:none;
+    }
+    .publication-rule{
+      width:72px;
+      height:2px;
+      margin:28px 0 38px;
+      background:#d7bd90;
+    }
+    .publication-body{
+      max-width:820px;
+      font-family:Arial,sans-serif;
+      font-size:16px;
+      line-height:24px;
+      color:#253748;
+    }
+    .publication-body p{
+      margin:0 0 24px;
+    }
+    .publication-body .quote-attribution-inline{
+      margin-inline-start:.45em;
+      font-style:normal;
+      white-space:nowrap;
+    }
+    .publication-body h2{
+      margin:42px 0 17px;
+      color:var(--ink);
+      font-size:27px;
+      line-height:1.25;
+      font-weight:600;
+    }
+    .publication-body blockquote{
+      margin:32px 0;
+      padding:5px 0 5px 24px;
+      border-left:2px solid #d7bd90;
+      color:#445565;
+      font-style:italic;
+    }
+    html[dir="rtl"] .publication-body blockquote{
+      border-left:0;
+      border-right:2px solid #d7bd90;
+      padding-left:0;
+      padding-right:24px;
+    }
+    .publication-body ul{
+      margin:0 0 26px;
+      padding-inline-start:24px;
+    }
+    .publication-section{
+      max-width:820px;
+      margin-top:46px;
+      padding-top:28px;
+      border-top:1px solid var(--line);
+    }
+    .publication-section[hidden]{display:none}
+    .publication-section h2{
+      margin:0 0 20px;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:23px;
+      font-weight:600;
+    }
+    .resources-list{
+      display:grid;
+      gap:10px;
+    }
+    .resource-item{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      padding:14px 16px;
+      border:1px solid var(--line);
+      background:#fff;
+      transition:border-color .16s ease, background-color .16s ease;
+    }
+    .resource-item:hover{
+      border-color:#b9aa90;
+      background:#fbfaf7;
+    }
+    .resource-title{
+      color:var(--navy);
+      font-weight:700;
+      font-size:14px;
+    }
+    .resource-meta{
+      flex:0 0 auto;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.04em;
+    }
+    @media (max-width:840px){
+      .publication-shell{padding:42px 20px 62px}
+      .publication-title{font-size:20px;line-height:1.3}
+      .publication-body{font-size:16px;line-height:24px}
+      .publication-body h2{font-size:24px}
+      .publication-rule{margin:24px 0 30px}
+      .resource-item{align-items:flex-start}
+    }
+
+  
+    /* GCIM publication typography */
+    @font-face{
+      font-family:"Instrument Serif";
+      src:url("assets/fonts/instrument-serif-regular.ttf") format("truetype");
+      font-style:normal;
+      font-weight:400;
+      font-display:swap;
+    }
+    .publication-title, .publication-body{
+      font-family:"Instrument Serif",Georgia,"Times New Roman",serif;
+    }
+
+    /* GCIM mobile viewport lock */
+    @media (max-width:840px) {
+      html, body { width:100%; max-width:100%; overflow-x:hidden; }
+      .masthead-inner, .nav, .content, .hero, .featured, .footer-inner,
+      .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
+      .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
+      .publication-title, .publication-body, .resource-item, .resource-title,
+      .brand-copy { overflow:hidden; }
+      .brand-copy strong { font-size:14px; line-height:1.1; white-space:nowrap; overflow-wrap:normal; }
+      .footer-brand { font-size:17px; }
+      .footer-brand-text span { white-space:nowrap; }
+      .publication-title, .publication-body, .news-title, .news-type, .news-date,
+      .hero h1, .inquiries-copy, .contact-value { overflow-wrap:normal; word-break:normal; hyphens:none; }
+      .publication-body .quote-attribution-inline { white-space:normal; overflow-wrap:anywhere; }
+      .resource-item { flex-wrap:wrap; }
+      .resource-title { overflow-wrap:anywhere; }
+      img, svg, video, iframe { max-width:100%; height:auto; }
+    }
+    @media (max-width:380px) {
+      .masthead-inner { padding-left:10px; padding-right:10px; gap:6px; }
+      .brand { gap:7px; }
+      .mark { width:42px; height:42px; }
+      .brand-copy strong { font-size:13px; line-height:1.1; }
+      .footer-brand { font-size:15px; }
+      .brand-copy span { font-size:9px; letter-spacing:.08em; }
+      .mobile-actions { gap:5px; }
+      .mobile-lang { min-width:52px; width:52px; padding-left:5px; padding-right:5px; }
+      .menu-toggle { width:38px; height:38px; }
+      .content, .hero, .featured, .publication-shell, .inquiries-wrap { padding-left:14px; padding-right:14px; }
+    }
+
+  
+    /* GCIM responsive typography */
+    html{font-size:16px}
+    h1,
+    .publication-title{font-size:40px;line-height:1.2}
+    .featured h2,
+    .news-title{font-size:24px;line-height:1.3}
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-type,
+    .news-date,
+    .publication-meta,
+    .publication-category{font-size:14px}
+    .subscribe-form input{font-size:16px;line-height:1.4}
+    .subscribe-form button,
+    .pagination button{font-size:16px;line-height:1.2}
+    .lang,
+    .mobile-lang{font-size:16px}
+    .track-two,
+    .subscribe-note,
+    .contact-label{font-size:12px}
+    @media (min-width:768px) and (max-width:1023px){
+      h1,
+      .publication-title{font-size:32px;line-height:1.25}
+    }
+    @media (max-width:767px){
+      h1,
+      .publication-title{font-size:26px;line-height:1.25}
+      .featured h2,
+      .news-title{font-size:20px;line-height:1.3}
+      .featured-meta,
+      .featured-meta span,
+      #featuredDate,
+      .news-type,
+      .news-date,
+      .publication-meta,
+      .publication-category{font-size:12px;line-height:1.3}
+      .portal-bar-inner{font-size:12px!important;line-height:1.2}
+      .nav-links{font-size:13px}
+      .footer-subscribe h3,
+      .subscribe-note,
+      .copyright{font-size:12px}
+    }
+    @media (max-width:480px){
+      h1,
+      .publication-title{line-height:1.25}
+      .featured h2,
+      .news-title{line-height:1.3}
+      .brand-copy span{font-size:12px}
+    }
+
+
+    /* Mobile header fit and alignment */
+    @media (max-width:840px){
+      .portal-bar-inner{
+        width:100%;
+        max-width:100%;
+        padding:8px 14px;
+        font-size:11px!important;
+        line-height:1.25;
+        letter-spacing:.06em!important;
+        text-align:center;
+        white-space:normal;
+        overflow:visible;
+      }
+      .masthead-inner{
+        width:100%;
+        max-width:100%;
+        min-height:80px;
+        padding:12px 14px;
+        grid-template-columns:minmax(0,1fr) auto;
+        gap:8px;
+      }
+      .brand{
+        min-width:0;
+        max-width:100%;
+        gap:8px;
+      }
+      .mark{
+        width:50px;
+        height:50px;
+        flex:0 0 50px;
+      }
+      .brand-copy{
+        min-width:0;
+        max-width:100%;
+        overflow:hidden;
+      }
+      .brand-copy strong{
+        font-size:16px;
+        line-height:1.1;
+        white-space:nowrap;
+      }
+      .brand-copy span{
+        margin-top:3px;
+        font-size:10px;
+        line-height:1.2;
+        letter-spacing:.09em;
+        white-space:normal;
+        overflow-wrap:normal;
+      }
+      .mobile-actions{
+        flex:0 0 auto;
+        gap:7px;
+      }
+      .mobile-lang-wrap::after{
+        content:"";
+        position:absolute;
+        top:50%;
+        right:13px;
+        width:7px;
+        height:7px;
+        border-right:1.5px solid #fff;
+        border-bottom:1.5px solid #fff;
+        transform:translateY(-65%) rotate(45deg);
+        pointer-events:none;
+      }
+      .mobile-lang{
+        -webkit-appearance:none;
+        appearance:none;
+        display:block;
+        width:64px;
+        min-width:64px;
+        height:40px;
+        padding:0 26px 0 12px;
+        font-size:14px;
+        line-height:1;
+        letter-spacing:.04em;
+        direction:ltr;
+        text-align:left;
+        text-align-last:left;
+      }
+      .menu-toggle{
+        width:40px;
+        height:40px;
+        flex:0 0 40px;
+      }
+    }
+    @media (max-width:480px){
+      .portal-bar-inner{
+        padding-inline:10px;
+        font-size:10px!important;
+        letter-spacing:.04em!important;
+      }
+      .masthead-inner{padding:10px;gap:6px}
+      .brand{gap:7px}
+      .mark{width:44px;height:44px;flex-basis:44px}
+      .brand-copy strong{font-size:15px}
+      .brand-copy span{font-size:9px;letter-spacing:.06em}
+      .mobile-actions{gap:6px}
+      .mobile-lang-wrap::after{right:11px;width:6px;height:6px}
+      .mobile-lang{
+        width:58px;
+        min-width:58px;
+        height:38px;
+        padding:0 22px 0 10px;
+        font-size:13px;
+      }
+      .menu-toggle{width:38px;height:38px;flex-basis:38px}
+    }
+    @media (max-width:340px){
+      .masthead-inner{padding-inline:8px;gap:5px}
+      .brand{gap:6px}
+      .mark{width:40px;height:40px;flex-basis:40px}
+      .brand-copy strong{font-size:14px}
+      .brand-copy span{font-size:9px;letter-spacing:.03em}
+      .mobile-actions{gap:5px}
+      .mobile-lang{width:56px;min-width:56px}
+      .menu-toggle{width:36px;height:36px;flex-basis:36px}
+    }
+  
+    /* Desktop editorial refinement: official portal line and language navigation */
+    @media (min-width:841px){
+      .portal-bar-inner{
+        padding-top:9px;
+        padding-bottom:9px;
+        font-size:11px;
+        font-weight:400;
+        letter-spacing:.08em;
+        text-transform:none;
+      }
+      .lang{
+        gap:0;
+        padding:0;
+        border:0;
+        border-radius:0;
+        background:transparent;
+        box-shadow:none;
+        font-size:11px;
+        font-weight:600;
+        letter-spacing:.08em;
+      }
+      .lang :is(a,button){
+        min-width:0;
+        height:32px;
+        padding:0 10px;
+        border-radius:0;
+        color:rgba(255,255,255,.72);
+        box-shadow:none;
+      }
+      .lang :is(a,button) + :is(a,button){
+        border-left:1px solid rgba(255,255,255,.28);
+      }
+      .lang :is(a,button).active{
+        position:relative;
+        background:transparent;
+        color:#fff;
+        box-shadow:none;
+      }
+      .lang :is(a,button).active::after{
+        content:"";
+        position:absolute;
+        right:10px;
+        bottom:2px;
+        left:10px;
+        height:2px;
+        background:#d7bd90;
+      }
+      .lang :is(a,button):hover:not(.active){
+        background:transparent;
+        color:#fff;
+      }
+    }
+  
+    /* Desktop navigation and subscribe control refinement */
+    @media (min-width:841px){
+      .nav-links{
+        gap:30px;
+        font-size:12px;
+        font-weight:500;
+        letter-spacing:.065em;
+      }
+      .nav-links a{
+        padding-top:20px;
+        padding-bottom:18px;
+      }
+      .media-link{
+        font-size:11px;
+        font-weight:600;
+        letter-spacing:.07em;
+        padding-left:22px;
+      }
+      .subscribe-form button{
+        min-height:34px;
+        padding:0 14px;
+        font-size:11px;
+        font-weight:600;
+        letter-spacing:.08em;
+      }
+    }
+  
+    /* GCIM_GENERATED_LATIN_PUBLICATION_TYPOGRAPHY_START */
+    /* Generated desktop typography for Latin-language publication pages. */
+    @media (min-width:841px){
+      @font-face{
+        font-family:"Instrument Serif";
+        src:url("assets/fonts/instrument-serif-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-stretch:normal;
+        font-display:swap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-shell{max-width:1144px;}
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-header{
+        width:min(100%, 1080px);max-width:min(100%, 1080px);margin-inline:auto;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-title{
+        width:min(100%, 1080px);max-width:min(100%, 1080px);margin:0;padding:0;
+        font-family:"Instrument Serif", serif;
+        font-size:clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+        font-style:normal;font-weight:400;line-height:1.08;letter-spacing:1.2px;
+        text-transform:none;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:manual;text-wrap:balance;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body{
+        width:min(100%, 782px);max-width:min(100%, 782px);margin-inline:0;
+        font-family:"Instrument Sans", sans-serif;
+        font-size:clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+        font-style:normal;font-weight:400;line-height:1.6;letter-spacing:.2px;
+        text-transform:none;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:manual;text-wrap:pretty;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.publication-meta,.publication-category,.publication-date,.publication-intro){
+        font-family:"Instrument Sans", sans-serif;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body > p{margin:0;}
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body > p + p{
+        margin-block-start:clamp(1.25rem, 1vw + 0.975rem, 1.875rem);
+      }
+    }
+
+    /* Mobile White House typography for Latin-language publication pages. */
+    @media (max-width:840px){
+      @font-face{
+        font-family:"Instrument Serif";
+        src:url("assets/fonts/instrument-serif-whitehouse-regular.woff2") format("woff2");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-variable.ttf") format("truetype");
+        font-style:normal;
+        font-weight:700;
+        font-display:swap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-title{
+        font-family:"Instrument Serif", serif;
+        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.08;
+        letter-spacing:1.2px;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:manual;
+        text-wrap:balance;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body{
+        font-family:"Instrument Sans", sans-serif;
+        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:.2px;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:manual;
+        text-wrap:pretty;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body :is(strong,b){font-weight:700;}
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.publication-meta,.publication-category,.publication-date){
+        font-family:"Instrument Sans", sans-serif;
+        font-style:normal;
+        font-weight:400;
+      }
+    }
+    /* GCIM_GENERATED_LATIN_PUBLICATION_TYPOGRAPHY_END */
+
+    /* GCIM_GENERATED_PORTAL_RESOURCES_START */
+    /* Official GCIM web-resources line. Desktop and mobile are intentionally separate. */
+    @media (min-width:841px){
+      @font-face{
+        font-family:"Instrument Sans";
+        src:url("assets/fonts/instrument-sans-whitehouse-regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+      }
+      .portal-bar-mobile{display:none;}
+      .portal-bar-desktop{
+        display:grid;
+        gap:3px;
+        text-align:center;
+        line-height:1.25;
+      }
+      .portal-bar-desktop-title,
+      .portal-bar-desktop-links{display:block;}
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-desktop{
+        font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+        font-weight:400;
+      }
+      html:is([lang="ru"], [lang="uk"]) .portal-bar-desktop{
+        font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+        font-weight:400;
+      }
+    }
+    @media (max-width:840px){
+      .portal-bar-mobile{
+        display:grid;
+        gap:3px;
+        text-align:center;
+        text-transform:none;
+        letter-spacing:0;
+        line-height:1.25;
+      }
+      .portal-bar-desktop{display:none;}
+      .portal-bar-mobile-title{display:block;}
+      .portal-bar-mobile-links{
+        display:flex;
+        justify-content:center;
+        gap:8px;
+        white-space:nowrap;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) .portal-bar-mobile{
+        font-family:"Instrument Sans",Arial,Helvetica,sans-serif;
+        font-weight:400;
+      }
+      html:is([lang="ru"], [lang="uk"]) .portal-bar-mobile{
+        font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;
+        font-weight:400;
+      }
+    }
+    /* GCIM_GENERATED_PORTAL_RESOURCES_END */
+
+    /* GCIM_MOBILE_COPYRIGHT_BREAK_START */
+.copyright-mobile-break{display:none;}
+@media (max-width:840px){.copyright-mobile-break{display:block;}}
+/* GCIM_MOBILE_COPYRIGHT_BREAK_END */
+
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_START */
+    @media (max-width:840px){
+      .publication-header{
+        width:min(100%, 1080px);
+        max-width:min(100%, 1080px);
+        margin-inline:auto;
+      }
+      .publication-title{
+        width:min(100%, 1080px);
+        max-width:min(100%, 1080px);
+        margin:0;
+        padding:0;
+      }
+      .publication-meta{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:0 0 12px;
+        padding:0;
+        gap:0;
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+      :is(.publication-category,.publication-date){
+        margin:0;
+        padding:0;
+        font-size:.875rem;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+      .publication-date::after{content:none;}
+      .publication-category{
+        margin-inline-start:16px;
+        padding-inline-start:16px;
+        border-inline-start:1px solid var(--line);
+      }
+      .publication-body{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin-inline:auto;
+        padding:0;
+      }
+      .publication-body > p{margin:0;}
+      .publication-body > p + p{margin-block-start:clamp(1.25rem, 1vw + .975rem, 1.875rem);}
+      .publication-body > h2{
+        width:min(100%, 782px);
+        max-width:min(100%, 782px);
+        margin:clamp(1.25rem, 1vw + .975rem, 1.875rem) 0 0;
+        padding:0;
+      }
+    }
+    /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_END */
+
+    /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_START */
+    @media (max-width:840px){
+      .brand-copy strong{
+        font-size:clamp(22px,6.4vw,26px)!important;
+        line-height:1.05;
+      }
+      .footer-brand-text > span{
+        font-size:clamp(24px,7vw,30px)!important;
+        line-height:1.05;
+      }
+    }
+    /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_END */
+</style>
+<link rel="stylesheet" href="assets/gc-masthead-v309.css">
+<link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-en.html"><link rel="alternate" hreflang="ar" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-ar.html"><link rel="alternate" hreflang="es" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-es.html"><link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-zh.html"><link rel="alternate" hreflang="ru" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-ru.html"><link rel="alternate" hreflang="fr" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-fr.html"><link rel="alternate" hreflang="uk" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-uk.html"><link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-en.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Global Citizens"><meta property="og:locale" content="es_ES"><meta property="og:title" content="Arquitectura de la diplomacia confidencial: mecanismos para facilitar la liberación de personas detenidas mediante el diálogo de actores no gubernamentales con Estados y otras partes implicadas"><meta property="og:description" content="Excelencias, señoras y señores, estimados colegas:"><meta property="og:url" content="https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-es.html"><meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Global Citizens Press Office"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Arquitectura de la diplomacia confidencial: mecanismos para facilitar la liberación de personas detenidas mediante el diálogo de actores no gubernamentales con Estados y otras partes implicadas"><meta name="twitter:description" content="Excelencias, señoras y señores, estimados colegas:"><meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta name="twitter:image:alt" content="Global Citizens Press Office"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Arquitectura de la diplomacia confidencial: mecanismos para facilitar la liberación de personas detenidas mediante el diálogo de actores no gubernamentales con Estados y otras partes implicadas", "datePublished": "2026-09-29", "description": "Excelencias, señoras y señores, estimados colegas:", "publisher": {"@type": "Organization", "name": "International Movement Global Citizens", "url": "https://gcim.eu/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://press.gcim.eu/2026-09-29-architecture-closed-diplomacy-es.html"}, "inLanguage": "es", "image": "https://press.gcim.eu/assets/social-preview.jpg"}</script>
+<style id="gcim-publication-intro-v301">
+  #publicationPage .publication-intro{
+    width:min(100%,820px);max-width:820px;margin:24px 0 0;
+    font-size:18px;line-height:1.45;font-weight:400;color:var(--ink);
+  }
+  #publicationPage .publication-intro p{margin:0;}
+  #publicationPage .publication-intro p + p{margin-top:8px;}
+  #publicationPage .publication-header .publication-intro-rule{
+    width:min(100%,820px);max-width:820px;height:1px;margin:26px 0 34px;background:var(--line);
+  }
+  @media (min-width:841px){
+    html:is([lang="en"],[lang="fr"],[lang="es"]) #publicationPage .publication-intro{
+      width:min(100%,782px);max-width:782px;margin-inline:0;font-family:"Instrument Sans",sans-serif;
+    }
+    html:is([lang="en"],[lang="fr"],[lang="es"]) #publicationPage .publication-header .publication-intro-rule{
+      width:min(100%,782px);max-width:782px;margin-inline:0;
+    }
+  }
+  @media (max-width:840px){
+    #publicationPage .publication-intro{margin-top:18px;font-size:15px;line-height:1.45;}
+    #publicationPage .publication-intro p + p{margin-top:6px;}
+    #publicationPage .publication-header .publication-intro-rule{margin:20px 0 28px;}
+  }
+</style>
+</head>
+<body>
+<div class="portal-bar">
+<div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Recursos oficiales de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Los recursos web oficiales del Movimiento Internacional Global Citizens (GCIM) están disponibles en las siguientes direcciones:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
+</div>
+<div class="topline"></div>
+<header class="masthead">
+<div class="masthead-inner">
+<a aria-label="Global Citizens home" class="brand" href="index-es.html">
+<div aria-hidden="true" class="mark emblem-tint" id="headerEmblem"></div>
+<div class="brand-copy">
+<strong data-en="Global Citizens" data-ru="Global Citizens" data-uk="Global Citizens">Global Citizens</strong>
+<span data-ar="الحركة الدولية" data-en="International Movement" data-es="Movimiento internacional" data-fr="Mouvement international" data-ru="Международное движение" data-uk="Міжнародний рух" data-zh="国际运动">Movimiento internacional</span>
+</div>
+</a>
+<div class="office-wrap">
+<div class="office" data-ar="المكتب الصحفي" data-en="Press Office" data-es="Oficina de Prensa" data-fr="Service de presse" data-ru="Пресс-офис" data-uk="Пресофіс" data-zh="新闻办公室">Oficina de Prensa</div>
+<div class="track-two" data-ar="دبلوماسية المسار الثاني" data-en="Track II Diplomacy" data-es="Diplomacia de segunda vía" data-fr="Diplomatie non gouvernementale" data-ru="Дипломатия второго трека" data-uk="Дипломатія другого треку" data-zh="二轨外交">Diplomacia de segunda vía</div>
+</div>
+<div aria-label="Language selector" class="lang" role="group">
+<button aria-pressed="false" data-lang-btn="en" title="English" type="button">EN</button>
+<button aria-pressed="false" data-lang-btn="ar" title="العربية" translate="no" type="button">AR</button>
+<button aria-pressed="true" data-lang-btn="es" title="Español" type="button" class="active">ES</button>
+<button aria-pressed="false" data-lang-btn="zh" title="中文" type="button">ZH</button>
+<button aria-pressed="false" data-lang-btn="ru" title="Русский" type="button">RU</button>
+<button aria-pressed="false" data-lang-btn="fr" title="Français" type="button">FR</button>
+<button aria-pressed="false" data-lang-btn="uk" title="Українська" translate="no" type="button">UA</button>
+</div>
+<div class="mobile-actions">
+<label aria-label="Language" class="mobile-lang-wrap">
+<select class="mobile-lang notranslate" id="mobileLang" translate="no">
+<option selected translate="no" value="en">EN</option>
+<option translate="no" value="ar">AR</option>
+<option translate="no" value="es" selected>ES</option>
+<option translate="no" value="zh">ZH</option>
+<option translate="no" value="ru">RU</option>
+<option translate="no" value="fr">FR</option>
+<option translate="no" value="uk">UA</option>
+</select>
+</label>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</header>
+<div class="nav-wrap">
+<nav aria-label="Main navigation" class="nav" id="mobileNav">
+<div class="nav-links">
+<a class="active" data-ar="الكل" data-en="All" data-es="Todo" data-fr="Tout" data-ru="Все" data-uk="Усі" data-zh="全部" href="index-es.html">Todo</a>
+<details class="nav-dropdown movement-menu">
+<summary data-en="Movement" data-ar="الحركة" data-es="Movimiento" data-zh="运动" data-ru="Движение" data-fr="Mouvement" data-uk="Рух">Movimiento</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="movement-official-statements" data-en="Official Statements" data-ar="البيانات الرسمية" data-es="Declaraciones oficiales" data-zh="官方声明" data-ru="Официальные заявления" data-fr="Déclarations officielles" data-uk="Офіційні заяви" href="movement-official-statements-es.html">Declaraciones oficiales</a>
+<a class="nav-submenu-link" data-category-nav="movement-press-releases" data-en="Press Releases" data-ar="البيانات الصحفية" data-es="Comunicados de prensa" data-zh="新闻稿" data-ru="Пресс-релизы" data-fr="Communiqués de presse" data-uk="Пресрелізи" href="movement-press-releases-es.html">Comunicados de prensa</a>
+<a class="nav-submenu-link" data-category-nav="movement-open-letters-petitions" data-en="Open Letters &amp; Petitions" data-ar="الرسائل المفتوحة والعرائض" data-es="Cartas abiertas y peticiones" data-zh="公开信与请愿书" data-ru="Открытые письма и петиции" data-fr="Lettres ouvertes et pétitions" data-uk="Відкриті листи та петиції" href="movement-open-letters-petitions-es.html">Cartas abiertas y peticiones</a>
+<a class="nav-submenu-link" data-category-nav="movement-urgent-appeals-cases" data-en="Urgent Appeals &amp; Cases" data-ar="النداءات العاجلة والقضايا" data-es="Llamamientos urgentes y casos" data-zh="紧急呼吁与个案" data-ru="Срочные обращения и дела" data-fr="Appels urgents et dossiers" data-uk="Термінові звернення та справи" href="movement-urgent-appeals-cases-es.html">Llamamientos urgentes y casos</a>
+<a class="nav-submenu-link" data-category-nav="movement-reports-submissions" data-en="Reports &amp; Submissions" data-ar="التقارير والمذكرات المقدمة" data-es="Informes y comunicaciones" data-zh="报告与提交材料" data-ru="Доклады и представления" data-fr="Rapports et communications" data-uk="Доповіді та подання" href="movement-reports-submissions-es.html">Informes y comunicaciones</a>
+</div>
+</details>
+<details class="nav-dropdown coordinator-menu">
+<summary data-en="Coordinator" data-ar="المنسق" data-es="Coordinador" data-zh="协调员" data-ru="Координатор" data-fr="Coordinateur" data-uk="Координатор">Coordinador</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="coordinator-statements-commentary" data-en="Statements and Commentary" data-ar="البيانات والتعليقات" data-es="Declaraciones y comentarios" data-zh="声明与评论" data-ru="Заявления и комментарии" data-fr="Déclarations et commentaires" data-uk="Заяви та коментарі" href="coordinator-statements-commentary-es.html">Declaraciones y comentarios</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-speeches-remarks" data-en="Speeches and Remarks" data-ar="الخطب والكلمات" data-es="Discursos e intervenciones" data-zh="演讲与讲话" data-ru="Речи и выступления" data-fr="Discours et allocutions" data-uk="Промови та виступи" href="coordinator-speeches-remarks-es.html">Discursos e intervenciones</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-policy-perspectives" data-en="Policy Perspectives" data-ar="رؤى حول السياسات" data-es="Perspectivas sobre políticas" data-zh="政策观点" data-ru="Взгляды на политику" data-fr="Perspectives sur les politiques" data-uk="Погляди на політику" href="coordinator-policy-perspectives-es.html">Perspectivas sobre políticas</a>
+</div>
+</details>
+<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about-es.html" id="aboutLink">Quiénes somos</a>
+</div>
+<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries-es.html" id="mediaInquiriesLink">Consultas de los medios</a>
+</nav>
+</div>
+<main>
+<article class="publication-shell" id="publicationPage">
+<a class="back-to-news" data-ar="← العودة إلى الأخبار" data-en="← Back to News" data-es="← Volver a las noticias" data-fr="← Retour aux actualités" data-ru="← Вернуться к новостям" data-uk="← Повернутися до новин" data-zh="← 返回新闻" href="index-es.html" id="backToNews">← Volver a las noticias</a>
+<button aria-label="Copy link" class="copy-link-button" id="copyLinkButton" title="Copy link" type="button">
+<span aria-hidden="true">⧉</span><span class="sr-only" data-ar="نسخ الرابط" data-en="Copy link" data-es="Copiar enlace" data-fr="Copier le lien" data-ru="Скопировать ссылку" data-uk="Копіювати посилання" data-zh="复制链接" id="copyLinkLabel">Copiar enlace</span>
+</button>
+<header class="publication-header">
+<div class="publication-meta">
+<time class="publication-date" datetime="2026-09-29" id="publicationDate">29 de septiembre de 2026</time>
+<span class="publication-category" id="publicationCategory">Actividades del Coordinador</span>
+</div>
+<h1 class="publication-title" id="publicationTitle">Arquitectura de la diplomacia confidencial: mecanismos para facilitar la liberación de personas detenidas mediante el diálogo de actores no gubernamentales con Estados y otras partes implicadas</h1>
+<div class="publication-intro"><p>Intervención del Coordinador General de Global Citizens en la sesión plenaria del Foro Internacional «Alianza por los Derechos y las Libertades Humanas», 29 de septiembre de 2026, Roma</p><p>Formato: diálogo de expertos a puerta cerrada mediante videoconferencia, con la participación de defensores de los derechos humanos, periodistas y representantes de la sociedad civil —ciudadanos extranjeros con experiencia en actividades profesionales y cívicas durante su estancia en Rusia—.</p></div>
+<div class="publication-rule publication-intro-rule"></div>
+</header>
+<div class="publication-body" id="publicationBody"><p>Excelencias, señoras y señores, estimados colegas:</p><p>permítanme comenzar con la historia de una persona.</p><p>Una noche de 2023, Pavel Zh., miembro de las Fuerzas Armadas de Ucrania, llamó a su hermano antes de dirigirse a las posiciones en el bosque de Serebriansky, cerca de Kreminna. Aquella fue su última conversación. Una vez que la unidad ocupó sus posiciones, se perdió el contacto con Pavel Zh.; sin embargo, durante algún tiempo su teléfono siguió dejando un rastro digital: según la familia, la ubicación del dispositivo se registró en una localidad que entonces se encontraba bajo el control de las fuerzas rusas. Después desapareció también aquella señal.</p><p>En los años transcurridos desde entonces, la familia no ha recibido información que permita establecer con certeza qué ocurrió con Pavel. Su muerte no ha sido confirmada; tampoco existe confirmación oficial de que se encuentre en cautiverio. Su destino permanece en esa zona de incertidumbre que en los documentos oficiales se designa con la fórmula «desaparecido en paradero desconocido», mientras que para sus familiares se reduce a una pregunta mucho más sencilla y dolorosa: si está vivo y dónde se encuentra.</p><p>El padre de Pavel es un oficial de carrera retirado y médico militar que prestó servicio en el ejército durante más de treinta años. El servicio militar fue su profesión durante gran parte de su vida. Ahora espera del sistema del que él mismo formó parte durante décadas una respuesta sobre el destino de su propio hijo.</p><p>Comienzo precisamente con esta historia porque casos como este no son importantes únicamente por su dimensión humana. También permiten comprender por qué las estadísticas sobre las personas desaparecidas durante la guerra son considerablemente más complejas de lo que puede parecer al observar por primera vez las cifras. En mayo de 2024, Global Citizens llamó la atención sobre datos que situaban en aproximadamente 37 000 el número de ucranianos desaparecidos, entre militares y civiles. Más de dos años después, esa cifra ya no puede ofrecer una descripción fiable de la magnitud actual del problema. No solo han cambiado las cifras, sino también, y no menos importante, nuestra comprensión de hasta qué punto categorías muy distintas de personas quedan agrupadas dentro de una misma estadística.</p><p>Ante todo, es necesario distinguir entre los militares desaparecidos durante las hostilidades y los civiles detenidos en los territorios ocupados o trasladados a Rusia. Para las familias, en ambos casos el punto de partida sigue siendo la incertidumbre. Sin embargo, desde la perspectiva del derecho internacional, de los registros estatales y de los mecanismos de retorno, se trata de dos problemas distintos.</p><p>Estimados colegas, permítanme detenerme primero en la situación de los militares.</p><p>La condición de militar desaparecido, por sí sola, apenas dice nada sobre lo que realmente le ha sucedido a una persona. Puede haber muerto sin que su cuerpo haya sido todavía localizado o identificado. Puede haber quedado separado de su unidad. Y, por último, un militar puede haber sido capturado, sin que la información al respecto llegue necesariamente con rapidez a la parte ucraniana o al Comité Internacional de la Cruz Roja.</p><p>En agosto de 2026, Ucrania logró el regreso de diez miembros de las Fuerzas Armadas y de la Guardia Nacional que, hasta el momento de su retorno, figuraban como desaparecidos. Dos de ellos eran buscados desde 2024 y los otros ocho desde 2025.</p><p>Naturalmente, este episodio por sí solo no permite extraer conclusiones sobre el destino del conjunto de militares desaparecidos a partir de lo sucedido a esas diez personas. Sin embargo, confirma una circunstancia de importancia fundamental: la ausencia de una condición confirmada de prisionero de guerra no significa que la persona no se encuentre en cautiverio.</p><p>Es precisamente aquí donde surge la zona de incertidumbre más angustiosa para los familiares. Mientras no haya información sobre la muerte y, al mismo tiempo, tampoco exista confirmación del cautiverio, la familia se ve obligada a seguir los intercambios, examinar fotografías de personas liberadas, buscar testimonios de antiguos prisioneros de guerra y comprobar cualquier información que, siquiera indirectamente, pueda indicar qué ha ocurrido con la persona.</p><p>A 18 de septiembre de 2026, Ucrania informaba del regreso del cautiverio de 8 823 militares. En total, para entonces habían regresado a sus hogares 9 726 ucranianos adultos, incluidos 903 civiles.</p><p>Pero un prisionero de guerra que ha regresado y un militar desaparecido pertenecen a categorías estadísticas diferentes. En el primer caso, el hecho del cautiverio está establecido. En el segundo, la cuestión principal sigue siendo determinar el destino de la persona.</p><p>Cuando la condición está confirmada, la situación se vuelve considerablemente más clara. Así, en el intercambio del 5 de junio de 2026, los 186 militares ucranianos que regresaron, según la Oficina del Comisionado de Derechos Humanos del Parlamento de Ucrania, habían sido confirmados oficialmente por el Comité Internacional de la Cruz Roja como prisioneros de guerra.</p><p>El caso de Pavel se encuentra en una fase anterior. La familia dispone de información sobre las circunstancias de su desaparición y sobre la posterior geolocalización de su teléfono, pero esos datos no bastan para afirmar que se encuentre o se haya encontrado en cautiverio.</p><p>Por ello, las estadísticas de militares desaparecidos no pueden convertirse automáticamente en estadísticas de prisioneros. Pero sería igualmente erróneo considerar que no existe ningún solapamiento entre ambos conjuntos.</p><p>Permítanme ahora pasar a otra categoría: los civiles. Aquí la incertidumbre surge en circunstancias diferentes y, en muchos aspectos, adquiere un carácter aún más complejo.</p><p>Con los civiles, la situación es distinta.</p><p>En febrero de 2025, The Washington Post relató la historia del ucraniano Vlad y de su esposa, Nadezhda Yevdokimova. Militares rusos detuvieron a Vlad en un puesto de control en el nordeste de Ucrania. Durante varios meses después de aquello, su esposa no dispuso de información fiable sobre el lugar donde se encontraba su marido.</p><p>La primera confirmación no llegó de un organismo estatal ni a través de un procedimiento oficial de notificación. Nadezhda recibió una llamada desde un número ruso. Su nombre y su número de teléfono estaban escritos en un pequeño trozo de papel que alguien había conseguido sacar clandestinamente de una celda oculto en un carrete de hilo. Así supo la familia que Vlad estaba vivo y se encontraba en una prisión rusa. Posteriormente aparecieron datos sobre sus traslados entre distintos establecimientos penitenciarios.</p><p>Lo esencial de esta historia no es tanto el insólito detalle de la nota como la propia forma en que se obtuvo la información. La persona se encontraba de hecho dentro del sistema penitenciario, mientras que durante mucho tiempo su familia ni siquiera dispuso de confirmación oficial de su paradero.</p><p>Son precisamente casos como este los que hacen especialmente poco fiables las estadísticas sobre la detención de civiles.</p><p>El prisionero de guerra tiene una condición específica prevista por el derecho internacional humanitario. La situación jurídica de un civil detenido es distinta. Algunos civiles son objeto de actuaciones penales; a otros no se les formulan cargos durante largos periodos; otros son inicialmente recluidos en lugares no oficiales. Defensores de los derechos humanos y periodistas han descrito casos de traslados de personas entre los territorios ocupados y establecimientos situados en Rusia, en ocasiones sin contacto estable con sus familiares.</p><p>The Washington Post escribió sobre una categoría de personas a las que los activistas que trabajan en su búsqueda denominaban «congeladas»: la persona está bajo custodia, pero su situación jurídica sigue siendo incierta y la familia se ve prácticamente privada de la posibilidad de determinar su condición mediante los procedimientos estatales ordinarios.</p><p>Aquí se manifiesta una diferencia fundamental respecto de la historia de Pavel. En el caso de un militar desaparecido, se desconoce si llegó a producirse su captura. En el caso de algunos civiles, la detención ya se ha producido, pero la incertidumbre surge dentro del propio sistema de detención.</p><p>Existe además otra diferencia fundamental: los mecanismos de retorno.</p><p>Para un militar que ha adquirido la condición de prisionero de guerra existe una categoría claramente definida por el derecho internacional y una práctica consolidada de intercambios. Las partes elaboran listas, se lleva a cabo una verificación y posteriormente se alcanzan acuerdos sobre operaciones concretas de intercambio.</p><p>Para los civiles no existe un mecanismo comparable.</p><p>En julio de 2026, el Servicio Europeo de Acción Exterior señaló expresamente que, a diferencia de los prisioneros de guerra, los civiles detenidos no están comprendidos en ningún mecanismo internacional de intercambio previsto por los Convenios de Ginebra. Precisamente por ello, la Unión Europea vincula su retorno a la presión diplomática, la coordinación internacional y el trabajo específico sobre casos concretos.</p><p>La lógica jurídica es aquí fundamentalmente distinta. El derecho internacional no contempla la detención de un civil con el propósito de intercambiarlo posteriormente. La Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos subraya que los civiles deben ser puestos en libertad en cuanto dejan de existir fundamentos jurídicos para mantenerlos detenidos.</p><p>Sin embargo, la práctica de la guerra ha resultado considerablemente más compleja que la construcción jurídica.</p><p>En efecto, se ha producido el retorno de civiles en el marco de operaciones realizadas simultáneamente con intercambios de prisioneros de guerra. Según las Naciones Unidas, durante los intercambios de mayo y agosto de 2025, Rusia entregó a Ucrania a 179 civiles detenidos.</p><p>No obstante, esto no se convirtió en un procedimiento estable comparable al intercambio de militares.</p><p>En julio de 2026, la Unión Europea y Ucrania abordaron específicamente el problema de los civiles detenidos como objeto de coordinación en materia de política exterior y reclamaron el retorno inmediato, seguro e incondicional de los civiles ucranianos detenidos arbitrariamente.</p><p>Las estadísticas de retornos muestran con claridad la magnitud de las diferencias. A 18 de septiembre, Ucrania informaba del regreso de 8 823 prisioneros de guerra y de solo 903 civiles. Estas cifras no pueden compararse directamente como indicadores de la eficacia de dos mecanismos análogos: sus fundamentos jurídicos y los regímenes de detención son distintos. Pero la propia diferencia permite comprender por qué la cuestión de los civiles sigue constituyendo un problema separado y considerablemente más complejo.</p><p>Además, en el caso de los civiles suele existir una etapa previa adicional: antes de tratar de conseguir la liberación, es necesario determinar que la persona se encuentra efectivamente privada de libertad.</p><p>Por tanto, cuando no se conoce el paradero de un civil detenido, se plantean dos tareas sucesivas: primero hay que localizar a la persona y confirmar que está detenida; después, trabajar para lograr su retorno.</p><p>Y es precisamente aquí donde llegamos directamente a la cuestión de la diplomacia confidencial. Cuando no existe un mecanismo internacional universal capaz de convertir automáticamente el hecho acreditado de que una persona está detenida en un procedimiento para su retorno, adquiere especial importancia el espacio de interacción directa y, a menudo, no pública entre Estados, estructuras internacionales, mediadores, representantes de la sociedad civil y otras partes capaces de contribuir a determinar el destino de una persona concreta y facilitar su regreso.</p><p>Excelencias, señoras y señores, permítanme pasar ahora directamente a las cifras, porque son precisamente sus distintas interpretaciones las que con frecuencia distorsionan la percepción de la verdadera magnitud del problema.</p><p>A mediados de 2026, en el discurso internacional oficial se había consolidado una estimación de aproximadamente 16 000 civiles ucranianos detenidos por la parte rusa.</p><p>El 15 de julio, el Servicio Europeo de Acción Exterior citó datos de las autoridades ucranianas: alrededor de 16 000 civiles se encuentran actualmente retenidos por Rusia, muchos de ellos procedentes de los territorios ocupados.</p><p>En agosto, las Naciones Unidas ofrecieron una estimación comparable. Associated Press informó de que, según una estimación de las Naciones Unidas, más de 16 000 civiles detenidos por Rusia durante la guerra continuaban privados de libertad; muchos permanecían incomunicados.</p><p>Es una cifra importante, pero puede interpretarse fácilmente de manera incorrecta.</p><p>No significa que exista una lista pública y plenamente verificada de 16 000 nombres, con el lugar de detención conocido de cada persona.</p><p>Civis Fortis, citando datos de la Oficina del Comisionado de Derechos Humanos del Parlamento de Ucrania, señala que, en junio de 2026, se habían verificado 1 878 casos de civiles retenidos por Rusia. De ellos, 892 habían sido confirmados oficialmente por el Comité Internacional de la Cruz Roja.</p><p>La diferencia entre los 892 casos confirmados por el CICR, los 1 878 casos verificados y la estimación general de aproximadamente 16 000 pone de manifiesto precisamente el problema fundamental: cada una de estas cifras refleja un grado distinto de confirmación de la información sobre el destino de personas concretas.</p><p>Sin embargo, también esta estimación debe considerarse con la debida cautela.</p><p>Las estimaciones de las organizaciones de derechos humanos son considerablemente más elevadas.</p><p>Civis Fortis recoge distintas estimaciones de defensores de los derechos humanos según las cuales el número de civiles secuestrados en los territorios temporalmente ocupados se sitúa entre 16 000 y 30 000. La propia organización subraya, no obstante, que se desconoce el número exacto.</p><p>En mayo de 2026, Le Monde también llamó la atención sobre la considerable diferencia entre la cifra utilizada oficialmente y las estimaciones de los defensores de los derechos humanos. Según el periódico francés, las organizaciones dedicadas a buscar a estas personas y documentar casos de cautiverio de civiles consideran que la cifra real es considerablemente superior a la estimación oficial de 16 000.</p><p>La expresión «decenas de miles», por otra parte, no apareció únicamente en el ámbito ucraniano de los derechos humanos. Ya en el informe del Departamento de Estado de los Estados Unidos sobre la situación en 2023 se señalaba que organismos estatales ucranianos y organizaciones de la sociedad civil estimaban en decenas de miles el número total de civiles ucranianos detenidos por las fuerzas rusas.</p><p>El mismo informe, citando al entonces Ministerio de Reintegración de Ucrania, ofrecía una cifra más concreta: a finales de septiembre de 2023, más de 25 000 civiles se encontraban en distintos lugares de detención bajo el control de las fuerzas rusas o de estructuras vinculadas a ellas, junto con 6 670 militares.</p><p>Esta cifra no puede compararse mecánicamente con la estimación actual de 16 000. Se trata de fechas, conjuntos de datos y criterios de contabilización diferentes. Algunas personas fueron liberadas; en otros casos pudo cambiar la condición de la persona; determinados datos fueron posteriormente precisados.</p><p>Sin embargo, la propia evolución de las estimaciones muestra que los 16 000 actuales no pueden considerarse un límite superior establecido.</p><p>Se trata, más bien, de una de las referencias más prudentes dentro de un sistema en el que una parte importante de los casos continúa sin estar suficientemente verificada.</p><p>Permítanme detenerme por separado en otra cifra que aparece periódicamente en el debate público y cuyo uso exige especial precisión.</p><p>Existe, en efecto, una cifra aún mayor.</p><p>En una publicación de 2025, la International Society for Human Rights afirmó que se desconocía el destino de más de 50 000 civiles.</p><p>Esta cifra supera de forma apreciable las demás estimaciones y, precisamente por ello, exige la comprobación más rigurosa.</p><p>En ese mismo material de la ISHR aparecen datos sobre 10 291 personas cuyo paradero había sido establecido. Esta cifra coincide con las estadísticas oficiales ucranianas de principios de febrero de 2025: en aquel momento, la Oficina Nacional de Información comunicaba que se buscaba a 62 948 personas y que, en 10 291 casos, se había establecido su paradero o se habían identificado los cuerpos de las personas fallecidas.</p><p>Sin embargo, la fuente oficial ucraniana subrayaba expresamente que las 62 948 personas constituían un conjunto general que incluía tanto a militares como a civiles.</p><p>Por consiguiente, la diferencia aritmética supera efectivamente las 50 000 personas, pero sería incorrecto presentarla como el número de civiles desaparecidos y, con mayor razón, como el número de civiles recluidos en prisiones rusas.</p><p>Es un ejemplo revelador de cómo una misma estadística puede cambiar de significado al pasar de un documento a otro.</p><p>Por tanto, esta cifra puede dar una idea de la magnitud del problema de las personas cuyo destino no ha podido establecerse, pero no existen fundamentos para considerarla un número acreditado de civiles privados de libertad.</p><p>A día de hoy, la imagen más fiable es otra: alrededor de 16 000 es la estimación actual de las autoridades ucranianas citada por el Servicio Europeo de Acción Exterior; las Naciones Unidas ofrecen una estimación comparable; entre 16 000 y 30 000 es el intervalo citado por determinadas organizaciones de derechos humanos; y «decenas de miles» es una categoría estimativa más amplia que aparece tanto en materiales de organizaciones de derechos humanos como en un informe anterior del Departamento de Estado de los Estados Unidos.</p><p>Y aquí es necesario introducir otra precisión, sin la cual cualquier comparación entre estas cifras induciría a error.</p><p>Existe otra cifra que supera ampliamente todas las mencionadas anteriormente.</p><p>A finales de agosto de 2026, 274 000 personas seguían figurando como desaparecidas en el sistema de la Agencia Central de Búsquedas del Comité Internacional de la Cruz Roja en relación con el conflicto armado internacional ruso-ucraniano. Para entonces, el CICR había mantenido alrededor de 814 000 contactos con familias, y 18 300 familias habían recibido información sobre el destino o el paradero de sus seres queridos.</p><p>Pero 274 000 no es el número de ucranianos recluidos en prisiones rusas ni el número de prisioneros de guerra ucranianos.</p><p>La Agencia Central de Búsquedas del CICR trabaja con militares y civiles de ambas partes que han perdido el contacto con sus familias o se encuentran en poder de la parte adversa. La organización actúa como intermediario neutral, recopilando y transmitiendo información a Rusia y Ucrania.</p><p>Una confusión similar se produce en torno al Registro ucraniano de Personas Desaparecidas en Circunstancias Especiales: este también incluye tanto a militares como a civiles.</p><p>Por ello, las cifras de 274 000, 30 000, 16 000 y 8 823 no pueden sumarse, restarse entre sí ni presentarse como etapas sucesivas de una misma serie estadística.</p><p>Responden a preguntas distintas.</p><p>274 000 es el número de personas que continúan desaparecidas en el sistema de búsqueda del CICR.</p><p>Alrededor de 16 000 es la estimación actual del número de civiles ucranianos retenidos por Rusia.</p><p>8 823 es el número de militares ucranianos que habían regresado del cautiverio a 18 de septiembre de 2026.</p><p>Sigue siendo desconocido, en cambio, el número de personas sobre las que existe información incompleta que no permite determinar inequívocamente su condición.</p><p>Es precisamente aquí donde, en la práctica, las historias de militares y civiles entran en contacto, aunque desde el punto de vista jurídico y estadístico sean diferentes. Un militar puede figurar como desaparecido y ser localizado posteriormente en cautiverio. Un civil puede encontrarse en un establecimiento penitenciario mientras su familia continúa buscándolo y considerándolo desaparecido.</p><p>Estimados colegas, detrás de estas diferencias estadísticas existe otro problema directamente relacionado con el tema de nuestra conversación de hoy: la falta de transparencia del propio sistema.</p><p>La dificultad para realizar el recuento está directamente relacionada con la opacidad del sistema de detención.</p><p>Las Naciones Unidas han documentado detenciones arbitrarias de civiles ucranianos, detenciones en régimen de incomunicación, torturas y malos tratos. En agosto de 2026, durante una reunión informal con arreglo a la fórmula Arria, con la participación de miembros del Consejo de Seguridad de las Naciones Unidas, representantes de la ONU volvieron a señalar violaciones de esta naturaleza contra civiles detenidos y prisioneros de guerra. La parte rusa rechazó las acusaciones y calificó el debate como parte de una campaña de desinformación.</p><p>En julio, la Unión Europea impuso sanciones a funcionarios rusos y a una organización; según la evaluación de la UE, esas personas y la organización eran responsables de graves violaciones de los derechos de los prisioneros de guerra ucranianos y de los civiles detenidos en Rusia y en los territorios ocupados.</p><p>El acceso a los lugares de detención y la confirmación del propio hecho de que una persona se encuentre en un establecimiento concreto siguen constituyendo un problema específico.</p><p>Por ello, el debate sobre el número de personas privadas de libertad no es simplemente una cuestión estadística. Cuanto menos transparente es el sistema, mayor es la diferencia entre el número real de personas recluidas en él y el número de aquellas cuyo paradero puede confirmarse desde el exterior.</p><p>Esta falta de transparencia determina precisamente una de las tareas centrales de la diplomacia confidencial. Antes de hablar de la liberación de una persona, a menudo es necesario conseguir que se confirme el propio hecho de que se encuentra en un lugar determinado. Las negociaciones sobre su retorno suelen ir precedidas de un trabajo destinado a establecer su destino. A su vez, un resultado público suele estar precedido por una comunicación no pública prolongada.</p><p>En este contexto, la diplomacia confidencial no constituye una alternativa al derecho internacional ni debe sustituir a los mecanismos estatales. Su posible función se manifiesta allí donde los procedimientos formales resultan insuficientes para resolver una cuestión humanitaria concreta y donde mantener un canal de comunicación puede contribuir a obtener información, confirmar una condición o facilitar el retorno de una persona.</p><p>Esto reviste especial importancia para los actores no gubernamentales. No poseen las competencias de un Estado, no pueden adoptar decisiones sobre una liberación y no deben crear la ilusión de que disponen de tales facultades. Su posible función es otra: establecer y mantener la comunicación, transmitir información verificable, contribuir a elaborar soluciones de mediación aceptables y mantener el diálogo con los actores estatales y las demás partes implicadas de cuyas decisiones depende, de hecho, el destino de una persona concreta.</p><p>Precisamente por ello, un trabajo eficaz en este ámbito no siempre es compatible con la publicidad. Un canal de negociación puede existir únicamente mientras las partes tengan la certeza de que el propio hecho del contacto, las propuestas intermedias y las condiciones objeto de discusión no se convertirán en instrumentos de presión pública antes de alcanzar un resultado. En cuestiones humanitarias, la confidencialidad, en determinadas circunstancias, deja de ser una forma de ocultar la actividad y se convierte en una de las condiciones necesarias para preservar la propia posibilidad de diálogo.</p><p>Al mismo tiempo, la confidencialidad no debe significar ausencia de principios. Al contrario: cuanto menos abierto esté el proceso a la observación externa, más claros deben permanecer sus límites —el carácter humanitario del objetivo, la fiabilidad de la información transmitida, la inadmisibilidad de comerciar con el destino de una persona y la comprensión de que el criterio último no es la visibilidad pública de ese trabajo, sino un resultado concreto para una persona concreta—.</p><p>Para concluir, permítanme volver a las dos historias humanas que han acompañado nuestra conversación de hoy.</p><p>La historia de Pavel comienza en la línea del frente.</p><p>Es militar. La última conversación de la que tiene conocimiento su familia tuvo lugar antes de que se dirigiera a las posiciones en el bosque de Serebriansky. Tras su desaparición, según sus familiares, durante algún tiempo su teléfono fue localizado en una población que se encontraba bajo control ruso.</p><p>Estos datos permiten considerar distintas hipótesis, incluida la posibilidad de que fuera capturado. Pero ninguna de ellas ha sido confirmada hasta ahora.</p><p>La historia de Vlad comienza de otra manera.</p><p>Es civil. Fue detenido y posteriormente quedó dentro del sistema penitenciario ruso. Sin embargo, su familia tuvo que determinar su paradero a través de un canal no oficial: un mensaje sacado clandestinamente de una celda.</p><p>Desde el punto de vista jurídico, estos casos no pueden equipararse. Pavel es un militar cuyo destino no ha sido establecido. Vlad es un civil cuya detención pudo confirmarse.</p><p>También son distintos los mecanismos de su posible retorno.</p><p>Pero, desde el punto de vista de las familias, existe una semejanza evidente entre estas categorías. Los sistemas estatales operan con condiciones y categorías: «desaparecido», «prisionero de guerra», «civil detenido», «verificado», «confirmado por el CICR». La familia trata ante todo de averiguar otra cosa: si la persona está viva y dónde se encuentra.</p><p>Cuando Global Citizens escribió en mayo de 2024 sobre 37 000 personas desaparecidas, una única cifra global todavía podía crear la impresión de que se trataba de un solo problema. Ahora resulta evidente que son varios problemas superpuestos.</p><p>Los militares y los civiles deben contabilizarse por separado.</p><p>Los militares desaparecidos no pueden considerarse automáticamente prisioneros.</p><p>Los civiles detenidos no pueden incluirse en las estadísticas de prisioneros de guerra.</p><p>Los registros generales de personas desaparecidas no pueden presentarse como si indicaran el número de personas recluidas en prisiones rusas.</p><p>Y, al mismo tiempo, la ausencia de una persona de una lista confirmada tampoco significa que no se encuentre en un lugar de detención.</p><p>Para el padre de Pavel, oficial de carrera y médico militar que sirvió en el ejército durante más de treinta años, todas estas diferencias estadísticas solo tienen importancia en la medida en que alguno de estos sistemas sea capaz, en última instancia, de darle una respuesta sobre el destino de su hijo.</p><p>La familia de Vlad obtuvo esa respuesta, inicialmente gracias a un trozo de papel sacado clandestinamente de la prisión. Aquello todavía no significaba el regreso a casa, pero al menos puso fin a una forma de incertidumbre.</p><p>Para la familia de Pavel, esa incertidumbre persiste.</p><p>Y, en última instancia, es precisamente esto, y no la mayor de las cifras publicadas, lo que define la magnitud del problema: cuántas personas siguen encontrándose entre registros, condiciones jurídicas y lugares de detención mientras sus familias continúan esperando una respuesta a la pregunta más sencilla: ¿dónde están?</p><p>Para nuestra conversación de hoy, esta cuestión tiene además otra dimensión. En cada caso de este tipo es necesario encontrar un canal por el que la información pueda pasar de una parte a otra. A veces ese canal es la diplomacia estatal. A veces, una organización internacional. A veces, un mediador, un periodista, un defensor de los derechos humanos, un representante de la sociedad civil o una estructura no gubernamental capaz de mantener un diálogo con quienes, en el espacio público, no hablan entre sí.</p><p>La arquitectura de la diplomacia confidencial se compone precisamente de esos canales. No puede garantizar un resultado, y quienes participan en ella no deben prometer aquello que no están facultados para asegurar. Pero puede preservar un espacio de diálogo allí donde la ausencia de diálogo deja a una persona reducida a un simple número en alguno de varios registros que no coinciden entre sí.</p><p>Por ello, propondría evaluar este tipo de trabajo no por su grado de visibilidad pública, sino mediante un criterio mucho más práctico: si el canal existente permite establecer el destino de una persona, confirmar su paradero, transmitir la información necesaria a quienes pueden tomar una decisión y, en última instancia, acercar su retorno.</p><p>En este ámbito, la publicidad no siempre constituye una medida de eficacia. A veces, el trabajo más importante comienza precisamente allí donde terminan las declaraciones a la prensa y surge la posibilidad de una conversación directa: serena, profesional, confidencial y orientada a un resultado humanitario concreto.</p><p>Y si una conversación de este tipo permite siquiera a una sola familia obtener respuesta a una pregunta que lleva años sin respuesta, ese canal tiene razón de ser.</p><p>Excelencias, señoras y señores, gracias por su atención.</p><h2>Nota</h2><p>El presente texto constituye la versión pública de la intervención.</p><p>Determinadas informaciones y fragmentos expuestos durante la intervención y el debate posterior no se incluyen en el texto publicado. Su divulgación podría afectar a los intereses de personas concretas, generar riesgos para su seguridad y vulnerar la confidencialidad de las comunicaciones relacionadas con las cuestiones humanitarias examinadas.</p><p>Por este motivo, el contenido de dichos fragmentos no se divulga ni se concreta. Su ausencia de la presente publicación constituye una limitación deliberada de la versión pública y no altera el contenido general ni las principales conclusiones de la intervención.</p><h2>Fuentes y materiales de referencia de la intervención</h2><h2>Militares y prisioneros de guerra</h2><p>Oficina del Comisionado de Derechos Humanos del Parlamento de Ucrania — regreso de diez militares anteriormente considerados desaparecidos, 25 de agosto de 2026.</p><p>https://ombudsman.gov.ua/news_details/10-nashih-zahisnikiv-povernulisya-dodomu-u-den-nezalezhnosti</p><p>Oficina del Comisionado de Derechos Humanos del Parlamento de Ucrania — 9 726 ucranianos adultos retornados, incluidos 8 823 prisioneros de guerra y 903 civiles, 18 de septiembre de 2026.</p><p>https://www.ombudsman.gov.ua/en/news_details/pidtrimka-ssha-ta-vsogo-svitu-potribna-shchob-povernuti-ukrayinciv-dodomu</p><p>Oficina del Comisionado de Derechos Humanos del Parlamento de Ucrania — 186 militares que regresaron el 5 de junio de 2026 y fueron confirmados por el CICR como prisioneros de guerra.</p><p>https://www.ombudsman.gov.ua/news_details/75-j-obmin-polonenimi-186-ukrayinciv-povernulisya-dodomu</p><h2>Civiles detenidos</h2><p>Servicio Europeo de Acción Exterior — alrededor de 16 000 civiles ucranianos retenidos por Rusia; inexistencia de un mecanismo internacional de intercambio para ellos análogo al aplicable a los prisioneros de guerra, 15 de julio de 2026.</p><p>https://www.eeas.europa.eu/eeas/eu-steps-coordination-strengthen-international-action-ukrainian-civilian-detainees_en</p><p>Associated Press / ONU — más de 16 000 civiles continúan retenidos por Rusia, agosto de 2026.</p><p>https://apnews.com/article/6687451c1d1170e57ac2db32695e3d61</p><p>Civis Fortis — 1 878 civiles verificados, 892 confirmados por el CICR; estimaciones de organizaciones de derechos humanos sobre el número total: entre 16 000 y 30 000, 31 de agosto de 2026.</p><p>https://civisfortis.org.ua/en/publications/if-russia-returns-all-civilian-captives-tomorrow-ukraines-support-system-would-collapse-civis-fortis-study/</p><p>Le Monde — investigación sobre la magnitud de la detención de civiles y el carácter incompleto de las estadísticas oficiales, mayo de 2026.</p><p>https://www.lemonde.fr/en/international/article/2026/05/18/captured-imprisoned-and-tortured-russia-ignores-all-laws-and-does-whatever-it-wants-to-ukrainian-civilians_6753550_4.html</p><p>The Washington Post — investigación sobre civiles ucranianos en el sistema penitenciario ruso y la historia de Vlad y Nadezhda Yevdokimova, febrero de 2025.</p><p>https://www.washingtonpost.com/world/2025/02/09/russia-ukraine-prisons-civilians-frozen/</p><h2>Retorno de civiles y derecho internacional</h2><p>Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos — informe sobre el trato dispensado a civiles privados de libertad; 179 civiles retornados en el marco de las operaciones de intercambio de mayo y agosto de 2025.</p><p>https://ukraine.ohchr.org/sites/default/files/2025-10/2025-09-22%20Treatment%20of%20civilians_ENG.pdf</p><p>Consejo de la Unión Europea / Ucrania — declaración conjunta sobre los civiles detenidos, 13 de julio de 2026.</p><p>https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/joint-statement-by-the-high-representative-on-behalf-of-the-european-union-and-by-ukraine-on-civilian-detainees-and-the-humanitarian-consequences-of-russia-s-war-of-aggression/</p><h2>Estimaciones anteriores y controvertidas</h2><p>Departamento de Estado de los Estados Unidos — informe sobre derechos humanos correspondiente a 2023: fuentes estatales ucranianas y de la sociedad civil estimaban en decenas de miles el número de civiles detenidos; más de 25 000 civiles figuraban en los datos de las autoridades ucranianas a finales de septiembre de 2023.</p><p>https://2021-2025.state.gov/reports/2023-country-reports-on-human-rights-practices/ukraine/russia-occupied-areas/</p><p>International Society for Human Rights — publicación que señala que se desconoce el destino de más de 50 000 civiles.</p><p>https://ishr.org/ukraine-the-horror-in-my-house/</p><p>Oficina Nacional de Información de Ucrania — 62 948 personas buscadas a 4 de febrero de 2025; la cifra incluye tanto a militares como a civiles.</p><p>https://nib.gov.ua/news/majzhe-63-tisyachi-lyudej-v-ukraini-vvazhayutsya-zniklimi-bezvisti/</p><h2>Búsqueda internacional de personas desaparecidas</h2><p>Comité Internacional de la Cruz Roja — 274 000 personas seguían figurando como desaparecidas en el sistema de la Agencia Central de Búsquedas a finales de agosto de 2026; el sistema abarca tanto a militares como a civiles.</p><p>https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine</p><h2>Fuentes adicionales</h2><p>Global Citizens — publicación original del 5 de mayo de 2024.</p><p>https://gcim.eu/ru/05/05/2024/169022/</p><p>Consejo de la Unión Europea — Human rights violations against Ukrainian prisoners of war: Council lists 15 individuals and one entity, 13 de julio de 2026.</p><p>https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/human-rights-violations-against-ukrainian-prisoners-of-war-council-lists-15-individuals-and-one-entity/</p></div>
+<section class="publication-section" hidden id="resourcesSection">
+<h2 id="resourcesHeading">Enlaces y archivos adjuntos</h2>
+<div class="resources-list" id="resourcesList"></div>
+</section>
+</article>
+</main>
+<footer>
+<div class="footer-inner">
+<div>
+<div class="footer-brand">
+<div aria-label="Global Citizens emblem" class="footer-emblem emblem-tint" role="img"></div>
+<div class="footer-brand-text">
+<span>Global Citizens</span>
+<a class="footer-website" href="https://gcim.eu/" rel="noopener" target="_blank">www.gcim.eu</a>
+</div>
+</div>
+<div class="footer-copy" data-ar="يُدار هذا المورد الإلكتروني الرسمي من قبل الحركة الدولية Global Citizens. وتُدرج الروابط إلى الموارد الإلكترونية الخارجية حصراً لأغراض إعلامية ولتيسير الاطلاع، ولا ينبغي تفسيرها على أنها تأييد من جانب الحركة لأي منظمة أو للآراء أو السياسات أو المواقف المعبَّر عنها في تلك الموارد. ويخضع المستخدمون عند الوصول إلى موارد إلكترونية خارجية لسياسات الخصوصية والأمن المعمول بها في تلك الموارد." data-en="This official web resource is maintained by the International Movement Global Citizens. Links to external web resources are provided solely for informational purposes and convenience and do not imply endorsement by the Movement of any organization or of any views, policies, or positions expressed therein. Users who access external web resources are subject to the privacy and security policies applicable to those resources." data-es="Este recurso web oficial es administrado por el Movimiento Internacional Global Citizens. Los enlaces a recursos web externos se facilitan exclusivamente con fines informativos y para facilitar la consulta, y no deben interpretarse como una aprobación por parte del Movimiento de organización alguna ni de las opiniones, políticas o posiciones expresadas en dichos recursos. Los usuarios que accedan a recursos web externos quedan sujetos a las políticas de privacidad y seguridad aplicables a dichos recursos." data-fr="Cette ressource web officielle est administrée par le Mouvement international Global Citizens. Les liens vers des ressources web externes sont fournis à titre strictement informatif et pour faciliter la consultation ; ils ne sauraient être interprétés comme constituant une approbation, par le Mouvement, d’une quelconque organisation ni des opinions, politiques ou positions qui y sont exprimées. Les utilisateurs qui accèdent à des ressources web externes sont soumis aux politiques de confidentialité et de sécurité applicables à ces ressources." data-ru="Настоящий официальный веб-ресурс администрируется Международным движением Global Citizens. Ссылки на внешние веб-ресурсы предоставляются исключительно в информационных целях и для удобства пользователей и не следует рассматривать как означающие одобрение Движением какой-либо организации либо выражаемых на соответствующих ресурсах взглядов, политики или позиций. При переходе на внешние веб-ресурсы на пользователей распространяются действующие на соответствующих ресурсах правила конфиденциальности и безопасности." data-uk="Цей офіційний вебресурс адмініструється Міжнародним рухом Global Citizens. Посилання на зовнішні вебресурси надаються виключно з інформаційною метою та для зручності користувачів і не мають розглядатися як схвалення Рухом будь-якої організації, а також поглядів, політики чи позицій, висловлених на відповідних ресурсах. Під час переходу на зовнішні вебресурси на користувачів поширюються правила конфіденційності та безпеки, що застосовуються до відповідних ресурсів." data-zh="本官方网络资源由 Global Citizens 国际运动负责维护。所提供的外部网络资源链接仅用于信息参考并为用户提供便利，不应被视为本运动对任何组织，或对相关资源中所表达的观点、政策或立场的认可。用户访问外部网络资源时，应遵守适用于相关资源的隐私和安全政策。" id="footerDisclaimer">Este recurso web oficial es administrado por el Movimiento Internacional Global Citizens. Los enlaces a recursos web externos se facilitan exclusivamente con fines informativos y para facilitar la consulta, y no deben interpretarse como una aprobación por parte del Movimiento de organización alguna ni de las opiniones, políticas o posiciones expresadas en dichos recursos. Los usuarios que accedan a recursos web externos quedan sujetos a las políticas de privacidad y seguridad aplicables a dichos recursos.</div>
+</div>
+<div class="footer-contacts">
+<p class="footer-language-note" data-ar="تتاح مواد هذا الموقع باللغات الرسمية الست للأمم المتحدة، وكذلك باللغة الأوكرانية." data-en="Materials on this website are available in the six official languages of the United Nations, as well as in Ukrainian." data-es="Los materiales de este sitio web están disponibles en los seis idiomas oficiales de las Naciones Unidas, así como en ucraniano." data-fr="Le contenu du présent site est disponible dans les six langues officielles de l’Organisation des Nations Unies, ainsi qu’en ukrainien." data-ru="Материалы сайта представлены на шести официальных языках ООН, а также на украинском языке." data-uk="Матеріали сайту доступні шістьма офіційними мовами ООН, а також українською мовою." data-zh="本网站材料以联合国六种正式语文及乌克兰语提供。">Los materiales de este sitio web están disponibles en los seis idiomas oficiales de las Naciones Unidas, así como en ucraniano.</p>
+</div>
+<div class="footer-subscribe">
+<h3 data-ar="النشرة الإلكترونية" data-en="Email Updates" data-es="Actualizaciones por correo" data-fr="Actualités par e-mail" data-ru="Рассылка по электронной почте" data-uk="Електронна розсилка" data-zh="电子邮件更新" id="footerEmailUpdates">Actualizaciones por correo</h3>
+<p class="subscribe-copy" data-ar="اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي." data-en="Subscribe to receive the latest official communications from the Press Office." data-es="Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa." data-fr="Abonnez-vous pour recevoir les dernières communications officielles du Service de presse." data-ru="Подпишитесь, чтобы получать последние официальные сообщения Пресс-офиса." data-uk="Підпишіться на отримання актуальної офіційної інформації пресофісу." data-zh="订阅以接收新闻办公室发布的最新官方信息。" id="footerSubscribeCopy">Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa.</p>
+<form class="subscribe-form" id="subscribeForm" novalidate="">
+<label class="sr-only" data-ar="عنوان البريد الإلكتروني" data-en="Email address" data-es="Correo electrónico" data-fr="Adresse e-mail" data-ru="Адрес электронной почты" data-uk="Адреса електронної пошти" data-zh="电子邮件地址" for="subscribeEmail" id="footerEmailLabel">Correo electrónico</label>
+<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="Correo electrónico" required="" type="email">
+<button data-ar="اشترك" data-en="Subscribe" data-es="Suscribirse" data-fr="S’abonner" data-ru="Подписаться" data-uk="Підписатися" data-zh="订阅" id="footerSubscribeButton" type="submit">Suscribirse</button>
+</form>
+<div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">Puede cancelar su suscripción en cualquier momento.</div>
+</div>
+</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break">All Rights Reserved</div>
+</footer>
+<script src="scripts/static-publication.js?v=174"></script>
+</body>
+</html>

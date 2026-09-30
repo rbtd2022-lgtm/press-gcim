@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html data-alternate-ar="2026-06-13-uk-national-holiday-general-coordinator-ar.html" data-alternate-en="2026-06-13-uk-national-holiday-general-coordinator-en.html" data-alternate-es="2026-06-13-uk-national-holiday-general-coordinator-es.html" data-alternate-fr="2026-06-13-uk-national-holiday-general-coordinator-fr.html" data-alternate-ru="2026-06-13-uk-national-holiday-general-coordinator-ru.html" data-alternate-uk="2026-06-13-uk-national-holiday-general-coordinator-uk.html" data-alternate-zh="2026-06-13-uk-national-holiday-general-coordinator-zh.html" data-page-language="es" dir="ltr" lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con" name="description"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con" name="description">
 <title>Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos — Global Citizens</title>
-<link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html" id="canonicalUrl" rel="canonical"/>
-<meta content="index, follow" name="robots"/>
-<link href="assets/favicon.png" rel="icon" type="image/png"/>
-<link href="assets/favicon.ico" rel="shortcut icon"/>
-<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"/><style>
+<link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html" id="canonicalUrl" rel="canonical">
+<meta content="index, follow" name="robots">
+<link href="assets/favicon.png" rel="icon" type="image/png">
+<link href="assets/favicon.ico" rel="shortcut icon">
+<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"><style>
     @font-face{font-family:"ITCFranklinGothicW10-Md 862390";src:url("assets/itc-franklin-gothic-md.woff2") format("woff2"),url("assets/itc-franklin-gothic-md.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
     :root{
       --ink:#102133;
@@ -908,25 +907,6 @@
       font-size:23px;
       font-weight:600;
     }
-    .service-list{
-      border-top:1px solid var(--line);
-    }
-    .service-row{
-      display:grid;
-      grid-template-columns:minmax(160px,220px) 1fr;
-      gap:24px;
-      padding:14px 0;
-      border-bottom:1px solid var(--line);
-      font-size:14px;
-      line-height:1.5;
-    }
-    .service-label{
-      color:var(--muted);
-      font-weight:700;
-    }
-    .service-value{
-      color:var(--ink);
-    }
     .resources-list{
       display:grid;
       gap:10px;
@@ -961,7 +941,6 @@
       .publication-body{font-size:16px;line-height:24px}
       .publication-body h2{font-size:24px}
       .publication-rule{margin:24px 0 30px}
-      .service-row{grid-template-columns:1fr;gap:5px;padding:13px 0}
       .resource-item{align-items:flex-start}
     }
 
@@ -985,7 +964,6 @@
       .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
       .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
       .publication-title, .publication-body, .resource-item, .resource-title,
-      .service-value { min-width:0; max-width:100%; }
       .brand-copy { overflow:hidden; }
       .brand-copy strong { font-size:14px; line-height:1.1; white-space:nowrap; overflow-wrap:normal; }
       .footer-brand { font-size:17px; }
@@ -1062,35 +1040,6 @@
       .brand-copy span{font-size:12px}
     }
 
-
-    /* Non-English mobile footer fit */
-    @media (max-width:767px){
-      .footer-inner,
-      .footer-subscribe{min-width:0;max-width:100%}
-      .footer-copy,
-      .footer-language-note,
-      .subscribe-copy,
-      .footer-subscribe h3,
-      .subscribe-note,
-      .copyright{
-        max-width:100%;
-        white-space:normal;
-        overflow-wrap:anywhere;
-        word-break:normal;
-      }
-      .subscribe-form{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-        margin-inline:0;
-      }
-      .subscribe-form input,
-      .subscribe-form button{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-      }
-    }
 
     /* Mobile header fit and alignment */
     @media (max-width:840px){
@@ -1321,11 +1270,14 @@
         text-transform:none;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:manual;text-wrap:balance;
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body{
-        width:min(100%, 782px);max-width:min(100%, 782px);margin-inline:auto;
+        width:min(100%, 782px);max-width:min(100%, 782px);margin-inline:0;
         font-family:"Instrument Sans", sans-serif;
         font-size:clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
         font-style:normal;font-weight:400;line-height:1.6;letter-spacing:.2px;
         text-transform:none;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:manual;text-wrap:pretty;
+      }
+      html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.publication-meta,.publication-category,.publication-date,.publication-intro){
+        font-family:"Instrument Sans", sans-serif;
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body > p{margin:0;}
       html:is([lang="en"], [lang="fr"], [lang="es"]) .publication-body > p + p{
@@ -1524,8 +1476,8 @@
     }
     /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_END */
 </style>
-<link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-en.html" hreflang="en-US" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-ar.html" hreflang="ar" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html" hreflang="es" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-zh.html" hreflang="zh-Hans" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-ru.html" hreflang="ru" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-fr.html" hreflang="fr" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-uk.html" hreflang="uk" rel="alternate"/><link href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-en.html" hreflang="x-default" rel="alternate"/><meta content="article" property="og:type"/><meta content="Global Citizens" property="og:site_name"/><meta content="es_ES" property="og:locale"/><meta content="Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos" property="og:title"/><meta content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con" property="og:description"/><meta content="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html" property="og:url"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image:secure_url"/><meta content="image/jpeg" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Global Citizens Press Office" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos" name="twitter:title"/><meta content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con" name="twitter:description"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" name="twitter:image"/><meta content="Global Citizens Press Office" name="twitter:image:alt"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos","datePublished":"2026-06-13","publisher":{"@type":"Organization","name":"International Movement Global Citizens","url":"https://gcim.eu/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html"},"inLanguage":"es","description":"El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con","image":"https://press.gcim.eu/assets/social-preview.jpg"}</script>  <link rel="stylesheet" href="assets/gc-masthead-v296.css">
-</head>
+<link rel="stylesheet" href="assets/gc-masthead-v309.css">
+<link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-en.html"><link rel="alternate" hreflang="ar" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-ar.html"><link rel="alternate" hreflang="es" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html"><link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-zh.html"><link rel="alternate" hreflang="ru" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-ru.html"><link rel="alternate" hreflang="fr" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-fr.html"><link rel="alternate" hreflang="uk" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-uk.html"><link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-en.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Global Citizens"><meta property="og:locale" content="es_ES"><meta property="og:title" content="Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos"><meta property="og:description" content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con"><meta property="og:url" content="https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html"><meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Global Citizens Press Office"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos"><meta name="twitter:description" content="El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con"><meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta name="twitter:image:alt" content="Global Citizens Press Office"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Con motivo de la fiesta nacional del Reino Unido, el Coordinador General de Global Citizens felicitó a los socios y altos representantes británicos", "datePublished": "2026-06-13", "description": "El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con", "publisher": {"@type": "Organization", "name": "International Movement Global Citizens", "url": "https://gcim.eu/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://press.gcim.eu/2026-06-13-uk-national-holiday-general-coordinator-es.html"}, "inLanguage": "es", "image": "https://press.gcim.eu/assets/social-preview.jpg"}</script></head>
 <body>
 <div class="portal-bar">
 <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Recursos oficiales de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Los recursos web oficiales del Movimiento Internacional Global Citizens (GCIM) están disponibles en las siguientes direcciones:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
@@ -1547,7 +1499,7 @@
 <div aria-label="Language selector" class="lang" role="group">
 <button aria-pressed="false" data-lang-btn="en" title="English" type="button">EN</button>
 <button aria-pressed="false" data-lang-btn="ar" title="العربية" translate="no" type="button">AR</button>
-<button aria-pressed="true" class="active" data-lang-btn="es" title="Español" type="button">ES</button>
+<button aria-pressed="true" data-lang-btn="es" title="Español" type="button" class="active">ES</button>
 <button aria-pressed="false" data-lang-btn="zh" title="中文" type="button">ZH</button>
 <button aria-pressed="false" data-lang-btn="ru" title="Русский" type="button">RU</button>
 <button aria-pressed="false" data-lang-btn="fr" title="Français" type="button">FR</button>
@@ -1556,9 +1508,9 @@
 <div class="mobile-actions">
 <label aria-label="Language" class="mobile-lang-wrap">
 <select class="mobile-lang notranslate" id="mobileLang" translate="no">
-<option selected="" translate="no" value="en">EN</option>
+<option selected translate="no" value="en">EN</option>
 <option translate="no" value="ar">AR</option>
-<option selected="" translate="no" value="es">ES</option>
+<option translate="no" value="es" selected>ES</option>
 <option translate="no" value="zh">ZH</option>
 <option translate="no" value="ru">RU</option>
 <option translate="no" value="fr">FR</option>
@@ -1575,13 +1527,27 @@
 <nav aria-label="Main navigation" class="nav" id="mobileNav">
 <div class="nav-links">
 <a class="active" data-ar="الكل" data-en="All" data-es="Todo" data-fr="Tout" data-ru="Все" data-uk="Усі" data-zh="全部" href="index-es.html">Todo</a>
-<a data-ar="الإصدارات" data-en="Releases" data-es="Comunicados" data-fr="Communiqués" data-ru="Релизы" data-uk="Пресрелізи" data-zh="新闻稿" href="press-releases-es.html">Comunicados</a>
-<a data-ar="البيانات" data-en="Statements" data-es="Declaraciones" data-fr="Déclarations" data-ru="Заявления" data-uk="Заяви" data-zh="声明" href="statements-es.html">Declaraciones</a>
-<a data-ar="أنشطة المنسق" data-en="Coordinator’s Actions" data-es="Actividades del Coordinador" data-fr="Activités du Coordinateur" data-ru="Деятельность Координатора" data-uk="Діяльність Координатора" data-zh="协调员活动" href="coordinator-actions-es.html">Actividades del Coordinador</a>
-<a data-ar="منظور" data-category-nav="perspective" data-en="Perspective" data-es="Perspectiva" data-fr="Perspective" data-ru="Взгляд" data-uk="Погляд" data-zh="视角" href="perspective-es.html">Perspectiva</a>
-<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about.html" id="aboutLink">Quiénes somos</a>
+<details class="nav-dropdown movement-menu">
+<summary data-en="Movement" data-ar="الحركة" data-es="Movimiento" data-zh="运动" data-ru="Движение" data-fr="Mouvement" data-uk="Рух">Movimiento</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="movement-official-statements" data-en="Official Statements" data-ar="البيانات الرسمية" data-es="Declaraciones oficiales" data-zh="官方声明" data-ru="Официальные заявления" data-fr="Déclarations officielles" data-uk="Офіційні заяви" href="movement-official-statements-es.html">Declaraciones oficiales</a>
+<a class="nav-submenu-link" data-category-nav="movement-press-releases" data-en="Press Releases" data-ar="البيانات الصحفية" data-es="Comunicados de prensa" data-zh="新闻稿" data-ru="Пресс-релизы" data-fr="Communiqués de presse" data-uk="Пресрелізи" href="movement-press-releases-es.html">Comunicados de prensa</a>
+<a class="nav-submenu-link" data-category-nav="movement-open-letters-petitions" data-en="Open Letters &amp; Petitions" data-ar="الرسائل المفتوحة والعرائض" data-es="Cartas abiertas y peticiones" data-zh="公开信与请愿书" data-ru="Открытые письма и петиции" data-fr="Lettres ouvertes et pétitions" data-uk="Відкриті листи та петиції" href="movement-open-letters-petitions-es.html">Cartas abiertas y peticiones</a>
+<a class="nav-submenu-link" data-category-nav="movement-urgent-appeals-cases" data-en="Urgent Appeals &amp; Cases" data-ar="النداءات العاجلة والقضايا" data-es="Llamamientos urgentes y casos" data-zh="紧急呼吁与个案" data-ru="Срочные обращения и дела" data-fr="Appels urgents et dossiers" data-uk="Термінові звернення та справи" href="movement-urgent-appeals-cases-es.html">Llamamientos urgentes y casos</a>
+<a class="nav-submenu-link" data-category-nav="movement-reports-submissions" data-en="Reports &amp; Submissions" data-ar="التقارير والمذكرات المقدمة" data-es="Informes y comunicaciones" data-zh="报告与提交材料" data-ru="Доклады и представления" data-fr="Rapports et communications" data-uk="Доповіді та подання" href="movement-reports-submissions-es.html">Informes y comunicaciones</a>
 </div>
-<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries.html" id="mediaInquiriesLink">Consultas de los medios</a>
+</details>
+<details class="nav-dropdown coordinator-menu">
+<summary data-en="Coordinator" data-ar="المنسق" data-es="Coordinador" data-zh="协调员" data-ru="Координатор" data-fr="Coordinateur" data-uk="Координатор">Coordinador</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="coordinator-statements-commentary" data-en="Statements and Commentary" data-ar="البيانات والتعليقات" data-es="Declaraciones y comentarios" data-zh="声明与评论" data-ru="Заявления и комментарии" data-fr="Déclarations et commentaires" data-uk="Заяви та коментарі" href="coordinator-statements-commentary-es.html">Declaraciones y comentarios</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-speeches-remarks" data-en="Speeches and Remarks" data-ar="الخطب والكلمات" data-es="Discursos e intervenciones" data-zh="演讲与讲话" data-ru="Речи и выступления" data-fr="Discours et allocutions" data-uk="Промови та виступи" href="coordinator-speeches-remarks-es.html">Discursos e intervenciones</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-policy-perspectives" data-en="Policy Perspectives" data-ar="رؤى حول السياسات" data-es="Perspectivas sobre políticas" data-zh="政策观点" data-ru="Взгляды на политику" data-fr="Perspectives sur les politiques" data-uk="Погляди на політику" href="coordinator-policy-perspectives-es.html">Perspectivas sobre políticas</a>
+</div>
+</details>
+<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about-es.html" id="aboutLink">Quiénes somos</a>
+</div>
+<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries-es.html" id="mediaInquiriesLink">Consultas de los medios</a>
 </nav>
 </div>
 <main>
@@ -1599,11 +1565,7 @@
 <div class="publication-rule"></div>
 </header>
 <div class="publication-body" id="publicationBody"><p>El Coordinador General de Global Citizens transmitió sus felicitaciones a los socios británicos y a los altos representantes del Reino Unido de Gran Bretaña e Irlanda del Norte con motivo de la fiesta nacional — el aniversario oficial de Su Majestad el Rey Carlos III.</p><p>La tradición de la celebración oficial del cumpleaños del monarca británico se remonta a 1748, cuando la ceremonia militar Trooping the Colour —«presentación de la bandera»— quedó vinculada a los actos solemnes en honor del soberano. En la actualidad, las misiones diplomáticas británicas de todo el mundo conmemoran esta fecha como el día nacional del Reino Unido.</p><p>En el mensaje se transmitieron a los destinatarios deseos de buena salud, bienestar y nuevos logros en sus actividades, así como deseos de paz y prosperidad para el pueblo del Reino Unido.</p><p>El fortalecimiento de los vínculos con los socios británicos responde al compromiso de Global Citizens con el desarrollo de la cooperación internacional. La confianza y el respeto mutuos constituyen una base sólida para proseguir un diálogo sustantivo, ampliar los contactos y desarrollar una labor conjunta sobre cuestiones de interés mutuo.</p></div>
-<section class="publication-section" hidden="" id="serviceSection">
-<h2 id="serviceHeading">Información administrativa</h2>
-<div class="service-list" id="serviceList"></div>
-</section>
-<section class="publication-section" hidden="" id="resourcesSection">
+<section class="publication-section" hidden id="resourcesSection">
 <h2 id="resourcesHeading">Enlaces y archivos adjuntos</h2>
 <div class="resources-list" id="resourcesList"></div>
 </section>
@@ -1629,18 +1591,14 @@
 <p class="subscribe-copy" data-ar="اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي." data-en="Subscribe to receive the latest official communications from the Press Office." data-es="Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa." data-fr="Abonnez-vous pour recevoir les dernières communications officielles du Service de presse." data-ru="Подпишитесь, чтобы получать последние официальные сообщения Пресс-офиса." data-uk="Підпишіться на отримання актуальної офіційної інформації пресофісу." data-zh="订阅以接收新闻办公室发布的最新官方信息。" id="footerSubscribeCopy">Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa.</p>
 <form class="subscribe-form" id="subscribeForm" novalidate="">
 <label class="sr-only" data-ar="عنوان البريد الإلكتروني" data-en="Email address" data-es="Correo electrónico" data-fr="Adresse e-mail" data-ru="Адрес электронной почты" data-uk="Адреса електронної пошти" data-zh="电子邮件地址" for="subscribeEmail" id="footerEmailLabel">Correo electrónico</label>
-<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="Correo electrónico" required="" type="email"/>
+<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="Correo electrónico" required="" type="email">
 <button data-ar="اشترك" data-en="Subscribe" data-es="Suscribirse" data-fr="S’abonner" data-ru="Подписаться" data-uk="Підписатися" data-zh="订阅" id="footerSubscribeButton" type="submit">Suscribirse</button>
 </form>
 <div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">Puede cancelar su suscripción en cualquier momento.</div>
 </div>
 </div>
-<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break">All Rights Reserved</div>
 </footer>
 <script src="scripts/static-publication.js?v=174"></script>
-
-
-
-
 </body>
 </html>

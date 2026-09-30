@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html data-alternate-ar="2026-09-17-where-the-state-ends-ar.html" data-alternate-en="2026-09-17-where-the-state-ends-en.html" data-alternate-es="2026-09-17-where-the-state-ends-es.html" data-alternate-fr="2026-09-17-where-the-state-ends-fr.html" data-alternate-ru="2026-09-17-where-the-state-ends-ru.html" data-alternate-uk="2026-09-17-where-the-state-ends-uk.html" data-alternate-zh="2026-09-17-where-the-state-ends-zh.html" data-page-language="ar" dir="rtl" lang="ar">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="تعكس المواد المنشورة على هذه الصفحة آراء المنسق العام، ولا تمثل بالضرورة الموقف الرسمي للحركة الدولية Global Citizens." name="description"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقا" name="description">
 <title>أين تنتهي الدولة؟ — Global Citizens</title>
-<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html" id="canonicalUrl" rel="canonical"/>
-<meta content="index, follow" name="robots"/>
-<link href="assets/favicon.png" rel="icon" type="image/png"/>
-<link href="assets/favicon.ico" rel="shortcut icon"/>
-<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"/><style>
+<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html" id="canonicalUrl" rel="canonical">
+<meta content="index, follow" name="robots">
+<link href="assets/favicon.png" rel="icon" type="image/png">
+<link href="assets/favicon.ico" rel="shortcut icon">
+<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"><style>
     @font-face{font-family:"ITCFranklinGothicW10-Md 862390";src:url("assets/itc-franklin-gothic-md.woff2") format("woff2"),url("assets/itc-franklin-gothic-md.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
     :root{
       --ink:#102133;
@@ -837,13 +836,6 @@
       letter-spacing:.11em;
       font-size:14px;
     }
-    .publication-disclaimer{
-      margin:0 0 14px;
-      max-width:900px;
-      font-size:13px;
-      line-height:1.45;
-      font-weight:400;
-    }
     .publication-title{
       margin:0;
       max-width:900px;
@@ -915,25 +907,6 @@
       font-size:23px;
       font-weight:600;
     }
-    .service-list{
-      border-top:1px solid var(--line);
-    }
-    .service-row{
-      display:grid;
-      grid-template-columns:minmax(160px,220px) 1fr;
-      gap:24px;
-      padding:14px 0;
-      border-bottom:1px solid var(--line);
-      font-size:14px;
-      line-height:1.5;
-    }
-    .service-label{
-      color:var(--muted);
-      font-weight:700;
-    }
-    .service-value{
-      color:var(--ink);
-    }
     .resources-list{
       display:grid;
       gap:10px;
@@ -964,16 +937,26 @@
     }
     @media (max-width:840px){
       .publication-shell{padding:42px 20px 62px}
-      .publication-disclaimer{font-size:12px;line-height:1.4;margin-bottom:12px}
       .publication-title{font-size:20px;line-height:1.3}
       .publication-body{font-size:16px;line-height:24px}
       .publication-body h2{font-size:24px}
       .publication-rule{margin:24px 0 30px}
-      .service-row{grid-template-columns:1fr;gap:5px;padding:13px 0}
       .resource-item{align-items:flex-start}
     }
 
   
+    /* GCIM publication typography */
+    @font-face{
+      font-family:"Instrument Serif";
+      src:url("assets/fonts/instrument-serif-regular.ttf") format("truetype");
+      font-style:normal;
+      font-weight:400;
+      font-display:swap;
+    }
+    .publication-title, .publication-body{
+      font-family:"Instrument Serif",Georgia,"Times New Roman",serif;
+    }
+
     /* GCIM mobile viewport lock */
     @media (max-width:840px) {
       html, body { width:100%; max-width:100%; overflow-x:hidden; }
@@ -981,7 +964,6 @@
       .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
       .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
       .publication-title, .publication-body, .resource-item, .resource-title,
-      .service-value { min-width:0; max-width:100%; }
       .brand-copy { overflow:hidden; }
       .brand-copy strong { font-size:14px; line-height:1.1; white-space:nowrap; overflow-wrap:normal; }
       .footer-brand { font-size:17px; }
@@ -1058,35 +1040,6 @@
       .brand-copy span{font-size:12px}
     }
 
-
-    /* Non-English mobile footer fit */
-    @media (max-width:767px){
-      .footer-inner,
-      .footer-subscribe{min-width:0;max-width:100%}
-      .footer-copy,
-      .footer-language-note,
-      .subscribe-copy,
-      .footer-subscribe h3,
-      .subscribe-note,
-      .copyright{
-        max-width:100%;
-        white-space:normal;
-        overflow-wrap:anywhere;
-        word-break:normal;
-      }
-      .subscribe-form{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-        margin-inline:0;
-      }
-      .subscribe-form input,
-      .subscribe-form button{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-      }
-    }
 
     /* Mobile header fit and alignment */
     @media (max-width:840px){
@@ -1287,6 +1240,54 @@
       }
     }
   
+    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_START */
+    /* Mobile White House metrics for Arabic and Simplified Chinese publication pages; existing language typefaces are preserved. */
+    @media (max-width:840px){
+      html:is([lang="ar"], [lang="zh"]) .publication-title{
+        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.08;
+        letter-spacing:0;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:none;
+        text-wrap:balance;
+      }
+      html:is([lang="ar"], [lang="zh"]) .publication-body{
+        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:none;
+        text-wrap:pretty;
+      }
+      html:is([lang="ar"], [lang="zh"]) .publication-body :is(strong,b){font-weight:700;}
+      html:is([lang="ar"], [lang="zh"]) .publication-body h2{
+        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.18;
+        letter-spacing:0;
+        text-transform:none;
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.publication-meta,.publication-category,.publication-date){
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+    }
+    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_END */
+
     /* GCIM_GENERATED_PORTAL_RESOURCES_START */
     /* Official GCIM web-resources line. Desktop and mobile are intentionally separate. */
     @media (min-width:841px){
@@ -1347,54 +1348,6 @@
 .copyright-mobile-break{display:none;}
 @media (max-width:840px){.copyright-mobile-break{display:block;}}
 /* GCIM_MOBILE_COPYRIGHT_BREAK_END */
-
-    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_START */
-    /* Mobile White House metrics for Arabic and Simplified Chinese publication pages; existing language typefaces are preserved. */
-    @media (max-width:840px){
-      html:is([lang="ar"], [lang="zh"]) .publication-title{
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.08;
-        letter-spacing:0;
-        text-transform:none;
-        white-space:normal;
-        overflow-wrap:normal;
-        word-break:normal;
-        hyphens:none;
-        text-wrap:balance;
-      }
-      html:is([lang="ar"], [lang="zh"]) .publication-body{
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.6;
-        letter-spacing:0;
-        text-transform:none;
-        white-space:normal;
-        overflow-wrap:normal;
-        word-break:normal;
-        hyphens:none;
-        text-wrap:pretty;
-      }
-      html:is([lang="ar"], [lang="zh"]) .publication-body :is(strong,b){font-weight:700;}
-      html:is([lang="ar"], [lang="zh"]) .publication-body h2{
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.18;
-        letter-spacing:0;
-        text-transform:none;
-      }
-      html:is([lang="ar"], [lang="zh"]) :is(.publication-meta,.publication-category,.publication-date){
-        font-style:normal;
-        font-weight:400;
-        line-height:1.6;
-        letter-spacing:0;
-        text-transform:none;
-      }
-    }
-    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_END */
 
     /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_START */
     @media (max-width:840px){
@@ -1466,8 +1419,8 @@
     }
     /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_END */
 </style>
-<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html" hreflang="en-US" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html" hreflang="ar" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-es.html" hreflang="es" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html" hreflang="zh-Hans" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ru.html" hreflang="ru" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-fr.html" hreflang="fr" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-uk.html" hreflang="uk" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html" hreflang="x-default" rel="alternate"/><meta content="article" property="og:type"/><meta content="Global Citizens" property="og:site_name"/><meta content="ar_SA" property="og:locale"/><meta content="أين تنتهي الدولة؟" property="og:title"/><meta content="تعكس المواد المنشورة على هذه الصفحة آراء المنسق العام، ولا تمثل بالضرورة الموقف الرسمي للحركة الدولية Global Citizens." property="og:description"/><meta content="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html" property="og:url"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image:secure_url"/><meta content="image/jpeg" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Global Citizens Press Office" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="أين تنتهي الدولة؟" name="twitter:title"/><meta content="تعكس المواد المنشورة على هذه الصفحة آراء المنسق العام، ولا تمثل بالضرورة الموقف الرسمي للحركة الدولية Global Citizens." name="twitter:description"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" name="twitter:image"/><meta content="Global Citizens Press Office" name="twitter:image:alt"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"أين تنتهي الدولة؟","datePublished":"2026-09-17","publisher":{"@type":"Organization","name":"International Movement Global Citizens","url":"https://gcim.eu/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html"},"inLanguage":"ar","description":"تعكس المواد المنشورة على هذه الصفحة آراء المنسق العام، ولا تمثل بالضرورة الموقف الرسمي للحركة الدولية Global Citizens.","image":"https://press.gcim.eu/assets/social-preview.jpg"}</script>  <link rel="stylesheet" href="assets/gc-masthead-v296.css">
-</head>
+<link rel="stylesheet" href="assets/gc-masthead-v309.css">
+<link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html"><link rel="alternate" hreflang="ar" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html"><link rel="alternate" hreflang="es" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-es.html"><link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html"><link rel="alternate" hreflang="ru" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ru.html"><link rel="alternate" hreflang="fr" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-fr.html"><link rel="alternate" hreflang="uk" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-uk.html"><link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Global Citizens"><meta property="og:locale" content="ar_SA"><meta property="og:title" content="أين تنتهي الدولة؟"><meta property="og:description" content="يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقا"><meta property="og:url" content="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html"><meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Global Citizens Press Office"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="أين تنتهي الدولة؟"><meta name="twitter:description" content="يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقا"><meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta name="twitter:image:alt" content="Global Citizens Press Office"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "أين تنتهي الدولة؟", "datePublished": "2026-09-17", "description": "يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقا", "publisher": {"@type": "Organization", "name": "International Movement Global Citizens", "url": "https://gcim.eu/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html"}, "inLanguage": "ar", "image": "https://press.gcim.eu/assets/social-preview.jpg"}</script></head>
 <body>
 <div class="portal-bar">
 <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">موارد GCIM الرسمية</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">الموارد الإلكترونية الرسمية للحركة الدولية Global Citizens (GCIM) متاحة عبر العناوين التالية:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
@@ -1488,7 +1441,7 @@
 </div>
 <div aria-label="Language selector" class="lang" role="group">
 <button aria-pressed="false" data-lang-btn="en" title="English" type="button">EN</button>
-<button aria-pressed="true" class="active" data-lang-btn="ar" title="العربية" translate="no" type="button">AR</button>
+<button aria-pressed="true" data-lang-btn="ar" title="العربية" translate="no" type="button" class="active">AR</button>
 <button aria-pressed="false" data-lang-btn="es" title="Español" type="button">ES</button>
 <button aria-pressed="false" data-lang-btn="zh" title="中文" type="button">ZH</button>
 <button aria-pressed="false" data-lang-btn="ru" title="Русский" type="button">RU</button>
@@ -1498,8 +1451,8 @@
 <div class="mobile-actions">
 <label aria-label="Language" class="mobile-lang-wrap">
 <select class="mobile-lang notranslate" id="mobileLang" translate="no">
-<option selected="" translate="no" value="en">EN</option>
-<option selected="" translate="no" value="ar">AR</option>
+<option selected translate="no" value="en">EN</option>
+<option translate="no" value="ar" selected>AR</option>
 <option translate="no" value="es">ES</option>
 <option translate="no" value="zh">ZH</option>
 <option translate="no" value="ru">RU</option>
@@ -1517,13 +1470,27 @@
 <nav aria-label="Main navigation" class="nav" id="mobileNav">
 <div class="nav-links">
 <a class="active" data-ar="الكل" data-en="All" data-es="Todo" data-fr="Tout" data-ru="Все" data-uk="Усі" data-zh="全部" href="index-ar.html">الكل</a>
-<a data-ar="الإصدارات" data-en="Releases" data-es="Comunicados" data-fr="Communiqués" data-ru="Релизы" data-uk="Пресрелізи" data-zh="新闻稿" href="press-releases-ar.html">الإصدارات</a>
-<a data-ar="البيانات" data-en="Statements" data-es="Declaraciones" data-fr="Déclarations" data-ru="Заявления" data-uk="Заяви" data-zh="声明" href="statements-ar.html">البيانات</a>
-<a data-ar="أنشطة المنسق" data-en="Coordinator’s Actions" data-es="Actividades del Coordinador" data-fr="Activités du Coordinateur" data-ru="Деятельность Координатора" data-uk="Діяльність Координатора" data-zh="协调员活动" href="coordinator-actions-ar.html">أنشطة المنسق</a>
-<a data-ar="منظور" data-category-nav="perspective" data-en="Perspective" data-es="Perspectiva" data-fr="Perspective" data-ru="Взгляд" data-uk="Погляд" data-zh="视角" href="perspective-ar.html">منظور</a>
-<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about.html" id="aboutLink">من نحن</a>
+<details class="nav-dropdown movement-menu">
+<summary data-en="Movement" data-ar="الحركة" data-es="Movimiento" data-zh="运动" data-ru="Движение" data-fr="Mouvement" data-uk="Рух">الحركة</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="movement-official-statements" data-en="Official Statements" data-ar="البيانات الرسمية" data-es="Declaraciones oficiales" data-zh="官方声明" data-ru="Официальные заявления" data-fr="Déclarations officielles" data-uk="Офіційні заяви" href="movement-official-statements-ar.html">البيانات الرسمية</a>
+<a class="nav-submenu-link" data-category-nav="movement-press-releases" data-en="Press Releases" data-ar="البيانات الصحفية" data-es="Comunicados de prensa" data-zh="新闻稿" data-ru="Пресс-релизы" data-fr="Communiqués de presse" data-uk="Пресрелізи" href="movement-press-releases-ar.html">البيانات الصحفية</a>
+<a class="nav-submenu-link" data-category-nav="movement-open-letters-petitions" data-en="Open Letters &amp; Petitions" data-ar="الرسائل المفتوحة والعرائض" data-es="Cartas abiertas y peticiones" data-zh="公开信与请愿书" data-ru="Открытые письма и петиции" data-fr="Lettres ouvertes et pétitions" data-uk="Відкриті листи та петиції" href="movement-open-letters-petitions-ar.html">الرسائل المفتوحة والعرائض</a>
+<a class="nav-submenu-link" data-category-nav="movement-urgent-appeals-cases" data-en="Urgent Appeals &amp; Cases" data-ar="النداءات العاجلة والقضايا" data-es="Llamamientos urgentes y casos" data-zh="紧急呼吁与个案" data-ru="Срочные обращения и дела" data-fr="Appels urgents et dossiers" data-uk="Термінові звернення та справи" href="movement-urgent-appeals-cases-ar.html">النداءات العاجلة والقضايا</a>
+<a class="nav-submenu-link" data-category-nav="movement-reports-submissions" data-en="Reports &amp; Submissions" data-ar="التقارير والمذكرات المقدمة" data-es="Informes y comunicaciones" data-zh="报告与提交材料" data-ru="Доклады и представления" data-fr="Rapports et communications" data-uk="Доповіді та подання" href="movement-reports-submissions-ar.html">التقارير والمذكرات المقدمة</a>
 </div>
-<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries.html" id="mediaInquiriesLink">استفسارات وسائل الإعلام</a>
+</details>
+<details class="nav-dropdown coordinator-menu">
+<summary data-en="Coordinator" data-ar="المنسق" data-es="Coordinador" data-zh="协调员" data-ru="Координатор" data-fr="Coordinateur" data-uk="Координатор">المنسق</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="coordinator-statements-commentary" data-en="Statements and Commentary" data-ar="البيانات والتعليقات" data-es="Declaraciones y comentarios" data-zh="声明与评论" data-ru="Заявления и комментарии" data-fr="Déclarations et commentaires" data-uk="Заяви та коментарі" href="coordinator-statements-commentary-ar.html">البيانات والتعليقات</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-speeches-remarks" data-en="Speeches and Remarks" data-ar="الخطب والكلمات" data-es="Discursos e intervenciones" data-zh="演讲与讲话" data-ru="Речи и выступления" data-fr="Discours et allocutions" data-uk="Промови та виступи" href="coordinator-speeches-remarks-ar.html">الخطب والكلمات</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-policy-perspectives" data-en="Policy Perspectives" data-ar="رؤى حول السياسات" data-es="Perspectivas sobre políticas" data-zh="政策观点" data-ru="Взгляды на политику" data-fr="Perspectives sur les politiques" data-uk="Погляди на політику" href="coordinator-policy-perspectives-ar.html">رؤى حول السياسات</a>
+</div>
+</details>
+<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about-ar.html" id="aboutLink">من نحن</a>
+</div>
+<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries-ar.html" id="mediaInquiriesLink">استفسارات وسائل الإعلام</a>
 </nav>
 </div>
 <main>
@@ -1537,15 +1504,11 @@
 <time class="publication-date" datetime="2026-09-17" id="publicationDate">١٧ سبتمبر ٢٠٢٦</time>
 <span class="publication-category" id="publicationCategory">أنشطة المنسق / منظور</span>
 </div>
-<p class="publication-disclaimer">تعكس المواد المنشورة على هذه الصفحة آراء المنسق العام، ولا تمثل بالضرورة الموقف الرسمي للحركة الدولية Global Citizens.</p><h1 class="publication-title" id="publicationTitle">أين تنتهي الدولة؟</h1>
+<h1 class="publication-title" id="publicationTitle">أين تنتهي الدولة؟</h1>
 <div class="publication-rule"></div>
 </header>
-<div class="publication-body" id="publicationBody"><p>يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقاء.</p><p>شهدت خريطة المدارس في روسيا تغيراً ملحوظاً خلال ربع القرن الماضي. ووفقاً لإصدار المدرسة العليا للاقتصاد التابعة للجامعة الوطنية للبحوث «التعليم بالأرقام: 2026»، كانت 68,804 مؤسسات تقدم التعليم العام الابتدائي أو الأساسي أو الثانوي في العام الدراسي 2000/01. وفي العام الدراسي 2025/26، انخفض العدد إلى 37,965 مؤسسة، أي بنسبة 44.8%.</p><p>تأتي هذه الأرقام من المدرسة العليا للاقتصاد في الجامعة الوطنية للأبحاث وتم تجميعها من الإحصاءات الرسمية. وهي ليست من منشور منفصل عن وزارة التربية والتعليم. التمييز مهم: فالإحصاءات الرسمية تتطلب الدقة ليس فقط في الأرقام، بل وأيضاً في اسم المؤسسة التي قامت بجمعها ونشرها.</p><p>كان التغير الأكبر في شبكة المدارس الريفية. فقد انخفض عدد المدارس الريفية الحكومية والبلدية من 45,475 إلى 20,664 مدرسة، أي بمقدار 24,811 مدرسة أو بنسبة 54.6%. وفي المدن، انخفض المؤشر المقابل من 22,694 إلى 16,319 مدرسة، أي بنسبة 28.1%. وفي المقابل، ارتفع عدد المدارس الخاصة من 635 إلى 982 مدرسة، غير أن هذه الزيادة كانت محدودة إلى حد لا يغير الصورة العامة.</p><p>تشرح التركيبة السكانية جزءًا مما حدث، ولكن ليس كله. وخلال الفترة نفسها، انخفض عدد طلاب المدارس من 20.55 مليون إلى 17.78 مليون، بانخفاض قدره 13.5%. وبالتالي انخفض عدد المؤسسات التعليمية بوتيرة تجاوزت ثلاثة أمثال وتيرة انخفاض عدد الطلاب.</p><p>ولا تثبت هذه البيانات أن كل مؤسسة اختفت من الإحصاءات قد أُغلقت؛ فعمليات الدمج وإعادة التنظيم والتغييرات في الوضع التنظيمي ممكنة أيضًا. كما لا يمكن تحديد دوافع القرارات من خلال جدول واحد. ومع ذلك، تشير هذه النسبة إلى تركّز مستمر لشبكة المدارس.</p><p>تفضّل البيروقراطية كلمة «التحسين» لأن هذه الكلمة لا جغرافيا لها. أما المدرسة فلها دائماً جغرافيا.</p><p>في مدينة كبيرة، قد يظل دمج مؤسستين مسألة إدارية. أما في تجمع سكاني صغير، فالمدرسة ليست مجرد مكان للتعليم. فهي تضمن الحضور الدائم للسلطة العامة، وتدعم فرص العمل، وتربط الأسر بالإقليم. ولذلك، فإن تغيير شبكة المدارس يكتسب دلالة سياسية حتى عندما يُصاغ في صورة إعادة تنظيم اقتصادي.</p><p>تقدم إحصاءات الولايات المتحدة بنيةً مختلفة. والمقارنة ليست متماثلة تمامًا: إذ يغطي المؤشر الروسي مؤسسات ذات أشكال ملكية مختلفة تقدم برامج التعليم العام، في حين يغطي الجدول الأمريكي المدارس العامة. وإضافة إلى ذلك، تشير أحدث بيانات NCES القابلة للمقارنة إلى العام الدراسي 2022/23، بينما تشير البيانات الروسية إلى 2025/26.</p><p>ومع ذلك فإن اتجاه التغيير يختلف. وفقًا للمركز الوطني الأمريكي لإحصاءات التعليم، ارتفع عدد المدارس العامة من 93,273 في 2000/2001 إلى 99,388 في 2022/23 - بزيادة قدرها 6.6% تقريبًا. ارتفع معدل الالتحاق بالمدارس العامة من 47.2 مليونًا في خريف عام 2000 إلى 49.6 مليونًا في خريف عام 2022، أو ما يقرب من 5.1%.</p><p>وفي الوقت نفسه، انخفض عدد المناطق التعليمية العامة العادية من 14,859 إلى 13,318 منطقة، أي بنسبة 10.4%. ولا تفسر الإحصاءات أسباب هذا الانخفاض، كما لا تسمح بإسناده تلقائياً إلى سياسة الدمج. وهي تسند استنتاجاً أكثر حذراً مفاده أن عدد الوحدات الإدارية انخفض بالتزامن مع زيادة عدد المدارس.</p><p>وهكذا خفضت روسيا في المقام الأول شبكة المنظمات، وخاصة في المناطق الريفية. وفي الولايات المتحدة، لم تتقلص شبكة المدارس الوطنية، على الرغم من انخفاض عدد المناطق التي تديرها. وهذا لا يثبت في حد ذاته تفوق نموذج على آخر. ويشير إلى أهداف مختلفة للانكماش المؤسسي.</p><p>أثر النموذج الروسي على الوجود الإقليمي للمدارس. تشير الإحصاءات الأمريكية في المقام الأول إلى التغيرات في الهيكل الإداري. في الحالة الأولى، يتناقص عدد الأماكن التي تعمل فيها المؤسسة التعليمية. وفي الحالة الثانية، يتناقص عدد السلطات التي تدير الشبكة التي تظل سليمة أو آخذة في التوسع.</p><p>يتطلب التعليم العالي قدرًا أكبر من الحذر. وفي روسيا، انخفض عدد المنظمات التي تقدم برامج البكالوريوس والتخصص والماجستير من 965 في 2000/2001 إلى 751 في 2025/26. لكن منذ 2020/21، شمل المؤشر المنظمات البحثية التي تقدم برامج الماجستير. وبالتالي فإن السلسلة طويلة المدى ليست متسقة تمامًا.</p><p>في الولايات المتحدة، انخفض عدد مؤسسات التعليم العالي المانحة للدرجات العلمية المشاركة في برامج المساعدات المالية الفيدرالية من 4182 في 2000/2001 إلى 3896 في 2022/23. تحذر الملاحظات المنهجية لـ NCES من أن المؤشر يتأثر، من بين أمور أخرى، بكيفية حساب الفروع بشكل منفصل.</p><p>إن عدد الجامعات في حد ذاته لا يقول شيئًا تقريبًا عن القدرة الفكرية للنظام. قد يكون هناك عدد أقل من المؤسسات والمزيد من الأبحاث.</p><p>وهذا بالضبط ما حدث في الولايات المتحدة. وفقًا للمركز الوطني لإحصاءات العلوم والهندسة، ارتفعت نفقات البحث والتطوير في الجامعات الأمريكية من 30.1 مليار دولار في السنة المالية 2000 إلى 108.8 مليار دولار في عام 2023. وبالقيمة الثابتة للدولار في عام 2017، كانت الزيادة من 41.4 مليار دولار إلى 89 مليار دولار، أي أكثر من الضعف. ووفرت المصادر الفيدرالية 55% من نفقات البحث الجامعي في عام 2023.</p><p>لا تثبت هذه الإحصائيات أن حكومة الولايات المتحدة تستخدم دائمًا الخبرة الأكاديمية بشكل مناسب. يمكن للمال أن يمول المعرفة، لكنه لا يستطيع أن يضمن الحكمة في الحكومة. وهي تظهر شيئًا آخر: يمكن للبنية التحتية للبحث أن تزداد قوة حتى مع انخفاض العدد الإجمالي للمؤسسات.</p><p>يتطلب التوصل إلى استنتاج مماثل بشأن روسيا سلسلة مستقلة من البيانات الرسمية القابلة للمقارنة حول نفقات الجامعات على البحوث، ومصادر تمويلها، والتكليفات الحكومية بإعداد أعمال الخبرة والتحليل. ومن دون مثل هذه السلسلة، يظل القول إن الوسط الأكاديمي الروسي يقع «على الهامش» تقييماً لا حقيقة إحصائية مثبتة.</p><p>غير أن المسألة المؤسسية لا تزول بذلك. فإنتاج المعرفة وقدرة السلطات على استخدامها وظيفتان مختلفتان من وظائف الدولة. ويمكن للجامعة إعداد الحسابات، فيما يتعين على الدولة أن تنشئ نظاماً تتنافس فيه الحسابات مع العادة المؤسسية. والخبرة التي لا يُلجأ إليها إلا لتأكيد قرار سبق اتخاذه ليست مشورة، بل مجرد زينة.</p><p>نادراً ما تنتج سياسة التعليم تأثيراً سياسياً فورياً. تختفي المدارس من السجلات بشكل أسرع من تلاشي عواقبها من الحياة العامة. ويبدو أن القرار في البداية مسألة محاسبية، ثم مسألة إقليمية، وبعد ذلك فقط مسألة سياسية.</p><p>وبالتالي فإن السؤال لا يتعلق بعدد المؤسسات التي تمكنت الدولة من دمجها. إنها درجة الكثافة المؤسسية التي تعتبرها الدولة ضرورية لمستقبلها. يمكن للدولة أن تقلل عدد المدارس بقرار إداري. إن إعادة تأسيس المدرسة كمركز للمجتمع والقدرة المهنية والثقة أمر أكثر صعوبة بكثير.</p><p>خريطة المدارس لا تصدر أحكاماً. فهي تبيّن فقط الأماكن التي تواصل الدولة حضورها اليومي فيها، والأماكن التي لم تترك فيها سوى التقارير.</p><p>لذا فإن المراجعة المستقبلية لنظام التعليم لا ينبغي أن تقاس بعدد الشعارات الجديدة، بل بالاستعداد للإجابة على سؤال قديم: ما الذي تعتبره الدولة واجباً عليها ــ الحفاظ على المؤسسات، أو الحفاظ على البنية الأساسية المدنية والفكرية للبلاد؟</p><p>يمكن إغلاق مدرسة خلال سنة مالية واحدة. أما إعادتها فصعبة بدرجة أكبر بكثير.</p><h2>المصادر</h2><p><a href="https://issek.hse.ru/mirror/pubs/share/1196008207.pdf" rel="noopener" target="_blank">1. الجامعة الوطنية للبحوث المدرسة العليا للاقتصاد، معهد الدراسات الإحصائية واقتصاديات المعرفة. التعليم بالأرقام: 2026. موسكو، 2026. DOI 10.17323/978-5-7598-3057-3. الجدول 3.2، "المنظمات التي تقدم الأنشطة التعليمية في إطار برامج التعليم العام الابتدائي والأساسي والثانوي"، ص. 45؛ الجدول 3.4، ص. 48؛ الجدول 4.3، ص. 55.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_214.10.asp" rel="noopener" target="_blank">2. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 214.10: Number of public school districts and public and private elementary and secondary schools, 1869–70 through 2022–23. أُعد الجدول في يناير 2024.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_203.10.asp" rel="noopener" target="_blank">3. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 203.10: Enrollment in public elementary and secondary schools, by level and grade, 1980 through 2031. بيانات فعلية لعام 2022؛ أُعد الجدول في ديسمبر 2023.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_317.10.asp" rel="noopener" target="_blank">4. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 317.10: Degree-granting postsecondary institutions, 1949–50 through 2022–23. أُعد الجدول في يناير 2024.</a></p><p><a href="https://ncses.nsf.gov/pubs/nsf25313" rel="noopener" target="_blank">5. Michael T. Gibbons; National Center for Science and Engineering Statistics. Higher Education R&amp;D Expenditures Increased 11.2%, Exceeded $108 Billion in FY 2023. NSF 25-313. U.S. National Science Foundation, 2024. الشكل 1 والجدولان 1–2.</a></p><p><a href="https://www.washingtonpost.com/people/george-f-will/" rel="noopener" target="_blank">6. The Washington Post. صفحة George F. Will وأرشيف مقالاته. استُخدمت حصراً مرجعاً أسلوبياً.</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/12/chicago-teachers-unions-abysmal-performance-sparks-voter-rebellion/" rel="noopener" target="_blank">7. George F. Will. Chicagoans are getting fed up with the city’s teachers union. The Washington Post، 12 أغسطس 2026. استُخدمت لتحليل الأساليب العامة في البناء والحجاج، لا مصدراً لإحصاءات هذا المقال.</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/28/ncaa-college-football-seeks-congressional-help/" rel="noopener" target="_blank">8. George F. Will. The addled college football cartel wants to huddle up with Congress. The Washington Post، 28 أغسطس 2026. استُخدمت حصراً مرجعاً أسلوبياً.</a></p></div>
-<section class="publication-section" hidden="" id="serviceSection">
-<h2 id="serviceHeading">معلومات إدارية</h2>
-<div class="service-list" id="serviceList"></div>
-</section>
-<section class="publication-section" hidden="" id="resourcesSection">
+<div class="publication-body" id="publicationBody"><p>يمكن دراسة الدولة من خلال ثلاث خرائط: الطرق والضرائب والمدارس. فالطرق تبيّن إلى أين تستطيع الدولة الوصول، والضرائب تبيّن من أين تستطيع تحصيل الموارد، والمدارس تبيّن أين تعتزم البقاء.</p><p>شهدت خريطة المدارس في روسيا تغيراً ملحوظاً خلال ربع القرن الماضي. ووفقاً لإصدار المدرسة العليا للاقتصاد التابعة للجامعة الوطنية للبحوث «التعليم بالأرقام: 2026»، كانت 68,804 مؤسسات تقدم التعليم العام الابتدائي أو الأساسي أو الثانوي في العام الدراسي 2000/01. وفي العام الدراسي 2025/26، انخفض العدد إلى 37,965 مؤسسة، أي بنسبة 44.8%.</p><p>تأتي هذه الأرقام من المدرسة العليا للاقتصاد في الجامعة الوطنية للأبحاث وتم تجميعها من الإحصاءات الرسمية. وهي ليست من منشور منفصل عن وزارة التربية والتعليم. التمييز مهم: فالإحصاءات الرسمية تتطلب الدقة ليس فقط في الأرقام، بل وأيضاً في اسم المؤسسة التي قامت بجمعها ونشرها.</p><p>كان التغير الأكبر في شبكة المدارس الريفية. فقد انخفض عدد المدارس الريفية الحكومية والبلدية من 45,475 إلى 20,664 مدرسة، أي بمقدار 24,811 مدرسة أو بنسبة 54.6%. وفي المدن، انخفض المؤشر المقابل من 22,694 إلى 16,319 مدرسة، أي بنسبة 28.1%. وفي المقابل، ارتفع عدد المدارس الخاصة من 635 إلى 982 مدرسة، غير أن هذه الزيادة كانت محدودة إلى حد لا يغير الصورة العامة.</p><p>تشرح التركيبة السكانية جزءًا مما حدث، ولكن ليس كله. وخلال الفترة نفسها، انخفض عدد طلاب المدارس من 20.55 مليون إلى 17.78 مليون، بانخفاض قدره 13.5%. وبالتالي انخفض عدد المؤسسات التعليمية بوتيرة تجاوزت ثلاثة أمثال وتيرة انخفاض عدد الطلاب.</p><p>ولا تثبت هذه البيانات أن كل مؤسسة اختفت من الإحصاءات قد أُغلقت؛ فعمليات الدمج وإعادة التنظيم والتغييرات في الوضع التنظيمي ممكنة أيضًا. كما لا يمكن تحديد دوافع القرارات من خلال جدول واحد. ومع ذلك، تشير هذه النسبة إلى تركّز مستمر لشبكة المدارس.</p><p>تفضّل البيروقراطية كلمة «التحسين» لأن هذه الكلمة لا جغرافيا لها. أما المدرسة فلها دائماً جغرافيا.</p><p>في مدينة كبيرة، قد يظل دمج مؤسستين مسألة إدارية. أما في تجمع سكاني صغير، فالمدرسة ليست مجرد مكان للتعليم. فهي تضمن الحضور الدائم للسلطة العامة، وتدعم فرص العمل، وتربط الأسر بالإقليم. ولذلك، فإن تغيير شبكة المدارس يكتسب دلالة سياسية حتى عندما يُصاغ في صورة إعادة تنظيم اقتصادي.</p><p>تقدم إحصاءات الولايات المتحدة بنيةً مختلفة. والمقارنة ليست متماثلة تمامًا: إذ يغطي المؤشر الروسي مؤسسات ذات أشكال ملكية مختلفة تقدم برامج التعليم العام، في حين يغطي الجدول الأمريكي المدارس العامة. وإضافة إلى ذلك، تشير أحدث بيانات NCES القابلة للمقارنة إلى العام الدراسي 2022/23، بينما تشير البيانات الروسية إلى 2025/26.</p><p>ومع ذلك فإن اتجاه التغيير يختلف. وفقًا للمركز الوطني الأمريكي لإحصاءات التعليم، ارتفع عدد المدارس العامة من 93,273 في 2000/2001 إلى 99,388 في 2022/23 - بزيادة قدرها 6.6% تقريبًا. ارتفع معدل الالتحاق بالمدارس العامة من 47.2 مليونًا في خريف عام 2000 إلى 49.6 مليونًا في خريف عام 2022، أو ما يقرب من 5.1%.</p><p>وفي الوقت نفسه، انخفض عدد المناطق التعليمية العامة العادية من 14,859 إلى 13,318 منطقة، أي بنسبة 10.4%. ولا تفسر الإحصاءات أسباب هذا الانخفاض، كما لا تسمح بإسناده تلقائياً إلى سياسة الدمج. وهي تسند استنتاجاً أكثر حذراً مفاده أن عدد الوحدات الإدارية انخفض بالتزامن مع زيادة عدد المدارس.</p><p>وهكذا خفضت روسيا في المقام الأول شبكة المنظمات، وخاصة في المناطق الريفية. وفي الولايات المتحدة، لم تتقلص شبكة المدارس الوطنية، على الرغم من انخفاض عدد المناطق التي تديرها. وهذا لا يثبت في حد ذاته تفوق نموذج على آخر. ويشير إلى أهداف مختلفة للانكماش المؤسسي.</p><p>أثر النموذج الروسي على الوجود الإقليمي للمدارس. تشير الإحصاءات الأمريكية في المقام الأول إلى التغيرات في الهيكل الإداري. في الحالة الأولى، يتناقص عدد الأماكن التي تعمل فيها المؤسسة التعليمية. وفي الحالة الثانية، يتناقص عدد السلطات التي تدير الشبكة التي تظل سليمة أو آخذة في التوسع.</p><p>يتطلب التعليم العالي قدرًا أكبر من الحذر. وفي روسيا، انخفض عدد المنظمات التي تقدم برامج البكالوريوس والتخصص والماجستير من 965 في 2000/2001 إلى 751 في 2025/26. لكن منذ 2020/21، شمل المؤشر المنظمات البحثية التي تقدم برامج الماجستير. وبالتالي فإن السلسلة طويلة المدى ليست متسقة تمامًا.</p><p>في الولايات المتحدة، انخفض عدد مؤسسات التعليم العالي المانحة للدرجات العلمية المشاركة في برامج المساعدات المالية الفيدرالية من 4182 في 2000/2001 إلى 3896 في 2022/23. تحذر الملاحظات المنهجية لـ NCES من أن المؤشر يتأثر، من بين أمور أخرى، بكيفية حساب الفروع بشكل منفصل.</p><p>إن عدد الجامعات في حد ذاته لا يقول شيئًا تقريبًا عن القدرة الفكرية للنظام. قد يكون هناك عدد أقل من المؤسسات والمزيد من الأبحاث.</p><p>وهذا بالضبط ما حدث في الولايات المتحدة. وفقًا للمركز الوطني لإحصاءات العلوم والهندسة، ارتفعت نفقات البحث والتطوير في الجامعات الأمريكية من 30.1 مليار دولار في السنة المالية 2000 إلى 108.8 مليار دولار في عام 2023. وبالقيمة الثابتة للدولار في عام 2017، كانت الزيادة من 41.4 مليار دولار إلى 89 مليار دولار، أي أكثر من الضعف. ووفرت المصادر الفيدرالية 55% من نفقات البحث الجامعي في عام 2023.</p><p>لا تثبت هذه الإحصائيات أن حكومة الولايات المتحدة تستخدم دائمًا الخبرة الأكاديمية بشكل مناسب. يمكن للمال أن يمول المعرفة، لكنه لا يستطيع أن يضمن الحكمة في الحكومة. وهي تظهر شيئًا آخر: يمكن للبنية التحتية للبحث أن تزداد قوة حتى مع انخفاض العدد الإجمالي للمؤسسات.</p><p>يتطلب التوصل إلى استنتاج مماثل بشأن روسيا سلسلة مستقلة من البيانات الرسمية القابلة للمقارنة حول نفقات الجامعات على البحوث، ومصادر تمويلها، والتكليفات الحكومية بإعداد أعمال الخبرة والتحليل. ومن دون مثل هذه السلسلة، يظل القول إن الوسط الأكاديمي الروسي يقع «على الهامش» تقييماً لا حقيقة إحصائية مثبتة.</p><p>غير أن المسألة المؤسسية لا تزول بذلك. فإنتاج المعرفة وقدرة السلطات على استخدامها وظيفتان مختلفتان من وظائف الدولة. ويمكن للجامعة إعداد الحسابات، فيما يتعين على الدولة أن تنشئ نظاماً تتنافس فيه الحسابات مع العادة المؤسسية. والخبرة التي لا يُلجأ إليها إلا لتأكيد قرار سبق اتخاذه ليست مشورة، بل مجرد زينة.</p><p>نادراً ما تنتج سياسة التعليم تأثيراً سياسياً فورياً. تختفي المدارس من السجلات بشكل أسرع من تلاشي عواقبها من الحياة العامة. ويبدو أن القرار في البداية مسألة محاسبية، ثم مسألة إقليمية، وبعد ذلك فقط مسألة سياسية.</p><p>وبالتالي فإن السؤال لا يتعلق بعدد المؤسسات التي تمكنت الدولة من دمجها. إنها درجة الكثافة المؤسسية التي تعتبرها الدولة ضرورية لمستقبلها. يمكن للدولة أن تقلل عدد المدارس بقرار إداري. إن إعادة تأسيس المدرسة كمركز للمجتمع والقدرة المهنية والثقة أمر أكثر صعوبة بكثير.</p><p>خريطة المدارس لا تصدر أحكاماً. فهي تبيّن فقط الأماكن التي تواصل الدولة حضورها اليومي فيها، والأماكن التي لم تترك فيها سوى التقارير.</p><p>لذا فإن المراجعة المستقبلية لنظام التعليم لا ينبغي أن تقاس بعدد الشعارات الجديدة، بل بالاستعداد للإجابة على سؤال قديم: ما الذي تعتبره الدولة واجباً عليها ــ الحفاظ على المؤسسات، أو الحفاظ على البنية الأساسية المدنية والفكرية للبلاد؟</p><p>يمكن إغلاق مدرسة خلال سنة مالية واحدة. أما إعادتها فصعبة بدرجة أكبر بكثير.</p><h2>المصادر</h2><p><a href="https://issek.hse.ru/mirror/pubs/share/1196008207.pdf" target="_blank" rel="noopener">1. الجامعة الوطنية للبحوث المدرسة العليا للاقتصاد، معهد الدراسات الإحصائية واقتصاديات المعرفة. التعليم بالأرقام: 2026. موسكو، 2026. DOI 10.17323/978-5-7598-3057-3. الجدول 3.2، "المنظمات التي تقدم الأنشطة التعليمية في إطار برامج التعليم العام الابتدائي والأساسي والثانوي"، ص. 45؛ الجدول 3.4، ص. 48؛ الجدول 4.3، ص. 55.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_214.10.asp" target="_blank" rel="noopener">2. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 214.10: Number of public school districts and public and private elementary and secondary schools, 1869–70 through 2022–23. أُعد الجدول في يناير 2024.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_203.10.asp" target="_blank" rel="noopener">3. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 203.10: Enrollment in public elementary and secondary schools, by level and grade, 1980 through 2031. بيانات فعلية لعام 2022؛ أُعد الجدول في ديسمبر 2023.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_317.10.asp" target="_blank" rel="noopener">4. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 317.10: Degree-granting postsecondary institutions, 1949–50 through 2022–23. أُعد الجدول في يناير 2024.</a></p><p><a href="https://ncses.nsf.gov/pubs/nsf25313" target="_blank" rel="noopener">5. Michael T. Gibbons; National Center for Science and Engineering Statistics. Higher Education R&amp;D Expenditures Increased 11.2%, Exceeded $108 Billion in FY 2023. NSF 25-313. U.S. National Science Foundation, 2024. الشكل 1 والجدولان 1–2.</a></p><p><a href="https://www.washingtonpost.com/people/george-f-will/" target="_blank" rel="noopener">6. The Washington Post. صفحة George F. Will وأرشيف مقالاته. استُخدمت حصراً مرجعاً أسلوبياً.</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/12/chicago-teachers-unions-abysmal-performance-sparks-voter-rebellion/" target="_blank" rel="noopener">7. George F. Will. Chicagoans are getting fed up with the city’s teachers union. The Washington Post، 12 أغسطس 2026. استُخدمت لتحليل الأساليب العامة في البناء والحجاج، لا مصدراً لإحصاءات هذا المقال.</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/28/ncaa-college-football-seeks-congressional-help/" target="_blank" rel="noopener">8. George F. Will. The addled college football cartel wants to huddle up with Congress. The Washington Post، 28 أغسطس 2026. استُخدمت حصراً مرجعاً أسلوبياً.</a></p></div>
+<section class="publication-section" hidden id="resourcesSection">
 <h2 id="resourcesHeading">الروابط والمرفقات</h2>
 <div class="resources-list" id="resourcesList"></div>
 </section>
@@ -1571,18 +1534,14 @@
 <p class="subscribe-copy" data-ar="اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي." data-en="Subscribe to receive the latest official communications from the Press Office." data-es="Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa." data-fr="Abonnez-vous pour recevoir les dernières communications officielles du Service de presse." data-ru="Подпишитесь, чтобы получать последние официальные сообщения Пресс-офиса." data-uk="Підпишіться на отримання актуальної офіційної інформації пресофісу." data-zh="订阅以接收新闻办公室发布的最新官方信息。" id="footerSubscribeCopy">اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي.</p>
 <form class="subscribe-form" id="subscribeForm" novalidate="">
 <label class="sr-only" data-ar="عنوان البريد الإلكتروني" data-en="Email address" data-es="Correo electrónico" data-fr="Adresse e-mail" data-ru="Адрес электронной почты" data-uk="Адреса електронної пошти" data-zh="电子邮件地址" for="subscribeEmail" id="footerEmailLabel">عنوان البريد الإلكتروني</label>
-<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="عنوان البريد الإلكتروني" required="" type="email"/>
+<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="عنوان البريد الإلكتروني" required="" type="email">
 <button data-ar="اشترك" data-en="Subscribe" data-es="Suscribirse" data-fr="S’abonner" data-ru="Подписаться" data-uk="Підписатися" data-zh="订阅" id="footerSubscribeButton" type="submit">اشترك</button>
 </form>
 <div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">يمكنك إلغاء الاشتراك في أي وقت.</div>
 </div>
 </div>
-<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break">All Rights Reserved</div>
 </footer>
 <script src="scripts/static-publication.js?v=174"></script>
-
-
-
-
 </body>
 </html>

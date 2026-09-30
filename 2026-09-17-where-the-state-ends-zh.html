@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html data-alternate-ar="2026-09-17-where-the-state-ends-ar.html" data-alternate-en="2026-09-17-where-the-state-ends-en.html" data-alternate-es="2026-09-17-where-the-state-ends-es.html" data-alternate-fr="2026-09-17-where-the-state-ends-fr.html" data-alternate-ru="2026-09-17-where-the-state-ends-ru.html" data-alternate-uk="2026-09-17-where-the-state-ends-uk.html" data-alternate-zh="2026-09-17-where-the-state-ends-zh.html" data-page-language="zh" dir="ltr" lang="zh">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="本页面发布的材料反映总协调员的观点，不一定代表国际运动 Global Citizens 的官方立场。" name="description"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。" name="description">
 <title>国家止于何处 — Global Citizens</title>
-<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html" id="canonicalUrl" rel="canonical"/>
-<meta content="index, follow" name="robots"/>
-<link href="assets/favicon.png" rel="icon" type="image/png"/>
-<link href="assets/favicon.ico" rel="shortcut icon"/>
-<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"/><style>
+<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html" id="canonicalUrl" rel="canonical">
+<meta content="index, follow" name="robots">
+<link href="assets/favicon.png" rel="icon" type="image/png">
+<link href="assets/favicon.ico" rel="shortcut icon">
+<link as="font" crossorigin="" href="assets/itc-franklin-gothic-md.woff2" rel="preload" type="font/woff2"><style>
     @font-face{font-family:"ITCFranklinGothicW10-Md 862390";src:url("assets/itc-franklin-gothic-md.woff2") format("woff2"),url("assets/itc-franklin-gothic-md.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
     :root{
       --ink:#102133;
@@ -837,13 +836,6 @@
       letter-spacing:.11em;
       font-size:14px;
     }
-    .publication-disclaimer{
-      margin:0 0 14px;
-      max-width:900px;
-      font-size:13px;
-      line-height:1.45;
-      font-weight:400;
-    }
     .publication-title{
       margin:0;
       max-width:900px;
@@ -915,25 +907,6 @@
       font-size:23px;
       font-weight:600;
     }
-    .service-list{
-      border-top:1px solid var(--line);
-    }
-    .service-row{
-      display:grid;
-      grid-template-columns:minmax(160px,220px) 1fr;
-      gap:24px;
-      padding:14px 0;
-      border-bottom:1px solid var(--line);
-      font-size:14px;
-      line-height:1.5;
-    }
-    .service-label{
-      color:var(--muted);
-      font-weight:700;
-    }
-    .service-value{
-      color:var(--ink);
-    }
     .resources-list{
       display:grid;
       gap:10px;
@@ -964,16 +937,26 @@
     }
     @media (max-width:840px){
       .publication-shell{padding:42px 20px 62px}
-      .publication-disclaimer{font-size:12px;line-height:1.4;margin-bottom:12px}
       .publication-title{font-size:20px;line-height:1.3}
       .publication-body{font-size:16px;line-height:24px}
       .publication-body h2{font-size:24px}
       .publication-rule{margin:24px 0 30px}
-      .service-row{grid-template-columns:1fr;gap:5px;padding:13px 0}
       .resource-item{align-items:flex-start}
     }
 
   
+    /* GCIM publication typography */
+    @font-face{
+      font-family:"Instrument Serif";
+      src:url("assets/fonts/instrument-serif-regular.ttf") format("truetype");
+      font-style:normal;
+      font-weight:400;
+      font-display:swap;
+    }
+    .publication-title, .publication-body{
+      font-family:"Instrument Serif",Georgia,"Times New Roman",serif;
+    }
+
     /* GCIM mobile viewport lock */
     @media (max-width:840px) {
       html, body { width:100%; max-width:100%; overflow-x:hidden; }
@@ -981,7 +964,6 @@
       .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
       .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
       .publication-title, .publication-body, .resource-item, .resource-title,
-      .service-value { min-width:0; max-width:100%; }
       .brand-copy { overflow:hidden; }
       .brand-copy strong { font-size:14px; line-height:1.1; white-space:nowrap; overflow-wrap:normal; }
       .footer-brand { font-size:17px; }
@@ -1058,35 +1040,6 @@
       .brand-copy span{font-size:12px}
     }
 
-
-    /* Non-English mobile footer fit */
-    @media (max-width:767px){
-      .footer-inner,
-      .footer-subscribe{min-width:0;max-width:100%}
-      .footer-copy,
-      .footer-language-note,
-      .subscribe-copy,
-      .footer-subscribe h3,
-      .subscribe-note,
-      .copyright{
-        max-width:100%;
-        white-space:normal;
-        overflow-wrap:anywhere;
-        word-break:normal;
-      }
-      .subscribe-form{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-        margin-inline:0;
-      }
-      .subscribe-form input,
-      .subscribe-form button{
-        width:100%;
-        max-width:100%;
-        min-width:0;
-      }
-    }
 
     /* Mobile header fit and alignment */
     @media (max-width:840px){
@@ -1287,6 +1240,54 @@
       }
     }
   
+    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_START */
+    /* Mobile White House metrics for Arabic and Simplified Chinese publication pages; existing language typefaces are preserved. */
+    @media (max-width:840px){
+      html:is([lang="ar"], [lang="zh"]) .publication-title{
+        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.08;
+        letter-spacing:0;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:none;
+        text-wrap:balance;
+      }
+      html:is([lang="ar"], [lang="zh"]) .publication-body{
+        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+        white-space:normal;
+        overflow-wrap:normal;
+        word-break:normal;
+        hyphens:none;
+        text-wrap:pretty;
+      }
+      html:is([lang="ar"], [lang="zh"]) .publication-body :is(strong,b){font-weight:700;}
+      html:is([lang="ar"], [lang="zh"]) .publication-body h2{
+        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-style:normal;
+        font-weight:400;
+        line-height:1.18;
+        letter-spacing:0;
+        text-transform:none;
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.publication-meta,.publication-category,.publication-date){
+        font-style:normal;
+        font-weight:400;
+        line-height:1.6;
+        letter-spacing:0;
+        text-transform:none;
+      }
+    }
+    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_END */
+
     /* GCIM_GENERATED_PORTAL_RESOURCES_START */
     /* Official GCIM web-resources line. Desktop and mobile are intentionally separate. */
     @media (min-width:841px){
@@ -1347,54 +1348,6 @@
 .copyright-mobile-break{display:none;}
 @media (max-width:840px){.copyright-mobile-break{display:block;}}
 /* GCIM_MOBILE_COPYRIGHT_BREAK_END */
-
-    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_START */
-    /* Mobile White House metrics for Arabic and Simplified Chinese publication pages; existing language typefaces are preserved. */
-    @media (max-width:840px){
-      html:is([lang="ar"], [lang="zh"]) .publication-title{
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.08;
-        letter-spacing:0;
-        text-transform:none;
-        white-space:normal;
-        overflow-wrap:normal;
-        word-break:normal;
-        hyphens:none;
-        text-wrap:balance;
-      }
-      html:is([lang="ar"], [lang="zh"]) .publication-body{
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.6;
-        letter-spacing:0;
-        text-transform:none;
-        white-space:normal;
-        overflow-wrap:normal;
-        word-break:normal;
-        hyphens:none;
-        text-wrap:pretty;
-      }
-      html:is([lang="ar"], [lang="zh"]) .publication-body :is(strong,b){font-weight:700;}
-      html:is([lang="ar"], [lang="zh"]) .publication-body h2{
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
-        font-style:normal;
-        font-weight:400;
-        line-height:1.18;
-        letter-spacing:0;
-        text-transform:none;
-      }
-      html:is([lang="ar"], [lang="zh"]) :is(.publication-meta,.publication-category,.publication-date){
-        font-style:normal;
-        font-weight:400;
-        line-height:1.6;
-        letter-spacing:0;
-        text-transform:none;
-      }
-    }
-    /* GCIM_GENERATED_AR_ZH_PUBLICATION_TYPOGRAPHY_END */
 
     /* GCIM_MOBILE_WHITEHOUSE_GEOMETRY_V287_START */
     @media (max-width:840px){
@@ -1466,8 +1419,8 @@
     }
     /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_END */
 </style>
-<link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html" hreflang="en-US" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html" hreflang="ar" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-es.html" hreflang="es" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html" hreflang="zh-Hans" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ru.html" hreflang="ru" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-fr.html" hreflang="fr" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-uk.html" hreflang="uk" rel="alternate"/><link href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html" hreflang="x-default" rel="alternate"/><meta content="article" property="og:type"/><meta content="Global Citizens" property="og:site_name"/><meta content="zh_CN" property="og:locale"/><meta content="国家止于何处" property="og:title"/><meta content="本页面发布的材料反映总协调员的观点，不一定代表国际运动 Global Citizens 的官方立场。" property="og:description"/><meta content="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html" property="og:url"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" property="og:image:secure_url"/><meta content="image/jpeg" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Global Citizens Press Office" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="国家止于何处" name="twitter:title"/><meta content="本页面发布的材料反映总协调员的观点，不一定代表国际运动 Global Citizens 的官方立场。" name="twitter:description"/><meta content="https://press.gcim.eu/assets/social-preview.jpg" name="twitter:image"/><meta content="Global Citizens Press Office" name="twitter:image:alt"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"国家止于何处","datePublished":"2026-09-17","publisher":{"@type":"Organization","name":"International Movement Global Citizens","url":"https://gcim.eu/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html"},"inLanguage":"zh","description":"本页面发布的材料反映总协调员的观点，不一定代表国际运动 Global Citizens 的官方立场。","image":"https://press.gcim.eu/assets/social-preview.jpg"}</script>  <link rel="stylesheet" href="assets/gc-masthead-v296.css">
-</head>
+<link rel="stylesheet" href="assets/gc-masthead-v309.css">
+<link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html"><link rel="alternate" hreflang="ar" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ar.html"><link rel="alternate" hreflang="es" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-es.html"><link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html"><link rel="alternate" hreflang="ru" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-ru.html"><link rel="alternate" hreflang="fr" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-fr.html"><link rel="alternate" hreflang="uk" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-uk.html"><link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-09-17-where-the-state-ends-en.html"><meta property="og:type" content="article"><meta property="og:site_name" content="Global Citizens"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="国家止于何处"><meta property="og:description" content="可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。"><meta property="og:url" content="https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html"><meta property="og:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:secure_url" content="https://press.gcim.eu/assets/social-preview.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Global Citizens Press Office"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="国家止于何处"><meta name="twitter:description" content="可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。"><meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg"><meta name="twitter:image:alt" content="Global Citizens Press Office"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "国家止于何处", "datePublished": "2026-09-17", "description": "可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。", "publisher": {"@type": "Organization", "name": "International Movement Global Citizens", "url": "https://gcim.eu/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://press.gcim.eu/2026-09-17-where-the-state-ends-zh.html"}, "inLanguage": "zh", "image": "https://press.gcim.eu/assets/social-preview.jpg"}</script></head>
 <body>
 <div class="portal-bar">
 <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">GCIM 官方资源</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">国际运动 Global Citizens（GCIM）的官方网络资源可通过以下地址访问：</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
@@ -1490,7 +1443,7 @@
 <button aria-pressed="false" data-lang-btn="en" title="English" type="button">EN</button>
 <button aria-pressed="false" data-lang-btn="ar" title="العربية" translate="no" type="button">AR</button>
 <button aria-pressed="false" data-lang-btn="es" title="Español" type="button">ES</button>
-<button aria-pressed="true" class="active" data-lang-btn="zh" title="中文" type="button">ZH</button>
+<button aria-pressed="true" data-lang-btn="zh" title="中文" type="button" class="active">ZH</button>
 <button aria-pressed="false" data-lang-btn="ru" title="Русский" type="button">RU</button>
 <button aria-pressed="false" data-lang-btn="fr" title="Français" type="button">FR</button>
 <button aria-pressed="false" data-lang-btn="uk" title="Українська" translate="no" type="button">UA</button>
@@ -1498,10 +1451,10 @@
 <div class="mobile-actions">
 <label aria-label="Language" class="mobile-lang-wrap">
 <select class="mobile-lang notranslate" id="mobileLang" translate="no">
-<option selected="" translate="no" value="en">EN</option>
+<option selected translate="no" value="en">EN</option>
 <option translate="no" value="ar">AR</option>
 <option translate="no" value="es">ES</option>
-<option selected="" translate="no" value="zh">ZH</option>
+<option translate="no" value="zh" selected>ZH</option>
 <option translate="no" value="ru">RU</option>
 <option translate="no" value="fr">FR</option>
 <option translate="no" value="uk">UA</option>
@@ -1517,13 +1470,27 @@
 <nav aria-label="Main navigation" class="nav" id="mobileNav">
 <div class="nav-links">
 <a class="active" data-ar="الكل" data-en="All" data-es="Todo" data-fr="Tout" data-ru="Все" data-uk="Усі" data-zh="全部" href="index-zh.html">全部</a>
-<a data-ar="الإصدارات" data-en="Releases" data-es="Comunicados" data-fr="Communiqués" data-ru="Релизы" data-uk="Пресрелізи" data-zh="新闻稿" href="press-releases-zh.html">新闻稿</a>
-<a data-ar="البيانات" data-en="Statements" data-es="Declaraciones" data-fr="Déclarations" data-ru="Заявления" data-uk="Заяви" data-zh="声明" href="statements-zh.html">声明</a>
-<a data-ar="أنشطة المنسق" data-en="Coordinator’s Actions" data-es="Actividades del Coordinador" data-fr="Activités du Coordinateur" data-ru="Деятельность Координатора" data-uk="Діяльність Координатора" data-zh="协调员活动" href="coordinator-actions-zh.html">协调员活动</a>
-<a data-ar="منظور" data-category-nav="perspective" data-en="Perspective" data-es="Perspectiva" data-fr="Perspective" data-ru="Взгляд" data-uk="Погляд" data-zh="视角" href="perspective-zh.html">视角</a>
-<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about.html" id="aboutLink">关于我们</a>
+<details class="nav-dropdown movement-menu">
+<summary data-en="Movement" data-ar="الحركة" data-es="Movimiento" data-zh="运动" data-ru="Движение" data-fr="Mouvement" data-uk="Рух">运动</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="movement-official-statements" data-en="Official Statements" data-ar="البيانات الرسمية" data-es="Declaraciones oficiales" data-zh="官方声明" data-ru="Официальные заявления" data-fr="Déclarations officielles" data-uk="Офіційні заяви" href="movement-official-statements-zh.html">官方声明</a>
+<a class="nav-submenu-link" data-category-nav="movement-press-releases" data-en="Press Releases" data-ar="البيانات الصحفية" data-es="Comunicados de prensa" data-zh="新闻稿" data-ru="Пресс-релизы" data-fr="Communiqués de presse" data-uk="Пресрелізи" href="movement-press-releases-zh.html">新闻稿</a>
+<a class="nav-submenu-link" data-category-nav="movement-open-letters-petitions" data-en="Open Letters &amp; Petitions" data-ar="الرسائل المفتوحة والعرائض" data-es="Cartas abiertas y peticiones" data-zh="公开信与请愿书" data-ru="Открытые письма и петиции" data-fr="Lettres ouvertes et pétitions" data-uk="Відкриті листи та петиції" href="movement-open-letters-petitions-zh.html">公开信与请愿书</a>
+<a class="nav-submenu-link" data-category-nav="movement-urgent-appeals-cases" data-en="Urgent Appeals &amp; Cases" data-ar="النداءات العاجلة والقضايا" data-es="Llamamientos urgentes y casos" data-zh="紧急呼吁与个案" data-ru="Срочные обращения и дела" data-fr="Appels urgents et dossiers" data-uk="Термінові звернення та справи" href="movement-urgent-appeals-cases-zh.html">紧急呼吁与个案</a>
+<a class="nav-submenu-link" data-category-nav="movement-reports-submissions" data-en="Reports &amp; Submissions" data-ar="التقارير والمذكرات المقدمة" data-es="Informes y comunicaciones" data-zh="报告与提交材料" data-ru="Доклады и представления" data-fr="Rapports et communications" data-uk="Доповіді та подання" href="movement-reports-submissions-zh.html">报告与提交材料</a>
 </div>
-<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries.html" id="mediaInquiriesLink">媒体问询</a>
+</details>
+<details class="nav-dropdown coordinator-menu">
+<summary data-en="Coordinator" data-ar="المنسق" data-es="Coordinador" data-zh="协调员" data-ru="Координатор" data-fr="Coordinateur" data-uk="Координатор">协调员</summary>
+<div class="nav-submenu">
+<a class="nav-submenu-link" data-category-nav="coordinator-statements-commentary" data-en="Statements and Commentary" data-ar="البيانات والتعليقات" data-es="Declaraciones y comentarios" data-zh="声明与评论" data-ru="Заявления и комментарии" data-fr="Déclarations et commentaires" data-uk="Заяви та коментарі" href="coordinator-statements-commentary-zh.html">声明与评论</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-speeches-remarks" data-en="Speeches and Remarks" data-ar="الخطب والكلمات" data-es="Discursos e intervenciones" data-zh="演讲与讲话" data-ru="Речи и выступления" data-fr="Discours et allocutions" data-uk="Промови та виступи" href="coordinator-speeches-remarks-zh.html">演讲与讲话</a>
+<a class="nav-submenu-link" data-category-nav="coordinator-policy-perspectives" data-en="Policy Perspectives" data-ar="رؤى حول السياسات" data-es="Perspectivas sobre políticas" data-zh="政策观点" data-ru="Взгляды на политику" data-fr="Perspectives sur les politiques" data-uk="Погляди на політику" href="coordinator-policy-perspectives-zh.html">政策观点</a>
+</div>
+</details>
+<a data-ar="من نحن" data-en="About Us" data-es="Quiénes somos" data-fr="À propos de nous" data-ru="О нас" data-uk="Про нас" data-zh="关于我们" href="about-zh.html" id="aboutLink">关于我们</a>
+</div>
+<a class="media-link" data-ar="استفسارات وسائل الإعلام" data-en="Media inquiries" data-es="Consultas de los medios" data-fr="Demandes des médias" data-ru="Запросы СМИ" data-uk="Запити ЗМІ" data-zh="媒体问询" href="media-inquiries-zh.html" id="mediaInquiriesLink">媒体问询</a>
 </nav>
 </div>
 <main>
@@ -1537,15 +1504,11 @@
 <time class="publication-date" datetime="2026-09-17" id="publicationDate">2026年9月17日</time>
 <span class="publication-category" id="publicationCategory">协调员活动 / 视角</span>
 </div>
-<p class="publication-disclaimer">本页面发布的材料反映总协调员的观点，不一定代表国际运动 Global Citizens 的官方立场。</p><h1 class="publication-title" id="publicationTitle">国家止于何处</h1>
+<h1 class="publication-title" id="publicationTitle">国家止于何处</h1>
 <div class="publication-rule"></div>
 </header>
-<div class="publication-body" id="publicationBody"><p>可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。</p><p>过去四分之一个世纪，俄罗斯的学校版图发生了显著变化。根据国立研究型大学高等经济学院出版的《数字中的教育：2026》，2000/01学年共有68,804个机构提供初等、基础或中等普通教育。到2025/26学年，这一数字降至37,965个，降幅为44.8%。</p><p>这些数据来自国立研究大学高等经济学院，根据官方统计数据编制；它们并非来自教育部的单独出版物。区别很重要：官方统计数据不仅要求数字准确，还要求收集和发布数据的机构名称准确。</p><p>农村学校网络的变化最为显著。国立和市立农村学校的数量从45,475所降至20,664所，减少24,811所，降幅为54.6%。在城市，相应数字从22,694所降至16,319所，降幅为28.1%。相比之下，私立学校数量从635所增至982所，但这一增幅不足以改变总体格局。</p><p>人口因素可以解释部分变化，但不能解释全部变化。同期，学生人数从2,055万人降至1,778万人，降幅为13.5%。因此，教育机构数量的下降速度超过学生人数下降速度的三倍。</p><p>这些数据并不能证明每个从统计数据中消失的机构都已关闭；合并、重组和组织地位的变化也是可能的。决策背后的动机也无法从单一表格中确定。然而，这一比例确实表明学校网络持续集中。</p><p>官僚机构偏爱“优化”一词，因为这个词没有地理属性。学校则始终具有明确的地理属性。</p><p>在大城市，两个机构的合并或许只是一个行政事项。在小型居民点，学校不仅是教学场所。学校保障公共权力的持续存在，维持就业，并将家庭与所在地联系起来。因此，即使学校网络的调整被表述为经济重组，也具有政治意义。</p><p>美国的统计数据呈现出不同的配置。这种比较并不完全对称：俄罗斯的指标涵盖了提供普通教育项目的不同所有制形式的组织，而美国的指标涵盖了公立学校。此外，最新的可比NCES数据指的是2022/23学年，而俄罗斯数据指的是2025/26学年。</p><p>然而，变化的方向不同。根据美国国家教育统计中心的数据，公立学校的数量从 2000/01 年的 93,273 所增加到 2022/23 年的 99,388 所，增幅约为 6.6%。公立学校入学人数从 2000 年秋季的 4720 万人增加到 2022 年秋季的 4960 万人，增幅约为 5.1%。</p><p>与此同时，普通公立学区的数量从14,859个降至13,318个，降幅为10.4%。统计数据没有解释这一减少的原因，也不能据此自动将其归因于合并政策。数据所支持的是一个更为审慎的结论：行政单位数量减少的同时，学校数量有所增加。</p><p>因此，俄罗斯缩减的首先是机构网络，尤其是农村地区的机构网络。在美国，全国学校网络并未缩小，尽管管理该网络的学区数量有所减少。这尚不足以证明一种模式优于另一种模式，但表明制度收缩所针对的对象不同。</p><p>俄罗斯模式影响的是学校的地域存在。美国统计数据主要反映行政结构的变化。在前一种情况下，设有教育机构的地点数量减少；在后一种情况下，管理一个保持不变或正在扩大的网络的机构数量减少。</p><p>高等教育需要更加审慎地加以分析。在俄罗斯，实施学士、专家和硕士培养项目的机构数量从2000/01学年的965个降至2025/26学年的751个。然而，自2020/21学年起，该指标纳入了实施硕士培养项目的科研机构。因此，这一长期序列并非完全同质。</p><p>在美国，参与联邦财政援助计划的授予学位的高等教育机构数量从2000/01年的4,182所下降到2022/23年的3,896所。 NCES 方法论注释警告说，该指标除其他外，还受到分支单独计数方式的影响。</p><p>大学的数量本身几乎不能说明一个系统的智力能力。可能会有更少的机构和更多的研究。</p><p>美国正是出现了这种情况。根据美国国家科学与工程统计中心的数据，美国高校的研发支出从2000财年的301亿美元增至2023年的1,088亿美元。按2017年不变价计算，支出从414亿美元增至890亿美元，增长一倍以上。2023年，联邦资金占高校研究支出的55%。</p><p>这些统计数据并不能证明美国政府始终正确利用学术专业知识。金钱可以为知识提供资金，但它不能保证政府的审慎。它们还表明：即使机构总数下降，研究基础设施也可以变得更加强大。</p><p>要就俄罗斯得出同等结论，需要另行建立一组官方可比数据，涵盖高校研究支出、资金来源以及政府委托的专家分析工作。若无此类数据，关于俄罗斯学术界“处于边缘”的说法仍属于评价，而非已经确立的统计事实。</p><p>然而，制度问题并未因此消失。知识生产与国家运用知识的能力属于不同的国家职能。大学可以提供测算；国家则应建立一种机制，使测算能够与部门惯性相竞争。仅为确认既定决定而征求的专业意见，不是咨询，而是装饰。</p><p>教育政策很少产生立竿见影的政治效果。学校从登记册中消失的速度比其后果从公共生活中消失的速度还要快。一项决定首先似乎是一个会计问题，然后是一个领土问题，最后才是一个政治问题。</p><p>因此，问题不在于国家成功合并了多少机构，而在于国家认为自身未来需要何种程度的制度密度。国家可以通过行政决定减少学校数量，但要恢复学校作为社区、人才和信任中心的功能，则困难得多。</p><p>学校版图不作裁决。它只是显示国家在哪些地方仍然每日存在，又在哪些地方只留下了报表。</p><p>因此，未来对教育体系的审查不应以新口号的数量来衡量，而应以是否愿意回答一个老问题来衡量：国家认为自己的职责是什么——维持制度，还是保护国家的公民和知识基础设施？</p><p>一所学校可以在一个预算年度内关闭。要使其恢复则困难得多。</p><h2>来源</h2><p><a href="https://issek.hse.ru/mirror/pubs/share/1196008207.pdf" rel="noopener" target="_blank">1.国立研究型大学高等经济学院统计研究所和知识经济研究所。数字教育：2026 年。莫斯科，2026 年。DOI 10.17323/978-5-7598-3057-3。表 3.2，“在初等、基础和中等普通教育计划下提供教育活动的组织”，第 14 页。 45；表 3.4，第 14 页48；表 4.3，第 14 页55.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_214.10.asp" rel="noopener" target="_blank">2. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 214.10: Number of public school districts and public and private elementary and secondary schools, 1869–70 through 2022–23. 该表于2024年1月编制。</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_203.10.asp" rel="noopener" target="_blank">3. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 203.10: Enrollment in public elementary and secondary schools, by level and grade, 1980 through 2031. 2022年实际数据；该表于2023年12月编制。</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_317.10.asp" rel="noopener" target="_blank">4. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 317.10: Degree-granting postsecondary institutions, 1949–50 through 2022–23. 该表于2024年1月编制。</a></p><p><a href="https://ncses.nsf.gov/pubs/nsf25313" rel="noopener" target="_blank">5. Michael T. Gibbons; National Center for Science and Engineering Statistics. Higher Education R&amp;D Expenditures Increased 11.2%, Exceeded $108 Billion in FY 2023. NSF 25-313. U.S. National Science Foundation, 2024. 图1及表1—2。</a></p><p><a href="https://www.washingtonpost.com/people/george-f-will/" rel="noopener" target="_blank">6. The Washington Post. 乔治·F·威尔的作者页面及专栏档案。仅作为文体参考。</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/12/chicago-teachers-unions-abysmal-performance-sparks-voter-rebellion/" rel="noopener" target="_blank">7. George F. Will. Chicagoans are getting fed up with the city’s teachers union. The Washington Post，2026年8月12日。用于分析一般构篇和修辞手法，不作为本文统计数据的来源。</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/28/ncaa-college-football-seeks-congressional-help/" rel="noopener" target="_blank">8. George F. Will. The addled college football cartel wants to huddle up with Congress. The Washington Post，2026年8月28日。仅作为文体参考。</a></p></div>
-<section class="publication-section" hidden="" id="serviceSection">
-<h2 id="serviceHeading">行政信息</h2>
-<div class="service-list" id="serviceList"></div>
-</section>
-<section class="publication-section" hidden="" id="resourcesSection">
+<div class="publication-body" id="publicationBody"><p>可以通过三幅地图来考察国家：道路、税收和学校。道路显示国家能够抵达何处；税收显示国家能够从何处获得资金；学校则显示国家打算在何处持续存在。</p><p>过去四分之一个世纪，俄罗斯的学校版图发生了显著变化。根据国立研究型大学高等经济学院出版的《数字中的教育：2026》，2000/01学年共有68,804个机构提供初等、基础或中等普通教育。到2025/26学年，这一数字降至37,965个，降幅为44.8%。</p><p>这些数据来自国立研究大学高等经济学院，根据官方统计数据编制；它们并非来自教育部的单独出版物。区别很重要：官方统计数据不仅要求数字准确，还要求收集和发布数据的机构名称准确。</p><p>农村学校网络的变化最为显著。国立和市立农村学校的数量从45,475所降至20,664所，减少24,811所，降幅为54.6%。在城市，相应数字从22,694所降至16,319所，降幅为28.1%。相比之下，私立学校数量从635所增至982所，但这一增幅不足以改变总体格局。</p><p>人口因素可以解释部分变化，但不能解释全部变化。同期，学生人数从2,055万人降至1,778万人，降幅为13.5%。因此，教育机构数量的下降速度超过学生人数下降速度的三倍。</p><p>这些数据并不能证明每个从统计数据中消失的机构都已关闭；合并、重组和组织地位的变化也是可能的。决策背后的动机也无法从单一表格中确定。然而，这一比例确实表明学校网络持续集中。</p><p>官僚机构偏爱“优化”一词，因为这个词没有地理属性。学校则始终具有明确的地理属性。</p><p>在大城市，两个机构的合并或许只是一个行政事项。在小型居民点，学校不仅是教学场所。学校保障公共权力的持续存在，维持就业，并将家庭与所在地联系起来。因此，即使学校网络的调整被表述为经济重组，也具有政治意义。</p><p>美国的统计数据呈现出不同的配置。这种比较并不完全对称：俄罗斯的指标涵盖了提供普通教育项目的不同所有制形式的组织，而美国的指标涵盖了公立学校。此外，最新的可比NCES数据指的是2022/23学年，而俄罗斯数据指的是2025/26学年。</p><p>然而，变化的方向不同。根据美国国家教育统计中心的数据，公立学校的数量从 2000/01 年的 93,273 所增加到 2022/23 年的 99,388 所，增幅约为 6.6%。公立学校入学人数从 2000 年秋季的 4720 万人增加到 2022 年秋季的 4960 万人，增幅约为 5.1%。</p><p>与此同时，普通公立学区的数量从14,859个降至13,318个，降幅为10.4%。统计数据没有解释这一减少的原因，也不能据此自动将其归因于合并政策。数据所支持的是一个更为审慎的结论：行政单位数量减少的同时，学校数量有所增加。</p><p>因此，俄罗斯缩减的首先是机构网络，尤其是农村地区的机构网络。在美国，全国学校网络并未缩小，尽管管理该网络的学区数量有所减少。这尚不足以证明一种模式优于另一种模式，但表明制度收缩所针对的对象不同。</p><p>俄罗斯模式影响的是学校的地域存在。美国统计数据主要反映行政结构的变化。在前一种情况下，设有教育机构的地点数量减少；在后一种情况下，管理一个保持不变或正在扩大的网络的机构数量减少。</p><p>高等教育需要更加审慎地加以分析。在俄罗斯，实施学士、专家和硕士培养项目的机构数量从2000/01学年的965个降至2025/26学年的751个。然而，自2020/21学年起，该指标纳入了实施硕士培养项目的科研机构。因此，这一长期序列并非完全同质。</p><p>在美国，参与联邦财政援助计划的授予学位的高等教育机构数量从2000/01年的4,182所下降到2022/23年的3,896所。 NCES 方法论注释警告说，该指标除其他外，还受到分支单独计数方式的影响。</p><p>大学的数量本身几乎不能说明一个系统的智力能力。可能会有更少的机构和更多的研究。</p><p>美国正是出现了这种情况。根据美国国家科学与工程统计中心的数据，美国高校的研发支出从2000财年的301亿美元增至2023年的1,088亿美元。按2017年不变价计算，支出从414亿美元增至890亿美元，增长一倍以上。2023年，联邦资金占高校研究支出的55%。</p><p>这些统计数据并不能证明美国政府始终正确利用学术专业知识。金钱可以为知识提供资金，但它不能保证政府的审慎。它们还表明：即使机构总数下降，研究基础设施也可以变得更加强大。</p><p>要就俄罗斯得出同等结论，需要另行建立一组官方可比数据，涵盖高校研究支出、资金来源以及政府委托的专家分析工作。若无此类数据，关于俄罗斯学术界“处于边缘”的说法仍属于评价，而非已经确立的统计事实。</p><p>然而，制度问题并未因此消失。知识生产与国家运用知识的能力属于不同的国家职能。大学可以提供测算；国家则应建立一种机制，使测算能够与部门惯性相竞争。仅为确认既定决定而征求的专业意见，不是咨询，而是装饰。</p><p>教育政策很少产生立竿见影的政治效果。学校从登记册中消失的速度比其后果从公共生活中消失的速度还要快。一项决定首先似乎是一个会计问题，然后是一个领土问题，最后才是一个政治问题。</p><p>因此，问题不在于国家成功合并了多少机构，而在于国家认为自身未来需要何种程度的制度密度。国家可以通过行政决定减少学校数量，但要恢复学校作为社区、人才和信任中心的功能，则困难得多。</p><p>学校版图不作裁决。它只是显示国家在哪些地方仍然每日存在，又在哪些地方只留下了报表。</p><p>因此，未来对教育体系的审查不应以新口号的数量来衡量，而应以是否愿意回答一个老问题来衡量：国家认为自己的职责是什么——维持制度，还是保护国家的公民和知识基础设施？</p><p>一所学校可以在一个预算年度内关闭。要使其恢复则困难得多。</p><h2>来源</h2><p><a href="https://issek.hse.ru/mirror/pubs/share/1196008207.pdf" target="_blank" rel="noopener">1.国立研究型大学高等经济学院统计研究所和知识经济研究所。数字教育：2026 年。莫斯科，2026 年。DOI 10.17323/978-5-7598-3057-3。表 3.2，“在初等、基础和中等普通教育计划下提供教育活动的组织”，第 14 页。 45；表 3.4，第 14 页48；表 4.3，第 14 页55.</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_214.10.asp" target="_blank" rel="noopener">2. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 214.10: Number of public school districts and public and private elementary and secondary schools, 1869–70 through 2022–23. 该表于2024年1月编制。</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_203.10.asp" target="_blank" rel="noopener">3. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 203.10: Enrollment in public elementary and secondary schools, by level and grade, 1980 through 2031. 2022年实际数据；该表于2023年12月编制。</a></p><p><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_317.10.asp" target="_blank" rel="noopener">4. U.S. Department of Education, National Center for Education Statistics. Digest of Education Statistics 2023, Table 317.10: Degree-granting postsecondary institutions, 1949–50 through 2022–23. 该表于2024年1月编制。</a></p><p><a href="https://ncses.nsf.gov/pubs/nsf25313" target="_blank" rel="noopener">5. Michael T. Gibbons; National Center for Science and Engineering Statistics. Higher Education R&amp;D Expenditures Increased 11.2%, Exceeded $108 Billion in FY 2023. NSF 25-313. U.S. National Science Foundation, 2024. 图1及表1—2。</a></p><p><a href="https://www.washingtonpost.com/people/george-f-will/" target="_blank" rel="noopener">6. The Washington Post. 乔治·F·威尔的作者页面及专栏档案。仅作为文体参考。</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/12/chicago-teachers-unions-abysmal-performance-sparks-voter-rebellion/" target="_blank" rel="noopener">7. George F. Will. Chicagoans are getting fed up with the city’s teachers union. The Washington Post，2026年8月12日。用于分析一般构篇和修辞手法，不作为本文统计数据的来源。</a></p><p><a href="https://www.washingtonpost.com/opinions/2026/08/28/ncaa-college-football-seeks-congressional-help/" target="_blank" rel="noopener">8. George F. Will. The addled college football cartel wants to huddle up with Congress. The Washington Post，2026年8月28日。仅作为文体参考。</a></p></div>
+<section class="publication-section" hidden id="resourcesSection">
 <h2 id="resourcesHeading">链接和附件</h2>
 <div class="resources-list" id="resourcesList"></div>
 </section>
@@ -1571,18 +1534,14 @@
 <p class="subscribe-copy" data-ar="اشترك لتلقي أحدث الاتصالات الرسمية من المكتب الصحفي." data-en="Subscribe to receive the latest official communications from the Press Office." data-es="Suscríbase para recibir las últimas comunicaciones oficiales de la Oficina de Prensa." data-fr="Abonnez-vous pour recevoir les dernières communications officielles du Service de presse." data-ru="Подпишитесь, чтобы получать последние официальные сообщения Пресс-офиса." data-uk="Підпишіться на отримання актуальної офіційної інформації пресофісу." data-zh="订阅以接收新闻办公室发布的最新官方信息。" id="footerSubscribeCopy">订阅以接收新闻办公室发布的最新官方信息。</p>
 <form class="subscribe-form" id="subscribeForm" novalidate="">
 <label class="sr-only" data-ar="عنوان البريد الإلكتروني" data-en="Email address" data-es="Correo electrónico" data-fr="Adresse e-mail" data-ru="Адрес электронной почты" data-uk="Адреса електронної пошти" data-zh="电子邮件地址" for="subscribeEmail" id="footerEmailLabel">电子邮件地址</label>
-<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="电子邮件地址" required="" type="email"/>
+<input autocomplete="email" data-placeholder-ar="عنوان البريد الإلكتروني" data-placeholder-en="Email address" data-placeholder-es="Correo electrónico" data-placeholder-fr="Adresse e-mail" data-placeholder-ru="Адрес электронной почты" data-placeholder-uk="Адреса електронної пошти" data-placeholder-zh="电子邮件地址" id="subscribeEmail" name="email" placeholder="电子邮件地址" required="" type="email">
 <button data-ar="اشترك" data-en="Subscribe" data-es="Suscribirse" data-fr="S’abonner" data-ru="Подписаться" data-uk="Підписатися" data-zh="订阅" id="footerSubscribeButton" type="submit">订阅</button>
 </form>
 <div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">您可以随时取消订阅。</div>
 </div>
 </div>
-<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break">All Rights Reserved</div>
 </footer>
 <script src="scripts/static-publication.js?v=174"></script>
-
-
-
-
 </body>
 </html>

@@ -12,7 +12,11 @@
     release: 'press-releases',
     statement: 'statements',
     'coordinator-action': 'coordinator-actions',
-    perspective: 'perspective'
+    perspective: 'perspective',
+    'movement-open-letters-petitions': 'open-letters-petitions',
+    'movement-urgent-appeals-cases': 'urgent-appeals-cases',
+    'movement-reports-submissions': 'reports-submissions',
+    'coordinator-speeches-remarks': 'speeches-remarks'
   });
   const SECTION_PAGES = Object.freeze({
     about: Object.freeze({
