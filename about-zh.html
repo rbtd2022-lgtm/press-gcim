@@ -1337,10 +1337,22 @@
 /* GCIM_MOBILE_COPYRIGHT_BREAK_END */
 
     /* GCIM_GENERATED_AR_ZH_SECTION_TYPOGRAPHY_START */
-    /* Mobile White House metrics for Arabic and Simplified Chinese full section pages; existing language typefaces are preserved. */
+    /* Reduced content typography for Arabic and Simplified Chinese full section pages; existing language typefaces are preserved. */
+    @media (min-width:841px){
+      html:is([lang="ar"], [lang="zh"]) .hero h1{
+        font-size:clamp(2.7rem, 1.08vw + 2.403rem, 3.375rem);
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > :is(p,.about-lead){
+        font-size:clamp(.9rem, .18vw + .8505rem, 1.0125rem);
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > h2,
+      html:is([lang="ar"], [lang="zh"]) .notice-heading{
+        font-size:clamp(1.35rem, .36vw + 1.251rem, 1.575rem);
+      }
+    }
     @media (max-width:840px){
       html:is([lang="ar"], [lang="zh"]) .hero h1{
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-size:clamp(1.96362rem, 9.819vw, 2.7rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1354,7 +1366,7 @@
       }
       html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > p,
       html:is([lang="ar"], [lang="zh"]) .about-lead{
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-size:clamp(.65457rem, 3.276vw, .9rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1363,7 +1375,7 @@
       }
       html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > h2,
       html:is([lang="ar"], [lang="zh"]) .notice-heading{
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-size:clamp(.98181rem, 4.905vw, 1.35rem);
         font-style:normal;
         font-weight:400;
         line-height:1.18;
@@ -1435,6 +1447,26 @@
   <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead-v309.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://gcim.eu/#organization",
+    "name": "Global Citizens",
+    "alternateName": "GCIM",
+    "url": "https://gcim.eu/",
+    "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"},
+    "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"],
+    "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"},
+    "description": "Global Citizens是一个国际非政府运动，致力于应对人道主义挑战、开展第二轨道外交（Track II diplomacy），并将人们的关键需求直接传达给国家和国际层面的决策者。",
+    "inLanguage": "zh-Hans"
+  }
+  </script>
+
+<style id="gcim-about-identity-v329">
+.about-identity-movement,.about-identity-mission{font-family:inherit;font-size:clamp(1.375rem,.35vw + 1.28rem,1.625rem);line-height:1.18;font-weight:400;letter-spacing:.56px;}
+@media (max-width:840px){.about-identity-movement,.about-identity-mission{font-size:clamp(1rem,5vw,1.375rem);}}
+</style>
 </head>
 <body>
   <div class="portal-bar">
@@ -1529,30 +1561,26 @@
   </div>
 
   <main>
+    
+
     <section class="hero">
-      <div class="eyebrow">机构简介</div>
-      <h1>关于新闻事务办公室</h1>
-      <div class="hero-rule"></div>
+      <h1>Global Citizens</h1>
+      <h2 class="about-identity-movement">国际运动</h2>
     </section>
 
     <section class="about-wrap">
       <div class="about-grid">
         <div class="about-copy">
-          <p class="about-lead">国际运动 Global Citizens 新闻事务办公室承担本运动官方信息发布和媒体联络工作，负责及时发布与本运动活动及立场有关的官方信息。本门户发布声明、新闻稿、协调员活动信息以及其他面向媒体和公众的资料。</p>
-
-          <h2>主要职责</h2>
-          <p>负责及时、准确、规范发布本运动有关活动和立场的官方信息；负责媒体联络和记者事务；受理职责范围内的媒体问询以及信息和评论请求；提供现行及历史新闻资料查询。</p>
-
-          <h2>官方发布</h2>
-          <p>本门户发布的内容为本运动对外正式信息，并按类别编排，以便查阅新闻稿、声明、协调员活动信息及其他面向媒体发布的资料。</p>
+          <h2 class="about-identity-mission">维护世界各地的人权</h2>
+          <p>Global Citizens是一个国际非政府运动，致力于应对人道主义挑战、开展第二轨道外交（Track II diplomacy），并将人们的关键需求直接传达给国家和国际层面的决策者。</p>
+          <p class="about-communications"><strong>联络：</strong><br><strong>电子邮箱：</strong> communications@gcim.eu。</p>
         </div>
 
         <aside class="about-card" aria-label="新闻事务办公室">
           <h2>新闻事务办公室</h2>
-          <div class="about-card-item">官方信息发布</div>
-          <div class="about-card-item">媒体联络</div>
-          <div class="about-card-item">二轨外交</div>
-          <a href="https://gcim.eu/" target="_blank" rel="noopener">本运动官方网站：www.gcim.eu</a>
+          <h2><strong>电子邮箱：</strong> pressoffice@gcim.eu。</h2>
+          <div class="about-card-item"><strong>警告：</strong></div>
+          <div class="about-card-item">此电子邮箱仅供媒体代表提交咨询。如您不是媒体代表但希望提交咨询，请将咨询发送至公共关系部门，邮箱为 communications@www.gcim.eu。</div>
         </aside>
       </div>
     </section>

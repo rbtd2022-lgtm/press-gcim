@@ -1284,7 +1284,7 @@
         margin:0 auto;
         padding:0;
         font-family:"Instrument Serif", serif;
-        font-size:clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+        font-size:clamp(2.5875rem, .99vw + 2.313rem, 3.15rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1301,7 +1301,7 @@
         max-width:min(100%, 782px);
         margin:0;
         font-family:"Instrument Sans", sans-serif;
-        font-size:clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+        font-size:clamp(.855rem, .162vw + .81rem, .95625rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1343,7 +1343,7 @@
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) .hero h1{
         font-family:"Instrument Serif", serif;
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-size:clamp(1.8rem, 9vw, 2.475rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1358,7 +1358,7 @@
       html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > p,
       html:is([lang="en"], [lang="fr"], [lang="es"]) .about-lead{
         font-family:"Instrument Sans", sans-serif;
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-size:clamp(.675rem, 3.15vw, .855rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1367,7 +1367,7 @@
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > h2{
         font-family:"Instrument Serif", serif;
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-size:clamp(.9rem, 4.5vw, 1.2375rem);
         font-style:normal;
         font-weight:400;
         line-height:1.18;
@@ -1500,6 +1500,29 @@
   <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead-v309.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://gcim.eu/#organization",
+    "name": "Global Citizens",
+    "alternateName": "GCIM",
+    "url": "https://gcim.eu/",
+    "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"},
+    "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"],
+    "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"},
+    "description": "Global Citizens est un mouvement international non gouvernemental qui agit dans le domaine de la réponse aux enjeux humanitaires, de la diplomatie de deuxième voie (Track II diplomacy) et de la transmission des besoins essentiels des personnes directement aux décideurs aux niveaux national et international.",
+    "inLanguage": "fr"
+  }
+  </script>
+
+<style id="gcim-about-identity-v329">
+.about-identity-movement,.about-identity-mission{font-family:"Instrument Serif",serif;font-size:clamp(1.375rem,.35vw + 1.28rem,1.625rem);line-height:1.18;font-weight:400;letter-spacing:.56px;}
+@media (max-width:840px){.about-identity-movement,.about-identity-mission{font-size:clamp(1rem,5vw,1.375rem);}}
+</style>
+<style id="gcim-about-brand-one-line-v336">
+@media (min-width:841px){.brand-copy strong{white-space:nowrap;}}
+</style>
 </head>
 <body>
   <div class="portal-bar">
@@ -1594,30 +1617,26 @@
   </div>
 
   <main>
+    
+
     <section class="hero">
-      <div class="eyebrow">À propos</div>
-      <h1>À propos du Bureau des opérations de presse</h1>
-      <div class="hero-rule"></div>
+      <h1>Global Citizens</h1>
+      <h2 class="about-identity-movement">Mouvement international</h2>
     </section>
 
     <section class="about-wrap">
       <div class="about-grid">
         <div class="about-copy">
-          <p class="about-lead">Le Bureau des opérations de presse du Mouvement international Global Citizens est l’interlocuteur de référence des médias et assure la diffusion de l’information officielle relative aux activités et aux positions du Mouvement. Le présent portail met à disposition les déclarations, communiqués, informations relatives aux activités du Coordinateur ainsi que d’autres documents destinés aux médias et au public.</p>
-
-          <h2>Missions</h2>
-          <p>Le Bureau veille à la diffusion, dans les meilleurs délais, d’informations officielles exactes et cohérentes. Il assure les relations avec les médias pour les questions relevant de sa compétence, traite les demandes d’information et de commentaire et met à disposition les documents de presse en cours ainsi que les publications antérieures.</p>
-
-          <h2>Communications officielles</h2>
-          <p>Les contenus publiés sur le présent portail relèvent de la communication officielle du Mouvement. Ils sont classés par catégorie afin de faciliter l’accès aux communiqués, déclarations, informations relatives aux activités du Coordinateur et autres documents destinés aux médias.</p>
+          <h2 class="about-identity-mission">Protection des droits de l’homme dans le monde</h2>
+          <p>Global Citizens est un mouvement international non gouvernemental qui agit dans le domaine de la réponse aux enjeux humanitaires, de la diplomatie de deuxième voie (Track II diplomacy) et de la transmission des besoins essentiels des personnes directement aux décideurs aux niveaux national et international.</p>
+          <p class="about-communications"><strong>Communications :</strong><br><strong>E-mail :</strong> communications@gcim.eu.</p>
         </div>
 
         <aside class="about-card" aria-label="Bureau des opérations de presse">
           <h2>Bureau des opérations de presse</h2>
-          <div class="about-card-item">Communication officielle</div>
-          <div class="about-card-item">Relations avec les médias</div>
-          <div class="about-card-item">Diplomatie non gouvernementale</div>
-          <a href="https://gcim.eu/" target="_blank" rel="noopener">Site officiel du Mouvement : www.gcim.eu</a>
+          <h2><strong>E-mail :</strong> pressoffice@gcim.eu.</h2>
+          <div class="about-card-item"><strong>Avertissement :</strong></div>
+          <div class="about-card-item">Cette adresse électronique est réservée exclusivement aux représentants des médias pour l’envoi de demandes. Si vous n’êtes pas représentant des médias et souhaitez adresser une demande, veuillez l’envoyer au service des relations publiques à l’adresse communications@www.gcim.eu.</div>
         </aside>
       </div>
     </section>

@@ -1255,7 +1255,7 @@
         margin:0 auto;
         padding:0;
         font-family:"Instrument Serif", serif;
-        font-size:clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+        font-size:clamp(2.5875rem, .99vw + 2.313rem, 3.15rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1272,7 +1272,7 @@
         max-width:min(100%, 782px);
         margin:0;
         font-family:"Instrument Sans", sans-serif;
-        font-size:clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+        font-size:clamp(.855rem, .162vw + .81rem, .95625rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1314,7 +1314,7 @@
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) .hero h1{
         font-family:"Instrument Serif", serif;
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-size:clamp(1.8rem, 9vw, 2.475rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1329,7 +1329,7 @@
       html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > p,
       html:is([lang="en"], [lang="fr"], [lang="es"]) .about-lead{
         font-family:"Instrument Sans", sans-serif;
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-size:clamp(.675rem, 3.15vw, .855rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1338,7 +1338,7 @@
       }
       html:is([lang="en"], [lang="fr"], [lang="es"]) :is(.about-copy,.inquiries-copy) > h2{
         font-family:"Instrument Serif", serif;
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-size:clamp(.9rem, 4.5vw, 1.2375rem);
         font-style:normal;
         font-weight:400;
         line-height:1.18;
@@ -1471,6 +1471,26 @@
   <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead-v309.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://gcim.eu/#organization",
+    "name": "Global Citizens",
+    "alternateName": "GCIM",
+    "url": "https://gcim.eu/",
+    "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"},
+    "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"],
+    "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"},
+    "description": "Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.",
+    "inLanguage": "en"
+  }
+  </script>
+
+<style id="gcim-about-identity-v329">
+.about-identity-movement,.about-identity-mission{font-family:"Instrument Serif",serif;font-size:clamp(1.375rem,.35vw + 1.28rem,1.625rem);line-height:1.18;font-weight:400;letter-spacing:.56px;}
+@media (max-width:840px){.about-identity-movement,.about-identity-mission{font-size:clamp(1rem,5vw,1.375rem);}}
+</style>
 </head>
 <body>
   <div class="portal-bar">
@@ -1565,30 +1585,26 @@
   </div>
 
   <main>
+    
+
     <section class="hero">
-      <div class="eyebrow">About</div>
-      <h1>About the Office of Press Operations</h1>
-      <div class="hero-rule"></div>
+      <h1>Global Citizens</h1>
+      <h2 class="about-identity-movement">International Movement</h2>
     </section>
 
     <section class="about-wrap">
       <div class="about-grid">
         <div class="about-copy">
-          <p class="about-lead">The Office of Press Operations of the International Movement Global Citizens serves as the Movement’s principal point of contact for the media and supports the timely dissemination of official information concerning the Movement’s activities and positions. Through this portal, the Office publishes statements, releases, information concerning the Coordinator’s activities, and other materials intended for the media and the public.</p>
-
-          <h2>Responsibilities</h2>
-          <p>The Office serves as the designated channel for media-related communications, responds to inquiries within its competence, facilitates requests for information and comment, and provides access to current and previously published press materials.</p>
-
-          <h2>Official Communications</h2>
-          <p>Materials published on this portal form part of the Movement’s official public communications. They are organized by category to facilitate access to releases, statements, information concerning the Coordinator’s activities, and other press-related materials.</p>
+          <h2 class="about-identity-mission">Protection of Human Rights Worldwide</h2>
+          <p>Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.</p>
+          <p class="about-communications"><strong>Communications:</strong><br><strong>Email:</strong> communications@gcim.eu.</p>
         </div>
 
         <aside class="about-card" aria-label="Office of Press Operations">
           <h2>Office of Press Operations</h2>
-          <div class="about-card-item">Official communications</div>
-          <div class="about-card-item">Media relations</div>
-          <div class="about-card-item">Track II Diplomacy</div>
-          <a href="https://gcim.eu/" target="_blank" rel="noopener">Official website: www.gcim.eu</a>
+          <h2><strong>Email:</strong> pressoffice@gcim.eu.</h2>
+          <div class="about-card-item"><strong>Warning:</strong></div>
+          <div class="about-card-item">This email address is used exclusively by media representatives to submit inquiries. If you are not a media representative and wish to submit an inquiry, please direct it to the Public Relations Office at communications@www.gcim.eu.</div>
         </aside>
       </div>
     </section>

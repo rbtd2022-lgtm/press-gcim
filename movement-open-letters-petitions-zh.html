@@ -1184,10 +1184,15 @@
 /* GCIM_MOBILE_COPYRIGHT_BREAK_END */
 
     /* GCIM_GENERATED_AR_ZH_NEWS_TYPOGRAPHY_START */
-    /* Mobile White House metrics for Arabic and Simplified Chinese news listings; existing language typefaces are preserved. */
+    /* Reduced content typography for Arabic and Simplified Chinese news listings; existing language typefaces are preserved. */
+    @media (min-width:841px){
+      html:is([lang="ar"], [lang="zh"]) :is(.featured h2, .news-title){
+        font-size:clamp(1.35rem, .36vw + 1.251rem, 1.575rem);
+      }
+    }
     @media (max-width:840px){
       html:is([lang="ar"], [lang="zh"]) :is(.featured h2, .news-title){
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-size:clamp(.98181rem, 4.905vw, 1.35rem);
         font-style:normal;
         font-weight:400;
         line-height:1.18;
@@ -1309,7 +1314,8 @@
 <meta content="https://press.gcim.eu/assets/social-preview.jpg" name="twitter:image">
 <meta content="Global Citizens Press Office" name="twitter:image:alt">
   <link rel="stylesheet" href="assets/gc-masthead-v313.css">
-</head>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens是一个国际非政府运动，致力于应对人道主义挑战、开展第二轨道外交（Track II diplomacy），并将人们的关键需求直接传达给国家和国际层面的决策者。", "inLanguage": "zh-Hans"}</script></head>
 <body data-static-category="movement-open-letters-petitions">
 <div class="portal-bar">
 <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">GCIM 官方资源</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">国际运动 Global Citizens（GCIM）的官方网络资源可通过以下地址访问：</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://pressroom.gcim.eu/">pressroom.gcim.eu</a></span></span></div>
@@ -1469,7 +1475,7 @@
 <div class="subscribe-note" data-ar="يمكنك إلغاء الاشتراك في أي وقت." data-en="You may unsubscribe at any time." data-es="Puede cancelar su suscripción en cualquier momento." data-fr="Vous pouvez vous désabonner à tout moment." data-ru="Вы можете отказаться от подписки в любое время." data-uk="Від підписки можна відмовитися в будь-який час." data-zh="您可以随时取消订阅。" id="footerSubscribeNote">您可以随时取消订阅。</div>
 </div>
 </div>
-<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break">All Rights Reserved</div>
+<div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
 </footer>
 <script src="scripts/language-routing.js?v=209"></script>
 <script>

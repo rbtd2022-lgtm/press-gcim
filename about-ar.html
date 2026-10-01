@@ -1347,10 +1347,22 @@
 /* GCIM_MOBILE_COPYRIGHT_BREAK_END */
 
     /* GCIM_GENERATED_AR_ZH_SECTION_TYPOGRAPHY_START */
-    /* Mobile White House metrics for Arabic and Simplified Chinese full section pages; existing language typefaces are preserved. */
+    /* Reduced content typography for Arabic and Simplified Chinese full section pages; existing language typefaces are preserved. */
+    @media (min-width:841px){
+      html:is([lang="ar"], [lang="zh"]) .hero h1{
+        font-size:clamp(2.7rem, 1.08vw + 2.403rem, 3.375rem);
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > :is(p,.about-lead){
+        font-size:clamp(.9rem, .18vw + .8505rem, 1.0125rem);
+      }
+      html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > h2,
+      html:is([lang="ar"], [lang="zh"]) .notice-heading{
+        font-size:clamp(1.35rem, .36vw + 1.251rem, 1.575rem);
+      }
+    }
     @media (max-width:840px){
       html:is([lang="ar"], [lang="zh"]) .hero h1{
-        font-size:clamp(2.1818rem, 10.91vw, 3rem);
+        font-size:clamp(1.96362rem, 9.819vw, 2.7rem);
         font-style:normal;
         font-weight:400;
         line-height:1.08;
@@ -1364,7 +1376,7 @@
       }
       html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > p,
       html:is([lang="ar"], [lang="zh"]) .about-lead{
-        font-size:clamp(.7273rem, 3.64vw, 1rem);
+        font-size:clamp(.65457rem, 3.276vw, .9rem);
         font-style:normal;
         font-weight:400;
         line-height:1.6;
@@ -1373,7 +1385,7 @@
       }
       html:is([lang="ar"], [lang="zh"]) :is(.about-copy,.inquiries-copy) > h2,
       html:is([lang="ar"], [lang="zh"]) .notice-heading{
-        font-size:clamp(1.0909rem, 5.45vw, 1.5rem);
+        font-size:clamp(.98181rem, 4.905vw, 1.35rem);
         font-style:normal;
         font-weight:400;
         line-height:1.18;
@@ -1445,6 +1457,26 @@
   <meta name="twitter:image" content="https://press.gcim.eu/assets/social-preview.jpg">
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead-v309.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://gcim.eu/#organization",
+    "name": "Global Citizens",
+    "alternateName": "GCIM",
+    "url": "https://gcim.eu/",
+    "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"},
+    "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"],
+    "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"},
+    "description": "Global Citizens حركة دولية غير حكومية تنشط في مجال الاستجابة للتحديات الإنسانية، والدبلوماسية من المسار الثاني (Track II diplomacy)، وإيصال الاحتياجات الأساسية للناس مباشرة إلى صانعي القرار على المستويين الوطني والدولي.",
+    "inLanguage": "ar"
+  }
+  </script>
+
+<style id="gcim-about-identity-v329">
+.about-identity-movement,.about-identity-mission{font-family:inherit;font-size:clamp(1.375rem,.35vw + 1.28rem,1.625rem);line-height:1.18;font-weight:400;letter-spacing:.56px;}
+@media (max-width:840px){.about-identity-movement,.about-identity-mission{font-size:clamp(1rem,5vw,1.375rem);}}
+</style>
 </head>
 <body>
   <div class="portal-bar">
@@ -1539,30 +1571,26 @@
   </div>
 
   <main>
+    
+
     <section class="hero">
-      <div class="eyebrow">نبذة تعريفية</div>
-      <h1>نبذة عن مكتب العمليات الصحفية</h1>
-      <div class="hero-rule"></div>
+      <h1>Global Citizens</h1>
+      <h2 class="about-identity-movement">الحركة الدولية</h2>
     </section>
 
     <section class="about-wrap">
       <div class="about-grid">
         <div class="about-copy">
-          <p class="about-lead">يتولى مكتب العمليات الصحفية للحركة الدولية Global Citizens نشر المعلومات الرسمية المتعلقة بأنشطة الحركة ومواقفها، ويعمل بوصفه جهة الاتصال الرئيسية مع وسائل الإعلام. وتتيح هذه البوابة الاطلاع على البيانات الرسمية والبيانات الصحفية والمعلومات المتعلقة بأنشطة المنسق وسائر المواد الموجهة إلى وسائل الإعلام والجمهور.</p>
-
-          <h2>المهام والاختصاصات</h2>
-          <p>يتولى المكتب نشر المعلومات الرسمية في الوقت المناسب وبصورة دقيقة ومتسقة، والتواصل مع وسائل الإعلام في المسائل الداخلة في نطاق اختصاصه، وتلقي طلبات الحصول على المعلومات والتعليقات ومعالجتها، وإتاحة المواد الصحفية الراهنة والمنشورة سابقاً.</p>
-
-          <h2>المواد الإعلامية الرسمية</h2>
-          <p>تندرج المواد المنشورة عبر هذه البوابة ضمن الاتصالات الرسمية للحركة، وتُنظم بحسب فئاتها بما ييسر الاطلاع على البيانات الصحفية والبيانات الرسمية والمعلومات المتعلقة بأنشطة المنسق وسائر المواد الموجهة إلى وسائل الإعلام.</p>
+          <h2 class="about-identity-mission">حماية حقوق الإنسان في جميع أنحاء العالم</h2>
+          <p>Global Citizens حركة دولية غير حكومية تنشط في مجال الاستجابة للتحديات الإنسانية، والدبلوماسية من المسار الثاني (Track II diplomacy)، وإيصال الاحتياجات الأساسية للناس مباشرة إلى صانعي القرار على المستويين الوطني والدولي.</p>
+          <p class="about-communications"><strong>الاتصالات:</strong><br><strong>البريد الإلكتروني:</strong> communications@gcim.eu.</p>
         </div>
 
         <aside class="about-card" aria-label="مكتب العمليات الصحفية">
           <h2>مكتب العمليات الصحفية</h2>
-          <div class="about-card-item">المعلومات الرسمية</div>
-          <div class="about-card-item">العلاقات مع وسائل الإعلام</div>
-          <div class="about-card-item">دبلوماسية المسار الثاني</div>
-          <a href="https://gcim.eu/" target="_blank" rel="noopener">الموقع الرسمي للحركة: www.gcim.eu</a>
+          <h2><strong>البريد الإلكتروني:</strong> pressoffice@gcim.eu.</h2>
+          <div class="about-card-item"><strong>تحذير:</strong></div>
+          <div class="about-card-item">يُستخدم عنوان البريد الإلكتروني هذا حصراً من جانب ممثلي وسائل الإعلام لتقديم الاستفسارات. وإذا لم تكن ممثلاً لوسائل الإعلام وترغب في تقديم استفسار، فيُرجى توجيهه إلى قسم العلاقات العامة على العنوان communications@www.gcim.eu.</div>
         </aside>
       </div>
     </section>
