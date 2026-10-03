@@ -14,6 +14,7 @@
     'coordinator-action': 'coordinator-actions',
     perspective: 'perspective',
     'movement-open-letters-petitions': 'open-letters-petitions',
+    'movement-information-notes': 'information-notes',
     'movement-urgent-appeals-cases': 'urgent-appeals-cases',
     'movement-reports-submissions': 'reports-submissions',
     'coordinator-speeches-remarks': 'speeches-remarks'
