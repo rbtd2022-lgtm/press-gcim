@@ -1433,7 +1433,7 @@
 <meta content="Global Citizens Press Office" name="twitter:image:alt"/>
   <link rel="stylesheet" href="assets/gc-masthead-v313.css">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://gcim.eu/", "https://press.gcim.eu/", "https://news.gcim.eu/", "https://pressroom.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.", "inLanguage": "en"}</script></head>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://press.gcim.eu/", "https://news.gcim.eu/", "https://info.gcim.eu/", "https://wire.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.", "inLanguage": "en"}</script></head>
 <body data-static-category="coordinator-policy-perspectives">
 <div class="portal-bar">
 <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Official GCIM resources</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Official web resources of the International Movement Global Citizens (GCIM) are available at the following addresses:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span></div>
@@ -1567,7 +1567,7 @@
 <span data-ar="المنشورات" data-en="Publications" data-es="Publicaciones" data-fr="Publications" data-ru="Релизы" data-uk="Публікації" data-zh="出版物" id="resultsLabel">Publications</span>
 <span data-ar="أرشيف المكتب الصحفي" data-en="Press Office archive" data-es="Archivo de la Oficina de Prensa" data-fr="Archives du service de presse" data-ru="Архив пресс-офиса" data-uk="Архів пресофісу" data-zh="新闻办公室档案">Press Office archive</span>
 </div>
-<div class="news-list" id="newsList"><article class="news-item" data-category="coordinator-policy-perspectives" data-categories="coordinator-policy-perspectives" data-search="Where the State Ends أين تنتهي الدولة؟ Dónde termina el Estado 国家止于何处 Где заканчивается государство Où s’arrête l’État Де закінчується держава"><a data-publication-link="" href="2026-09-17-where-the-state-ends-en.html"><h2 class="news-title">Where the State Ends</h2><div class="news-meta"><div class="news-type">Coordinator | Perspective</div><div class="news-date">September 17, 2026</div></div></a></article></div>
+<div class="news-list" id="newsList"><article class="news-item" data-category="coordinator-policy-perspectives" data-categories="coordinator-policy-perspectives" data-search="Where the State Ends Coordinator | Perspective September 17, 2026 A school disappears twice. First, from the statistical register. Then, from a community’s sense of its own future. Government statistics record the first disappearance. The second raises a question about its social and political consequences. A state leaves behind many maps. Roads show where it can" data-search-id="2026-09-17-where-the-state-ends"><a data-publication-link="" href="2026-09-17-where-the-state-ends-en.html"><h2 class="news-title">Where the State Ends</h2><div class="news-meta"><div class="news-type">Coordinator | Perspective</div><div class="news-date">September 17, 2026</div></div></a></article></div>
 <nav aria-label="Pagination" class="pagination" id="pagination">
 <button class="page-nav" data-ar="السابق" data-en="Previous" data-es="Anterior" data-fr="Précédent" data-ru="Назад" data-uk="Попередня" data-zh="上一页" id="prevPage" type="button">Previous</button>
 <div aria-label="Page numbers" class="page-numbers" id="pageNumbers" role="group"></div>
@@ -1604,6 +1604,7 @@
 <div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
 </footer>
 <script src="scripts/language-routing.js?v=209"></script>
+<script src="scripts/gc-news-search-v382.js"></script>
 <script>
     // Basic anti-harvesting protection: the complete email address and
     // mailto URL are not present in the raw HTML source.
@@ -2037,13 +2038,23 @@ const VALID_NEWS_CATEGORIES = ['all', 'movement-official-statements', 'movement-
       renderPagination(totalPages);
     }
 
-    function filterNews(resetPage = false){
+    async function filterNews(resetPage = false){
       if (!searchInput) return;
+
+      if (searchInput.value.trim() && window.GCIMNewsSearch) {
+        await window.GCIMNewsSearch.ensureLoaded();
+      }
 
       const q = searchInput.value.trim().toLowerCase();
 
       filteredItems = newsItems.filter(item => {
-        const text = ((item.dataset.search || '') + ' ' + item.innerText).toLowerCase();
+        if (window.GCIMNewsSearch) {
+          return window.GCIMNewsSearch.matches(item, q);
+        }
+
+        const text =
+          ((item.dataset.search || '') + ' ' + item.innerText).toLowerCase();
+
         return !q || text.includes(q);
       });
 
