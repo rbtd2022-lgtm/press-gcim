@@ -1965,8 +1965,37 @@ const VALID_NEWS_CATEGORIES = ['all', 'movement-official-statements', 'movement-
     async function filterNews(resetPage = false){
       if (!searchInput) return;
 
-      if (searchInput.value.trim() && window.GCIMNewsSearch) {
-        await window.GCIMNewsSearch.ensureLoaded();
+      if (searchInput.value.trim()) {
+        if (window.GCIMNewsSearch) {
+          await window.GCIMNewsSearch.ensureLoaded();
+        } else {
+          if (!filterNews.searchIndexPromise) {
+            filterNews.searchIndexPromise = fetch('search-index.json', {
+              cache: 'no-cache',
+              credentials: 'same-origin'
+            })
+              .then(response => {
+                if (!response.ok) throw new Error('Search index request failed');
+                return response.json();
+              })
+              .then(data => {
+                if (
+                  !data ||
+                  data.version !== 1 ||
+                  !data.publications ||
+                  typeof data.publications !== 'object' ||
+                  Array.isArray(data.publications)
+                ) {
+                  throw new Error('Invalid search index');
+                }
+
+                return data.publications;
+              })
+              .catch(() => null);
+          }
+
+          filterNews.searchIndex = await filterNews.searchIndexPromise;
+        }
       }
 
       const q = searchInput.value.trim().toLowerCase();
@@ -1976,8 +2005,18 @@ const VALID_NEWS_CATEGORIES = ['all', 'movement-official-statements', 'movement-
           return window.GCIMNewsSearch.matches(item, q);
         }
 
-        const text =
+        const localText =
           ((item.dataset.search || '') + ' ' + item.innerText).toLowerCase();
+
+        const publicationId = item.dataset.searchId || '';
+        const fullText =
+          filterNews.searchIndex &&
+          publicationId &&
+          typeof filterNews.searchIndex[publicationId] === 'string'
+            ? filterNews.searchIndex[publicationId]
+            : '';
+
+        const text = (localText + ' ' + fullText).toLowerCase();
 
         return !q || text.includes(q);
       });
