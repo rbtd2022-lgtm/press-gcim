@@ -1,0 +1,3 @@
+
+.about-identity-movement,.about-identity-mission{font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif;font-size:clamp(1.375rem,.35vw + 1.28rem,1.625rem);line-height:1.18;font-weight:400;letter-spacing:.56px;}
+@media (max-width:840px){.about-identity-movement,.about-identity-mission{font-size:clamp(1rem,5vw,1.375rem);}}

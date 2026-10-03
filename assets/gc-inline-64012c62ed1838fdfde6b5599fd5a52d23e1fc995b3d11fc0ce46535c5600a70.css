@@ -1,0 +1,23 @@
+
+  #publicationPage .publication-intro{
+    width:min(100%,820px);max-width:820px;margin:24px 0 0;
+    font-size:18px;line-height:1.45;font-weight:400;color:var(--ink);
+  }
+  #publicationPage .publication-intro p{margin:0;}
+  #publicationPage .publication-intro p + p{margin-top:8px;}
+  #publicationPage .publication-header .publication-intro-rule{
+    width:min(100%,820px);max-width:820px;height:1px;margin:26px 0 34px;background:var(--line);
+  }
+  @media (min-width:841px){
+    html:is([lang="en"],[lang="fr"],[lang="es"]) #publicationPage .publication-intro{
+      width:min(100%,782px);max-width:782px;margin-inline:0;font-family:"Instrument Sans",sans-serif;
+    }
+    html:is([lang="en"],[lang="fr"],[lang="es"]) #publicationPage .publication-header .publication-intro-rule{
+      width:min(100%,782px);max-width:782px;margin-inline:0;
+    }
+  }
+  @media (max-width:840px){
+    #publicationPage .publication-intro{margin-top:18px;font-size:15px;line-height:1.45;}
+    #publicationPage .publication-intro p + p{margin-top:6px;}
+    #publicationPage .publication-header .publication-intro-rule{margin:20px 0 28px;}
+  }
