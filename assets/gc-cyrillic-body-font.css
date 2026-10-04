@@ -1,3 +1,20 @@
 @font-face{font-family:"Libre Franklin";src:url("libre-franklin-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 html:is([lang="ru"],[lang="uk"]) main :is(.publication-body,.about-copy,.inquiries-copy,.about-lead,.about-identity-movement,.about-identity-mission,p,li,dt,dd,blockquote,td,th,figcaption){font-family:"Libre Franklin",Arial,sans-serif!important}
 html:is([lang="ru"],[lang="uk"]) main :is(h1,h2,h3,h4,h5,h6,.publication-title,.news-title){font-family:"Libre Caslon Cyrillic Condensed",Georgia,"Times New Roman",serif!important}
+/* v404: PT Sans mobile Cyrillic content; the text block is centered. */
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@media (max-width:840px){
+  html:is([lang="ru"],[lang="uk"]) main :is(h1,h2,h3,h4,h5,h6,.publication-title,.news-title,.publication-body,.about-copy,.inquiries-copy,.about-lead,.about-identity-movement,.about-identity-mission,p,li,dt,dd,blockquote,td,th,figcaption){font-family:"GC PT Sans",Arial,sans-serif!important;letter-spacing:0!important}
+  /* MID: outer width 95%, 1em (16px) padding and 0.8% column padding.
+     Split the column padding equally to center the content with equal fields. */
+  html:is([lang="ru"],[lang="uk"]) body :is(.publication-shell,.about-wrap,.inquiries-wrap){box-sizing:border-box;width:95%!important;max-width:95%!important;margin-inline:auto!important;padding-inline:16px!important;min-width:0}
+  html:is([lang="ru"],[lang="uk"]) body :is(.publication-header,.publication-body,.about-copy,.inquiries-copy){box-sizing:border-box;width:99.2%!important;max-width:99.2%!important;margin-inline:auto!important;padding-inline:0!important;min-width:0;text-align:left!important}
+  html:is([lang="ru"],[lang="uk"]) main :is(h1,.publication-title){font-size:28px!important;line-height:1.1!important;font-weight:400!important;font-style:normal;letter-spacing:0!important;text-align:left!important;text-wrap:wrap;overflow-wrap:normal;word-break:normal;hyphens:none}
+  html:is([lang="ru"],[lang="uk"]) main :is(.publication-body,.about-copy,.inquiries-copy,.about-lead){font-size:16px!important;line-height:24px!important;font-weight:400;color:#000!important;letter-spacing:0!important;text-align:left!important;overflow-wrap:break-word;word-break:normal;hyphens:none;text-wrap:wrap}
+  html:is([lang="ru"],[lang="uk"]) main :is(.publication-body,.about-copy,.inquiries-copy) p{font-size:16px!important;line-height:24px!important;margin:0 0 15px!important;letter-spacing:0!important;color:#000!important;text-align:left!important}
+  html:is([lang="ru"],[lang="uk"]) main :is(.publication-body,.about-copy,.inquiries-copy) p + p{margin-block-start:0!important}
+  html:is([lang="ru"],[lang="uk"]) main :is(strong,b){font-weight:700;font-synthesis:none}
+  html:is([lang="ru"],[lang="uk"]) .publication-rule{display:none}
+  html:is([lang="ru"],[lang="uk"]) .publication-header{margin-bottom:37px!important}
+}
