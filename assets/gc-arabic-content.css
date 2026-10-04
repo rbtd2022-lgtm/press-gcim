@@ -1,0 +1,25 @@
+/* Supplied MID Arabic saved page: PT Sans / sans-serif fallback (PT Sans has no
+   Arabic glyphs). Broken inline Times New Roman declarations are invalid CSS.
+   Main column: 1300px, 16px padding; 20px below 1350px;
+   720px below 1050px; full width with 2% padding below 767px.
+   Body spans: 14pt / 150%; paragraphs: 15px; title: 28px / 1.1. */
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+html body main[data-gc-arabic-content]{box-sizing:border-box;width:100%!important;max-width:1300px!important;margin-inline:auto!important;padding-inline:16px!important;min-width:0;display:block;direction:rtl}
+html body main[data-gc-arabic-content] > *{box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:auto!important;padding-inline:0!important;min-width:0;text-align:right}
+html body main[data-gc-arabic-content] :is(.publication-header,.publication-body,.about-copy,.inquiries-copy,.about-grid,.inquiries-grid){box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:0!important;padding-inline:0!important;min-width:0;text-align:right!important}
+html body main[data-gc-arabic-content] :is(.about-grid,.inquiries-grid){grid-template-columns:1fr!important}
+html body main[data-gc-arabic-content],html body main[data-gc-arabic-content] *:not(.copy-link-button,.copy-link-button *){font-family:"GC PT Sans",sans-serif!important;letter-spacing:0!important}
+html body main[data-gc-arabic-content] :is(h1,.publication-title){font-size:28px!important;line-height:1.1!important;font-weight:400!important;font-style:normal!important;text-align:right!important;text-wrap:wrap;overflow-wrap:break-word;word-break:normal;hyphens:none}
+html body main[data-gc-arabic-content] :is(h2,h3,h4,h5,h6){text-align:right!important;font-weight:400!important}
+html body main[data-gc-arabic-content] h2{font-size:24px!important;line-height:1.67!important}
+html body main[data-gc-arabic-content] h3{font-size:20px!important}
+html body main[data-gc-arabic-content] :is(.publication-body,.about-copy,.inquiries-copy,.about-lead,p,li,dt,dd,blockquote,td,th,figcaption){font-size:14pt!important;line-height:1.5!important;font-weight:400;color:#000!important;text-align:justify!important;overflow-wrap:break-word;word-break:normal;hyphens:none;text-wrap:wrap;direction:rtl}
+html body main[data-gc-arabic-content] p{margin:0 0 15px!important}
+html body main[data-gc-arabic-content] p + p{margin-block-start:0!important}
+html body main[data-gc-arabic-content] :is(strong,b){font-weight:700!important}
+html body main[data-gc-arabic-content] .publication-rule{display:none}
+html body main[data-gc-arabic-content] .publication-header{margin-bottom:37px!important}
+@media(max-width:1350px){html body main[data-gc-arabic-content]{padding-inline:20px!important}}
+@media(max-width:1050px){html body main[data-gc-arabic-content]{width:720px!important;max-width:100%!important}}
+@media(max-width:767px){html body main[data-gc-arabic-content]{width:100%!important;padding-inline:2%!important}}

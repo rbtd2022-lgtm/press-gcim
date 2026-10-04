@@ -18,3 +18,23 @@ html:is([lang="ru"],[lang="uk"]) main :is(h1,h2,h3,h4,h5,h6,.publication-title,.
   html:is([lang="ru"],[lang="uk"]) .publication-rule{display:none}
   html:is([lang="ru"],[lang="uk"]) .publication-header{margin-bottom:37px!important}
 }
+/* v409: desktop RU/UK; measured typography and column from supplied MID page. */
+@media(min-width:841px){
+html body main[data-gc-cyrillic-desktop]{box-sizing:border-box;width:100%!important;max-width:1300px!important;margin-inline:auto!important;padding-inline:16px!important;min-width:0;display:block}
+html body main[data-gc-cyrillic-desktop] > *{box-sizing:border-box;width:57.53333333%!important;max-width:57.53333333%!important;margin-inline:auto!important;padding-inline:0!important;min-width:0;text-align:left}
+html body main[data-gc-cyrillic-desktop] :is(.publication-header,.publication-body,.about-copy,.inquiries-copy,.about-grid,.inquiries-grid){box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:0!important;padding-inline:0!important;min-width:0;text-align:left!important}
+html body main[data-gc-cyrillic-desktop] :is(.about-grid,.inquiries-grid){grid-template-columns:1fr!important}
+html body main[data-gc-cyrillic-desktop],html body main[data-gc-cyrillic-desktop] *:not(.copy-link-button,.copy-link-button *){font-family:"GC PT Sans",Arial,sans-serif!important;letter-spacing:0!important}
+html body main[data-gc-cyrillic-desktop] :is(h1,.publication-title){font-size:28px!important;line-height:1.1!important;font-weight:400!important;font-style:normal!important;text-align:left!important;text-wrap:wrap;overflow-wrap:break-word;word-break:normal;hyphens:none}
+html body main[data-gc-cyrillic-desktop] :is(h2,h3,h4,h5,h6){text-align:left!important;font-weight:400!important}
+html body main[data-gc-cyrillic-desktop] h2{font-size:24px!important;line-height:1.67!important}
+html body main[data-gc-cyrillic-desktop] h3{font-size:20px!important}
+html body main[data-gc-cyrillic-desktop] :is(.publication-body,.about-copy,.inquiries-copy,.about-lead,p,li,dt,dd,blockquote,td,th,figcaption){font-size:16px!important;line-height:24px!important;font-weight:400;color:#000!important;text-align:left!important;overflow-wrap:break-word;word-break:normal;hyphens:none;text-wrap:wrap}
+html body main[data-gc-cyrillic-desktop] p{margin:0 0 15px!important}
+html body main[data-gc-cyrillic-desktop] p + p{margin-block-start:0!important}
+html body main[data-gc-cyrillic-desktop] :is(strong,b){font-weight:700!important}
+html body main[data-gc-cyrillic-desktop] .publication-rule{display:none}
+html body main[data-gc-cyrillic-desktop] .publication-header{margin-bottom:37px!important}
+@media(max-width:1300px){html body main[data-gc-cyrillic-desktop]{width:95%!important}}
+@media(max-width:992px){html body main[data-gc-cyrillic-desktop] > *{width:99.2%!important;max-width:99.2%!important}}
+}

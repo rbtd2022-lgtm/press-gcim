@@ -1,0 +1,24 @@
+/* Chinese glyphs use the system sans-serif fallback, as on MID; PT Sans has no CJK glyphs.
+   PT Sans and measured geometry from the supplied MID Chinese page.
+   MID: outer 1300px / 95% below 1300px, 16px padding;
+   desktop column 58.33333333% minus 0.8% padding; full column below 992px.
+   Center that measured text column and retain equal left/right fields. */
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+html body main[data-gc-chinese-content]{box-sizing:border-box;width:100%!important;max-width:1300px!important;margin-inline:auto!important;padding-inline:16px!important;min-width:0;display:block}
+html body main[data-gc-chinese-content] > *{box-sizing:border-box;width:57.53333333%!important;max-width:57.53333333%!important;margin-inline:auto!important;padding-inline:0!important;min-width:0;text-align:left}
+html body main[data-gc-chinese-content] :is(.publication-header,.publication-body,.about-copy,.inquiries-copy,.about-grid,.inquiries-grid){box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:0!important;padding-inline:0!important;min-width:0;text-align:left!important}
+html body main[data-gc-chinese-content] :is(.about-grid,.inquiries-grid){grid-template-columns:1fr!important}
+html body main[data-gc-chinese-content],html body main[data-gc-chinese-content] *:not(.copy-link-button,.copy-link-button *){font-family:"GC PT Sans",sans-serif!important;letter-spacing:0!important}
+html body main[data-gc-chinese-content] :is(h1,.publication-title){font-size:28px!important;line-height:1.1!important;font-weight:400!important;font-style:normal!important;text-align:left!important;text-wrap:wrap;overflow-wrap:break-word;word-break:normal;hyphens:none}
+html body main[data-gc-chinese-content] :is(h2,h3,h4,h5,h6){text-align:left!important;font-weight:400!important}
+html body main[data-gc-chinese-content] h2{font-size:24px!important;line-height:1.67!important}
+html body main[data-gc-chinese-content] h3{font-size:20px!important}
+html body main[data-gc-chinese-content] :is(.publication-body,.about-copy,.inquiries-copy,.about-lead,p,li,dt,dd,blockquote,td,th,figcaption){font-size:16px!important;line-height:24px!important;font-weight:400;color:#000!important;text-align:left!important;overflow-wrap:break-word;word-break:normal;hyphens:none;text-wrap:wrap}
+html body main[data-gc-chinese-content] p{margin:0 0 15px!important}
+html body main[data-gc-chinese-content] p + p{margin-block-start:0!important}
+html body main[data-gc-chinese-content] :is(strong,b){font-weight:700!important}
+html body main[data-gc-chinese-content] .publication-rule{display:none}
+html body main[data-gc-chinese-content] .publication-header{margin-bottom:37px!important}
+@media(max-width:1300px){html body main[data-gc-chinese-content]{width:95%!important}}
+@media(max-width:992px){html body main[data-gc-chinese-content] > *{width:99.2%!important;max-width:99.2%!important}}
