@@ -15,9 +15,7 @@
   <link rel="alternate" hreflang="fr" href="https://press.gcim.eu/media-inquiries-fr.html">
   <link rel="alternate" hreflang="uk" href="https://press.gcim.eu/media-inquiries-uk.html">
   <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/gc-inline-8a1a74b255b7f20b514d65b5c40aca3da2efaed71574c68f012cdf093b721c24.css?v=383">
+    <link rel="stylesheet" href="assets/gc-inline-dac3bb83bba0d3042b14f5dd0decb313594445a43235c53387dc8149e48211ad.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Citizens">
   <meta property="og:locale" content="ar_SA">
@@ -37,9 +35,16 @@
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead.css">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://press.gcim.eu/", "https://news.gcim.eu/", "https://info.gcim.eu/", "https://wire.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens حركة دولية غير حكومية تنشط في مجال الاستجابة للتحديات الإنسانية، والدبلوماسية من المسار الثاني (Track II diplomacy)، وإيصال الاحتياجات الأساسية للناس مباشرة إلى صانعي القرار على المستويين الوطني والدولي.", "inLanguage": "ar"}</script></head>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://press.gcim.eu/", "https://news.gcim.eu/", "https://info.gcim.eu/", "https://wire.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens حركة دولية غير حكومية تنشط في مجال الاستجابة للتحديات الإنسانية، والدبلوماسية من المسار الثاني (Track II diplomacy)، وإيصال الاحتياجات الأساسية للناس مباشرة إلى صانعي القرار على المستويين الوطني والدولي.", "inLanguage": "ar"}</script><link rel="stylesheet" href="assets/gc-inline-1f27d0a4164c333e7254be9e0a5b300256bfff740cb796c0b55a7823256480a6.css">
+<link rel="stylesheet" href="assets/gc-keyboard-focus.css">
+<link rel="stylesheet" href="assets/gc-skip-link.css">
+<link href="assets/favicon.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="assets/favicon.ico" rel="shortcut icon"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+</head>
 <body>
-  <div class="portal-bar">
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+<div class="portal-bar">
     <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">موارد GCIM الرسمية</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">الموارد الإلكترونية الرسمية للحركة الدولية Global Citizens (GCIM) متاحة عبر العناوين التالية:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span></div>
   </div>
 
@@ -131,7 +136,7 @@
     </nav>
   </div>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero">
       <div class="eyebrow">معلومات لوسائل الإعلام</div>
       <h1>نبذة عن مكتب العمليات الصحفية</h1>
@@ -268,7 +273,7 @@
     </div>
     <div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
   </footer>
-  <script src="scripts/language-routing.js?v=209"></script>
+  <script src="scripts/language-routing.js?v=209" defer></script>
 
   <script>
     // Basic anti-harvesting protection: the complete email address and
@@ -320,6 +325,10 @@
 
     if (window.GCIMLanguageRouting) {
       window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+    } else {
+      document.addEventListener("DOMContentLoaded", () => {
+        window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+      }, { once: true });
     }
 
     document.querySelectorAll('[data-lang-link]').forEach(link => {

@@ -1,0 +1,26 @@
+/* GCIM_TEXT_ACCESSIBILITY_START */
+/* Maintained text contrast and minimum size; applied last by every full build. */
+:root{--accent-text:#84652f;}
+.template-tag{font-size:12px!important;color:#5f666b!important;}
+.portal-bar-inner{
+  font-size:12px!important;
+  line-height:1.4!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  height:auto!important;
+}
+.portal-bar-mobile-title,.portal-bar-desktop-title,.portal-bar-desktop-links{
+  white-space:normal!important;
+  overflow-wrap:anywhere;
+}
+@media (max-width:840px){
+  .portal-bar-mobile{min-width:0;max-width:100%;}
+  .portal-bar-mobile-links{
+    flex-wrap:wrap;
+    white-space:normal!important;
+    gap:3px 8px;
+    line-height:1.4;
+  }
+  .portal-bar-mobile-links a{overflow-wrap:anywhere;}
+}
+/* GCIM_TEXT_ACCESSIBILITY_END */

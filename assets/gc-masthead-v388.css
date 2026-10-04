@@ -1,0 +1,593 @@
+@font-face {
+  font-family: "GC Masthead";
+  src: url("fonts/UnifrakturCook-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* v309: two independent localized navigation menus. */
+.nav-dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-dropdown > summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 21px 0 19px;
+  color: inherit;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown > summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform .18s ease;
+}
+
+.nav-dropdown[open] > summary::after {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: #d7bd90;
+}
+
+.nav-submenu {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  min-width: 260px;
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 6px 0;
+  background: #102c46;
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 10px 24px rgba(0,0,0,.2);
+}
+
+.nav-links .nav-submenu-link {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  border: 0;
+  white-space: normal;
+}
+
+.nav-links .nav-submenu-link:hover,
+.nav-links .nav-submenu-link:focus-visible {
+  background: rgba(255,255,255,.1);
+}
+
+.nav-links .nav-submenu-link.active::after {
+  right: 18px;
+  bottom: 5px;
+  left: 18px;
+}
+
+html[dir="rtl"] .nav-submenu {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+@media (max-width: 840px) {
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown > summary {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    white-space: normal;
+  }
+
+  .nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+    right: auto;
+    bottom: 0;
+    left: 20px;
+    width: 34px;
+    height: 2px;
+  }
+
+  .nav-submenu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 0;
+    background: rgba(0,0,0,.12);
+    border: 0;
+    box-shadow: none;
+  }
+
+  .nav-links .nav-submenu-link {
+    padding: 14px 32px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    overflow-wrap: anywhere;
+  }
+
+  html[dir="rtl"] .nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+    right: 20px;
+    left: auto;
+  }
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("fonts/instrument-serif-global-citizens-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans-global-citizens-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Cyrillic Condensed";
+  src: url("fonts/libre-caslon-cyrillic-condensed-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.brand-copy strong,
+.footer-brand-text > span,
+.brand > strong {
+  font-family: "GC Masthead", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 841px) {
+  .brand-copy strong,
+  .brand > strong {
+    font-size: 34px;
+  }
+
+  .footer-brand-text > span {
+    font-size: 34px;
+  }
+
+  .office {
+    font-size: 30px;
+  }
+
+  .track-two {
+    font-size: 15px;
+  }
+
+  /* Mandatory White House desktop metrics for all languages; language fonts are preserved. */
+  html :is(.featured h2, .news-title) {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html :is(
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-meta,
+    .news-type,
+    .news-date
+  ) {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  html .publication-title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html .publication-body {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html .publication-body :is(strong, b) {
+    font-weight: 700;
+  }
+
+  html .publication-body h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html .publication-category {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+  }
+
+  html .publication-date {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* White House desktop typography for the 14 About / Media Inquiries pages. */
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1 {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead) {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body:has(.about-wrap, .inquiries-wrap) :is(.about-wrap, .inquiries-wrap) h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  /* White House desktop typography for the multilingual 404 page. */
+  html[lang] body #title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #title {
+    font-family: "Instrument Serif", serif;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #message {
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  html:is([lang="ru"], [lang="uk"]) body :is(#title, #message) {
+    font-family: "Libre Caslon Cyrillic Condensed", Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #title {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #message {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 840px) {
+  /* Mandatory White House mobile metrics for all languages; language fonts are preserved. */
+  html[lang] body :is(.featured h2, .news-title) {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-meta,
+    .news-type,
+    .news-date
+  ) {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-body {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-body :is(strong, b) {
+    font-weight: 700;
+  }
+
+  html[lang] body .publication-body h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-category {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+  }
+
+  html[lang] body .publication-date {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 439px) {
+  html[lang] body :is(.featured h2, .news-title),
+  html[lang] body .publication-body h2 {
+    font-size: clamp(1.0909rem, 5.45vw, 1.5rem);
+  }
+
+  html[lang] body .publication-title {
+    font-size: clamp(2.1818rem, 10.91vw, 3rem);
+  }
+
+  html[lang] body .publication-body {
+    font-size: clamp(0.7273rem, 3.64vw, 1rem);
+  }
+}
+
+@media (max-width: 840px) {
+  /* White House mobile typography for the 14 About / Media Inquiries pages. */
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1 {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead) {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  /* White House mobile typography for the multilingual 404 page. */
+  html[lang] body #title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #title {
+    font-family: "Instrument Serif", serif;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #message {
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  html:is([lang="ru"], [lang="uk"]) body :is(#title, #message) {
+    font-family: "Libre Caslon Cyrillic Condensed", Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #title {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #message {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 439px) {
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body #title {
+    font-size: clamp(2.1818rem, 10.91vw, 3rem);
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(0.7273rem, 3.64vw, 1rem);
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.0909rem, 5.45vw, 1.5rem);
+  }
+}
+
+/*
+ * v294 mobile readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (max-width: 840px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(1.625rem, 1.44vw + 1.337rem, 2rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.8vw + 0.84rem, 1.125rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.25rem, 1.2vw + 1.01rem, 1.5rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
+
+/*
+ * v295 desktop readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (min-width: 841px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(2rem, 1.3vw + 1.35rem, 2.75rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1.125rem, 0.25vw + 0.99rem, 1.25rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.5rem, 0.5vw + 1.2375rem, 1.75rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important} }

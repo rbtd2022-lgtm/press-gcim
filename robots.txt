@@ -2,10 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://press.gcim.eu/sitemap.xml
-Sitemap: https://press.gcim.eu/sitemap-en.xml
-Sitemap: https://press.gcim.eu/sitemap-ar.xml
-Sitemap: https://press.gcim.eu/sitemap-es.xml
-Sitemap: https://press.gcim.eu/sitemap-zh.xml
-Sitemap: https://press.gcim.eu/sitemap-ru.xml
-Sitemap: https://press.gcim.eu/sitemap-fr.xml
-Sitemap: https://press.gcim.eu/sitemap-uk.xml

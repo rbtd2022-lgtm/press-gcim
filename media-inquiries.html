@@ -15,9 +15,7 @@
   <link rel="alternate" hreflang="fr" href="https://press.gcim.eu/media-inquiries-fr.html">
   <link rel="alternate" hreflang="uk" href="https://press.gcim.eu/media-inquiries-uk.html">
   <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/gc-inline-367e0ce97137a1538a977f8db0f23ae38558daf0c38c0d37e702523dd27b81a4.css?v=383">
+    <link rel="stylesheet" href="assets/gc-inline-e70104a2ad370bb933777a3c498ace2dbf95096da59a0c350597811d8d6d298e.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Citizens">
   <meta property="og:locale" content="en_US">
@@ -37,9 +35,16 @@
   <meta name="twitter:image:alt" content="Global Citizens Press Office">
   <link rel="stylesheet" href="assets/gc-masthead.css">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://press.gcim.eu/", "https://news.gcim.eu/", "https://info.gcim.eu/", "https://wire.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.", "inLanguage": "en"}</script></head>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://gcim.eu/#organization", "name": "Global Citizens", "alternateName": "GCIM", "url": "https://gcim.eu/", "logo": {"@type": "ImageObject", "url": "https://press.gcim.eu/assets/gcim-emblem.webp"}, "sameAs": ["https://press.gcim.eu/", "https://news.gcim.eu/", "https://info.gcim.eu/", "https://wire.gcim.eu/"], "contactPoint": {"@type": "ContactPoint", "contactType": "press inquiries", "url": "https://press.gcim.eu/media-inquiries.html"}, "description": "Global Citizens is an international non-governmental movement working to address humanitarian challenges, advance Track II diplomacy, and bring people's key needs directly to decision-makers at the national and international levels.", "inLanguage": "en"}</script><link rel="stylesheet" href="assets/gc-inline-1f27d0a4164c333e7254be9e0a5b300256bfff740cb796c0b55a7823256480a6.css">
+<link rel="stylesheet" href="assets/gc-keyboard-focus.css">
+<link rel="stylesheet" href="assets/gc-skip-link.css">
+<link href="assets/favicon.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="assets/favicon.ico" rel="shortcut icon"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+</head>
 <body>
-  <div class="portal-bar">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="portal-bar">
     <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Official GCIM resources</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Official web resources of the International Movement Global Citizens (GCIM) are available at the following addresses:</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span></div>
   </div>
 
@@ -131,7 +136,7 @@
     </nav>
   </div>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero">
       <div class="eyebrow">Information for the Media</div>
       <h1>About the Office of Press Operations</h1>
@@ -268,7 +273,7 @@
     </div>
     <div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
   </footer>
-  <script src="scripts/language-routing.js?v=209"></script>
+  <script src="scripts/language-routing.js?v=209" defer></script>
 
   <script>
     // Basic anti-harvesting protection: the complete email address and
@@ -320,6 +325,10 @@
 
     if (window.GCIMLanguageRouting) {
       window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+    } else {
+      document.addEventListener("DOMContentLoaded", () => {
+        window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+      }, { once: true });
     }
 
     document.querySelectorAll('[data-lang-link]').forEach(link => {

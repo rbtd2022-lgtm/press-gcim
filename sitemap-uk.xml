@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
     <loc>https://press.gcim.eu/2024-03-18-foreign-nationals-not-political-instruments-uk.html</loc>
     <lastmod>2024-03-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2024-03-18-foreign-nationals-not-political-instruments-en.html"/>
@@ -239,6 +240,17 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/coordinator-statements-commentary-uk.html"/>
   </url>
   <url>
+    <loc>https://press.gcim.eu/gcim-web-resources-uk.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/gcim-web-resources.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/gcim-web-resources.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/gcim-web-resources-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/gcim-web-resources-es.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/gcim-web-resources-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/gcim-web-resources-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/gcim-web-resources-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/gcim-web-resources-uk.html"/>
+  </url>
+  <url>
     <loc>https://press.gcim.eu/index-uk.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/"/>
@@ -262,6 +274,17 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/media-inquiries-uk.html"/>
   </url>
   <url>
+    <loc>https://press.gcim.eu/movement-information-notes-uk.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/movement-information-notes.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/movement-information-notes.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/movement-information-notes-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/movement-information-notes-es.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/movement-information-notes-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/movement-information-notes-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/movement-information-notes-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/movement-information-notes-uk.html"/>
+  </url>
+  <url>
     <loc>https://press.gcim.eu/movement-official-statements-uk.html</loc>
     <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/movement-official-statements.html"/>
@@ -283,16 +306,6 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/movement-open-letters-petitions-ru.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/movement-open-letters-petitions-fr.html"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/movement-open-letters-petitions-uk.html"/>
-  </url><url>
-    <loc>https://press.gcim.eu/movement-information-notes-uk.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/movement-information-notes.html"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/movement-information-notes.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/movement-information-notes-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/movement-information-notes-es.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/movement-information-notes-zh.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/movement-information-notes-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/movement-information-notes-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/movement-information-notes-uk.html"/>
   </url>
   <url>
     <loc>https://press.gcim.eu/movement-press-releases-uk.html</loc>
@@ -328,4 +341,4 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/movement-urgent-appeals-cases-fr.html"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/movement-urgent-appeals-cases-uk.html"/>
   </url>
-  </urlset>
+</urlset>

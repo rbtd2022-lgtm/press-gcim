@@ -15,9 +15,7 @@
   <link rel="alternate" hreflang="fr" href="https://press.gcim.eu/about-fr.html">
   <link rel="alternate" hreflang="uk" href="https://press.gcim.eu/about-uk.html">
   <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/gc-inline-23b3063da23ef9b0993c414e230a82a23378049afcac9c44bd5e5ae0a2fdf6a7.css?v=383">
+    <link rel="stylesheet" href="assets/gc-inline-fdbfa9059a28182d29f134703a628569b82e99addfee249b4533b18a33a69a9f.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Citizens">
   <meta property="og:locale" content="fr_FR">
@@ -52,11 +50,18 @@
   }
   </script>
 
-<link rel="stylesheet" href="assets/gc-inline-6e129ff335d1a7ea5257c1230471dbc0afcd517388d0ec89a1a062291fc4326d.css?v=383" id="gcim-about-identity-v329">
-<link rel="stylesheet" href="assets/gc-inline-d6565112b4e7bd027087ada86f3aaff3fdc2ddf83fa4334bf345e6dc1fd7fd7a.css?v=383" id="gcim-about-brand-one-line-v336">
+<link rel="stylesheet" href="assets/gc-inline-6e129ff335d1a7ea5257c1230471dbc0afcd517388d0ec89a1a062291fc4326d.css">
+<link rel="stylesheet" href="assets/gc-inline-d6565112b4e7bd027087ada86f3aaff3fdc2ddf83fa4334bf345e6dc1fd7fd7a.css">
+<link rel="stylesheet" href="assets/gc-inline-1f27d0a4164c333e7254be9e0a5b300256bfff740cb796c0b55a7823256480a6.css">
+<link rel="stylesheet" href="assets/gc-keyboard-focus.css">
+<link rel="stylesheet" href="assets/gc-skip-link.css">
+<link href="assets/favicon.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="assets/favicon.ico" rel="shortcut icon"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 </head>
 <body>
-  <div class="portal-bar">
+<a class="skip-link" href="#main">Aller au contenu</a>
+<div class="portal-bar">
     <div class="portal-bar-inner"><span class="portal-bar-mobile"><span class="portal-bar-mobile-title">Ressources officielles de GCIM</span><span class="portal-bar-mobile-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a></span><span class="portal-bar-mobile-links"><a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span><span class="portal-bar-desktop"><span class="portal-bar-desktop-title">Les ressources web officielles du Mouvement international Global Citizens (GCIM) sont accessibles aux adresses suivantes :</span><span class="portal-bar-desktop-links"><a href="https://gcim.eu/">gcim.eu</a> · <a href="https://press.gcim.eu/">press.gcim.eu</a> · <a href="https://news.gcim.eu/">news.gcim.eu</a> · <a href="https://info.gcim.eu/">info.gcim.eu</a> · <a href="https://wire.gcim.eu/">wire.gcim.eu</a></span></span></div>
   </div>
 
@@ -148,7 +153,7 @@
     </nav>
   </div>
 
-  <main>
+  <main id="main" tabindex="-1">
     
 
     <section class="hero">
@@ -267,7 +272,7 @@
     </div>
     <div class="copyright">© 2020-2027 Global Citizens.<br class="copyright-mobile-break"/>All Rights Reserved</div>
   </footer>
-  <script src="scripts/language-routing.js?v=209"></script>
+  <script src="scripts/language-routing.js?v=209" defer></script>
 
   <script>
     // Basic anti-harvesting protection: the complete email address and
@@ -319,6 +324,10 @@
 
     if (window.GCIMLanguageRouting) {
       window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+    } else {
+      document.addEventListener("DOMContentLoaded", () => {
+        window.GCIMLanguageRouting.wirePage(PAGE_LANGUAGE);
+      }, { once: true });
     }
 
     document.querySelectorAll('[data-lang-link]').forEach(link => {

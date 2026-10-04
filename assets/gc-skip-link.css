@@ -1,0 +1,2 @@
+.skip-link{position:fixed;top:.5rem;inset-inline-start:.5rem;z-index:2147483647;transform:translateY(calc(-100% - 1rem));padding:.75rem 1rem;background:#fff;color:#142c43;font:600 16px/1.5 sans-serif;text-decoration:underline;max-width:calc(100vw - 1rem);box-sizing:border-box}
+.skip-link:focus,.skip-link:focus-visible{transform:none;outline:3px solid #a78248;outline-offset:2px}
