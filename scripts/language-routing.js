@@ -8,17 +8,6 @@
     en: 'index.html', ar: 'index-ar.html', es: 'index-es.html', zh: 'index-zh.html',
     ru: 'index-ru.html', fr: 'index-fr.html', uk: 'index-uk.html'
   });
-  const CATEGORY_STEMS = Object.freeze({
-    release: 'press-releases',
-    statement: 'statements',
-    'coordinator-action': 'coordinator-actions',
-    perspective: 'perspective',
-    'movement-open-letters-petitions': 'open-letters-petitions',
-    'movement-information-notes': 'information-notes',
-    'movement-urgent-appeals-cases': 'urgent-appeals-cases',
-    'movement-reports-submissions': 'reports-submissions',
-    'coordinator-speeches-remarks': 'speeches-remarks'
-  });
   const SECTION_PAGES = Object.freeze({
     about: Object.freeze({
       en:'about.html', ar:'about-ar.html', es:'about-es.html', zh:'about-zh.html', ru:'about-ru.html', fr:'about-fr.html', uk:'about-uk.html'
@@ -49,8 +38,7 @@
   function homeUrl(lang) { lang=normalizeLanguage(lang); return HOME_PAGES[lang]; }
   function categoryUrl(category, lang) {
     lang=normalizeLanguage(lang);
-    const stem=CATEGORY_STEMS[category];
-    return stem ? stem + languageSuffix(lang) + '.html' : homeUrl(lang);
+    return (category && category !== 'all') ? category + languageSuffix(lang) + '.html' : homeUrl(lang);
   }
   function sectionUrl(section, lang) {
     const pages=SECTION_PAGES[section]; lang=normalizeLanguage(lang);
@@ -102,7 +90,7 @@
     return lang;
   }
   global.GCIMLanguageRouting=Object.freeze({
-    SUPPORTED_LANGUAGES, STORAGE_KEY, SECTION_PAGES, HOME_PAGES, CATEGORY_STEMS,
+    SUPPORTED_LANGUAGES, STORAGE_KEY, SECTION_PAGES, HOME_PAGES,
     normalizeLanguage, saveLanguage, readLanguage, homeUrl, categoryUrl, sectionUrl, publicationUrl,
     wireHomeLinks, wireSectionLinks, wirePublicationLinks, wireCategoryLinks, wirePage
   });

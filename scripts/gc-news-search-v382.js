@@ -9,7 +9,8 @@
 
     if (!searchIndexPromise) {
       searchIndexPromise = fetch('search-index.json', {
-        cache: 'no-cache',
+        // Reuse a fresh HTTP cache entry; revalidate normally when it expires.
+        cache: 'default',
         credentials: 'same-origin'
       })
         .then(function (response) {

@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
+Disallow: /content/
+Disallow: /mobile-emulator.html
+Disallow: /scripts/homepage-news.js
+Disallow: /scripts/news-model.js
+Disallow: /scripts/publication-renderer.js
 
 Sitemap: https://press.gcim.eu/sitemap.xml

@@ -32,19 +32,25 @@
 <link href="assets/favicon.ico" rel="shortcut icon"/>
 <link href="assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link rel="stylesheet" href="assets/gc-latin-content.css">
+<link rel="stylesheet" href="assets/gc-error-page.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="topline"></div>
-  <main data-gc-latin-content id="main" tabindex="-1">
+  <div class="gc-not-found-panel">
+    <header>
     <a class="brand" id="brand" href="index.html" aria-label="Global Citizens home">
       <img src="assets/gcim-emblem.webp" alt="" width="64" height="64">
       <strong>Global Citizens</strong>
     </a>
+    </header>
+    <main data-gc-latin-content id="main" tabindex="-1">
     <div class="code">404</div>
     <h1 id="title">Page not found</h1>
     <p id="message">The requested page could not be found.</p>
     <a class="home" id="home" href="index.html">Return to the news</a>
+  </main>
+    <footer>
     <nav aria-label="Language">
       <a href="index.html" lang="en">English</a>
       <a href="index-ar.html" lang="ar" dir="rtl">العربية</a>
@@ -54,7 +60,8 @@
       <a href="index-fr.html" lang="fr">Français</a>
       <a href="index-uk.html" lang="uk">Українська</a>
     </nav>
-  </main>
+    </footer>
+  </div>
   <script>
     (function(){
       'use strict';
