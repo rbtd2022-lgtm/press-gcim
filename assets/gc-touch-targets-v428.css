@@ -1,0 +1,22 @@
+/* Shared minimum touch targets; applied last on every page by the build. */
+.lang button,
+.mobile-lang,
+.menu-toggle,
+.nav-dropdown > summary,
+.nav-submenu-link,
+.mobile-menu a,
+.mobile-menu summary,
+.pagination button,
+.subscribe-form button,
+.subscribe-form input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]) {
+  box-sizing: border-box;
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+.lang button, .mobile-lang, .menu-toggle, .pagination button {
+  height: 44px !important;
+  flex-shrink: 0;
+}
+.menu-toggle { width: 44px !important; }
+.nav-submenu-link { display: flex; align-items: center; }
+.pagination, .page-numbers { flex-wrap: wrap; }

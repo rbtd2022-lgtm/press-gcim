@@ -1,0 +1,5 @@
+/* Shared gold text contrast, applied to all pages by the build. */
+:root { --gc-gold-label-text: #84652f; }
+.eyebrow, .featured-label {
+  color: var(--gc-gold-label-text) !important;
+}

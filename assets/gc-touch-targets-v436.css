@@ -1,0 +1,66 @@
+/* Shared minimum touch targets; applied last on every page by the build. */
+.lang button,
+.mobile-lang,
+.menu-toggle,
+.nav-dropdown > summary,
+.nav-submenu-link,
+.mobile-menu a,
+.mobile-menu summary,
+.pagination button,
+.subscribe-form button,
+.copy-link-button,
+.subscribe-form input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]) {
+  box-sizing: border-box;
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+.lang button, .mobile-lang, .menu-toggle, .pagination button {
+  height: 44px !important;
+  flex-shrink: 0;
+}
+.menu-toggle { width: 44px !important; }
+.nav-submenu-link { display: flex; align-items: center; }
+.pagination, .page-numbers { flex-wrap: wrap; }
+/* Standalone links are controls too; inline links in prose keep their flow. */
+.back-to-news,
+.footer-website,
+.news-item > a,
+.news-title a,
+.featured h2 a,
+.resource-item a,
+.about-card-item a,
+a.contact-value,
+.gc-not-found-panel .home,
+.gc-not-found-panel nav a {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.news-item > a { display: block; }
+.copy-link-button { width: 44px !important; height: 44px !important; }
+@media (max-width: 840px) {
+  /* Real target sizes, with wrapping instead of overlapping hit areas. */
+  html[lang] body .portal-bar-mobile-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 4px;
+    max-width: 100%;
+  }
+  .portal-bar-mobile-links a {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 100%;
+    padding-inline: 2px;
+    overflow-wrap: anywhere;
+  }
+}
