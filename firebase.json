@@ -6,7 +6,45 @@
       ".firebaserc",
       ".github/**",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "tools/**",
+      "content/**",
+      "mobile-emulator.html",
+      "scripts/homepage-news.js",
+      "scripts/news-model.js",
+      "scripts/publication-renderer.js",
+      "assets/gc-masthead-v388.css",
+      "assets/gc-masthead-v389.css",
+      "assets/gcim-emblem.png",
+      "assets/gc-inline-fe290e84a40830f4648bc4544bf91d8205e74005f08f816bcd0e3fe4ccf2581f.css"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0, must-revalidate"
+          }
+        ]
+      }
     ]
   }
 }
