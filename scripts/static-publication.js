@@ -4,6 +4,16 @@
 
   const LANGS = ['en', 'ar', 'es', 'zh', 'ru', 'fr', 'uk'];
 
+  const COPY_FEEDBACK = {
+    en: ['Link copied', 'Could not copy the link. Please copy it from the address bar.'],
+    ru: ['Ссылка скопирована', 'Не удалось скопировать ссылку. Скопируйте её из адресной строки.'],
+    ar: ['تم نسخ الرابط', 'تعذّر نسخ الرابط. يُرجى نسخه من شريط العنوان.'],
+    es: ['Enlace copiado', 'No se pudo copiar el enlace. Cópielo desde la barra de direcciones.'],
+    zh: ['链接已复制', '无法复制链接。请从地址栏复制。'],
+    fr: ['Lien copié', 'Impossible de copier le lien. Copiez-le depuis la barre d’adresse.'],
+    uk: ['Посилання скопійовано', 'Не вдалося скопіювати посилання. Скопіюйте його з адресного рядка.']
+  };
+
   function currentLanguage() {
     const lang = document.documentElement.dataset.pageLanguage || document.documentElement.lang;
     return LANGS.includes(lang) ? lang : 'en';
@@ -37,27 +47,37 @@
       mobileLang.addEventListener('change', () => selectLanguage(mobileLang.value));
     }
 
-    // Return to the home page in the language currently displayed.
-    const brand = document.querySelector('a.brand');
-    if (brand) {
-      brand.addEventListener('click', (event) => {
-        event.preventDefault();
-        const visibleLang = currentLanguage();
-        window.location.href = window.GCIMLanguageRouting ? window.GCIMLanguageRouting.homeUrl(visibleLang) : (visibleLang === 'en' ? 'index.html' : 'index-' + visibleLang + '.html');
-      });
-    }
     const backToNews = document.getElementById('backToNews');
     if (backToNews) { const visibleLang = currentLanguage(); backToNews.href = window.GCIMLanguageRouting ? window.GCIMLanguageRouting.homeUrl(visibleLang) : (visibleLang === 'en' ? 'index.html' : 'index-' + visibleLang + '.html'); }
     const copyLinkButton = document.getElementById('copyLinkButton');
     if (copyLinkButton) {
       const copyLinkLabel = document.getElementById('copyLinkLabel');
       if (copyLinkLabel) copyLinkButton.setAttribute('aria-label', copyLinkLabel.textContent);
+      const originalTitle = copyLinkButton.title;
+      const originalLabel = copyLinkButton.getAttribute('aria-label');
+      const originalText = copyLinkLabel ? copyLinkLabel.textContent : '';
+      if (copyLinkLabel) copyLinkLabel.setAttribute('aria-live', 'polite');
+      let feedbackTimer;
+      function showFeedback(message, duration) {
+        window.clearTimeout(feedbackTimer);
+        copyLinkButton.title = message;
+        copyLinkButton.setAttribute('aria-label', message);
+        if (copyLinkLabel) copyLinkLabel.textContent = message;
+        feedbackTimer = window.setTimeout(() => {
+          copyLinkButton.title = originalTitle;
+          if (originalLabel !== null) copyLinkButton.setAttribute('aria-label', originalLabel);
+          else copyLinkButton.removeAttribute('aria-label');
+          if (copyLinkLabel) copyLinkLabel.textContent = originalText;
+        }, duration);
+      }
       copyLinkButton.addEventListener('click', async () => {
+        const messages = COPY_FEEDBACK[currentLanguage()];
         try {
           await navigator.clipboard.writeText(window.location.href);
-          copyLinkButton.title = currentLanguage() === 'ru' ? 'Ссылка скопирована' : 'Link copied';
-          window.setTimeout(() => { copyLinkButton.title = copyLinkButton.getAttribute('aria-label') || 'Copy link'; }, 1600);
-        } catch (e) {}
+          showFeedback(messages[0], 1600);
+        } catch (e) {
+          showFeedback(messages[1], 5000);
+        }
       });
     }
 
@@ -71,20 +91,9 @@
       });
     }
 
-    const form = document.getElementById('subscribeForm');
-    if (form) form.addEventListener('submit', (event) => event.preventDefault());
-
     const year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();
 
-    const user = ['press', 'office'].join('');
-    const domain = ['gcim', 'eu'].join('.');
-    const address = user + String.fromCharCode(64) + domain;
-    const footerEmail = document.getElementById('protectedEmail');
-    if (footerEmail) {
-      footerEmail.textContent = address;
-      footerEmail.href = ['mai', 'lto:'].join('') + address;
-    }
   }
 
   if (document.readyState === 'loading') {

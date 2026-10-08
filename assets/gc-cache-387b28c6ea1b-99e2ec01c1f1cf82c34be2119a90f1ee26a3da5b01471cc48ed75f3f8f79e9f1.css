@@ -1,0 +1,1011 @@
+
+    :root{color-scheme:light}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f3ec;color:#102133;font-family:Arial,Helvetica,sans-serif}
+    .topline{height:4px;background:#a78248}
+    main{width:min(760px,calc(100% - 40px));margin:8vh auto;padding:48px;background:#fff;border-top:5px solid #102c46}
+    .brand{display:inline-flex;align-items:center;gap:14px;color:#102133;text-decoration:none}
+    .brand img{width:64px;height:64px;object-fit:contain}
+    .brand strong{font-family:Georgia,"Times New Roman",serif;font-size:21px}
+    .code{margin-top:58px;color:#84652f;font-size:14px;font-weight:700;letter-spacing:.15em}
+    h1{margin:12px 0 18px;font:500 clamp(34px,7vw,58px)/1.08 Georgia,"Times New Roman",serif}
+    p{font-size:17px;line-height:1.6}
+    .home{display:inline-block;margin-top:22px;color:#102c46;font-weight:700;text-underline-offset:4px}
+    nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:48px;padding-top:22px;border-top:1px solid #d8d7d1}
+    nav a{color:#44515e;font-size:13px}
+    a:focus-visible{outline:3px solid #84652f;outline-offset:4px}
+    @media(max-width:560px){main{width:min(100% - 24px,760px);margin:24px auto;padding:30px 22px}.code{margin-top:40px}}
+  
+    /* GCIM mobile viewport lock */
+    @media (max-width:840px) {
+      html, body { width:100%; max-width:100%; overflow-x:hidden; }
+      .masthead-inner, .nav, .content, .hero, .featured, .footer-inner,
+      .publication-shell, .inquiries-wrap, .about-wrap { min-width:0; max-width:100%; }
+      .brand, .brand-copy, .mobile-actions, .nav-links, .news-item, .news-title,
+      .publication-title, .publication-body, .resource-item, .resource-title,
+      .service-value { min-width:0; max-width:100%; }
+      .brand-copy strong { white-space:normal; overflow-wrap:anywhere; }
+      .publication-title, .publication-body, .news-title, .news-type, .news-date,
+      .hero h1, .inquiries-copy, .contact-value { overflow-wrap:anywhere; word-break:normal; }
+      .publication-body .quote-attribution-inline { white-space:normal; overflow-wrap:anywhere; }
+      .resource-item { flex-wrap:wrap; }
+      .resource-title { overflow-wrap:anywhere; }
+      img, svg, video, iframe { max-width:100%; height:auto; }
+    }
+    @media (max-width:380px) {
+      .masthead-inner { padding-left:10px; padding-right:10px; gap:6px; }
+      .brand { gap:7px; }
+      .mark { width:42px; height:42px; }
+      .brand-copy strong { font-size:16px; line-height:1.1; }
+      .brand-copy span { font-size:12px; letter-spacing:.08em; }
+      .mobile-actions { gap:5px; }
+      .mobile-lang { min-width:52px; width:52px; padding-left:5px; padding-right:5px; }
+      .menu-toggle { width:38px; height:38px; }
+      .content, .hero, .featured, .publication-shell, .inquiries-wrap { padding-left:14px; padding-right:14px; }
+    }
+
+  
+    /* GCIM responsive typography */
+    html{font-size:16px}
+    h1,
+    .publication-title{font-size:40px;line-height:1.2}
+    .featured h2,
+    .news-title{font-size:24px;line-height:1.3}
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-type,
+    .news-date,
+    .publication-meta,
+    .publication-category{font-size:14px}
+    .subscribe-form input{font-size:16px;line-height:1.4}
+    .subscribe-form button,
+    .pagination button{font-size:16px;line-height:1.2}
+    .lang,
+    .mobile-lang{font-size:16px}
+    .track-two,
+    .subscribe-note,
+    .contact-label{font-size:12px}
+    @media (min-width:768px) and (max-width:1023px){
+      h1,
+      .publication-title{font-size:32px;line-height:1.25}
+    }
+    @media (max-width:767px){
+      h1,
+      .publication-title{font-size:26px;line-height:1.25}
+      .featured h2,
+      .news-title{font-size:20px;line-height:1.3}
+      .featured-meta,
+      .featured-meta span,
+      #featuredDate,
+      .news-type,
+      .news-date,
+      .publication-meta,
+      .publication-category{font-size:12px;line-height:1.3}
+      .portal-bar-inner{font-size:12px!important;line-height:1.2}
+      .nav-links{font-size:13px}
+      .footer-subscribe h3,
+      .subscribe-note,
+      .copyright{font-size:12px}
+    }
+    @media (max-width:480px){
+      h1,
+      .publication-title{line-height:1.25}
+      .featured h2,
+      .news-title{line-height:1.3}
+    }
+
+
+    /* Mobile header fit and alignment */
+    @media (max-width:840px){
+      .portal-bar-inner{
+        width:100%;
+        max-width:100%;
+        padding:8px 14px;
+        font-size:12px!important;
+        line-height:1.25;
+        letter-spacing:.06em!important;
+        text-align:center;
+        white-space:normal;
+        overflow:visible;
+      }
+      .masthead-inner{
+        width:100%;
+        max-width:100%;
+        min-height:80px;
+        padding:12px 14px;
+        grid-template-columns:minmax(0,1fr) auto;
+        gap:8px;
+      }
+      .brand{
+        min-width:0;
+        max-width:100%;
+        gap:8px;
+      }
+      .mark{
+        width:50px;
+        height:50px;
+        flex:0 0 50px;
+      }
+      .brand-copy{
+        min-width:0;
+        max-width:100%;
+        overflow:hidden;
+      }
+      .brand-copy strong{
+        font-size:16px;
+        line-height:1.1;
+        white-space:nowrap;
+      }
+      .brand-copy span{
+        margin-top:3px;
+        font-size:12px;
+        line-height:1.2;
+        letter-spacing:.09em;
+        white-space:normal;
+        overflow-wrap:normal;
+      }
+      .mobile-actions{
+        flex:0 0 auto;
+        gap:7px;
+      }
+      .mobile-lang-wrap::after{
+        content:"";
+        position:absolute;
+        top:50%;
+        right:13px;
+        width:7px;
+        height:7px;
+        border-right:1.5px solid #fff;
+        border-bottom:1.5px solid #fff;
+        transform:translateY(-65%) rotate(45deg);
+        pointer-events:none;
+      }
+      .mobile-lang{
+        -webkit-appearance:none;
+        appearance:none;
+        display:block;
+        width:64px;
+        min-width:64px;
+        height:40px;
+        padding:0 26px 0 12px;
+        font-size:14px;
+        line-height:1;
+        letter-spacing:.04em;
+        direction:ltr;
+        text-align:left;
+        text-align-last:left;
+      }
+      .menu-toggle{
+        width:40px;
+        height:40px;
+        flex:0 0 40px;
+      }
+    }
+    @media (max-width:480px){
+      .portal-bar-inner{
+        padding-inline:10px;
+        font-size:12px!important;
+        letter-spacing:.04em!important;
+      }
+      .masthead-inner{padding:10px;gap:6px}
+      .brand{gap:7px}
+      .mark{width:44px;height:44px;flex-basis:44px}
+      .brand-copy strong{font-size:15px}
+      .brand-copy span{font-size:12px;letter-spacing:.06em}
+      .mobile-actions{gap:6px}
+      .mobile-lang-wrap::after{right:11px;width:6px;height:6px}
+      .mobile-lang{
+        width:58px;
+        min-width:58px;
+        height:38px;
+        padding:0 22px 0 10px;
+        font-size:13px;
+      }
+      .menu-toggle{width:38px;height:38px;flex-basis:38px}
+    }
+    @media (max-width:340px){
+      .masthead-inner{padding-inline:8px;gap:5px}
+      .brand{gap:6px}
+      .mark{width:40px;height:40px;flex-basis:40px}
+      .brand-copy strong{font-size:14px}
+      .brand-copy span{font-size:12px;letter-spacing:.03em}
+      .mobile-actions{gap:5px}
+      .mobile-lang{width:56px;min-width:56px}
+      .menu-toggle{width:36px;height:36px;flex-basis:36px}
+    }
+  
+    /* Desktop editorial refinement: official portal line and language navigation */
+    @media (min-width:841px){
+      .portal-bar-inner{
+        padding-top:9px;
+        padding-bottom:9px;
+        font-size:12px;
+        font-weight:400;
+        letter-spacing:.08em;
+        text-transform:none;
+      }
+      .lang{
+        gap:0;
+        padding:0;
+        border:0;
+        border-radius:0;
+        background:transparent;
+        box-shadow:none;
+        font-size:12px;
+        font-weight:600;
+        letter-spacing:.08em;
+      }
+      .lang :is(a,button){
+        min-width:0;
+        height:32px;
+        padding:0 10px;
+        border-radius:0;
+        color:rgba(255,255,255,.72);
+        box-shadow:none;
+      }
+      .lang :is(a,button) + :is(a,button){
+        border-left:1px solid rgba(255,255,255,.28);
+      }
+      .lang :is(a,button).active{
+        position:relative;
+        background:transparent;
+        color:#fff;
+        box-shadow:none;
+      }
+      .lang :is(a,button).active::after{
+        content:"";
+        position:absolute;
+        right:10px;
+        bottom:2px;
+        left:10px;
+        height:2px;
+        background:#d7bd90;
+      }
+      .lang :is(a,button):hover:not(.active){
+        background:transparent;
+        color:#fff;
+      }
+    }
+  
+    /* Desktop navigation and subscribe control refinement */
+    @media (min-width:841px){
+      .nav-links{
+        gap:30px;
+        font-size:12px;
+        font-weight:500;
+        letter-spacing:.065em;
+      }
+      .nav-links a{
+        padding-top:20px;
+        padding-bottom:18px;
+      }
+      .media-link{
+        font-size:12px;
+        font-weight:600;
+        letter-spacing:.07em;
+        padding-left:22px;
+      }
+      .subscribe-form button{
+        min-height:34px;
+        padding:0 14px;
+        font-size:12px;
+        font-weight:600;
+        letter-spacing:.08em;
+      }
+    }
+  
+    /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_START */
+    @media (max-width:840px){
+      .brand-copy strong{
+        font-size:clamp(22px,6.4vw,26px)!important;
+        line-height:1.05;
+      }
+      .footer-brand-text > span{
+        font-size:clamp(24px,7vw,30px)!important;
+        line-height:1.05;
+      }
+    }
+    /* GCIM_MOBILE_GLOBAL_CITIZENS_SIZE_V288_END */
+
+@font-face {
+  font-family: "GC Masthead";
+  src: url("fonts/UnifrakturCook-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* v309: two independent localized navigation menus. */
+.nav-dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-dropdown > summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 21px 0 19px;
+  color: inherit;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown > summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform .18s ease;
+}
+
+.nav-dropdown[open] > summary::after {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: #d7bd90;
+}
+
+.nav-submenu {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  min-width: 260px;
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 6px 0;
+  background: #102c46;
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 10px 24px rgba(0,0,0,.2);
+}
+
+.nav-links .nav-submenu-link {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  border: 0;
+  white-space: normal;
+}
+
+.nav-links .nav-submenu-link:hover,
+.nav-links .nav-submenu-link:focus-visible {
+  background: rgba(255,255,255,.1);
+}
+
+.nav-links .nav-submenu-link.active::after {
+  right: 18px;
+  bottom: 5px;
+  left: 18px;
+}
+
+html[dir="rtl"] .nav-submenu {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+@media (max-width: 840px) {
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown > summary {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    white-space: normal;
+  }
+
+  .nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+    right: auto;
+    bottom: 0;
+    left: 20px;
+    width: 34px;
+    height: 2px;
+  }
+
+  .nav-submenu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 0;
+    background: rgba(0,0,0,.12);
+    border: 0;
+    box-shadow: none;
+  }
+
+  .nav-links .nav-submenu-link {
+    padding: 14px 32px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    overflow-wrap: anywhere;
+  }
+
+  html[dir="rtl"] .nav-dropdown:has(.nav-submenu-link.active) > summary::before {
+    right: 20px;
+    left: auto;
+  }
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("fonts/instrument-serif-global-citizens-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans-global-citizens-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Cyrillic Condensed";
+  src: url("fonts/libre-caslon-cyrillic-condensed-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.brand-copy strong,
+.footer-brand-text > span,
+.brand > strong {
+  font-family: "GC Masthead", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 841px) {
+  .brand-copy strong,
+  .brand > strong {
+    font-size: 34px;
+  }
+
+  .footer-brand-text > span {
+    font-size: 34px;
+  }
+
+  .office {
+    font-size: 30px;
+  }
+
+  .track-two {
+    font-size: 15px;
+  }
+
+  /* Mandatory White House desktop metrics for all languages; language fonts are preserved. */
+  html :is(.featured h2, .news-title) {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html :is(
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-meta,
+    .news-type,
+    .news-date
+  ) {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  html .publication-title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html .publication-body {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html .publication-body :is(strong, b) {
+    font-weight: 700;
+  }
+
+  html .publication-body h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html .publication-category {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+  }
+
+  html .publication-date {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* White House desktop typography for the 14 About / Media Inquiries pages. */
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1 {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead) {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body:has(.about-wrap, .inquiries-wrap) :is(.about-wrap, .inquiries-wrap) h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  /* White House desktop typography for the multilingual 404 page. */
+  html[lang] body #title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #title {
+    font-family: "Instrument Serif", serif;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #message {
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  html:is([lang="ru"], [lang="uk"]) body :is(#title, #message) {
+    font-family: "Libre Caslon Cyrillic Condensed", Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #title {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #message {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 840px) {
+  /* Mandatory White House mobile metrics for all languages; language fonts are preserved. */
+  html[lang] body :is(.featured h2, .news-title) {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(
+    .featured-meta,
+    .featured-meta span,
+    #featuredDate,
+    .news-meta,
+    .news-type,
+    .news-date
+  ) {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-body {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-body :is(strong, b) {
+    font-weight: 700;
+  }
+
+  html[lang] body .publication-body h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  html[lang] body .publication-category {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+  }
+
+  html[lang] body .publication-date {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 439px) {
+  html[lang] body :is(.featured h2, .news-title),
+  html[lang] body .publication-body h2 {
+    font-size: clamp(1.0909rem, 5.45vw, 1.5rem);
+  }
+
+  html[lang] body .publication-title {
+    font-size: clamp(2.1818rem, 10.91vw, 3rem);
+  }
+
+  html[lang] body .publication-body {
+    font-size: max(12px, clamp(0.7273rem, 3.64vw, 1rem));
+  }
+}
+
+@media (max-width: 840px) {
+  /* White House mobile typography for the 14 About / Media Inquiries pages. */
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1 {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead) {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.5rem, 0.4vw + 1.39rem, 1.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.56px;
+    text-transform: none;
+  }
+
+  /* White House mobile typography for the multilingual 404 page. */
+  html[lang] body #title {
+    font-size: clamp(3rem, 1.2vw + 2.67rem, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.2vw + 0.945rem, 1.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #title {
+    font-family: "Instrument Serif", serif;
+  }
+
+  html:is([lang="en"], [lang="fr"], [lang="es"]) body #message {
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  html:is([lang="ru"], [lang="uk"]) body :is(#title, #message) {
+    font-family: "Libre Caslon Cyrillic Condensed", Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #title {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  html:is([lang="ar"], [lang="zh"]) body #message {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 439px) {
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body #title {
+    font-size: clamp(2.1818rem, 10.91vw, 3rem);
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: max(12px, clamp(0.7273rem, 3.64vw, 1rem));
+  }
+
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.0909rem, 5.45vw, 1.5rem);
+  }
+}
+
+/*
+ * v294 mobile readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (max-width: 840px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(1.625rem, 1.44vw + 1.337rem, 2rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1rem, 0.8vw + 0.84rem, 1.125rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.25rem, 1.2vw + 1.01rem, 1.5rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
+
+/*
+ * v295 desktop readability correction.
+ * Scope: non-home full-content pages only. Homepage cards and featured
+ * headlines are intentionally excluded from every selector in this block.
+ */
+@media (min-width: 841px) {
+  html[lang] body .publication-title,
+  html[lang] body:has(.about-wrap, .inquiries-wrap) .hero h1,
+  html[lang] body[data-static-category] .hero h1,
+  html[lang] body #title {
+    font-size: clamp(2rem, 1.3vw + 1.35rem, 2.75rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  html[lang] body .publication-body,
+  html[lang] body :is(.about-copy, .inquiries-copy) > :is(p, .about-lead),
+  html[lang] body #message {
+    font-size: clamp(1.125rem, 0.25vw + 0.99rem, 1.25rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  html[lang] body .publication-body h2,
+  html[lang] body :is(.about-copy, .inquiries-copy) > h2 {
+    font-size: clamp(1.5rem, 0.5vw + 1.2375rem, 1.75rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: balance;
+  }
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important} }
+
+/* GCIM_TEXT_ACCESSIBILITY_START */
+/* Maintained text contrast and minimum size; applied last by every full build. */
+:root{--accent-text:#84652f;}
+.template-tag{font-size:12px!important;color:#5f666b!important;}
+.portal-bar-inner{
+  font-size:12px!important;
+  line-height:1.4!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  height:auto!important;
+}
+.portal-bar-mobile-title,.portal-bar-desktop-title,.portal-bar-desktop-links{
+  white-space:normal!important;
+  overflow-wrap:anywhere;
+}
+@media (max-width:840px){
+  .portal-bar-mobile{min-width:0;max-width:100%;}
+  .portal-bar-mobile-links{
+    flex-wrap:wrap;
+    white-space:normal!important;
+    gap:3px 8px;
+    line-height:1.4;
+  }
+  .portal-bar-mobile-links a{overflow-wrap:anywhere;}
+}
+/* GCIM_TEXT_ACCESSIBILITY_END */
+.skip-link{position:fixed;top:.5rem;inset-inline-start:.5rem;z-index:2147483647;transform:translateY(calc(-100% - 1rem));padding:.75rem 1rem;background:#fff;color:#142c43;font:600 16px/1.5 sans-serif;text-decoration:underline;max-width:calc(100vw - 1rem);box-sizing:border-box}
+.skip-link:focus,.skip-link:focus-visible{transform:none;outline:3px solid #a78248;outline-offset:2px}
+
+/* PT Sans and measured geometry from the supplied MID English page.
+   MID: outer 1300px / 95% below 1300px, 16px padding;
+   desktop column 58.33333333% minus 0.8% padding; full column below 992px.
+   Center that measured text column and retain equal left/right fields. */
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-03FF,U+0530-DFFF,U+F900-10FFFF}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-regular-cyrillic.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0400-052F}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-03FF,U+0530-DFFF,U+F900-10FFFF}
+@font-face{font-family:"GC PT Sans";src:url("fonts/pt-sans-bold-cyrillic.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0400-052F}
+html body main[data-gc-latin-content]{box-sizing:border-box;width:100%!important;max-width:1300px!important;margin-inline:auto!important;padding-inline:16px!important;min-width:0;display:block}
+html body main[data-gc-latin-content] > *{box-sizing:border-box;width:57.53333333%!important;max-width:57.53333333%!important;margin-inline:auto!important;padding-inline:0!important;min-width:0;text-align:left}
+html body main[data-gc-latin-content] :is(.publication-header,.publication-body,.about-copy,.inquiries-copy,.about-grid,.inquiries-grid){box-sizing:border-box;width:100%!important;max-width:100%!important;margin-inline:0!important;padding-inline:0!important;min-width:0;text-align:left!important}
+html body main[data-gc-latin-content] :is(.about-grid,.inquiries-grid){grid-template-columns:1fr!important}
+html body main[data-gc-latin-content],html body main[data-gc-latin-content] *:not(.copy-link-button,.copy-link-button *){font-family:"GC PT Sans",Arial,sans-serif!important;letter-spacing:0!important}
+html body main[data-gc-latin-content] :is(h1,.publication-title){font-size:28px!important;line-height:1.1!important;font-weight:400!important;font-style:normal!important;text-align:left!important;text-wrap:wrap;overflow-wrap:break-word;word-break:normal;hyphens:none}
+html body main[data-gc-latin-content] :is(h2,h3,h4,h5,h6){text-align:left!important;font-weight:400!important}
+html body main[data-gc-latin-content] h2{font-size:24px!important;line-height:1.67!important}
+html body main[data-gc-latin-content] h3{font-size:20px!important}
+html body main[data-gc-latin-content] :is(.publication-body,.about-copy,.inquiries-copy,.about-lead,p,li,dt,dd,blockquote,td,th,figcaption){font-size:16px!important;line-height:24px!important;font-weight:400;color:#000!important;text-align:left!important;overflow-wrap:break-word;word-break:normal;hyphens:none;text-wrap:wrap}
+html body main[data-gc-latin-content] p{margin:0 0 15px!important}
+html body main[data-gc-latin-content] p + p{margin-block-start:0!important}
+html body main[data-gc-latin-content] :is(strong,b){font-weight:700!important}
+html body main[data-gc-latin-content] .publication-rule{display:none}
+html body main[data-gc-latin-content] .publication-header{margin-bottom:37px!important}
+@media(max-width:1300px){html body main[data-gc-latin-content]{width:95%!important}}
+@media(max-width:992px){html body main[data-gc-latin-content] > *{width:99.2%!important;max-width:99.2%!important}}
+
+/* Preserve the existing 404 card across semantic landmarks. */
+.gc-not-found-panel{width:min(760px,calc(100% - 40px));margin:8vh auto;padding:48px;background:#fff;border-top:5px solid #102c46}
+.gc-not-found-panel > main{width:auto;margin:0;padding:0;background:transparent;border:0}
+@media(max-width:560px){.gc-not-found-panel{width:min(100% - 24px,760px);margin:24px auto;padding:30px 22px}}
+
+:focus-visible{outline:3px solid #a78248!important;outline-offset:2px!important}
+
+/* Shared mobile footer geometry for every language and page. */
+@media (max-width:840px){
+  body footer .footer-inner,
+  body footer .copyright{
+    box-sizing:border-box!important;
+    width:calc(100% - 40px)!important;
+    max-width:480px!important;
+    min-width:0!important;
+    margin-inline:auto!important;
+    padding-inline:0!important;
+    text-align:left!important;
+  }
+  body footer .footer-inner{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    justify-items:stretch!important;
+  }
+  body footer .footer-inner > *{
+    box-sizing:border-box;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin-inline:0!important;
+    padding-inline:0!important;
+    text-align:left!important;
+  }
+  body footer :is(.footer-copy,.footer-language-note,.subscribe-copy,.footer-subscribe h3,.subscribe-note,.copyright){
+    max-width:100%!important;
+    text-align:left!important;
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+  }
+  body footer :is(.footer-contacts,.footer-subscribe){padding-top:0!important}
+  body footer .footer-brand{justify-content:flex-start!important;text-align:left!important}
+  body footer .footer-brand-text{text-align:left!important;min-width:0}
+  body footer .subscribe-form{
+    box-sizing:border-box;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin-inline:0!important;
+  }
+  body footer .subscribe-form :is(input,button){box-sizing:border-box;width:100%!important;max-width:100%!important;min-width:0!important}
+}

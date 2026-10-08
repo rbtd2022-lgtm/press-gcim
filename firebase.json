@@ -13,9 +13,6 @@
       "scripts/homepage-news.js",
       "scripts/news-model.js",
       "scripts/publication-renderer.js",
-      "assets/gc-masthead-v388.css",
-      "assets/gc-masthead-v389.css",
-      "assets/gcim-emblem.png",
       "assets/gc-inline-fe290e84a40830f4648bc4544bf91d8205e74005f08f816bcd0e3fe4ccf2581f.css"
     ],
     "headers": [
@@ -33,6 +30,14 @@
           {
             "key": "X-Frame-Options",
             "value": "SAMEORIGIN"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
           }
         ]
       },
@@ -83,6 +88,24 @@
       },
       {
         "source": "scripts/language-routing.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "assets/gc-cache-*.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "assets/gc-design-v*.css",
         "headers": [
           {
             "key": "Cache-Control",
