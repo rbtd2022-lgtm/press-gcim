@@ -95,3 +95,84 @@
     wireHomeLinks, wireSectionLinks, wirePublicationLinks, wireCategoryLinks, wirePage
   });
 })(window);
+
+(function () {
+  'use strict';
+
+  let searchIndex = null;
+  let searchIndexPromise = null;
+
+  async function ensureLoaded() {
+    if (searchIndex) return searchIndex;
+
+    if (!searchIndexPromise) {
+      searchIndexPromise = fetch('search-index.json', {
+        // Reuse a fresh HTTP cache entry; revalidate normally when it expires.
+        cache: 'default',
+        credentials: 'same-origin'
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Search index request failed');
+          return response.json();
+        })
+        .then(function (data) {
+          if (
+            !data ||
+            data.version !== 1 ||
+            !data.publications ||
+            typeof data.publications !== 'object' ||
+            Array.isArray(data.publications)
+          ) {
+            throw new Error('Invalid search index');
+          }
+
+          searchIndex = data.publications;
+          return searchIndex;
+        })
+        .catch(function () {
+          searchIndexPromise = null;
+          return null;
+        });
+    }
+
+    return searchIndexPromise;
+  }
+
+  function getSearchText(item) {
+    const localText =
+      ((item.dataset.search || '') + ' ' + (item.innerText || '')).toLowerCase();
+
+    if (!searchIndex) return localText;
+
+    const publicationId = item.dataset.searchId || '';
+    const fullText =
+      publicationId && typeof searchIndex[publicationId] === 'string'
+        ? searchIndex[publicationId]
+        : '';
+
+    return (localText + ' ' + fullText).toLowerCase();
+  }
+
+  function matches(item, query) {
+    if (!query) return true;
+    return getSearchText(item).includes(query);
+  }
+
+  window.GCIMNewsSearch = {
+    ensureLoaded: ensureLoaded,
+    matches: matches
+  };
+})();
+
+/* Fit the whole mobile masthead title after fonts and layout are ready. */
+(()=>{const start=()=>{const title=document.querySelector('.masthead .brand-copy strong');if(!title)return;const box=title.parentElement;let pending=false;const fit=()=>{pending=false;title.style.removeProperty('font-size');if(innerWidth>840)return;const available=box.clientWidth-1;if(available<=0)return;const range=document.createRange();range.selectNodeContents(title);for(let i=0;i<4;i++){const width=range.getBoundingClientRect().width;if(width<=available)break;const size=parseFloat(getComputedStyle(title).fontSize);title.style.setProperty('font-size',`${size*available/width*.98}px`,'important');}};const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(fit);}};new ResizeObserver(schedule).observe(box);new MutationObserver(schedule).observe(title,{childList:true,characterData:true,subtree:true});addEventListener('resize',schedule);document.fonts.ready.then(schedule);document.fonts.addEventListener('loadingdone',schedule);schedule();};document.readyState==='loading'?document.addEventListener('DOMContentLoaded',start):start();})();
+
+/* Shared subscription form behavior. */
+(() => {
+  function wire() {
+    const form = document.getElementById('subscribeForm');
+    if (form) form.addEventListener('submit', event => event.preventDefault());
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire, {once: true});
+  else wire();
+})();
