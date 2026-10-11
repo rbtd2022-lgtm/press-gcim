@@ -107,6 +107,5 @@
       ]
     }
   ],
-  "buildCommand": "node tools/build_dist.cjs",
-  "outputDirectory": "dist"
+  "outputDirectory": "."
 }
