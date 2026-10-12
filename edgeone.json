@@ -80,24 +80,6 @@
       ]
     },
     {
-      "source": "/assets/gc-cache-*.css",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/assets/gc-design-v*.css",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
       "source": "/assets/gc-site-v*.css",
       "headers": [
         {
