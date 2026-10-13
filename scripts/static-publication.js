@@ -14,6 +14,53 @@
     uk: ['Посилання скопійовано', 'Не вдалося скопіювати посилання. Скопіюйте його з адресного рядка.']
   };
 
+  const TEXT_FEEDBACK = {
+    en: ['Text copied', 'Could not copy the text. Please select and copy it manually.'],
+    ru: ['Текст скопирован', 'Не удалось скопировать текст. Выделите и скопируйте его вручную.'],
+    ar: ['تم نسخ النص', 'تعذّر نسخ النص. يُرجى تحديده ونسخه يدويًا.'],
+    es: ['Texto copiado', 'No se pudo copiar el texto. Selecciónelo y cópielo manualmente.'],
+    zh: ['文本已复制', '无法复制文本。请选中文本并手动复制。'],
+    fr: ['Texte copié', 'Impossible de copier le texte. Sélectionnez-le et copiez-le manuellement.'],
+    uk: ['Текст скопійовано', 'Не вдалося скопіювати текст. Виділіть і скопіюйте його вручну.']
+  };
+
+  function publicationText() {
+    const page = document.getElementById('publicationPage');
+    if (!page) return '';
+    return ['#publicationTitle', '#publicationDate', '.publication-intro', '#publicationBody']
+      .flatMap((selector) => Array.from(page.querySelectorAll(selector)))
+      .map((node) => node.innerText.trim())
+      .filter(Boolean).join('\n\n');
+  }
+
+  async function copyText(text) {
+    if (!text) throw new Error('Empty publication');
+    if (navigator.clipboard && window.isSecureContext) {
+      try { await navigator.clipboard.writeText(text); return; } catch (e) {}
+    }
+    const active = document.activeElement;
+    const selection = window.getSelection();
+    const ranges = selection ? Array.from({ length: selection.rangeCount }, (_, i) => selection.getRangeAt(i).cloneRange()) : [];
+    const field = document.createElement('textarea');
+    field.value = text;
+    field.readOnly = true;
+    field.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none;';
+    document.body.appendChild(field);
+    try {
+      field.focus({ preventScroll: true });
+      field.select();
+      field.setSelectionRange(0, text.length);
+      if (!document.execCommand('copy')) throw new Error('Copy failed');
+    } finally {
+      field.remove();
+      if (active && active.focus) active.focus({ preventScroll: true });
+      if (selection) {
+        selection.removeAllRanges();
+        ranges.forEach((range) => selection.addRange(range));
+      }
+    }
+  }
+
   function currentLanguage() {
     const lang = document.documentElement.dataset.pageLanguage || document.documentElement.lang;
     return LANGS.includes(lang) ? lang : 'en';
@@ -77,6 +124,24 @@
           showFeedback(messages[0], 1600);
         } catch (e) {
           showFeedback(messages[1], 5000);
+        }
+      });
+    }
+
+    const copyTextButton = document.getElementById('copyTextButton');
+    if (copyTextButton && document.getElementById('publicationBody')) {
+      const status = document.getElementById('copyTextStatus');
+      let feedbackTimer;
+      copyTextButton.addEventListener('click', async () => {
+        window.clearTimeout(feedbackTimer);
+        if (status) status.textContent = '';
+        const messages = TEXT_FEEDBACK[currentLanguage()];
+        try {
+          await copyText(publicationText());
+          if (status) status.textContent = messages[0];
+          feedbackTimer = window.setTimeout(() => { if (status) status.textContent = ''; }, 2000);
+        } catch (e) {
+          if (status) status.textContent = messages[1];
         }
       });
     }
