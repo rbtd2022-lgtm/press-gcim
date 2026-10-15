@@ -87,7 +87,7 @@
         ]
       },
       {
-        "source": "scripts/language-routing.js",
+        "source": "assets/gc-site-v*.css",
         "headers": [
           {
             "key": "Cache-Control",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "source": "assets/gc-site-v*.css",
+        "source": "scripts/language-routing.js",
         "headers": [
           {
             "key": "Cache-Control",
