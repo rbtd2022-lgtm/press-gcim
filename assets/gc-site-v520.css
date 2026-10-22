@@ -1427,13 +1427,3 @@ html:is([lang="ru"],[lang="uk"]) main :is(h1,h2,h3,h4,h5,h6,.publication-title,.
 @media (max-width: 840px){.portal-bar-mobile-links a:where(html[data-gc-rules~="r2"],html[data-gc-rules~="r2"] *){box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;max-width:100%;padding-inline:2px;overflow-wrap:anywhere;}}
 :root:where(html[data-gc-rules~="r2"],html[data-gc-rules~="r2"] *){--gc-gold-label-text:#84652f;}
 .eyebrow:where(html[data-gc-rules~="r2"],html[data-gc-rules~="r2"] *),.featured-label:where(html[data-gc-rules~="r2"],html[data-gc-rules~="r2"] *){color:var(--gc-gold-label-text) !important;}
-
-/* Approved mobile RU/UK publication body font: both script subsets. */
-@font-face{font-family:"GC Publication Mobile Sans";src:url("fonts/pt-sans-regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-03FF,U+0530-DFFF,U+F900-10FFFF;}
-@font-face{font-family:"GC Publication Mobile Sans";src:url("fonts/pt-sans-regular-cyrillic.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0400-052F;}
-@font-face{font-family:"GC Publication Mobile Sans";src:url("fonts/pt-sans-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-03FF,U+0530-DFFF,U+F900-10FFFF;}
-@font-face{font-family:"GC Publication Mobile Sans";src:url("fonts/pt-sans-bold-cyrillic.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0400-052F;}
-@media(max-width:840px){html:is([lang="ru"],[lang="uk"]) #publicationPage :is(.publication-body,.publication-body *){font-family:"GC Publication Mobile Sans",Arial,sans-serif!important;}}
-
-/* Approved mobile RU/UK homepage headings: use both PT Sans script subsets. */
-@media(max-width:840px){html:is([lang="ru"],[lang="uk"]) body:has(#newsList):not([data-static-category]) main :is(.hero h1,.news-item .news-title,.featured h2,.featured h2 a){font-family:"GC Publication Mobile Sans",Arial,sans-serif!important;}}
