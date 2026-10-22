@@ -164,8 +164,89 @@
   };
 })();
 
-/* Fit the whole mobile masthead title after fonts and layout are ready. */
-(()=>{const start=()=>{const title=document.querySelector('.masthead .brand-copy strong');if(!title)return;const box=title.parentElement;let pending=false;const fit=()=>{pending=false;title.style.removeProperty('font-size');if(innerWidth>840)return;const available=box.clientWidth-1;if(available<=0)return;const range=document.createRange();range.selectNodeContents(title);for(let i=0;i<4;i++){const width=range.getBoundingClientRect().width;if(width<=available)break;const size=parseFloat(getComputedStyle(title).fontSize);title.style.setProperty('font-size',`${size*available/width*.98}px`,'important');}};const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(fit);}};new ResizeObserver(schedule).observe(box);new MutationObserver(schedule).observe(title,{childList:true,characterData:true,subtree:true});addEventListener('resize',schedule);document.fonts.ready.then(schedule);document.fonts.addEventListener('loadingdone',schedule);schedule();};document.readyState==='loading'?document.addEventListener('DOMContentLoaded',start):start();})();
+/* Fit the mobile masthead from unchanged CSS metrics after its font is ready. */
+(() => {
+  const start = () => {
+    const title = document.querySelector('.masthead .brand-copy strong');
+    if (!title) return;
+    const box = title.parentElement;
+    let pending = false;
+    let fontsReady = !document.fonts;
+    let observedWidth = -1;
+
+    const fit = () => {
+      pending = false;
+      if (innerWidth > 840) {
+        if (title.style.getPropertyValue('font-size')) title.style.removeProperty('font-size');
+        return;
+      }
+      const available = box.clientWidth - 1;
+      if (available <= 0) return;
+
+      // Measure the CSS size on an invisible copy. Never reset the visible
+      // title just to measure it, or feed its height back into ResizeObserver.
+      const measure = title.cloneNode(true);
+      measure.removeAttribute('id');
+      measure.setAttribute('aria-hidden', 'true');
+      measure.style.removeProperty('font-size');
+      for (const [name, value] of Object.entries({
+        position: 'absolute', visibility: 'hidden', 'pointer-events': 'none',
+        'inline-size': 'max-content', 'max-inline-size': 'none',
+        'white-space': 'nowrap'
+      })) measure.style.setProperty(name, value, 'important');
+      box.appendChild(measure);
+      let width, baseSize;
+      try {
+        baseSize = parseFloat(getComputedStyle(measure).fontSize);
+        const range = document.createRange();
+        range.selectNodeContents(measure);
+        width = range.getBoundingClientRect().width;
+      } finally {
+        measure.remove();
+      }
+      if (!(width > 0) || !(baseSize > 0)) return;
+      if (width <= available) {
+        if (title.style.getPropertyValue('font-size')) title.style.removeProperty('font-size');
+        return;
+      }
+      const size = Math.floor(baseSize * available / width * .98 * 1000) / 1000;
+      const previous = parseFloat(title.style.getPropertyValue('font-size'));
+      if (!Number.isFinite(previous) || Math.abs(previous - size) > .001) {
+        title.style.setProperty('font-size', `${size}px`, 'important');
+      }
+    };
+    const schedule = () => {
+      if (fontsReady && !pending) {
+        pending = true;
+        requestAnimationFrame(fit);
+      }
+    };
+    new ResizeObserver(entries => {
+      const width = entries[0].contentRect.width;
+      if (Math.abs(width - observedWidth) > .01) {
+        observedWidth = width;
+        schedule();
+      }
+    }).observe(box);
+    new MutationObserver(schedule).observe(title, {
+      childList: true, characterData: true, subtree: true
+    });
+    addEventListener('resize', schedule);
+    if (document.fonts) {
+      const style = getComputedStyle(title);
+      document.fonts.load(`${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`, title.textContent)
+        .catch(() => {})
+        .then(() => { fontsReady = true; schedule(); });
+      document.fonts.ready.then(schedule);
+      document.fonts.addEventListener('loadingdone', schedule);
+    } else {
+      schedule();
+    }
+  };
+  document.readyState === 'loading'
+    ? document.addEventListener('DOMContentLoaded', start)
+    : start();
+})();
 
 /* Shared subscription form behavior. */
 (() => {
