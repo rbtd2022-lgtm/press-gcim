@@ -257,3 +257,22 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire, {once: true});
   else wire();
 })();
+
+/* Dismiss the shared official-resources disclosure on every page. */
+(() => {
+  document.addEventListener('click', event => {
+    document.querySelectorAll('details.resources-menu[open]').forEach(menu => {
+      if (!menu.contains(event.target)) menu.open = false;
+    });
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const menus = document.querySelectorAll('details.resources-menu[open]');
+    if (!menus.length) return;
+    event.preventDefault();
+    menus.forEach(menu => {
+      menu.open = false;
+      menu.querySelector('summary')?.focus({preventScroll: true});
+    });
+  });
+})();
