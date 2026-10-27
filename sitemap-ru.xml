@@ -349,6 +349,18 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/gcim-web-resources-uk.html"/>
   </url>
   <url>
+    <loc>https://press.gcim.eu/healthcare-ukraine-ru.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/healthcare-ukraine.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/healthcare-ukraine.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/healthcare-ukraine-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/healthcare-ukraine-es.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/healthcare-ukraine-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/healthcare-ukraine-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/healthcare-ukraine-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/healthcare-ukraine-uk.html"/>
+  </url>
+  <url>
     <loc>https://press.gcim.eu/index-ru.html</loc>
     <lastmod>2026-10-27</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/"/>
@@ -443,17 +455,5 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/movement-urgent-appeals-cases-ru.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/movement-urgent-appeals-cases-fr.html"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/movement-urgent-appeals-cases-uk.html"/>
-  </url>
-  <url>
-    <loc>https://press.gcim.eu/zvytiaha-ru.html</loc>
-    <lastmod>2026-10-27</lastmod>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/zvytiaha.html"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/zvytiaha.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/zvytiaha-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/zvytiaha-es.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/zvytiaha-zh.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/zvytiaha-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/zvytiaha-fr.html"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/zvytiaha-uk.html"/>
   </url>
 </urlset>

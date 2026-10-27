@@ -1,7 +1,7 @@
 const langButtons = document.querySelectorAll('[data-lang-btn]');
     let currentLang = window.GCIMLanguageRouting.readLanguage();
     const homePages = window.GCIMLanguageRouting.HOME_PAGES;
-    function categoryPage(lang, category){ return category === 'all' ? 'zvytiaha' + (lang === 'en' ? '' : '-' + lang) + '.html' : window.GCIMLanguageRouting.categoryUrl(category, lang); }
+    function categoryPage(lang, category){ return category === 'all' ? 'healthcare-ukraine' + (lang === 'en' ? '' : '-' + lang) + '.html' : window.GCIMLanguageRouting.categoryUrl(category, lang); }
     function staticCategory(){
   const category = document.body.dataset.staticCategory || 'all';
   return VALID_NEWS_CATEGORIES.includes(category) ? category : 'all';
