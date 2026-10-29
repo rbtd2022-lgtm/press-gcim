@@ -1,0 +1,4 @@
+/* Apply exposure and monochrome only to the image layer; the approved burgundy fade remains untouched. */
+.gc-home-alive-section .gc-zvytiaha-visual{background-image:none;}
+.gc-home-alive-section .gc-zvytiaha-visual::before{content:"";position:absolute;inset:0;background-image:url("bring-them-home-alive.webp");background-position:inherit;background-size:inherit;background-repeat:no-repeat;filter:grayscale(1) brightness(5.2) contrast(.85);pointer-events:none;}
+@media(max-width:840px){.gc-home-alive-section .gc-zvytiaha-visual{background-image:none;}}
