@@ -18,6 +18,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Python
+        if: ${{ hashFiles('tools/build_dist.cjs') != '' }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python build dependencies
+        if: ${{ hashFiles('tools/build_dist.cjs') != '' }}
+        run: python3 -m pip install lxml "Pillow>=10"
+
       - name: Prepare public directory
         run: |
           if [ -f tools/build_dist.cjs ]; then

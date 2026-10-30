@@ -30,3 +30,35 @@
 /scripts/language-routing.js
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
+
+/assets/base.css
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/home.css
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/publication.css
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/static.css
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff2
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/scripts/gc-shared-*.js
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  ! Cache-Control
+  Cache-Control: max-age=2592000

@@ -15,6 +15,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        if: ${{ hashFiles('tools/build_dist.cjs') != '' }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python build dependencies
+        if: ${{ hashFiles('tools/build_dist.cjs') != '' }}
+        run: python3 -m pip install lxml "Pillow>=10"
+
       - name: Build public directory
         if: ${{ hashFiles('tools/build_dist.cjs') != '' }}
         run: node tools/build_dist.cjs
