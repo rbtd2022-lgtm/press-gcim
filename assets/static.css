@@ -1269,9 +1269,6 @@ html[lang] body[data-news-tag="zvytiaha"] main .hero h1{white-space:normal!impor
 @media(min-width:841px){@supports(font-size:1cqw){.gc-veteran-banner .gc-zvytiaha-heading{font-size:clamp(14px,3.8cqw,20px);}}}
 @media(max-width:840px){.gc-veteran-banner .gc-zvytiaha-heading{font-size:clamp(17px,4.6vw,20px);line-height:1.3;}}
 @media(max-width:840px){.gc-veteran-banner .gc-zvytiaha-visual{aspect-ratio:1.5;background-size:cover;background-position:50% 15%;background-image:url("veteran-criminal-liability.webp");}}
-@media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner > .gc-zvytiaha-visual{height:clamp(70px,20vw,110px);min-height:0;aspect-ratio:auto;background-size:cover;}}
-@media(max-width:840px){section[aria-label="ZVYTIAHA"] > a.gc-zvytiaha-banner > .gc-zvytiaha-visual{background-position:70% 32%;}}
-@media(max-width:840px){section.gc-veteran-section > a.gc-veteran-banner > .gc-zvytiaha-visual{background-position:50% 24%;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner > .gc-zvytiaha-copy{padding:10px 14px 12px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country{font-size:13px;line-height:1.2;margin-bottom:8px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country::after{margin-top:6px;}}
