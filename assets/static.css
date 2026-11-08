@@ -1285,7 +1285,7 @@ section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{backgro
 /* Veteran page: approved country conclusions, compact responsive cards. */
 #main .country-conclusions{box-sizing:border-box;max-width:var(--max);margin:0 auto;padding:0 28px 36px;color:var(--ink)}
 #main .country-conclusions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-#main .country-conclusions .country-conclusion{box-sizing:border-box;min-width:0;background:#f2dfce;border:1px solid var(--line);border-top:3px solid #d7bd90;padding:18px 20px}
+#main .country-conclusions .country-conclusion{box-sizing:border-box;min-width:0;background:#f2dfce;border:1px solid var(--line);border-top:3px solid var(--gc-red);padding:18px 20px}
 #main .country-conclusions .country-conclusion h3{font-size:18px!important;line-height:24px!important;font-weight:400!important;color:var(--navy);margin:0 0 10px!important;letter-spacing:0!important;overflow-wrap:anywhere;text-align:start!important}
 #main .country-conclusions .country-conclusion p{font-size:15px!important;line-height:22px!important;font-weight:400!important;margin:0!important;letter-spacing:0!important;text-align:start!important;overflow-wrap:anywhere}
 #main .country-conclusions .synthesis-conclusions{margin-top:16px}
@@ -1314,3 +1314,5 @@ section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{backgro
  html body[data-listing-page="veteran-criminal-liability"] #main .hero h1{font-size:20px!important;line-height:1.25!important;letter-spacing:0!important}
 }
 @media(max-width:360px){html body[data-listing-page="veteran-criminal-liability"] #main .hero h1{font-size:18px!important;line-height:1.3!important}}
+
+#main .country-conclusions{padding-top:12px!important}
