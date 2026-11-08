@@ -951,3 +951,28 @@ html[lang] body[data-news-tag="zvytiaha"] main .hero h1{white-space:normal!impor
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country{font-size:13px;line-height:1.2;margin-bottom:8px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country::after{margin-top:6px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-heading{font-size:clamp(13px,3.6vw,16.5px);line-height:1.3;}}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-heading{white-space:normal;text-wrap:balance;font-size:20px;line-height:1.28;}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-break{display:none;}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{background-image:url("zvytiaha.webp?v=638");background-image:image-set(url("zvytiaha.avif?v=638") type("image/avif"),url("zvytiaha.webp?v=638") type("image/webp"));background-size:cover;background-position:50% 20%;}
+@media(min-width:841px){@supports(font-size:1cqw){section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-heading{font-size:clamp(14px,3.8cqw,20px);}}}
+@media(max-width:840px){section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{aspect-ratio:1.5;background-size:cover;background-position:50% 15%;}}
+.gc-burns-banner{grid-column:1 / -1;margin:0 0 24px;}
+.gc-burns-banner .gc-zvytiaha-heading{white-space:normal;text-wrap:balance;font-size:20px;line-height:1.28;}
+.gc-burns-banner .gc-zvytiaha-visual{background-image:url("burns-career-collage.webp");background-image:image-set(url("burns-career-collage.avif") type("image/avif"),url("burns-career-collage.webp") type("image/webp"));background-position:50% 20%;}
+@media(min-width:841px){@supports(font-size:1cqw){.gc-burns-banner .gc-zvytiaha-heading{font-size:clamp(14px,3.8cqw,20px);}}}
+@media(max-width:840px){.gc-burns-banner .gc-zvytiaha-visual{aspect-ratio:1.5;background-size:cover;background-position:50% 15%;}}
+@media(max-width:840px){.gc-burns-banner > .gc-zvytiaha-copy{padding:10px 14px 12px;}}
+@media(max-width:840px){.gc-burns-banner .gc-zvytiaha-country{font-size:13px;line-height:1.2;margin-bottom:8px;}}
+@media(max-width:840px){.gc-burns-banner .gc-zvytiaha-country::after{margin-top:6px;}}
+@media(max-width:840px){.gc-burns-banner .gc-zvytiaha-heading{font-size:clamp(13px,3.6vw,16.5px);line-height:1.3;}}
+.gc-burns-name{display:block;}
+.gc-burns-role{display:block;font-size:14px;line-height:1.25;margin-top:4px;letter-spacing:0;white-space:nowrap;}
+@media(max-width:840px){.gc-burns-role{font-size:clamp(10px,2.95vw,11.5px);line-height:1.25;margin-top:3px;}}
+@media(max-width:840px){html[lang="ar"] .gc-burns-role{font-size:clamp(9px,2.7vw,11.5px);}}
+#featuredPublication > .gc-melania-banner{grid-column:2;width:calc(100% - 40px);justify-self:end;margin:0;}
+#featuredPublication .gc-melania-name{display:none;}
+html[lang] body #featuredPublication .gc-melania-heading{font-family:var(--gc-sans)!important;font-size:clamp(20px,1.7vw,24px)!important;font-weight:400!important;line-height:1.28!important;letter-spacing:0!important;color:#fff1e3!important;margin:0!important;}
+#featuredPublication .gc-melania-portrait{background-image:url("melania-trump-oleshky.webp?v=e6e73be0e6eb29e3");background-image:image-set(url("melania-trump-oleshky.avif?v=26ee8ff70484c56e") type("image/avif"),url("melania-trump-oleshky.webp?v=e6e73be0e6eb29e3") type("image/webp"));}
+@media(max-width:840px){#featuredPublication > .gc-melania-banner{grid-column:1;width:100%;}}
+@media(max-width:840px){html[lang] body #featuredPublication .gc-melania-heading{font-size:clamp(20px,2.8vw,24px)!important;}}
+@media(max-width:600px){html[lang] body #featuredPublication .gc-melania-heading{font-size:clamp(17px,4.6vw,20px)!important;line-height:1.3!important;}}

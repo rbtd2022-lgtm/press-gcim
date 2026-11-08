@@ -1273,6 +1273,11 @@ html[lang] body[data-news-tag="zvytiaha"] main .hero h1{white-space:normal!impor
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country{font-size:13px;line-height:1.2;margin-bottom:8px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-country::after{margin-top:6px;}}
 @media(max-width:840px){:is(section[aria-label="ZVYTIAHA"],section.gc-veteran-section) > a.gc-zvytiaha-banner .gc-zvytiaha-heading{font-size:clamp(13px,3.6vw,16.5px);line-height:1.3;}}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-heading{white-space:normal;text-wrap:balance;font-size:20px;line-height:1.28;}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-break{display:none;}
+section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{background-image:url("zvytiaha.webp?v=638");background-image:image-set(url("zvytiaha.avif?v=638") type("image/avif"),url("zvytiaha.webp?v=638") type("image/webp"));background-size:cover;background-position:50% 20%;}
+@media(min-width:841px){@supports(font-size:1cqw){section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-heading{font-size:clamp(14px,3.8cqw,20px);}}}
+@media(max-width:840px){section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{aspect-ratio:1.5;background-size:cover;background-position:50% 15%;}}
 :where(body[data-static-category="movement-reports-submissions"]) .gc-home-alive-section .gc-zvytiaha-visual{background-image:none;}
 :where(body[data-static-category="movement-reports-submissions"]) .gc-home-alive-section .gc-zvytiaha-visual::before{content:"";position:absolute;inset:0;background-image:url("bring-them-home-alive.webp");background-position:inherit;background-size:inherit;background-repeat:no-repeat;filter:grayscale(1) brightness(5.2) contrast(.85);pointer-events:none;}
 @media(max-width:840px){:where(body[data-static-category="movement-reports-submissions"]) .gc-home-alive-section .gc-zvytiaha-visual{background-image:none;}}
