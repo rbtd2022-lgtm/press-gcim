@@ -1316,3 +1316,11 @@ section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{backgro
 @media(max-width:360px){html body[data-listing-page="veteran-criminal-liability"] #main .hero h1{font-size:18px!important;line-height:1.3!important}}
 
 #main .country-conclusions{padding-top:12px!important}
+
+/* Country card names: existing short mobile names and booklet desktop names. */
+#main .country-conclusions .country-name-mobile{display:none}
+#main .country-conclusions .country-name-desktop{display:inline}
+@media(max-width:840px){
+ #main .country-conclusions .country-name-mobile{display:inline}
+ #main .country-conclusions .country-name-desktop{display:none}
+}
