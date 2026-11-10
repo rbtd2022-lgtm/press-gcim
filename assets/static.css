@@ -1286,16 +1286,16 @@ section[aria-label="ZVYTIAHA"] > .gc-zvytiaha-banner .gc-zvytiaha-visual{backgro
 #main .country-conclusions{box-sizing:border-box;max-width:var(--max);margin:0 auto;padding:0 28px 36px;color:var(--ink)}
 #main .country-conclusions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 #main .country-conclusions .country-conclusion{box-sizing:border-box;min-width:0;background:#f2dfce;border:1px solid var(--line);border-top:3px solid var(--gc-red);padding:18px 20px}
-#main .country-conclusions .country-conclusion h3{font-size:18px!important;line-height:24px!important;font-weight:400!important;color:var(--navy);margin:0 0 10px!important;letter-spacing:0!important;overflow-wrap:anywhere;text-align:start!important}
+#main .country-conclusions .country-conclusion h2{font-size:18px!important;line-height:24px!important;font-weight:400!important;color:var(--navy);margin:0 0 10px!important;letter-spacing:0!important;overflow-wrap:anywhere;text-align:start!important}
 #main .country-conclusions .country-conclusion p{font-size:15px!important;line-height:22px!important;font-weight:400!important;margin:0!important;letter-spacing:0!important;text-align:start!important;overflow-wrap:anywhere}
 #main .country-conclusions .synthesis-conclusions{margin-top:16px}
 #main .country-conclusions .synthesis-conclusions .country-conclusion{display:flex;align-items:center;min-height:64px}
-#main .country-conclusions .synthesis-conclusions .country-conclusion h3{margin:0!important}
+#main .country-conclusions .synthesis-conclusions .country-conclusion h2{margin:0!important}
 @media(max-width:840px){
  #main .country-conclusions{padding:0 20px 28px}
   #main .country-conclusions-grid{grid-template-columns:minmax(0,1fr);gap:12px}
  #main .country-conclusions .country-conclusion{padding:14px 16px}
- #main .country-conclusions .country-conclusion h3{font-size:17px!important;line-height:22px!important;margin-bottom:8px!important}
+ #main .country-conclusions .country-conclusion h2{font-size:17px!important;line-height:22px!important;margin-bottom:8px!important}
  #main .country-conclusions .country-conclusion p{font-size:14px!important;line-height:21px!important}
  #main .country-conclusions .synthesis-conclusions{margin-top:12px}
  #main .country-conclusions .synthesis-conclusions .country-conclusion{min-height:60px}
