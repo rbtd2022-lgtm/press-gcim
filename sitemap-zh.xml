@@ -433,6 +433,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-11-23-congress-thanks-en.html"/>
   </url>
   <url>
+    <loc>https://press.gcim.eu/2026-11-24-us-leaders-thanks-zh.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-es.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-fr.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-uk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/2026-11-24-us-leaders-thanks-en.html"/>
+  </url>
+  <url>
     <loc>https://press.gcim.eu/about-zh.html</loc>
     <lastmod>2026-11-20</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/about.html"/>
@@ -458,7 +470,7 @@
   </url>
   <url>
     <loc>https://press.gcim.eu/coordinator-official-messages-zh.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/coordinator-official-messages.html"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/coordinator-official-messages.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/coordinator-official-messages-ar.html"/>
@@ -542,7 +554,7 @@
   </url>
   <url>
     <loc>https://press.gcim.eu/index-zh.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://press.gcim.eu/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://press.gcim.eu/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://press.gcim.eu/index-ar.html"/>
