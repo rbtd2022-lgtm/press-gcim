@@ -4,12 +4,15 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
+env:
+  INDEXNOW_KEY_FILE: e0af8ddaca77bb71ad8ba02f87669866.txt
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -36,6 +39,7 @@ jobs:
             mkdir -p dist
             cp -R assets scripts dist/
             find . -maxdepth 1 -type f \( -name '*.html' -o -name '*.xml' -o -name 'CNAME' -o -name '_headers' -o -name 'robots.txt' -o -name 'search-index.json' \) ! -name 'mobile-emulator.html' -exec cp {} dist/ \;
+            cp "$INDEXNOW_KEY_FILE" dist/
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -43,3 +47,108 @@ jobs:
           path: dist
       - uses: actions/deploy-pages@v4
         id: deployment
+
+      - name: Notify IndexNow of new canonical URLs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY_INDEXNOW'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import time
+          from urllib.error import HTTPError, URLError
+          from urllib.parse import urlencode, urlsplit
+          from urllib.request import Request, urlopen
+          from xml.etree import ElementTree
+
+          HOST = 'press.gcim.eu'
+          NS = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+          MAP_NAMES = tuple(f'sitemap-{lang}.xml' for lang in ('ar', 'en', 'es', 'fr', 'ru', 'uk', 'zh'))
+
+
+          def git(*args):
+              return subprocess.check_output(['git', *args])
+
+
+          def sitemap_urls(sitemaps):
+              urls = set()
+              for data in sitemaps:
+                  root = ElementTree.fromstring(data)
+                  if root.tag != NS + 'urlset':
+                      raise ValueError('Expected a language sitemap')
+                  for loc in root.findall(f'{NS}url/{NS}loc'):
+                      address = (loc.text or '').strip()
+                      url = urlsplit(address)
+                      if url.scheme != 'https' or url.netloc != HOST or url.fragment or url.query:
+                          raise ValueError(f'Unexpected canonical URL in sitemap: {address}')
+                      urls.add(address)
+              return urls
+
+
+          def previous_urls():
+              api = os.environ['GITHUB_API_URL']
+              repo = os.environ['GITHUB_REPOSITORY']
+              number = int(os.environ['GITHUB_RUN_NUMBER'])
+              query = urlencode({'branch': os.environ['GITHUB_REF_NAME'], 'status': 'success', 'per_page': 100})
+              request = Request(f'{api}/repos/{repo}/actions/workflows/pages.yml/runs?{query}', headers={
+                  'Authorization': f'Bearer {os.environ["GH_TOKEN"]}',
+                  'Accept': 'application/vnd.github+json',
+                  'X-GitHub-Api-Version': '2022-11-28',
+              })
+              with urlopen(request, timeout=20) as response:
+                  runs = json.load(response)['workflow_runs']
+              previous = max((run for run in runs if run['run_number'] < number),
+                             key=lambda run: run['run_number'], default=None)
+              if previous is None:
+                  print('No earlier successful Pages run. Submitting the initial set of canonical URLs.')
+                  return set()
+              revision = previous['head_sha']
+              subprocess.run(['git', 'fetch', '--no-tags', '--depth=1', 'origin', revision], check=True)
+              files = set(git('ls-tree', '--name-only', revision).decode().splitlines())
+              return sitemap_urls(git('show', f'{revision}:{name}') for name in MAP_NAMES if name in files)
+
+
+          def send(urls, key, key_url):
+              payload = json.dumps({'host': HOST, 'key': key, 'keyLocation': key_url, 'urlList': urls}).encode()
+              request = Request('https://api.indexnow.org/indexnow', data=payload,
+                                headers={'Content-Type': 'application/json; charset=utf-8'})
+              for attempt in range(4):
+                  try:
+                      with urlopen(key_url, timeout=20) as file:
+                          if file.read().decode().strip() != key:
+                              raise ValueError('The published IndexNow verification file does not match')
+                      with urlopen(request, timeout=20) as response:
+                          if response.status not in (200, 202):
+                              raise ValueError(f'Unexpected IndexNow HTTP status {response.status}')
+                          print(f'IndexNow received {len(urls)} URLs (HTTP {response.status}).')
+                          return
+                  except HTTPError as error:
+                      if error.code not in (404, 408, 429, 500, 502, 503, 504) or attempt == 3:
+                          raise
+                      wait = error.headers.get('Retry-After', '')
+                      time.sleep(min(60, int(wait)) if wait.isdigit() else 5 * (2 ** attempt))
+                  except (URLError, TimeoutError, ValueError):
+                      if attempt == 3:
+                          raise
+                      time.sleep(5 * (2 ** attempt))
+
+
+          def main():
+              dist = Path('dist')
+              current = sitemap_urls((dist / name).read_bytes() for name in MAP_NAMES)
+              urls = sorted(current - previous_urls())
+              if not urls:
+                  print('No new canonical URLs to submit.')
+                  return
+              key_file = os.environ['INDEXNOW_KEY_FILE']
+              key = Path(key_file).stem
+              if (dist / key_file).read_text().strip() != key:
+                  raise ValueError('The IndexNow verification file is missing or invalid in dist')
+              send(urls, key, f'https://{HOST}/{key_file}')
+
+
+          if __name__ == '__main__':
+              main()
+          PY_INDEXNOW
